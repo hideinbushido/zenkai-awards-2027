@@ -73,3 +73,10 @@ export const PALMARES_2026 = [
   { categorie: "Meilleure romance", gagnant: "Bloom", img: v("romance-bloom"), presentateur: "Y-Gaëtan", handle: "@yvesgaetan", photo: v("pres-gaetan") },
   { categorie: "Meilleur combat", gagnant: "Akaza vs Giyu & Tanjiro", img: v("combat-akavstan"), presentateur: "Alex Kagami", handle: "@alexkagami.manga", photo: v("pres-kagami") },
 ] as const;
+
+// Présentateurs qui ont ouvert les enveloppes en 2026 (palmares2026.ts, dépôt anime-awards).
+export const PRESENTATEURS_2026 = [
+  "Tempest", "Y-Gaëtan", "Hermione", "Daan", "Shadow", "Afro Joestar", "Stylouish", "Alex Kagami",
+  "Jason", "Senior Sendo", "Afro Otaku", "Spyro", "Tsunade Desty", "Le Zumaki", "Jeremiah", "Elyza",
+  "Yvendis", "Mikassa237", "Sensei TV", "Mr. Hunter", "Braizanime", "Tomi-tan", "Le Grand G", "Rico",
+] as const;
