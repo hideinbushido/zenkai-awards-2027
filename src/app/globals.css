@@ -1,0 +1,575 @@
+@import "tailwindcss";
+@import "@fontsource/zen-old-mincho/700.css";
+@import "@fontsource/zen-old-mincho/900.css";
+@import "@fontsource/schibsted-grotesk/400.css";
+@import "@fontsource/schibsted-grotesk/500.css";
+@import "@fontsource/schibsted-grotesk/700.css";
+@import "@fontsource/schibsted-grotesk/900.css";
+
+/* ════════ Zenkai 2027 — « Impact frame » (voir DESIGN.md) ════════ */
+:root {
+  --ink: #0B0B0C;
+  --paper: #F4F4F1;
+  --ink-2: #1B1B1C;
+  --mute-on-ink: #8C8C88;
+  --mute-on-paper: #5A5A55;
+  --impact: #E1121B;
+  --impact-text-paper: #C40E17;
+  --impact-text-ink: #FF4D55;
+  --rule-on-ink: rgb(244 244 241 / 0.18);
+  --rule-on-paper: rgb(11 11 12 / 0.18);
+  --font-display: "Zen Old Mincho", serif;
+  --font-text: "Schibsted Grotesk", sans-serif;
+  --cut: 90ms steps(2, end);
+  --flip: 320ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  --slam: 420ms cubic-bezier(0.16, 1, 0.3, 1);
+  --pad: clamp(20px, 4.4vw, 64px);
+
+  /* anciens noms 2026, rebranchés sur la palette 2027 */
+  --background: var(--ink);
+  --foreground: var(--paper);
+  --primary: var(--paper);
+  --primary-dark: var(--mute-on-ink);
+  --secondary: var(--paper);
+  --accent: var(--impact);
+  --card-bg: var(--ink-2);
+  --card-border: var(--rule-on-ink);
+  --muted: var(--mute-on-ink);
+}
+
+@theme inline {
+  --font-display: "Zen Old Mincho", serif;
+  --font-sans: "Schibsted Grotesk", sans-serif;
+  --color-ink: #0B0B0C;
+  --color-paper: #F4F4F1;
+  --color-ink-2: #1B1B1C;
+  --color-impact: #E1121B;
+  --color-mute: #8C8C88;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scrollbar-color: var(--paper) var(--ink); }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+::selection { background: var(--impact); color: #fff; }
+:focus-visible { outline: 3px solid var(--impact); outline-offset: 4px; }
+
+body {
+  background-color: var(--ink);
+  color: var(--paper);
+  font-family: var(--font-text);
+  font-size: 18px;
+  line-height: 1.55;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3 { font-family: var(--font-display); font-weight: 900; letter-spacing: -0.01em; text-wrap: balance; }
+p { text-wrap: pretty; }
+.num { font-variant-numeric: tabular-nums; }
+
+/* Boutons et liens 2027 */
+.z-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 48px; border: 0; cursor: pointer;
+  font-family: var(--font-display); font-weight: 900; font-size: clamp(18px, 1.6vw, 22px); line-height: 1.1;
+  padding: 18px 32px; text-decoration: none; background: var(--paper); color: var(--ink);
+  transition: background-color var(--cut), color var(--cut), transform var(--cut), box-shadow var(--cut);
+}
+.z-btn:hover { background: var(--ink); color: var(--paper); box-shadow: inset 0 0 0 2px var(--paper); }
+.z-btn:active { transform: scale(.97); }
+.z-btn:disabled, .z-btn[aria-disabled="true"] { background: var(--ink-2); color: var(--mute-on-ink); cursor: not-allowed; box-shadow: none; }
+.z-paper .z-btn { background: var(--ink); color: var(--paper); }
+.z-paper .z-btn:hover { background: var(--paper); color: var(--ink); box-shadow: inset 0 0 0 2px var(--ink); }
+.z-link {
+  font-weight: 700; font-size: 17px; color: inherit; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 6px;
+  background: none; border: 0; cursor: pointer; padding: 12px 0; font-family: var(--font-text); transition: text-decoration-thickness var(--cut);
+}
+.z-link:hover { text-decoration-thickness: 4px; }
+.z-paper { background: var(--paper); color: var(--ink); }
+.z-sec { padding: clamp(56px, 8vw, 96px) var(--pad); }
+.z-wrap { padding-inline: var(--pad); }
+.z-field label { display: block; font-weight: 700; font-size: 16px; margin-bottom: 8px; }
+.z-field input, .z-field textarea {
+  width: 100%; background: transparent; color: inherit; border: 0; border-bottom: 2px solid currentColor; border-radius: 0;
+  font: 400 18px/1.4 var(--font-text); padding: 12px 0; outline: none;
+}
+.z-field input:focus-visible, .z-field textarea:focus-visible { border-bottom-color: var(--impact); outline: 3px solid var(--impact); outline-offset: 4px; }
+.z-error { color: var(--impact-text-ink); font-weight: 700; }
+.z-paper .z-error { color: var(--impact-text-paper); }
+
+/* Onglets de catégories */
+.z-tab { font: 700 15px/1 var(--font-text); color: var(--paper); background: transparent; border: 2px solid var(--rule-on-ink);
+  padding: 12px 14px; min-height: 44px; cursor: pointer; transition: background-color var(--cut), color var(--cut), border-color var(--cut); }
+.z-tab:hover { border-color: var(--paper); }
+.z-tab[aria-current="true"], .z-tab[data-current="true"] { background: var(--paper); color: var(--ink); border-color: var(--paper); }
+.z-tick { display: inline-block; width: 10px; height: 10px; margin-left: 8px; background: var(--impact); vertical-align: 1px; }
+
+/* Plaques de vote */
+.z-plates { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; perspective: 1400px; }
+@media (max-width: 1000px) {
+  .z-plates { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: minmax(124px, 38vw); overflow-x: auto;
+    scroll-snap-type: x mandatory; padding: 4px var(--pad) 14px; margin-inline: calc(var(--pad) * -1); }
+}
+.z-plate { position: relative; display: block; height: clamp(380px, 36vw, 500px); scroll-snap-align: start; cursor: pointer; }
+.z-plate input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.z-card { position: absolute; inset: 0; transform-style: preserve-3d; transition: transform var(--flip); }
+.z-face { position: absolute; inset: 0; backface-visibility: hidden; display: flex; flex-direction: column; border: 2px solid var(--paper); overflow: hidden; }
+.z-front { background: var(--ink-2); color: var(--paper); transition: background-color var(--cut), color var(--cut); }
+.z-plate:hover .z-front, .z-plate input:focus-visible ~ .z-card .z-front { background: var(--paper); color: var(--ink); }
+.z-plate input:focus-visible ~ .z-card { outline: 3px solid var(--impact); outline-offset: 4px; }
+.z-poster { position: relative; height: 42%; border-bottom: 2px solid currentColor; overflow: hidden;
+  background-image: radial-gradient(currentColor 22%, transparent 24%); background-size: 8px 8px; }
+.z-poster img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) contrast(1.35); display: block; }
+.z-poster::after { content: ""; position: absolute; inset: 0; background-image: radial-gradient(rgb(11 11 12 / .55) 26%, transparent 28%); background-size: 5px 5px; mix-blend-mode: multiply; }
+.z-name { flex: 1; display: flex; justify-content: center; padding: 16px 6px 10px; min-height: 0; }
+.z-name span { writing-mode: vertical-rl; font-family: var(--font-display); font-weight: 700; font-size: clamp(18px, 1.7vw, 23px); line-height: 1.15; max-height: 100%; overflow: hidden; }
+.z-sub { padding: 0 8px 12px; text-align: center; font-size: 13px; line-height: 1.25; }
+.z-back { background: var(--impact); color: #fff; border-color: var(--impact); transform: rotateY(180deg); }
+.z-back .z-name span { font-weight: 900; }
+.z-stampwrap { height: 42%; border-bottom: 2px solid #fff; display: flex; align-items: center; justify-content: center; }
+.z-stamp { width: clamp(72px, 7vw, 104px); aspect-ratio: 1; border: 4px solid currentColor; display: inline-flex; align-items: center; justify-content: center;
+  font-family: var(--font-display); font-weight: 900; font-size: clamp(44px, 4.4vw, 64px); transform: rotate(-8deg); flex: none; }
+.z-plate input:checked ~ .z-card { transform: rotateY(180deg); }
+.z-plate input:checked ~ .z-card .z-stamp { animation: z-stamp var(--slam) both 120ms; }
+@keyframes z-stamp { from { transform: rotate(-8deg) scale(1.18); opacity: .2; } to { transform: rotate(-8deg) scale(1); opacity: 1; } }
+
+.z-case-link { transition: background-color var(--cut), color var(--cut); }
+.z-case-link:hover { background: var(--ink); color: var(--paper); }
+
+/* Textes « dégradé or » de 2026 : désormais texte plein */
+.gradient-text, .gradient-text-gold { color: var(--paper); background: none; -webkit-text-fill-color: currentColor; animation: none; }
+
+/* ── Card prestige — glassmorphism sombre avec bordure or ── */
+.card-glow {
+  transition: all 0.35s ease;
+}
+.card-glow:hover {
+  box-shadow: 0 0 0 1px rgba(244,244,241,0.5), 0 20px 60px rgba(244,244,241,0.12);
+  transform: translateY(-4px);
+  border-color: rgba(244,244,241,0.5) !important;
+}
+
+/* ── Fond Award Show — scène sombre avec projecteurs ── */
+.anime-bg {
+  background-color: #0B0B0C;
+  background-image:
+    /* Projecteur central haut */
+    radial-gradient(ellipse 60% 40% at 50% -5%, rgba(244,244,241,0.18) 0%, transparent 65%),
+    /* Projecteur gauche */
+    radial-gradient(ellipse 35% 50% at 15% 0%, rgba(244,244,241,0.1) 0%, transparent 55%),
+    /* Projecteur droit */
+    radial-gradient(ellipse 35% 50% at 85% 0%, rgba(244,244,241,0.08) 0%, transparent 55%),
+    /* Chaleur basse scène */
+    radial-gradient(ellipse 80% 30% at 50% 100%, rgba(11,11,12,0.12) 0%, transparent 70%),
+    /* Particule or 1 */
+    radial-gradient(2px 2px at 22% 28%, rgba(244,244,241,0.6) 0%, transparent 100%),
+    /* Particule or 2 */
+    radial-gradient(2px 2px at 78% 18%, rgba(244,244,241,0.5) 0%, transparent 100%),
+    /* Particule or 3 */
+    radial-gradient(1px 1px at 45% 65%, rgba(244,244,241,0.4) 0%, transparent 100%),
+    /* Particule or 4 */
+    radial-gradient(1px 1px at 60% 40%, rgba(244,244,241,0.35) 0%, transparent 100%),
+    /* Particule or 5 */
+    radial-gradient(1px 1px at 88% 55%, rgba(244,244,241,0.3) 0%, transparent 100%);
+}
+
+.hero-gradient {
+  background: radial-gradient(
+    ellipse 70% 50% at 50% -5%,
+    rgba(244,244,241, 0.25) 0%,
+    transparent 70%
+  );
+}
+
+/* ── Scroll bar or ── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #0B0B0C; }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#F4F4F1, #8C8C88);
+  border-radius: 3px;
+}
+
+/* ── Animations ── */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes gold-pulse {
+  0%, 100% { box-shadow: 0 0 20px rgba(244,244,241,0.45), 0 0 40px rgba(244,244,241,0.15); }
+  50% { box-shadow: 0 0 40px rgba(244,244,241,0.75), 0 0 80px rgba(244,244,241,0.3), 0 0 120px rgba(244,244,241,0.1); }
+}
+
+/* Compatibilité noms */
+@keyframes pulse-neon {
+  0%, 100% { box-shadow: 0 0 20px rgba(244,244,241,0.45), 0 0 40px rgba(244,244,241,0.15); }
+  50% { box-shadow: 0 0 40px rgba(244,244,241,0.75), 0 0 80px rgba(244,244,241,0.3); }
+}
+
+@keyframes rotate-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes portal-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes portal-spin-reverse {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+@keyframes spotlight-scan {
+  0%, 100% { opacity: 0.6; transform: translateX(-5%); }
+  50% { opacity: 1; transform: translateX(5%); }
+}
+
+@keyframes scan-line {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100vh); }
+}
+
+.float-animation { animation: float 3s ease-in-out infinite; }
+.pulse-glow { animation: gold-pulse 2.5s ease-in-out infinite; }
+
+/* ── Bouton prestige or ── */
+.btn-gold {
+  background: linear-gradient(135deg, #F4F4F1, #F4F4F1, #8C8C88, #F4F4F1);
+  background-size: 250% auto;
+  color: #0B0B0C !important;
+  font-weight: 800;
+  transition: background-position 0.5s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+.btn-gold:hover {
+  background-position: right center;
+  transform: scale(1.05);
+  box-shadow: 0 0 35px rgba(244,244,241,0.55), 0 0 70px rgba(244,244,241,0.2);
+}
+
+/* ── Nominee card selected ── */
+.nominee-card-selected {
+  border-color: #F4F4F1 !important;
+  background: rgba(244,244,241,0.06) !important;
+  box-shadow: 0 0 0 1px rgba(244,244,241,0.4), 0 0 30px rgba(244,244,241,0.15);
+}
+
+/* ── Diviseur or ── */
+.gold-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #F4F4F1, #F4F4F1, #F4F4F1, transparent);
+  opacity: 0.75;
+}
+
+/* ── Modal ── */
+@keyframes modal-slide-up {
+  from { opacity: 0; transform: translateY(100%); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes modal-scale-in {
+  from { opacity: 0; transform: scale(0.92) translateY(12px); }
+  to   { opacity: 1; transform: scale(1)    translateY(0); }
+}
+/* Mobile: slide up from bottom */
+.modal-panel {
+  animation: modal-slide-up 0.38s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+/* Desktop: scale in from center */
+@media (min-width: 640px) {
+  .modal-panel {
+    animation: modal-scale-in 0.3s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+}
+
+/* ── Category card — entry animation + hover ── */
+@keyframes entry-category {
+  from {
+    opacity: 0;
+    transform: translateY(28px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.category-card {
+  opacity: 0;
+  animation: entry-category 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+.category-card:hover {
+  border-color: rgba(244,244,241,0.55) !important;
+  box-shadow: 0 0 30px rgba(244,244,241,0.18), 0 8px 30px rgba(0,0,0,0.4);
+  transform: translateY(-4px) scale(1.01);
+}
+
+/* ════════════════════════════════════════════
+   NOMINEE CARD — animations par catégorie
+   ════════════════════════════════════════════ */
+
+/* État initial : invisible et décalé */
+.nominee-card {
+  opacity: 0;
+  transform: translateY(32px) scale(0.88);
+  will-change: transform, opacity;
+}
+.nominee-card.in-view:hover { transform: scale(1.06) translateY(-4px) !important; z-index: 10; }
+
+/* ══════════════════════════════════════
+   ANIMATIONS D'ENTRÉE — une par thème
+   ══════════════════════════════════════ */
+
+/* COMBAT — explosion depuis le centre */
+@keyframes entry-combat {
+  0%   { opacity: 0; transform: scale(0.2) rotate(-8deg); filter: brightness(6) contrast(2); }
+  45%  { opacity: 1; transform: scale(1.1) rotate(3deg);  filter: brightness(2.5); }
+  65%  { transform: scale(0.94) rotate(-1deg); filter: brightness(1.4); }
+  82%  { transform: scale(1.03); }
+  100% { transform: scale(1) rotate(0deg); filter: brightness(1); opacity: 1; }
+}
+
+/* VILLAIN — montée des flammes depuis le bas */
+@keyframes entry-villain {
+  0%   { opacity: 0; transform: translateY(80px) scaleY(0.3); filter: blur(20px) hue-rotate(280deg) brightness(0.2); }
+  40%  { opacity: 0.9; filter: blur(6px) hue-rotate(310deg) brightness(1.8); }
+  65%  { transform: translateY(-10px) scaleY(1.04); filter: blur(1px) hue-rotate(20deg); }
+  82%  { transform: translateY(3px) scaleY(0.98); }
+  100% { opacity: 1; transform: translateY(0) scaleY(1); filter: blur(0) hue-rotate(0deg) brightness(1); }
+}
+
+/* MUSIC — slide depuis la gauche avec rebond skew */
+@keyframes entry-music {
+  0%   { opacity: 0; transform: translateX(-100px) skewX(15deg); filter: blur(10px) brightness(0.4); }
+  50%  { opacity: 1; transform: translateX(12px) skewX(-5deg); filter: blur(0) brightness(1.5); }
+  70%  { transform: translateX(-6px) skewX(2deg); }
+  85%  { transform: translateX(3px) skewX(-1deg); }
+  100% { transform: translateX(0) skewX(0deg); filter: brightness(1); opacity: 1; }
+}
+
+/* EPIC — flash doré puis matérialisation */
+@keyframes entry-epic {
+  0%   { opacity: 0; transform: scale(0.3) rotate(25deg); filter: brightness(0) saturate(0); }
+  30%  { opacity: 1; transform: scale(1.15) rotate(-5deg); filter: brightness(8) saturate(4) sepia(0.6); }
+  55%  { transform: scale(0.95) rotate(1deg); filter: brightness(2) saturate(2); }
+  75%  { transform: scale(1.04); filter: brightness(1.4) saturate(1.3); }
+  100% { transform: scale(1) rotate(0deg); filter: brightness(1) saturate(1); opacity: 1; }
+}
+
+/* LIGHTNING — clignotement électrique */
+@keyframes entry-lightning {
+  0%,4%,8%,12% { opacity: 0; transform: translateY(-25px) scaleY(0.5); filter: brightness(7) blur(3px); }
+  2%,6%,10%    { opacity: 1; filter: brightness(8) blur(0); }
+  14%          { opacity: 1; transform: translateY(0) scaleY(1); filter: brightness(4); }
+  25%          { filter: brightness(2.5); }
+  50%          { filter: brightness(1.5); }
+  100%         { opacity: 1; filter: brightness(1); transform: translateY(0) scaleY(1); }
+}
+
+/* PORTAL — rotation spirale depuis le centre */
+@keyframes entry-portal {
+  0%   { opacity: 0; transform: rotate(-270deg) scale(0.05); filter: blur(25px) hue-rotate(240deg) brightness(3); }
+  45%  { opacity: 1; transform: rotate(15deg) scale(1.08); filter: blur(3px) hue-rotate(40deg) brightness(1.5); }
+  65%  { transform: rotate(-5deg) scale(0.96); filter: blur(0) hue-rotate(10deg); }
+  82%  { transform: rotate(2deg) scale(1.02); }
+  100% { transform: rotate(0deg) scale(1); filter: hue-rotate(0deg) brightness(1); opacity: 1; }
+}
+
+/* ROMANCE — chute douce depuis le haut avec pivot */
+@keyframes entry-romance {
+  0%   { opacity: 0; transform: translateY(-70px) rotate(-12deg) scale(0.8); filter: blur(8px) brightness(2) saturate(3); }
+  45%  { opacity: 1; transform: translateY(14px) rotate(4deg) scale(1.04); filter: blur(0) brightness(1.3) saturate(1.5); }
+  65%  { transform: translateY(-5px) rotate(-1deg) scale(0.98); filter: brightness(1.1); }
+  82%  { transform: translateY(2px) rotate(0.5deg); }
+  100% { transform: translateY(0) rotate(0deg) scale(1); filter: brightness(1) saturate(1); opacity: 1; }
+}
+
+/* SPARKLE — pop explosion de particules */
+@keyframes entry-sparkle {
+  0%   { opacity: 0; transform: scale(0.05) rotate(30deg); filter: brightness(6) saturate(4); }
+  35%  { opacity: 1; transform: scale(1.3) rotate(-10deg); filter: brightness(3.5) saturate(3); }
+  55%  { transform: scale(0.88) rotate(4deg); filter: brightness(2); }
+  75%  { transform: scale(1.08) rotate(-2deg); filter: brightness(1.4); }
+  90%  { transform: scale(0.97) rotate(0.5deg); }
+  100% { transform: scale(1) rotate(0deg); filter: brightness(1) saturate(1); opacity: 1; }
+}
+
+/* WISDOM — slide droite + aura verte progressive */
+@keyframes entry-wisdom {
+  0%   { opacity: 0; transform: translateX(70px) scale(0.88); filter: blur(12px) brightness(0.2) sepia(1) hue-rotate(80deg); }
+  45%  { opacity: 1; transform: translateX(-8px); filter: blur(0) brightness(1.6) sepia(0.4) hue-rotate(50deg); }
+  65%  { transform: translateX(4px); filter: brightness(1.3) sepia(0.2) hue-rotate(20deg); }
+  82%  { transform: translateX(-2px); }
+  100% { transform: translateX(0); filter: brightness(1) sepia(0) hue-rotate(0deg); opacity: 1; }
+}
+
+/* RAINBOW — spin avec teintes cycliques */
+@keyframes entry-rainbow {
+  0%   { opacity: 0; transform: scale(0.2) rotate(-40deg); filter: hue-rotate(0deg) saturate(6) brightness(3); }
+  35%  { opacity: 1; transform: scale(1.12) rotate(12deg); filter: hue-rotate(120deg) saturate(4) brightness(2); }
+  60%  { transform: scale(0.93) rotate(-4deg); filter: hue-rotate(240deg) saturate(2.5) brightness(1.4); }
+  80%  { transform: scale(1.04) rotate(1deg); filter: hue-rotate(330deg) saturate(1.5); }
+  100% { transform: scale(1) rotate(0deg); filter: hue-rotate(360deg) saturate(1) brightness(1); opacity: 1; }
+}
+
+/* GOLD — default : flash doré + montée */
+@keyframes entry-gold {
+  0%   { opacity: 0; transform: translateY(45px) scale(0.82); filter: brightness(0) sepia(1); }
+  30%  { filter: brightness(4) sepia(1) saturate(4); }
+  55%  { opacity: 1; transform: translateY(-6px) scale(1.04); filter: brightness(1.8) sepia(0.3); }
+  75%  { transform: translateY(2px) scale(0.98); }
+  100% { transform: translateY(0) scale(1); filter: brightness(1) sepia(0); opacity: 1; }
+}
+
+/* ══════════════════════════════════════
+   ANIMATIONS IDLE + OVERLAYS VISUELS
+   ══════════════════════════════════════ */
+
+/* Combat — feu orange en bas */
+.anim-combat.in-view { animation: entry-combat 0.75s cubic-bezier(0.22,1,0.36,1) both; }
+.anim-combat.in-view::before {
+  content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 45%;
+  background: linear-gradient(to top, rgba(255,80,0,0.45) 0%, rgba(255,140,30,0.2) 50%, transparent 100%);
+  animation: overlay-fire-combat 1.6s ease-in-out var(--idle-delay,0.8s) infinite alternate;
+  pointer-events: none; z-index: 2; border-radius: 0 0 16px 16px;
+}
+@keyframes overlay-fire-combat {
+  0%   { height: 35%; opacity: 0.65; transform: scaleX(1); }
+  50%  { height: 55%; opacity: 0.9; transform: scaleX(1.03); filter: blur(1px); }
+  100% { height: 40%; opacity: 0.7; transform: scaleX(0.97); }
+}
+
+/* Villain — flammes violettes/rouges */
+.anim-villain.in-view { animation: entry-villain 0.85s ease-out both; }
+.anim-villain.in-view::before {
+  content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 55%;
+  background: linear-gradient(to top, rgba(180,0,255,0.55) 0%, rgba(200,0,60,0.3) 40%, rgba(140,0,220,0.15) 70%, transparent 100%);
+  animation: overlay-villain 2s ease-in-out var(--idle-delay,0.9s) infinite alternate;
+  pointer-events: none; z-index: 2; border-radius: 0 0 16px 16px;
+}
+@keyframes overlay-villain {
+  0%   { height: 40%; opacity: 0.7; transform: scaleX(1) skewX(0deg); }
+  33%  { height: 65%; opacity: 1;   transform: scaleX(1.04) skewX(-1deg); filter: blur(1px); }
+  66%  { height: 50%; opacity: 0.8; transform: scaleX(0.96) skewX(1deg); }
+  100% { height: 45%; opacity: 0.75; transform: scaleX(1.02) skewX(0deg); }
+}
+
+/* Music — ondes bleues */
+.anim-music.in-view { animation: entry-music 0.7s cubic-bezier(0.34,1.56,0.64,1) both; }
+.anim-music.in-view::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(to bottom, transparent 40%, rgba(30,190,255,0.12) 60%, rgba(30,130,255,0.08) 80%, transparent 100%);
+  animation: overlay-music 1.8s ease-in-out var(--idle-delay,0.75s) infinite;
+  pointer-events: none; z-index: 2;
+}
+@keyframes overlay-music {
+  0%,100% { transform: translateY(0); opacity: 0.6; }
+  50%      { transform: translateY(-6px); opacity: 1; }
+}
+
+/* Epic — éclat doré */
+.anim-epic.in-view {
+  animation: entry-epic 0.8s cubic-bezier(0.22,1,0.36,1) both;
+  border-color: rgba(244,244,241,0.55) !important;
+}
+.anim-epic.in-view::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 50% 30%, rgba(244,244,241,0.2) 0%, transparent 65%);
+  animation: overlay-epic 2s ease-in-out var(--idle-delay,0.85s) infinite;
+  pointer-events: none; z-index: 2;
+}
+@keyframes overlay-epic {
+  0%,100% { opacity: 0.5; transform: scale(1); }
+  50%      { opacity: 1;   transform: scale(1.08); }
+}
+
+/* Lightning — clignotement électrique (filter uniquement) */
+@keyframes idle-lightning {
+  0%,82%,100% { filter: brightness(1); }
+  84%,88%,92% { filter: brightness(1.4); }
+  85%,89%,93% { filter: brightness(0.9); }
+}
+.anim-lightning.in-view { animation: entry-lightning 0.8s ease-out both, idle-lightning 3.5s ease-in-out var(--idle-delay,0.85s) infinite; }
+.anim-lightning.in-view:hover { filter: brightness(1.15); }
+.anim-lightning.in-view::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(115deg, transparent 35%, rgba(160,230,255,0.35) 48%, rgba(200,240,255,0.5) 50%, rgba(160,230,255,0.35) 52%, transparent 65%);
+  animation: overlay-lightning 3.5s ease-in-out var(--idle-delay,0.85s) infinite;
+  pointer-events: none; z-index: 2;
+}
+@keyframes overlay-lightning {
+  0%,80%,100% { opacity: 0; transform: translateX(-120%); }
+  83%          { opacity: 1; transform: translateX(120%); }
+  84%          { opacity: 0; transform: translateX(120%); }
+  86%          { opacity: 0.7; transform: translateX(120%); }
+  87%          { opacity: 0; }
+}
+
+/* Portal — vortex violet */
+.anim-portal.in-view { animation: entry-portal 0.9s cubic-bezier(0.22,1,0.36,1) both; }
+.anim-portal.in-view::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 50% 50%, rgba(100,60,255,0.2) 0%, rgba(80,40,220,0.1) 40%, transparent 70%);
+  animation: overlay-portal 4s linear var(--idle-delay,0.95s) infinite;
+  pointer-events: none; z-index: 2;
+}
+@keyframes overlay-portal {
+  0%   { transform: rotate(0deg) scale(1);   opacity: 0.6; }
+  50%  { transform: rotate(180deg) scale(1.1); opacity: 1; }
+  100% { transform: rotate(360deg) scale(1);  opacity: 0.6; }
+}
+
+/* Romance — halo rose */
+.anim-romance.in-view { animation: entry-romance 0.8s cubic-bezier(0.34,1.56,0.64,1) both; }
+.anim-romance.in-view::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 50% 20%, rgba(255,120,170,0.18) 0%, transparent 60%);
+  animation: overlay-romance 2.5s ease-in-out var(--idle-delay,0.85s) infinite;
+  pointer-events: none; z-index: 2;
+}
+@keyframes overlay-romance {
+  0%,100% { opacity: 0.5; transform: scale(1); }
+  50%      { opacity: 1;   transform: scale(1.06); }
+}
+
+/* Sparkle — étincelles */
+.anim-sparkle.in-view { animation: entry-sparkle 0.7s cubic-bezier(0.34,1.56,0.64,1) both; }
+
+/* Wisdom — aura verte */
+.anim-wisdom.in-view { animation: entry-wisdom 0.75s cubic-bezier(0.22,1,0.36,1) both; }
+
+/* Rainbow — arc-en-ciel */
+.anim-rainbow.in-view { animation: entry-rainbow 0.8s cubic-bezier(0.22,1,0.36,1) both; }
+.anim-rainbow.in-view::before {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(45deg, rgba(255,80,80,0.1), rgba(255,200,50,0.1), rgba(50,200,255,0.1), rgba(180,50,255,0.1));
+  background-size: 400% 400%;
+  animation: overlay-rainbow 3s linear var(--idle-delay,0.85s) infinite;
+  pointer-events: none; z-index: 2;
+}
+@keyframes overlay-rainbow {
+  0%   { background-position: 0% 50%; opacity: 0.6; }
+  50%  { background-position: 100% 50%; opacity: 1; }
+  100% { background-position: 0% 50%; opacity: 0.6; }
+}
+
+/* Gold — défaut doré */
+.anim-gold.in-view { animation: entry-gold 0.7s cubic-bezier(0.22,1,0.36,1) both; }
+
+/* ── Container responsive ── */
+.container-mobile {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+@media (min-width: 640px) { .container-mobile { padding: 0 1.5rem; } }
+@media (min-width: 1024px) { .container-mobile { padding: 0 2rem; } }
