@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
-import { Michroma, Onest } from "next/font/google";
+import { Archivo, Michroma, Onest } from "next/font/google";
+import Defilement from "@/components/Defilement";
+import Nav from "@/components/Nav";
 import "./globals.css";
 
 const large = Michroma({ weight: "400", subsets: ["latin"], variable: "--f-large" });
 const texte = Onest({ subsets: ["latin"], variable: "--f-texte" });
+const display = Archivo({ subsets: ["latin"], axes: ["wdth"], variable: "--f-display" });
 
 export const metadata: Metadata = {
   title: "Zenkai Anime Awards 2027 · Édition Holo",
@@ -12,8 +15,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="fr" className={`${large.variable} ${texte.variable}`}>
-      <body>{children}</body>
+    <html lang="fr" className={`${large.variable} ${texte.variable} ${display.variable}`}>
+      <body>
+        <Nav />
+        <Defilement>{children}</Defilement>
+      </body>
     </html>
   );
 }

@@ -14,10 +14,11 @@ type Props = {
   priorite?: boolean;
   style?: CSSProperties;
   className?: string;
+  sansBandeau?: boolean;
 };
 
 // Carte à collectionner holographique : inclinaison 3D, film irisé et reflet qui suivent le pointeur.
-export default function CarteHolo({ img, nom, detail, numero, rang, taille = "moyenne", priorite, style, className }: Props) {
+export default function CarteHolo({ img, nom, detail, numero, rang, taille = "moyenne", priorite, style, className, sansBandeau }: Props) {
   const ref = useRef<HTMLDivElement>(null);
   const cadre = useRef<number | null>(null);
 
@@ -54,14 +55,14 @@ export default function CarteHolo({ img, nom, detail, numero, rang, taille = "mo
         </div>
         <div className={s.film} aria-hidden="true" />
         <div className={s.reflet} aria-hidden="true" />
-        <div className={s.bandeau}>
+        {!sansBandeau && <div className={s.bandeau}>
           <span className={s.nom}>{nom}</span>
           {detail && <span className={s.detail}>{detail}</span>}
           <span className={s.numero}>
             {rang && <span className={s.rang}>{rang}</span>}
             {numero}
           </span>
-        </div>
+        </div>}
       </div>
     </div>
   );

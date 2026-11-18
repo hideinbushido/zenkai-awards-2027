@@ -1,0 +1,8 @@
+.liste { list-style: none; margin: var(--e7) 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(16px, 2.4vw, 36px); }
+.vitre { display: block; width: 100%; padding: 0; border: 0; background: var(--fond-2); cursor: pointer; aspect-ratio: 4 / 5; border-radius: 14px; overflow: hidden; }
+.canvas { display: block; width: 100%; height: 100%; }
+.cat { margin-top: var(--e4); font-size: 14px; font-weight: 600; color: var(--irise-cyan); }
+.gagnant { font-family: var(--f-display), sans-serif; font-weight: 900; font-stretch: 70%; text-transform: uppercase; font-size: clamp(26px, 2.6vw, 42px); line-height: 0.95; margin-top: 6px; }
+.par { margin-top: var(--e3); font-size: 14px; color: var(--texte-doux); }
+.par span { color: var(--chrome-3); }
+@media (max-width: 860px) { .liste { grid-template-columns: 1fr; } .vitre { aspect-ratio: 4 / 3; } }
