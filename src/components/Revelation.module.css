@@ -1,0 +1,2 @@
+.section { position: relative; z-index: 2; background: var(--fond); }
+.cadre { background: oklch(0.205 0.02 268); padding: clamp(96px, 11vw, 170px) var(--marge); will-change: clip-path; }

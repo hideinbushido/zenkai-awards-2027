@@ -6,72 +6,102 @@ import CarteHolo from "@/components/CarteHolo";
 import FondShader from "@/components/webgl/FondShader";
 import { EDITION, NOMINES_ANNEE } from "@/data/edition";
 import { gsap, reduit, useGSAP } from "@/lib/gsap";
+import { DUREE, EASE } from "@/lib/motion";
 import s from "./Hero.module.css";
 
-// Premier écran : le nom géant, une carte holo plantée dedans, un fond irisé vivant.
+const LETTRES = "ZENKAI".split("");
+
+function Nom({ classe }: { classe: string }) {
+  return (
+    <div className={`${s.nom} ${classe}`}>
+      {LETTRES.map((l, i) => (
+        <span key={i} className={s.masque}>
+          {/* avoid-ai-design-ignore: C6 — chaque lettre est en métal chromé irisé, matière du thème Holo */}
+          <span className={s.lettre} data-i={i}>{l}</span>
+        </span>
+      ))}
+    </div>
+  );
+}
+
+// Premier écran : le nom géant, une carte plantée dedans, un fond irisé vivant.
+// Il reste collé pendant que le manifeste glisse par-dessus.
 export default function Hero() {
-  const racine = useRef<HTMLElement>(null);
+  const zone = useRef<HTMLDivElement>(null);
 
   useGSAP(() => {
-    const q = gsap.utils.selector(racine);
-    const fige = reduit();
+    if (reduit()) return;
+    const q = gsap.utils.selector(zone);
+    const lettres = q(`.${s.lettre}`);
 
-    if (fige) return;
+    // Entrée : lettres masquées qui montent une à une, puis la carte, puis le reste
+    const tl = gsap.timeline({ defaults: { ease: EASE } });
+    tl.from(lettres, { yPercent: 108, duration: DUREE.longue, stagger: { each: 0.06, from: "center" } }, 0.15)
+      .from(q(`.${s.carte}`), { y: 160, scale: 0.86, rotate: -6, opacity: 0, duration: DUREE.longue }, 0.45)
+      .from(q(`.${s.pile} span`), { yPercent: 105, duration: DUREE.normale, stagger: 0.07 }, 0.75)
+      .from(q(`.${s.bas} > *`), { y: 18, opacity: 0, duration: DUREE.normale, stagger: 0.07 }, 0.95)
+      .from(q(`.${s.coin}`), { opacity: 0, duration: DUREE.normale }, 1.05);
 
-    // Parallaxe : le nom recule, la carte avance
-    const nomX = gsap.quickTo(q(`.${s.nom}`), "x", { duration: 1.2, ease: "power3" });
-    const carteX = gsap.quickTo(q(`.${s.carte}`), "x", { duration: 1, ease: "power3" });
-    const carteY = gsap.quickTo(q(`.${s.carte}`), "y", { duration: 1, ease: "power3" });
+    // Parallaxe au pointeur : le nom recule, la carte avance (écriture directe, pas d'état)
+    const nomX = gsap.quickTo(q(`.${s.couchesNom}`), "x", { duration: 1.4, ease: "power3" });
+    const carteX = gsap.quickTo(q(`.${s.carte}`), "x", { duration: 1.1, ease: "power3" });
+    const carteY = gsap.quickTo(q(`.${s.carte}`), "y", { duration: 1.1, ease: "power3" });
     const bouge = (e: PointerEvent) => {
       const x = e.clientX / innerWidth - 0.5, y = e.clientY / innerHeight - 0.5;
-      nomX(x * -18); carteX(x * 34); carteY(y * 18);
+      nomX(x * -16); carteX(x * 30); carteY(y * 16);
     };
     window.addEventListener("pointermove", bouge, { passive: true });
 
-    const tl = gsap.timeline({ defaults: { ease: "expo.out" } });
-    tl.from(q(`.${s.revele}`), { clipPath: "inset(100% 0 0 0)", y: 80, duration: 1.6 }, 0.1)
-      .from(q(`.${s.carte}`), { yPercent: 40, rotate: -10, opacity: 0, duration: 1.6 }, 0.35)
-      .from(q(`.${s.pile} li`), { yPercent: 100, opacity: 0, duration: 0.9, stagger: 0.08 }, 0.6)
-      .from(q(`.${s.bas} > *`), { y: 24, opacity: 0, duration: 1, stagger: 0.08 }, 0.8)
-      .from(q(`.${s.coin}`), { opacity: 0, duration: 1.2 }, 0.9);
+    // Sortie au scroll : les lettres s'écartent, la carte monte, le reste s'efface
+    const sortie = gsap.timeline({
+      scrollTrigger: { trigger: zone.current, start: "top top", end: "bottom bottom", scrub: 0.4 },
+      defaults: { ease: "none" },
+    });
+    lettres.forEach((el) => {
+      const i = Number((el as HTMLElement).dataset.i) - 2.5;
+      sortie.to(el, { xPercent: i * 26, yPercent: -10 - Math.abs(i) * 6 }, 0);
+    });
+    sortie.to(q(`.${s.carte}`), { yPercent: -22, rotate: -5, scale: 1.06 }, 0)
+      .to(q(`.${s.pile}, .${s.coin}, .${s.bas}`), { opacity: 0 }, 0)
+      .to(q(`.${s.voile}`), { opacity: 1 }, 0.2);
 
     return () => window.removeEventListener("pointermove", bouge);
-  }, { scope: racine });
+  }, { scope: zone });
 
   const vedette = NOMINES_ANNEE[0];
 
   return (
-    <section ref={racine} className={s.hero} aria-labelledby="hero-titre">
-      <FondShader className={s.fond} />
+    <div ref={zone} className={s.zone}>
+      <section className={s.hero} aria-labelledby="hero-titre">
+        <FondShader className={s.fond} />
 
-      <ul className={s.pile} aria-label="L'édition en bref">
-        <li>25 boosters</li>
-        <li>1 voix par fan</li>
-        <li>Live en mai</li>
-      </ul>
-      <p className={s.coin}>
-        Les récompenses anime votées par la communauté. Chaque catégorie est un booster, ses nominés sont les cartes.
-      </p>
+        <p className={s.pile}>
+          <span>25 catégories</span>
+          <span>1 voix par fan</span>
+          <span>Live en mai</span>
+        </p>
+        <p className={s.coin}>
+          Les récompenses anime votées par la communauté. Deuxième édition, pour les animés diffusés en 2026.
+        </p>
 
-      <h1 id="hero-titre" className={s.cache}>Zenkai Anime Awards {EDITION.annee}</h1>
+        <h1 id="hero-titre" className={s.cache}>Zenkai Anime Awards {EDITION.annee}</h1>
 
-      <div className={s.scene} aria-hidden="true">
-        {/* avoid-ai-design-ignore: C6 — lettres en métal chromé, matière du thème Holo */}
-        <div className={`${s.nom} ${s.derriere}`}><span className={s.revele}><span className={s.lettres}>ZENKAI</span></span></div>
-        <div className={s.carte}>
-          <CarteHolo img={vedette.img} nom={vedette.nom} numero="025 / 025" rang="Secrète" taille="grande" priorite sansBandeau />
+        <div className={s.scene} aria-hidden="true">
+          <div className={s.couchesNom}><Nom classe={s.derriere} /></div>
+          <div className={s.carte}>
+            <CarteHolo img={vedette.img} nom={vedette.nom} numero="025 / 025" taille="grande" priorite sansBandeau />
+          </div>
+          <div className={s.couchesNom}><Nom classe={s.devant} /></div>
         </div>
-        <div className={`${s.nom} ${s.devant}`}><span className={s.revele}><span className={s.lettres}>ZENKAI</span></span></div>
-      </div>
 
-      <div className={s.bas}>
-        <p className={s.sousTitre}>Anime Awards {EDITION.annee} · Édition 2</p>
-        <div className={s.actions}>
-          <Link href="#rappel" className={s.boutonChrome}>Voter</Link>
-          <Link href="/categories" className={s.boutonFantome}>Voir les boosters</Link>
+        <div className={s.bas}>
+          <p className={s.sousTitre}>Anime Awards {EDITION.annee}</p>
+          <Link href="/categories" className={s.bouton}>Découvrir les catégories</Link>
+          <p className={s.dates}>Votes {EDITION.votes}<br />Live {EDITION.live}</p>
         </div>
-        <p className={s.dates}>Votes {EDITION.votes} · Live {EDITION.live}</p>
-      </div>
-    </section>
+
+        <div className={s.voile} aria-hidden="true" />
+      </section>
+    </div>
   );
 }

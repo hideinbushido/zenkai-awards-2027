@@ -1,0 +1,49 @@
+.zone { position: relative; z-index: 2; background: var(--fond); }
+.collant { position: sticky; top: 0; height: 100svh; overflow: hidden; display: grid; align-content: center; }
+.rail { display: flex; align-items: center; gap: clamp(16px, 1.8vw, 28px); padding: 0 var(--marge); width: max-content; will-change: transform; }
+
+.intro { width: min(36vw, 520px); flex: none; display: grid; gap: var(--e5); margin-right: clamp(24px, 4vw, 80px); }
+.titre { font-family: var(--f-display), sans-serif; font-weight: 900; font-stretch: 62%; font-size: clamp(64px, 9vw, 168px); line-height: 0.84; text-transform: uppercase; letter-spacing: -0.02em; }
+.texte { color: var(--texte-doux); font-size: clamp(16px, 1.25vw, 19px); max-width: 34ch; }
+
+/* Un booster : foil serti en haut et en bas, qui s'incline au survol */
+.booster {
+  position: relative; flex: none; text-decoration: none; color: oklch(0.15 0.012 268);
+  width: clamp(210px, 17vw, 270px); aspect-ratio: 0.64;
+  display: grid; grid-template-rows: auto 1fr auto; padding: 30px 18px 28px;
+  isolation: isolate;
+  transition: translate 500ms var(--ease-sortie), rotate 500ms var(--ease-sortie);
+}
+.feuille {
+  position: absolute; inset: 0; z-index: -1;
+  background:
+    linear-gradient(118deg, transparent 15%, oklch(0.9 0.13 calc(var(--teinte) * 1deg) / 0.8) 38%, oklch(0.84 0.14 calc((var(--teinte) + 80) * 1deg) / 0.65) 52%, transparent 75%),
+    linear-gradient(180deg, var(--chrome-1), var(--chrome-2) 40%, var(--chrome-3) 68%, var(--chrome-1));
+  background-size: 280% 100%, 100% 100%;
+  background-position: 10% 0, 0 0;
+  mask:
+    conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) bottom / 9px 51% repeat-x,
+    conic-gradient(from 135deg at top, #0000, #000 1deg 89deg, #0000 90deg) top / 9px 51% repeat-x;
+  filter: drop-shadow(0 24px 30px oklch(0.04 0.01 265 / 0.7));
+  transition: background-position 900ms var(--ease-sortie);
+}
+.booster:hover, .booster:focus-visible { translate: 0 -12px; rotate: -2deg; }
+.booster:hover .feuille, .booster:focus-visible .feuille { background-position: 95% 0, 0 0; }
+.booster:active { scale: 0.98; }
+.haut { display: flex; justify-content: space-between; align-items: baseline; }
+.marque { font-family: var(--f-display), sans-serif; font-weight: 900; font-stretch: 62%; font-size: clamp(30px, 2.5vw, 42px); text-transform: uppercase; line-height: 0.9; }
+.num { font-family: var(--f-large), sans-serif; font-size: 12px; font-variant-numeric: tabular-nums; }
+.etiquette { grid-row: 3; display: grid; gap: 4px; background: oklch(0.13 0.012 268 / 0.94); color: var(--chrome-1); padding: 14px 12px; border-radius: 4px; }
+.famille { font-size: 12px; color: var(--irise-cyan); font-weight: 600; }
+.nom { font-weight: 700; font-size: clamp(14px, 1.1vw, 17px); line-height: 1.2; }
+
+.jauge { position: absolute; left: var(--marge); right: var(--marge); bottom: clamp(28px, 6vh, 64px); height: 1px; background: var(--ligne); }
+.jauge span { display: block; height: 100%; background: var(--chrome-1); transform-origin: 0 50%; transform: scaleX(0); }
+
+@media (max-width: 760px) {
+  .intro { width: 78vw; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .collant { position: static; height: auto; padding: var(--e8) 0; }
+  .rail { width: auto; overflow-x: auto; }
+}

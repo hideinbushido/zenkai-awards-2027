@@ -8,7 +8,7 @@ import { gsap, ScrollTrigger, reduit } from "@/lib/gsap";
 export default function Defilement({ children }: { children: ReactNode }) {
   useEffect(() => {
     if (reduit()) return;
-    const lenis = new Lenis({ duration: 1.15, easing: (t) => 1 - Math.pow(1 - t, 4), wheelMultiplier: 0.9 });
+    const lenis = new Lenis({ lerp: 0.1, wheelMultiplier: 0.95, touchMultiplier: 1.4 });
     lenis.on("scroll", ScrollTrigger.update);
     const tic = (t: number) => lenis.raf(t * 1000);
     gsap.ticker.add(tic);

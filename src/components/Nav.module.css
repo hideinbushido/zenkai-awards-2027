@@ -5,6 +5,8 @@
   pointer-events: none;
   background: linear-gradient(to bottom, oklch(0.155 0.012 268 / 0.92) 0%, oklch(0.155 0.012 268 / 0.6) 55%, transparent);
 }
+.nav { transition: transform 600ms cubic-bezier(0.16, 1, 0.3, 1); }
+.nav[data-cache] { transform: translateY(-110%); }
 .nav > * { pointer-events: auto; }
 .marque { display: flex; align-items: center; gap: 10px; text-decoration: none; font-family: var(--f-large), sans-serif; font-size: 14px; letter-spacing: 0.08em; justify-self: start; }
 .embleme { filter: invert(1); mix-blend-mode: screen; }
