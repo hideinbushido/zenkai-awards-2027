@@ -70,11 +70,11 @@ function Scene({ progres, images, categorie }: { progres: RefObject<number>; ima
 
   const matCorps = useMemo(() => new THREE.ShaderMaterial({
     vertexShader: FOIL_VERTEX, fragmentShader: FOIL_FRAGMENT, transparent: true, side: THREE.DoubleSide,
-    uniforms: { uTime: { value: 0 }, uBombe: { value: 1 }, uOpacite: { value: 1 }, uEtiquette: { value: etiquette }, uSertieHaut: { value: 0.0 }, uSertieBas: { value: 0.05 } },
+    uniforms: { uTime: { value: 0 }, uBombe: { value: 1 }, uOpacite: { value: 1 }, uEtiquette: { value: etiquette }, uSertieHaut: { value: 0.0 }, uSertieBas: { value: 0.05 }, uDecal: { value: 0 }, uTeinte: { value: new THREE.Color(1, 1, 1) }, uForce: { value: 0 } },
   }), [etiquette]);
   const matBande = useMemo(() => new THREE.ShaderMaterial({
     vertexShader: FOIL_VERTEX, fragmentShader: FOIL_FRAGMENT, transparent: true, side: THREE.DoubleSide,
-    uniforms: { uTime: { value: 0 }, uBombe: { value: 0.15 }, uOpacite: { value: 1 }, uEtiquette: { value: vide }, uSertieHaut: { value: 0.35 }, uSertieBas: { value: 0.0 } },
+    uniforms: { uTime: { value: 0 }, uBombe: { value: 0.15 }, uOpacite: { value: 1 }, uEtiquette: { value: vide }, uSertieHaut: { value: 0.35 }, uSertieBas: { value: 0.0 }, uDecal: { value: 0 }, uTeinte: { value: new THREE.Color(1, 1, 1) }, uForce: { value: 0 } },
   }), [vide]);
   const matCartes = useMemo(() => textures.map((t) => new THREE.ShaderMaterial({
     vertexShader: CARTE_VERTEX, fragmentShader: CARTE_FRAGMENT, transparent: true, side: THREE.DoubleSide,

@@ -1,0 +1,36 @@
+/* Remonte de 60svh pour glisser par-dessus le héros collé */
+.etalage {
+  position: relative; z-index: 2; margin-top: -60svh;
+  min-height: 100svh;
+  display: grid; grid-template-rows: 1fr auto; gap: var(--e6);
+  padding: clamp(80px, 9vw, 130px) var(--marge) clamp(64px, 7vw, 110px);
+  background: linear-gradient(180deg, var(--fond-2), var(--fond) 60%);
+  border-radius: 36px 36px 0 0;
+  box-shadow: 0 -30px 70px -30px oklch(0.25 0.04 285 / 0.35);
+}
+.scene { position: relative; display: grid; place-items: center; min-height: clamp(320px, 42vw, 620px); }
+.paquet {
+  position: absolute; display: block;
+  width: clamp(130px, 17vw, 290px);
+  translate: calc(var(--i) * clamp(84px, 13vw, 230px)) calc(abs(var(--i)) * 34px);
+  rotate: calc(var(--i) * 8deg);
+  z-index: calc(10 - abs(var(--i)));
+  filter: drop-shadow(0 34px 34px oklch(0.25 0.04 285 / 0.3));
+  transition: scale 500ms var(--ease-sortie);
+}
+.paquet:hover { scale: 1.05; }
+.paquet:active { scale: 0.98; }
+.flotte { display: block; animation: flotte 6s ease-in-out infinite alternate; animation-delay: calc(var(--i) * -1.3s); }
+@keyframes flotte { to { transform: translateY(-14px) rotate(1.5deg); } }
+.flotte img { width: 100%; height: auto; }
+
+.texte { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: var(--e5) var(--e7); align-items: end; }
+.titre { font-size: clamp(52px, 7.4vw, 140px); grid-row: span 2; }
+.chapo { color: var(--encre-douce); font-size: clamp(16px, 1.25vw, 19px); max-width: 40ch; }
+.actions { display: flex; flex-wrap: wrap; gap: var(--e3); }
+
+@media (max-width: 860px) {
+  .texte { grid-template-columns: 1fr; }
+  .titre { grid-row: auto; }
+}
+@media (prefers-reduced-motion: reduce) { .flotte { animation: none; } }

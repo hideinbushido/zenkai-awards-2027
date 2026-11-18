@@ -19,7 +19,7 @@ void main() {
 }`;
 
 export const FOIL_FRAGMENT = /* glsl */ `
-uniform sampler2D uEtiquette; uniform float uTime; uniform float uOpacite; uniform float uSertieHaut; uniform float uSertieBas;
+uniform sampler2D uEtiquette; uniform float uTime; uniform float uOpacite; uniform float uSertieHaut; uniform float uSertieBas; uniform float uDecal; uniform vec3 uTeinte; uniform float uForce;
 varying vec2 vUv; varying vec3 vPos; varying vec3 vVue;
 vec3 spectre(float t) { return 0.5 + 0.5 * cos(6.28318 * (vec3(0.0, 0.33, 0.67) + t)); }
 float h(vec2 p) { return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453); }
@@ -31,7 +31,8 @@ void main() {
   float diff = 0.55 + 0.45 * max(dot(n, l), 0.0);
   float brosse = (h(vec2(floor(vUv.y * 420.0), 3.0)) - 0.5) * 0.08;
   vec3 metal = vec3(0.74, 0.76, 0.82) * diff + brosse;
-  vec3 irise = spectre(fres * 2.2 + vUv.y * 0.9 + vUv.x * 0.35 + uTime * 0.025);
+  vec3 irise = spectre(fres * 2.2 + vUv.y * 0.9 + vUv.x * 0.35 + uTime * 0.025 + uDecal);
+  irise = mix(irise, uTeinte * (0.75 + 0.35 * irise), uForce);
   vec3 col = mix(metal, irise * 1.05, 0.5 + 0.3 * fres);
   float spec = pow(max(dot(reflect(-l, n), v), 0.0), 36.0);
   col += spec * 0.85;

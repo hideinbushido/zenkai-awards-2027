@@ -5,7 +5,7 @@ import { useShader } from "./useShader";
 
 // Fond irisé vivant : nappes de film holographique sur graphite, qui suivent doucement la souris.
 const FRAGMENT = `
-uniform float uTime; uniform vec2 uResolution; uniform vec2 uMouse; uniform float uIntensite;
+uniform float uTime; uniform vec2 uResolution; uniform vec2 uMouse; uniform float uIntensite; uniform float uClair;
 float h(vec2 p){ return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453); }
 float n(vec2 p){ vec2 i = floor(p), f = fract(p); vec2 u = f*f*(3.0-2.0*f);
   return mix(mix(h(i), h(i+vec2(1,0)), u.x), mix(h(i+vec2(0,1)), h(i+vec2(1,1)), u.x), u.y); }
@@ -21,16 +21,19 @@ void main(){
   float d = length(p - m * 0.6);
   vec3 irise = spectre(f * 2.6 + r.x * 1.4 + d * 0.5 + t * 1.6);
   float nappe = smoothstep(0.38, 0.95, f + 0.22 * (1.0 - d));
-  vec3 col = vec3(0.045, 0.05, 0.066);
-  col = mix(col, irise * 0.5 + 0.06, nappe * 0.6 * uIntensite);
-  col += vec3(0.86, 0.89, 0.96) * pow(smoothstep(0.58, 0.97, f), 3.0) * 0.32 * uIntensite;
+  vec3 sombre = vec3(0.045, 0.05, 0.066);
+  vec3 perle = vec3(0.958, 0.96, 0.968);
+  vec3 col = mix(sombre, perle, uClair);
+  vec3 reflet = mix(irise * 0.5 + 0.06, perle * 0.86 + irise * 0.2, uClair);
+  col = mix(col, reflet, nappe * 0.62 * uIntensite);
+  col += vec3(0.86, 0.89, 0.96) * pow(smoothstep(0.58, 0.97, f), 3.0) * 0.32 * uIntensite * (1.0 - uClair);
   vec2 uv = gl_FragCoord.xy / uResolution;
-  col *= 1.0 - 0.6 * dot(uv - 0.5, uv - 0.5) * 2.0;
-  col += (h(gl_FragCoord.xy + fract(uTime) * 91.0) - 0.5) * 0.035;
+  col *= 1.0 - mix(0.6, 0.12, uClair) * dot(uv - 0.5, uv - 0.5) * 2.0;
+  col += (h(gl_FragCoord.xy + fract(uTime) * 91.0) - 0.5) * mix(0.035, 0.018, uClair);
   gl_FragColor = vec4(col, 1.0);
 }`;
 
-export default function FondShader({ intensite = 1, className }: { intensite?: number; className?: string }) {
+export default function FondShader({ intensite = 1, clair = false, className }: { intensite?: number; clair?: boolean; className?: string }) {
   const souris = useRef<[number, number]>([0.5, 0.5]);
   const cible = useRef<[number, number]>([0.5, 0.5]);
 
@@ -47,7 +50,7 @@ export default function FondShader({ intensite = 1, className }: { intensite?: n
       const s = souris.current, c = cible.current;
       s[0] += (c[0] - s[0]) * 0.04;
       s[1] += (c[1] - s[1]) * 0.04;
-      return { uMouse: [s[0], s[1]], uIntensite: intensite };
+      return { uMouse: [s[0], s[1]], uIntensite: intensite, uClair: clair ? 1 : 0 };
     },
   });
 

@@ -1,7 +1,0 @@
-/* La page passe au-dessus du pied fixé, et laisse une hauteur d'écran pour le découvrir */
-.page { position: relative; z-index: 1; margin-bottom: 100svh; background: var(--fond); box-shadow: 0 40px 80px -20px oklch(0.02 0.01 265 / 0.9); border-radius: 0 0 36px 36px; }
-.tete { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: var(--e6); align-items: end; }
-.h2 { font-family: var(--f-display), sans-serif; font-weight: 900; font-stretch: 62%; font-size: clamp(56px, 8vw, 150px); line-height: 0.85; letter-spacing: -0.02em; text-transform: uppercase; }
-.chapo { color: var(--texte-doux); font-size: clamp(16px, 1.25vw, 19px); max-width: 40ch; }
-.lien { display: inline-block; margin-top: var(--e6); font-weight: 600; padding: 6px 0; }
-@media (max-width: 860px) { .tete { grid-template-columns: 1fr; } }

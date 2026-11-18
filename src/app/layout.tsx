@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Archivo, Michroma, Onest } from "next/font/google";
 import Defilement from "@/components/Defilement";
+import Fin from "@/components/Fin";
 import Nav from "@/components/Nav";
 import "./globals.css";
 
@@ -18,7 +19,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html lang="fr" className={`${large.variable} ${texte.variable} ${display.variable}`}>
       <body>
         <Nav />
-        <Defilement>{children}</Defilement>
+        <Defilement>
+          <div className="contenu">{children}</div>
+          <Fin />
+        </Defilement>
       </body>
     </html>
   );

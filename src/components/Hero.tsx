@@ -37,7 +37,7 @@ export default function Hero() {
     // Entrée : lettres masquées qui montent une à une, puis la carte, puis le reste
     const tl = gsap.timeline({ defaults: { ease: EASE } });
     tl.from(lettres, { yPercent: 108, duration: DUREE.longue, stagger: { each: 0.06, from: "center" } }, 0.15)
-      .from(q(`.${s.carte}`), { y: 160, scale: 0.86, rotate: -6, opacity: 0, duration: DUREE.longue }, 0.45)
+      .from(q(`.${s.carte}`), { y: 160, scale: 0.86, rotate: -6, autoAlpha: 0, duration: DUREE.longue }, 0.45)
       .from(q(`.${s.pile} span`), { yPercent: 105, duration: DUREE.normale, stagger: 0.07 }, 0.75)
       .from(q(`.${s.bas} > *`), { y: 18, opacity: 0, duration: DUREE.normale, stagger: 0.07 }, 0.95)
       .from(q(`.${s.coin}`), { opacity: 0, duration: DUREE.normale }, 1.05);
@@ -73,7 +73,7 @@ export default function Hero() {
   return (
     <div ref={zone} className={s.zone}>
       <section className={s.hero} aria-labelledby="hero-titre">
-        <FondShader className={s.fond} />
+        <FondShader className={s.fond} clair />
 
         <p className={s.pile}>
           <span>25 catégories</span>
@@ -91,12 +91,11 @@ export default function Hero() {
           <div className={s.carte}>
             <CarteHolo img={vedette.img} nom={vedette.nom} numero="025 / 025" taille="grande" priorite sansBandeau />
           </div>
-          <div className={s.couchesNom}><Nom classe={s.devant} /></div>
         </div>
 
         <div className={s.bas}>
           <p className={s.sousTitre}>Anime Awards {EDITION.annee}</p>
-          <Link href="/categories" className={s.bouton}>Découvrir les catégories</Link>
+          <Link href="/categories" className="bouton">Ouvrir les boosters</Link>
           <p className={s.dates}>Votes {EDITION.votes}<br />Live {EDITION.live}</p>
         </div>
 

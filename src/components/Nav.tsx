@@ -12,12 +12,13 @@ export default function Nav() {
         <span>Zenkai</span>
       </Link>
       <nav aria-label="Navigation principale" className={s.pilule}>
-        <Link href="/categories">Boosters</Link>
+        <Link href="/categories">Catégories</Link>
         <Link href="/palmares">Palmarès</Link>
         <Link href="/equipe">Équipe</Link>
+        <Link href="/a-propos">À propos</Link>
         <Link href="/faq">FAQ</Link>
       </nav>
-      <Link href="/#rappel" className={s.voter}>Voter</Link>
+      <Link href="/voter" className={`bouton ${s.voter}`}>Voter</Link>
     </header>
   );
 }

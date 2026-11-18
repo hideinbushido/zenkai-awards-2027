@@ -1,56 +1,108 @@
-/* ZENKAI ANIME AWARDS 2027 — thème HOLO CHROME
-   Graphite profond, argent chromé, film holographique irisé.
-   L'objet de référence : une carte à collectionner rare. */
+/* ZENKAI ANIME AWARDS 2027 — thème HOLO, monde NACRÉ
+   Blanc perle irisé comme un coffret collector, encre graphite pour le texte,
+   foil holographique pour la matière. Le sombre n'arrive qu'en contrepoint (pied de page, révélations). */
 
 :root {
-  --fond: oklch(0.155 0.012 268);
-  --fond-2: oklch(0.2 0.014 268);
-  --fond-3: oklch(0.255 0.016 268);
-  --ligne: oklch(0.36 0.012 268);
+  /* Fonds nacrés */
+  --fond: oklch(0.968 0.005 255);
+  --fond-2: oklch(0.942 0.008 262);
+  --fond-3: oklch(0.912 0.011 264);
+  --ligne: oklch(0.86 0.012 262);
 
-  --chrome-1: oklch(0.96 0.004 260);
-  --chrome-2: oklch(0.8 0.008 260);
-  --chrome-3: oklch(0.58 0.01 262);
-  --chrome-4: oklch(0.38 0.01 265);
+  /* Encres */
+  --encre: oklch(0.2 0.02 272);
+  --encre-douce: oklch(0.45 0.02 268);
+  --encre-pale: oklch(0.6 0.016 265);
 
-  --texte: oklch(0.95 0.004 260);
-  --texte-doux: oklch(0.74 0.014 262);
+  /* Contrepoint sombre */
+  --nuit: oklch(0.16 0.014 270);
+  --nuit-2: oklch(0.22 0.016 270);
 
-  --irise-cyan: oklch(0.84 0.12 205);
-  --irise-violet: oklch(0.76 0.15 300);
-  --irise-rose: oklch(0.82 0.13 350);
-  --irise-citron: oklch(0.92 0.15 115);
+  /* Irisé (lisible sur fond clair) */
+  --irise-cyan: oklch(0.56 0.12 222);
+  --irise-violet: oklch(0.52 0.16 300);
+  --irise-rose: oklch(0.58 0.16 355);
+  --irise-citron: oklch(0.62 0.13 120);
 
-  /* Métal brossé : le chrome qu'on retrouve sur les boutons et les titres */
-  --metal: linear-gradient(172deg, var(--chrome-1) 0%, var(--chrome-2) 38%, var(--chrome-3) 52%, var(--chrome-1) 64%, var(--chrome-2) 100%);
-  /* Spectre holographique */
-  --spectre: linear-gradient(100deg, var(--irise-cyan), var(--irise-violet), var(--irise-rose), var(--irise-citron), var(--irise-cyan));
+  /* Nacre : le reflet perle des surfaces */
+  --nacre: linear-gradient(118deg, oklch(0.95 0.035 205), oklch(0.93 0.045 295), oklch(0.95 0.04 352), oklch(0.965 0.045 105), oklch(0.95 0.035 205));
+  --spectre: linear-gradient(100deg, oklch(0.75 0.13 205), oklch(0.68 0.16 300), oklch(0.72 0.15 352), oklch(0.82 0.15 110), oklch(0.75 0.13 205));
+
+  /* Alias utilisés par les composants */
+  --texte: var(--encre);
+  --texte-doux: var(--encre-douce);
+  --chrome-3: var(--encre-pale);
 
   --e2: 8px; --e3: 12px; --e4: 16px; --e5: 24px; --e6: 32px; --e7: 48px; --e8: 72px; --e9: 112px;
   --marge: clamp(16px, 4vw, 72px);
   --ease-sortie: cubic-bezier(0.16, 1, 0.3, 1);
+  --rayon: 22px;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+html { -webkit-text-size-adjust: 100%; scrollbar-color: var(--fond-3) var(--fond); }
 
 body {
   margin: 0;
   background: var(--fond);
-  color: var(--texte);
+  color: var(--encre);
   font-family: var(--f-texte), sans-serif;
   font-size: 17px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
 
-::selection { background: var(--irise-violet); color: var(--fond); }
-:focus-visible { outline: 2px solid var(--irise-cyan); outline-offset: 3px; border-radius: 4px; }
+::selection { background: oklch(0.85 0.08 300); color: var(--encre); }
+:focus-visible { outline: 2px solid var(--irise-violet); outline-offset: 3px; border-radius: 4px; }
 img { display: block; max-width: 100%; }
-a { color: inherit; text-underline-offset: 0.22em; }
+a { color: inherit; text-underline-offset: 0.22em; text-decoration-thickness: 1px; }
 button, input { font: inherit; color: inherit; }
 h1, h2, h3 { margin: 0; text-wrap: balance; font-weight: 400; }
 p { margin: 0; text-wrap: pretty; }
 
-html { scrollbar-color: var(--chrome-4) var(--fond); }
+/* Titres d'affiche : condensé lourd, encre */
+.affiche {
+  font-family: var(--f-display), sans-serif; font-weight: 900; font-stretch: 62%;
+  text-transform: uppercase; letter-spacing: -0.02em; line-height: 0.86;
+}
+
+/* Bouton principal : encre, avec un reflet nacré qui traverse au survol */
+.bouton {
+  position: relative; display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  overflow: hidden; isolation: isolate;
+  text-decoration: none; font-weight: 700; font-size: 16px; padding: 15px 30px; border-radius: 999px; border: 0; cursor: pointer;
+  background: var(--encre); color: oklch(0.98 0.004 260);
+  box-shadow: 0 14px 30px -16px oklch(0.2 0.03 280 / 0.55);
+  transition: scale 160ms ease-out;
+}
+.bouton::after {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: var(--spectre); opacity: 0; translate: -60% 0; mix-blend-mode: screen;
+  transition: translate 900ms var(--ease-sortie), opacity 300ms ease;
+}
+.bouton:hover::after { opacity: 0.45; translate: 0 0; }
+.bouton:active { scale: 0.97; }
+.bouton[aria-disabled="true"], .bouton:disabled { background: var(--fond-3); color: var(--encre-pale); box-shadow: none; cursor: not-allowed; }
+
+.bouton-clair {
+  display: inline-flex; align-items: center; text-decoration: none; font-weight: 700; font-size: 16px;
+  padding: 14px 28px; border-radius: 999px; border: 1px solid var(--ligne); background: oklch(1 0 0 / 0.55);
+  transition: border-color 160ms ease, scale 160ms ease-out;
+}
+.bouton-clair:hover { border-color: var(--encre-pale); }
+.bouton-clair:active { scale: 0.97; }
+
+.lien-souligne { font-weight: 600; padding: 6px 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  .bouton::after { transition: none; }
+}
+
+/* Le contenu passe au-dessus du pied fixé et laisse une hauteur d'écran pour le découvrir */
+.contenu {
+  position: relative; z-index: 1; margin-bottom: 100svh;
+  background: var(--fond);
+  border-radius: 0 0 36px 36px;
+  box-shadow: 0 40px 80px -30px oklch(0.1 0.02 270 / 0.6);
+  overflow: clip;
+}
