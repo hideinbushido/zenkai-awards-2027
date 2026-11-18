@@ -1,4 +1,4 @@
-.rico { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: clamp(32px, 5vw, 96px); align-items: center; padding: clamp(72px, 8vw, 128px) var(--marge); background: var(--fond-2); }
+.rico { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: clamp(32px, 5vw, 96px); align-items: center; padding: clamp(72px, 8vw, 128px) var(--marge); background: var(--voile); }
 .ricoCarte {
   aspect-ratio: 63 / 88; max-width: 420px; width: 100%; justify-self: center;
   border-radius: 24px; display: grid; place-items: center;

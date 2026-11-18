@@ -3,6 +3,7 @@ import { Archivo, Michroma, Onest } from "next/font/google";
 import Defilement from "@/components/Defilement";
 import Fin from "@/components/Fin";
 import Nav from "@/components/Nav";
+import FondGlobal from "@/components/webgl/FondGlobal";
 import "./globals.css";
 
 const large = Michroma({ weight: "400", subsets: ["latin"], variable: "--f-large" });
@@ -20,7 +21,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body>
         <Nav />
         <Defilement>
-          <div className="contenu">{children}</div>
+          <div className="contenu">
+            <FondGlobal />
+            {children}
+          </div>
           <Fin />
         </Defilement>
       </body>

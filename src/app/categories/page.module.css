@@ -3,7 +3,7 @@
   padding: clamp(72px, 8vw, 128px) var(--marge);
   border-top: 1px solid var(--ligne);
 }
-.famille:nth-of-type(even) { background: var(--fond-2); }
+.famille:nth-of-type(even) { background: var(--voile); }
 .famille[data-famille="grand-prix"] { background: var(--nuit); color: oklch(0.96 0.004 260); }
 .famille[data-famille="grand-prix"] .texte, .famille[data-famille="grand-prix"] .compte { color: oklch(0.76 0.012 262); }
 .colonne { position: relative; }

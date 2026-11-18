@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useRef } from "react";
 import CarteHolo from "@/components/CarteHolo";
-import FondShader from "@/components/webgl/FondShader";
 import { EDITION, NOMINES_ANNEE } from "@/data/edition";
 import { gsap, reduit, useGSAP } from "@/lib/gsap";
 import { DUREE, EASE } from "@/lib/motion";
@@ -63,17 +62,16 @@ export default function Hero() {
     });
     sortie.to(q(`.${s.carte}`), { yPercent: -22, rotate: -5, scale: 1.06 }, 0)
       .to(q(`.${s.pile}, .${s.coin}, .${s.bas}`), { opacity: 0 }, 0)
-      .to(q(`.${s.voile}`), { opacity: 1 }, 0.2);
+      .to(q(`.${s.scene}`), { opacity: 0 }, 0.25);
 
     return () => window.removeEventListener("pointermove", bouge);
   }, { scope: zone });
 
-  const vedette = NOMINES_ANNEE[0];
+  const vedette = NOMINES_ANNEE[1];
 
   return (
     <div ref={zone} className={s.zone}>
       <section className={s.hero} aria-labelledby="hero-titre">
-        <FondShader className={s.fond} clair />
 
         <p className={s.pile}>
           <span>25 catégories</span>
@@ -99,7 +97,6 @@ export default function Hero() {
           <p className={s.dates}>Votes {EDITION.votes}<br />Live {EDITION.live}</p>
         </div>
 
-        <div className={s.voile} aria-hidden="true" />
       </section>
     </div>
   );

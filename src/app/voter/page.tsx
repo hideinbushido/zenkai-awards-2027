@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import TitreAnime from "@/components/TitreAnime";
-import FondShader from "@/components/webgl/FondShader";
 import { EDITION } from "@/data/edition";
 import s from "./page.module.css";
 
@@ -18,7 +17,6 @@ const ETAPES = [
 export default function Voter() {
   return (
     <section className={s.page} aria-labelledby="voter-titre">
-      <FondShader className={s.fond} clair intensite={0.9} />
       <div className={s.texte}>
         <TitreAnime as="h1" id="voter-titre" className={`affiche ${s.titre}`}>Les boosters ouvrent en mars</TitreAnime>
         <p className={s.chapo}>

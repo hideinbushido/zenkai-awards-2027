@@ -9,6 +9,8 @@ export const EDITION = {
   live: "Mai 2027",
   liveOu: "En direct sur TikTok · @ricokouame",
   tiktok: "https://www.tiktok.com/@ricokouame",
+  // Le site de la première édition, ouvert directement sur ses résultats
+  resultats2026: "https://animeawards-alpha.vercel.app/fr/resultats",
 } as const;
 
 export type Categorie = { id: string; titre: string; court: string; famille: Famille };

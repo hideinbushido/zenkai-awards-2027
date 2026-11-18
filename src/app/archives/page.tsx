@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import EnTetePage from "@/components/EnTetePage";
+import { EDITION } from "@/data/edition";
 import s from "./page.module.css";
 
 export const metadata: Metadata = { title: "Archives · Zenkai Anime Awards" };
@@ -17,7 +18,7 @@ export default function Archives() {
             <p className={`affiche ${s.nom}`}>Set Gold</p>
             <p className={s.texte}>La première édition, thème or prestige. Animé de l&apos;année : My Hero Academia, saison finale.</p>
             <div className={s.actions}>
-              <a className="bouton" href="https://animeawards-alpha.vercel.app/fr">Voir le site 2026</a>
+              <a className="bouton" href={EDITION.resultats2026} target="_blank" rel="noopener">Les résultats sur le site 2026</a>
               <Link className="bouton-clair" href="/palmares">Palmarès</Link>
             </div>
           </li>

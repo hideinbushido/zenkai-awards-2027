@@ -6,8 +6,6 @@
   padding: calc(84px + var(--e3)) var(--marge) var(--e6);
   isolation: isolate;
 }
-.fond { position: absolute; inset: 0; width: 100%; height: 100%; z-index: -1; }
-.voile { position: absolute; inset: 0; z-index: 5; background: var(--fond); opacity: 0; pointer-events: none; }
 .cache { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
 .pile {

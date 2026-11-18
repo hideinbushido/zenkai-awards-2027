@@ -17,7 +17,7 @@
 .etapeTitre { font-size: clamp(40px, 4vw, 68px); }
 .etapeTexte { color: var(--encre-douce); }
 
-.calendrier { background: var(--fond-2); }
+.calendrier { background: var(--voile); }
 .frise { list-style: none; margin: clamp(48px, 6vw, 88px) 0 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--e6); position: relative; }
 .frise::before { content: ""; position: absolute; left: 0; right: 0; top: 9px; height: 2px; background: var(--spectre); opacity: 0.55; }
 .jalon { position: relative; display: grid; gap: var(--e3); padding-top: var(--e7); }
@@ -30,7 +30,7 @@
 .qui a { font-weight: 700; }
 .liens { display: flex; flex-wrap: wrap; gap: var(--e3); }
 
-.edition { background: var(--fond-2); }
+.edition { background: var(--voile); }
 .edTete { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: var(--e6); align-items: end; }
 
 @media (max-width: 1000px) {
