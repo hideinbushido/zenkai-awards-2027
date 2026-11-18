@@ -1,0 +1,88 @@
+/* Carte holographique : art + film irisé (color-dodge) + reflet (overlay) */
+.scene { perspective: 900px; }
+
+.carte {
+  --px: 50%; --py: 50%; --rx: 0deg; --ry: 0deg; --eclat: 0.45;
+  position: relative;
+  aspect-ratio: 63 / 88; /* format carte à collectionner */
+  border-radius: 4.5% / 3.3%;
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--fond-2);
+  transform: rotateX(var(--rx)) rotateY(var(--ry));
+  transform-style: preserve-3d;
+  transition: transform 600ms var(--ease-sortie), box-shadow 300ms ease;
+  /* Liseré chromé */
+  box-shadow:
+    inset 0 0 0 2px oklch(0.92 0.005 260 / 0.85),
+    inset 0 0 0 5px oklch(0.35 0.01 265),
+    0 24px 50px -20px oklch(0.05 0.01 265 / 0.9);
+  will-change: transform;
+}
+.carte[data-actif] { transition: transform 80ms linear, box-shadow 300ms ease; }
+
+.grande { width: clamp(220px, 23vw, 340px); }
+.moyenne { width: clamp(150px, 15vw, 230px); }
+.petite { width: clamp(120px, 11vw, 170px); }
+
+.art { position: absolute; inset: 5px 5px 0; border-radius: 3.6% / 2.6%; overflow: hidden; }
+.art img { object-fit: cover; object-position: 50% 15%; }
+
+/* Film holographique : bandes spectrales qui glissent avec le pointeur */
+.film {
+  position: absolute; inset: 0; pointer-events: none;
+  background:
+    repeating-linear-gradient(
+      115deg,
+      oklch(0.82 0.13 200) 0%,
+      oklch(0.78 0.15 300) 7%,
+      oklch(0.84 0.13 350) 14%,
+      oklch(0.92 0.14 110) 21%,
+      oklch(0.85 0.12 200) 28%
+    ),
+    repeating-linear-gradient(-35deg, oklch(0.5 0 0) 0 1px, oklch(0.62 0 0) 1px 3px);
+  background-size: 300% 300%, 100% 100%;
+  background-position: var(--px) var(--py), 0 0;
+  background-blend-mode: soft-light;
+  mix-blend-mode: color-dodge;
+  opacity: calc(var(--eclat) * 0.5);
+  filter: saturate(1.25) contrast(1.1);
+  animation: chatoie 7s ease-in-out infinite alternate;
+}
+.carte[data-actif] .film { animation: none; }
+@keyframes chatoie { from { background-position: 0% 30%, 0 0; } to { background-position: 100% 70%, 0 0; } }
+
+/* Reflet de lumière qui suit le pointeur */
+.reflet {
+  position: absolute; inset: 0; pointer-events: none;
+  background: radial-gradient(circle at var(--px) var(--py), oklch(1 0 0 / 0.75) 0%, oklch(1 0 0 / 0.15) 22%, transparent 55%);
+  mix-blend-mode: overlay;
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+.carte[data-actif] .reflet { opacity: 1; }
+
+/* Bandeau du bas : nom et numéro de set */
+.bandeau {
+  position: absolute; left: 5px; right: 5px; bottom: 5px;
+  display: grid; grid-template-columns: 1fr auto; gap: 0 8px; align-items: end;
+  padding: 26% 10px 9px;
+  background: linear-gradient(to top, oklch(0.12 0.01 265 / 0.95) 35%, transparent);
+  border-radius: 0 0 3.6% 3.6% / 0 0 2.6% 2.6%;
+  color: var(--texte);
+}
+.nom { grid-column: 1; font-weight: 700; font-size: clamp(13px, 1vw, 16px); line-height: 1.15; }
+.detail { grid-column: 1; font-size: 12px; color: var(--texte-doux); line-height: 1.2; }
+.numero { grid-column: 2; grid-row: 1 / 3; display: grid; justify-items: end; gap: 2px; font-family: var(--f-large), sans-serif; font-size: 9.5px; letter-spacing: 0.04em; font-variant-numeric: tabular-nums; color: var(--chrome-2); }
+.rang { font-family: var(--f-texte), sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0; color: var(--irise-cyan); }
+
+.petite .bandeau { padding: 22% 8px 7px; }
+.petite .nom { font-size: 12px; }
+
+@media (hover: none) {
+  .film { opacity: 0.38; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .film { animation: none; }
+  .carte { transition: none; }
+}
