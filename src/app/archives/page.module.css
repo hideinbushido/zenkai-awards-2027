@@ -1,0 +1,16 @@
+.section { padding: clamp(64px, 7vw, 110px) var(--marge) clamp(96px, 10vw, 160px); }
+.sets { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(16px, 2.4vw, 36px); }
+.set {
+  position: relative; overflow: hidden; min-height: 480px;
+  display: grid; align-content: end; gap: var(--e4);
+  padding: clamp(28px, 3vw, 48px); border-radius: 28px;
+}
+.or { background: linear-gradient(150deg, oklch(0.24 0.03 80), oklch(0.14 0.01 80)); color: oklch(0.92 0.06 85); }
+.or .texte { color: oklch(0.8 0.05 85); }
+.holo { background: var(--nacre); box-shadow: inset 0 0 0 1px oklch(1 0 0 / 0.8); }
+.annee { font-family: var(--f-large), sans-serif; font-size: 13px; }
+.nom { font-size: clamp(56px, 7vw, 128px); }
+.texte { max-width: 40ch; font-size: clamp(16px, 1.2vw, 18px); color: var(--encre-douce); }
+.actions { display: flex; flex-wrap: wrap; gap: var(--e3); }
+.paquet { position: absolute; right: 6%; top: 8%; width: clamp(110px, 12vw, 190px); height: auto; rotate: 10deg; filter: drop-shadow(0 26px 26px oklch(0.25 0.04 285 / 0.3)); }
+@media (max-width: 860px) { .sets { grid-template-columns: 1fr; } }

@@ -1,12 +1,9 @@
-/* Remonte de 70svh pour glisser par-dessus le héros collé */
-.zone { position: relative; z-index: 2; height: 230svh; margin-top: -70svh; }
+.zone { position: relative; z-index: 2; height: 220svh; }
 .panneau {
   position: sticky; top: 0; height: 100svh;
   display: grid; align-content: center; gap: var(--e7);
   padding: 0 var(--marge);
   background: var(--fond);
-  border-radius: 36px 36px 0 0;
-  box-shadow: 0 -40px 80px -30px oklch(0.02 0.01 265 / 0.9);
 }
 .phrase {
   max-width: 17ch;
@@ -14,6 +11,6 @@
   font-size: clamp(44px, 7.4vw, 132px); line-height: 0.92; letter-spacing: -0.015em; text-transform: uppercase;
 }
 .mot { opacity: 0.13; }
-.fort { color: var(--irise-cyan); }
+.fort { color: var(--irise-violet); }
 .signature { font-family: var(--f-large), sans-serif; font-size: 12px; letter-spacing: 0.06em; color: var(--chrome-3); justify-self: end; }
 @media (prefers-reduced-motion: reduce) { .mot { opacity: 1; } }

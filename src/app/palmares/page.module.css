@@ -1,0 +1,38 @@
+/* Ouverture sombre : le contrepoint de la révélation */
+.nuit { background: var(--nuit); color: oklch(0.96 0.004 260); padding: calc(120px + var(--e6)) var(--marge) clamp(72px, 8vw, 120px); display: grid; gap: var(--e6); }
+.titre { font-size: clamp(72px, 12vw, 230px); }
+.chapo { color: oklch(0.76 0.012 262); font-size: clamp(17px, 1.35vw, 20px); max-width: 56ch; }
+
+.gp { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: clamp(24px, 4vw, 72px); align-items: end; margin-top: var(--e6); }
+.gpImage { aspect-ratio: 4 / 3; border-radius: var(--rayon); overflow: hidden; background: var(--nuit-2); }
+.gpCanvas { display: block; width: 100%; height: 100%; }
+.gpTexte { display: grid; gap: var(--e3); }
+.gpCat { font-size: 15px; font-weight: 600; color: oklch(0.8 0.1 300); }
+.gpNom { font-size: clamp(56px, 7vw, 130px); }
+.gpSous { font-size: 18px; font-weight: 600; }
+.gpCredit, .gpPar { color: oklch(0.76 0.012 262); font-size: 15px; }
+
+.liste { padding: clamp(88px, 10vw, 150px) var(--marge); }
+.h2 { font-size: clamp(48px, 6.4vw, 120px); }
+.grille { list-style: none; margin: clamp(40px, 5vw, 72px) 0 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(16px, 2vw, 28px); }
+.enveloppe {
+  display: grid; grid-template-columns: clamp(110px, 12vw, 180px) 1fr; gap: var(--e5);
+  padding: var(--e4); border-radius: var(--rayon);
+  background: oklch(1 0 0 / 0.65); box-shadow: inset 0 0 0 1px var(--ligne);
+  transition: translate 500ms var(--ease-sortie), box-shadow 300ms ease;
+}
+.enveloppe:hover { translate: 0 -4px; box-shadow: inset 0 0 0 1px var(--encre-pale), 0 24px 40px -28px oklch(0.25 0.04 285 / 0.5); }
+.affiche { position: relative; aspect-ratio: 3 / 4; border-radius: 12px; overflow: hidden; background: var(--fond-3); }
+.affiche img { object-fit: cover; object-position: 50% 15%; }
+.infos { display: grid; align-content: start; gap: 6px; }
+.ordre { font-family: var(--f-large), sans-serif; font-size: 11px; color: var(--encre-pale); }
+.cat { font-size: 15px; font-weight: 700; color: var(--irise-violet); }
+.gagnant { font-family: var(--f-display), sans-serif; font-weight: 900; font-stretch: 66%; text-transform: uppercase; font-size: clamp(26px, 2.3vw, 38px); line-height: 0.95; }
+.sous { font-size: 14px; color: var(--encre-douce); }
+.podium { list-style: none; margin: var(--e2) 0 0; padding: 0; display: grid; gap: 4px; font-size: 14px; color: var(--encre-douce); }
+.podium span { display: inline-block; width: 1.6em; font-weight: 800; color: var(--encre); font-variant-numeric: tabular-nums; }
+.par { margin-top: auto; padding-top: var(--e3); display: flex; align-items: center; gap: 8px; font-size: 13.5px; color: var(--encre-douce); }
+.par span { color: var(--encre-pale); }
+.photo { border-radius: 50%; object-fit: cover; }
+
+@media (max-width: 900px) { .gp, .grille { grid-template-columns: 1fr; } }

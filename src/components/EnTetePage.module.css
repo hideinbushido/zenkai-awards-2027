@@ -1,0 +1,12 @@
+.tete {
+  position: relative; isolation: isolate; overflow: hidden;
+  min-height: min(78svh, 760px);
+  display: grid; align-content: end; gap: var(--e6);
+  padding: calc(120px + var(--e6)) var(--marge) clamp(40px, 5vw, 72px);
+}
+.fond { position: absolute; inset: 0; width: 100%; height: 100%; z-index: -1; }
+.titre { font-size: clamp(72px, 13vw, 250px); }
+.bas { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--e6); align-items: end; border-top: 1px solid var(--ligne); padding-top: var(--e5); }
+.chapo { font-size: clamp(17px, 1.4vw, 21px); color: var(--encre-douce); max-width: 52ch; }
+.aside { display: flex; flex-wrap: wrap; gap: var(--e3); }
+@media (max-width: 760px) { .bas { grid-template-columns: 1fr; } }

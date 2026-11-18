@@ -1,0 +1,39 @@
+.famille {
+  display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: clamp(24px, 4vw, 72px);
+  padding: clamp(72px, 8vw, 128px) var(--marge);
+  border-top: 1px solid var(--ligne);
+}
+.famille:nth-of-type(even) { background: var(--fond-2); }
+.famille[data-famille="grand-prix"] { background: var(--nuit); color: oklch(0.96 0.004 260); }
+.famille[data-famille="grand-prix"] .texte, .famille[data-famille="grand-prix"] .compte { color: oklch(0.76 0.012 262); }
+.colonne { position: relative; }
+.colle { position: sticky; top: 110px; display: grid; gap: var(--e4); }
+.titre { font-size: clamp(44px, 4.6vw, 96px); }
+.texte { color: var(--encre-douce); font-size: clamp(16px, 1.25vw, 19px); max-width: 30ch; }
+.compte { font-family: var(--f-large), sans-serif; font-size: 12px; color: var(--encre-pale); }
+
+.grille { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(190px, 42vw), 1fr)); gap: clamp(20px, 2.4vw, 40px) clamp(14px, 1.8vw, 28px); }
+.booster { display: block; text-decoration: none; }
+.paquet {
+  position: relative; display: block;
+  filter: drop-shadow(0 26px 26px oklch(0.25 0.04 285 / 0.28));
+  transition: translate 600ms var(--ease-sortie), rotate 600ms var(--ease-sortie);
+}
+.paquet img { width: 100%; height: auto; }
+.booster:hover .paquet, .booster:focus-visible .paquet { translate: 0 -12px; rotate: -2.5deg; }
+.booster:active .paquet { scale: 0.98; }
+/* L'étiquette de la catégorie, collée sur le paquet de sa famille */
+.sticker {
+  position: absolute; left: 8%; right: 10%; bottom: 13%;
+  display: grid; gap: 4px; padding: 12px 12px 13px;
+  background: oklch(0.99 0.003 260); color: var(--encre);
+  border-radius: 8px; rotate: -3deg;
+  box-shadow: 0 8px 18px -8px oklch(0.2 0.03 280 / 0.45);
+}
+.num { font-family: var(--f-large), sans-serif; font-size: 10px; color: var(--irise-violet); font-variant-numeric: tabular-nums; }
+.nom { font-weight: 800; font-size: clamp(14px, 1.15vw, 17px); line-height: 1.15; }
+
+@media (max-width: 860px) {
+  .famille { grid-template-columns: 1fr; }
+  .colle { position: static; }
+}
