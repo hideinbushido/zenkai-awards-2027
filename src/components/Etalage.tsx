@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Booster2D from "@/components/Booster2D";
 import Link from "next/link";
 import { useRef } from "react";
 import { EDITION } from "@/data/edition";
@@ -52,7 +52,7 @@ export default function Etalage() {
         {FAMILLES_BOOSTERS.map((f, i) => (
           <Link key={f.id} href={`/categories#${f.id}`} className={s.paquet} style={{ "--i": i - 2 } as React.CSSProperties} aria-label={`${f.nom} : ${f.nb} booster${f.nb > 1 ? "s" : ""}`}>
             <span className={s.flotte}>
-              <Image src={`/visuels/booster-${f.id}.webp`} alt="" width={420} height={720} sizes="(max-width: 760px) 34vw, 18vw" />
+              <Booster2D famille={f.id} titre={f.nom} sousTitre={`${f.nb} booster${f.nb > 1 ? "s" : ""}`} />
             </span>
           </Link>
         ))}

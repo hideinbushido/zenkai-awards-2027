@@ -12,7 +12,7 @@ const QUESTIONS = [
   { q: "Peut-on voter plusieurs fois ?", r: "Non. Une seule voix par adresse email. Toute tentative de vote multiple est annulée." },
   { q: "Puis-je modifier mon vote ?", r: "Avant de valider ton classeur, oui : tu peux rouvrir un booster et changer de carte. Une fois validé, ton vote est définitif." },
   { q: "Comment les gagnants sont-ils choisis ?", r: "Uniquement par le nombre de votes. Pas de jury, pas d'algorithme. En cas d'égalité parfaite, l'organisation peut trancher ou déclarer des ex-aequo." },
-  { q: "Quand sont annoncés les résultats ?", r: "En mai 2027, en direct sur le TikTok de @ricokouame. Chaque enveloppe est ouverte par un créateur de la communauté. Les résultats restent secrets jusqu'au live." },
+  { q: "Quand sont annoncés les résultats ?", r: "En mai 2027, en direct sur le TikTok de @ricokouame. Le live est animé par ses présentateurs, et des créateurs de la communauté sont invités à annoncer les résultats. Les résultats restent secrets jusqu'au live." },
   { q: "Je n'ai pas reçu mon lien d'accès.", r: "Regarde dans tes spams. Si tu ne le trouves toujours pas, recommence depuis la page de vote avec la même adresse : un nouveau lien t'est envoyé." },
 ];
 

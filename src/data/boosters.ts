@@ -1,4 +1,5 @@
-import { CATEGORIES, NOMINES_ANNEE, NOMINES_PROTAGONISTE, type Famille, type Nomine } from "./edition";
+import { CATEGORIES, type Famille } from "./edition";
+import { NOMINES_2027 } from "./nomines2027";
 
 export const FAMILLES: { id: Famille; nom: string; texte: string }[] = [
   { id: "series", nom: "Séries", texte: "Les meilleures séries de 2026, genre par genre." },
@@ -10,12 +11,8 @@ export const FAMILLES: { id: Famille; nom: string; texte: string }[] = [
 
 export const imageBooster = (f: Famille) => `/visuels/booster-${f}.webp`;
 
-// Nominés connus pour l'instant : ceux de 2026 servent d'exemple sur deux catégories.
-const NOMINES: Partial<Record<string, Nomine[]>> = {
-  annee: NOMINES_ANNEE,
-  protagoniste: NOMINES_PROTAGONISTE,
-};
-export const nominesDe = (id: string) => NOMINES[id] ?? null;
+// Proposition de nominés 2027 (à valider avant l'ouverture des votes).
+export const nominesDe = (id: string) => NOMINES_2027[id] ?? null;
 
 export const categorie = (id: string) => CATEGORIES.find((c) => c.id === id);
 export const voisines = (id: string) => {

@@ -4,14 +4,14 @@
 .paquet {
   grid-area: 1 / 1; place-self: center; position: relative;
   width: clamp(220px, 24vw, 360px);
-  filter: drop-shadow(0 40px 40px oklch(0.25 0.04 285 / 0.32));
   animation: respire 5s ease-in-out infinite alternate;
 }
 @keyframes respire { to { transform: translateY(-10px) rotate(1deg); } }
 .corps, .bande { position: relative; }
-.corps img, .bande img { width: 100%; height: auto; }
-.corps { clip-path: inset(11% 0 0 0); }
-.bande { position: absolute; inset: 0; clip-path: inset(0 0 89% 0); }
+.corps svg, .bande svg { display: block; width: 100%; height: auto; overflow: visible; }
+/* La soudure du haut se détache : même dessin, découpé en deux */
+.corps { clip-path: inset(7.4% -20px -20px -20px); }
+.bande { position: absolute; inset: 0; clip-path: inset(-20px -20px 92.6% -20px); }
 .sticker {
   position: absolute; left: 8%; right: 10%; bottom: 13%;
   display: grid; gap: 4px; padding: 14px 14px 15px;

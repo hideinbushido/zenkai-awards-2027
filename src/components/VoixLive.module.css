@@ -1,0 +1,22 @@
+.section { padding: clamp(80px, 9vw, 140px) var(--marge) clamp(96px, 10vw, 160px); display: grid; gap: clamp(40px, 5vw, 80px); }
+.tete { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: var(--e5) var(--e7); align-items: end; }
+.titre { font-size: clamp(52px, 7.4vw, 140px); line-height: 1; }
+.texte { color: var(--encre-douce); font-size: clamp(16px, 1.25vw, 19px); max-width: 40ch; }
+
+.cartes { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; align-items: flex-start; }
+.carte {
+  margin-inline: clamp(6px, 1vw, 16px);
+  translate: 0 calc(abs(var(--i)) * 34px);
+  rotate: calc(var(--i) * 6deg);
+  z-index: calc(3 - abs(var(--i)));
+  transition: translate 600ms var(--ease-sortie), rotate 600ms var(--ease-sortie);
+}
+.carte:hover { translate: 0 calc(abs(var(--i)) * 34px - 18px); rotate: calc(var(--i) * 3deg); z-index: 4; }
+.lien { display: block; border-radius: 16px; }
+
+@media (max-width: 860px) {
+  .tete { grid-template-columns: 1fr; }
+  .cartes { justify-content: flex-start; overflow-x: auto; scroll-snap-type: x mandatory; gap: 16px; padding: 12px 4px 28px; margin-inline: calc(var(--marge) * -1); padding-inline: var(--marge); }
+  .carte { margin: 0; translate: none; rotate: none; flex: none; scroll-snap-align: center; }
+  .carte:hover { translate: none; rotate: none; }
+}

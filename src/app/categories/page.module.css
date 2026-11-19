@@ -16,10 +16,10 @@
 .booster { display: block; text-decoration: none; }
 .paquet {
   position: relative; display: block;
-  filter: drop-shadow(0 26px 26px oklch(0.25 0.04 285 / 0.28));
   transition: translate 600ms var(--ease-sortie), rotate 600ms var(--ease-sortie);
 }
-.paquet img { width: 100%; height: auto; }
+.paquet svg { display: block; width: 100%; height: auto; overflow: visible; }
+.cache { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .booster:hover .paquet, .booster:focus-visible .paquet { translate: 0 -12px; rotate: -2.5deg; }
 .booster:active .paquet { scale: 0.98; }
 /* L'étiquette de la catégorie, collée sur le paquet de sa famille */

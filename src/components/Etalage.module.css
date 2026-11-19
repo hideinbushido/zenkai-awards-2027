@@ -12,14 +12,13 @@
   translate: calc(var(--i) * clamp(84px, 13vw, 230px)) calc(abs(var(--i)) * 34px);
   rotate: calc(var(--i) * 8deg);
   z-index: calc(10 - abs(var(--i)));
-  filter: drop-shadow(0 34px 34px oklch(0.25 0.04 285 / 0.3));
   transition: scale 500ms var(--ease-sortie);
 }
 .paquet:hover { scale: 1.05; }
 .paquet:active { scale: 0.98; }
 .flotte { display: block; animation: flotte 6s ease-in-out infinite alternate; animation-delay: calc(var(--i) * -1.3s); }
 @keyframes flotte { to { transform: translateY(-14px) rotate(1.5deg); } }
-.flotte img { width: 100%; height: auto; }
+.flotte svg { display: block; width: 100%; height: auto; overflow: visible; }
 
 .texte { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: var(--e5) var(--e7); align-items: end; }
 .titre { font-size: clamp(52px, 7.4vw, 140px); line-height: 1; grid-row: span 2; }

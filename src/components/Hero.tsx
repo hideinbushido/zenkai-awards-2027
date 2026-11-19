@@ -3,7 +3,8 @@
 import Link from "next/link";
 import { useRef } from "react";
 import CarteHolo from "@/components/CarteHolo";
-import { EDITION, NOMINES_ANNEE } from "@/data/edition";
+import { EDITION } from "@/data/edition";
+import { NOMINES_2027 } from "@/data/nomines2027";
 import { gsap, reduit, useGSAP } from "@/lib/gsap";
 import { DUREE, EASE } from "@/lib/motion";
 import s from "./Hero.module.css";
@@ -67,7 +68,7 @@ export default function Hero() {
     return () => window.removeEventListener("pointermove", bouge);
   }, { scope: zone });
 
-  const vedette = NOMINES_ANNEE[1];
+  const vedette = NOMINES_2027.annee[0];
 
   return (
     <div ref={zone} className={s.zone}>

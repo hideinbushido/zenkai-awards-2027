@@ -1,8 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import Booster2D from "@/components/Booster2D";
 import CarteHolo from "@/components/CarteHolo";
 import type { Categorie, Nomine } from "@/data/edition";
 import { gsap, reduit, useGSAP } from "@/lib/gsap";
@@ -12,7 +12,6 @@ import s from "./OuvertureBooster.module.css";
 type Props = {
   categorie: Categorie;
   numero: number;
-  image: string;
   nomines: Nomine[] | null;
   suivante: { id: string; titre: string } | null;
 };
@@ -23,7 +22,7 @@ const lireClasseur = (): Record<string, string> => {
 };
 
 // Le moment fort : on déchire le booster, les nominés jaillissent en éventail, on garde sa carte.
-export default function OuvertureBooster({ categorie, numero, image, nomines, suivante }: Props) {
+export default function OuvertureBooster({ categorie, numero, nomines, suivante }: Props) {
   const scene = useRef<HTMLDivElement>(null);
   const [ouvert, setOuvert] = useState(false);
   const [choix, setChoix] = useState<string | null>(null);
@@ -69,14 +68,10 @@ export default function OuvertureBooster({ categorie, numero, image, nomines, su
       {/* Le booster scellé : corps + bande du haut, découpés dans la même image */}
       <div className={s.paquet} aria-hidden={ouvert || undefined}>
         <div className={s.corps}>
-          <Image src={image} alt="" width={420} height={720} priority sizes="(max-width: 760px) 60vw, 340px" />
-          <span className={s.sticker}>
-            <span className={s.num}>{String(numero).padStart(2, "0")} / 25</span>
-            <span className={s.nomCat}>{categorie.titre}</span>
-          </span>
+          <Booster2D famille={categorie.famille} titre={categorie.court} sousTitre={`${String(numero).padStart(2, "0")} / 25`} />
         </div>
         <div className={s.bande}>
-          <Image src={image} alt="" width={420} height={720} sizes="(max-width: 760px) 60vw, 340px" />
+          <Booster2D famille={categorie.famille} titre={categorie.court} sousTitre={`${String(numero).padStart(2, "0")} / 25`} />
         </div>
       </div>
 

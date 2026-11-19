@@ -9,13 +9,14 @@ type Options = {
   // Appelée à chaque image : renvoie les uniformes à jour (temps fourni en secondes)
   uniformes?: (t: number) => Uniformes;
   image?: string; // texture optionnelle (uTexture)
+  video?: string; // ou une vidéo muette en boucle, envoyée à chaque image dans uTexture
   echelle?: number; // résolution relative (perf)
 };
 
 const VERTEX = `attribute vec2 p; varying vec2 vUv; void main(){ vUv = p * 0.5 + 0.5; gl_Position = vec4(p, 0.0, 1.0); }`;
 
 // Petit moteur WebGL : un quad plein cadre, un fragment shader, pause hors écran.
-export function useShader<T extends HTMLCanvasElement>({ fragment, uniformes, image, echelle = 1 }: Options) {
+export function useShader<T extends HTMLCanvasElement>({ fragment, uniformes, image, video, echelle = 1 }: Options) {
   const ref = useRef<T>(null);
   const appel = useRef(uniformes);
   useEffect(() => { appel.current = uniformes; });
@@ -47,7 +48,9 @@ export function useShader<T extends HTMLCanvasElement>({ fragment, uniformes, im
     gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);
 
     let actif = true;
-    let texPrete = !image;
+    let texPrete = !image && !video;
+    let film: HTMLVideoElement | null = null;
+    let texFilm: WebGLTexture | null = null;
     if (image) {
       const tex = gl.createTexture();
       const img = new Image();
@@ -65,6 +68,25 @@ export function useShader<T extends HTMLCanvasElement>({ fragment, uniformes, im
         texPrete = true;
       };
       img.src = image;
+    }
+    if (video) {
+      film = document.createElement("video");
+      film.muted = true; film.loop = true; film.playsInline = true; film.preload = "auto"; film.crossOrigin = "anonymous";
+      film.src = video;
+      texFilm = gl.createTexture();
+      gl.bindTexture(gl.TEXTURE_2D, texFilm);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+      gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, true);
+      film.addEventListener("loadeddata", () => {
+        if (!actif || !film) return;
+        gl.useProgram(prog);
+        gl.uniform2f(gl.getUniformLocation(prog, "uImage"), film.videoWidth, film.videoHeight);
+        texPrete = true;
+      });
+      film.play().catch(() => {});
     }
 
     const taille = () => {
@@ -85,7 +107,16 @@ export function useShader<T extends HTMLCanvasElement>({ fragment, uniformes, im
     let raf = 0;
     const image0 = () => {
       raf = requestAnimationFrame(image0);
+      if (film) {
+        // La vidéo ne tourne que quand le fond est visible
+        if (!visible) { if (!film.paused) film.pause(); return; }
+        if (film.paused && !fige) film.play().catch(() => {});
+      }
       if (!visible || !texPrete) return;
+      if (film && texFilm && film.readyState >= 2) {
+        gl.bindTexture(gl.TEXTURE_2D, texFilm);
+        gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, film);
+      }
       taille();
       const t = fige ? 4 : (performance.now() - debut) / 1000;
       gl.uniform1f(gl.getUniformLocation(prog, "uTime"), t);
@@ -100,8 +131,8 @@ export function useShader<T extends HTMLCanvasElement>({ fragment, uniformes, im
     };
     raf = requestAnimationFrame(image0);
 
-    return () => { actif = false; cancelAnimationFrame(raf); obs.disconnect(); };
-  }, [fragment, image, echelle]);
+    return () => { actif = false; cancelAnimationFrame(raf); obs.disconnect(); if (film) { film.pause(); film.removeAttribute("src"); film.load(); } };
+  }, [fragment, image, video, echelle]);
 
   return ref;
 }

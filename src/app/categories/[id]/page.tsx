@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import OuvertureBooster from "@/components/OuvertureBooster";
-import { FAMILLES, categorie, imageBooster, nominesDe, voisines } from "@/data/boosters";
+import { FAMILLES, categorie, nominesDe, voisines } from "@/data/boosters";
 import { CATEGORIES } from "@/data/edition";
 import s from "./page.module.css";
 
@@ -51,7 +51,6 @@ async function Contenu({ params }: { params: PageProps<"/categories/[id]">["para
       <OuvertureBooster
         categorie={c}
         numero={numero}
-        image={imageBooster(c.famille)}
         nomines={nominesDe(id)}
         suivante={apres ? { id: apres.id, titre: apres.titre } : null}
       />

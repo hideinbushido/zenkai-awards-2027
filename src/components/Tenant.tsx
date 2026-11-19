@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import Refraction from "@/components/webgl/Refraction";
+import VerreHolo from "@/components/webgl/VerreHolo";
 import { EDITION } from "@/data/edition";
 import { ANIME_DE_L_ANNEE } from "@/data/palmares2026";
 import { gsap, reduit, useGSAP } from "@/lib/gsap";
@@ -42,6 +43,7 @@ export default function Tenant() {
   return (
     <section ref={ref} className={s.section} aria-labelledby="tenant-titre">
       <div className={s.panneau}>
+        <VerreHolo video="/videos/mur-mha.mp4" voile="nuit" force={0.7} cannelures={10} className={s.montage} />
         <div className={s.image}>
           <Refraction src={winner.img!} net={net} className={s.canvas} />
           <span className={s.sceau}>Grand prix 2026</span>
@@ -50,7 +52,7 @@ export default function Tenant() {
           <p className={s.etiquette}>Tenant du titre · Édition Gold</p>
           <h2 id="tenant-titre" className={`affiche ${s.nom}`}>{winner.name}</h2>
           <p className={s.sous}>{winner.sub}, élu animé de l&apos;année par la communauté.</p>
-          <p className={s.credit}>{winner.credit} · enveloppe ouverte par {presenter.name} en direct</p>
+          <p className={s.credit}>{winner.credit} · résultat annoncé par {presenter.name} en direct</p>
           <p className={s.question}>Qui lui succède en mai&nbsp;?</p>
           <div className={s.actions}>
             <Link href="/palmares" className={s.bouton}>Revoir le palmarès 2026</Link>

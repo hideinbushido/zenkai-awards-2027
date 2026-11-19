@@ -20,7 +20,7 @@ const CALENDRIER = [
   { quand: "Janvier – février 2027", quoi: "Sélection des nominés parmi les animés diffusés de janvier à décembre 2026." },
   { quand: "Mars – avril 2027", quoi: "Les boosters s'ouvrent : vingt-cinq catégories, une voix par fan." },
   { quand: "Fin avril 2027", quoi: "Les votes confirmés par email sont dépouillés." },
-  { quand: "Mai 2027", quoi: "Le live : chaque enveloppe ouverte en direct sur TikTok." },
+  { quand: "Mai 2027", quoi: "Le live : les résultats annoncés en direct sur TikTok." },
 ];
 
 export default function APropos() {
@@ -67,7 +67,7 @@ export default function APropos() {
         <div className={s.qui}>
           <p>
             Zenkai, c&apos;est le collectif de Rico (<a href={EDITION.tiktok}>@ricokouame</a>), qui organise la cérémonie et anime le live.
-            En 2026, vingt-quatre créateurs de la communauté ont ouvert les enveloppes avec lui.
+            En 2026, le live était présenté par Pape, Mr. Hunter et Braizanime, et vingt-quatre créateurs de la communauté étaient invités à annoncer les résultats.
           </p>
           <p>Pas de jury, pas d&apos;algorithme : seuls les votes décident. En cas d&apos;égalité parfaite, l&apos;organisation peut déclarer des ex-aequo.</p>
           <div className={s.liens}>

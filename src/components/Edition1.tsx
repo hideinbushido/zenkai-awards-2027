@@ -27,7 +27,7 @@ export default function Edition1() {
             </button>
             <p className={s.cat}>{p.categorie}</p>
             <p className={s.gagnant}>{p.gagnant}</p>
-            <p className={s.par}>Enveloppe ouverte par {p.presentateur} <span>{p.handle}</span></p>
+            <p className={s.par}>Annoncé par {p.presentateur} <span>{p.handle}</span></p>
           </li>
         );
       })}

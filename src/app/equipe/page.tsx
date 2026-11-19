@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import EnTetePage from "@/components/EnTetePage";
 import TitreAnime from "@/components/TitreAnime";
+import VoixLive from "@/components/VoixLive";
 import { EDITION } from "@/data/edition";
 import { ANIME_DE_L_ANNEE, PALMARES_2026 } from "@/data/palmares2026";
 import s from "./page.module.css";
@@ -10,7 +11,7 @@ export const metadata: Metadata = { title: "Équipe · Zenkai Anime Awards" };
 
 type Voix = { nom: string; handle?: string; photo?: string; categories: string[] };
 
-// Les présentateurs 2026, regroupés (certains ont ouvert plusieurs enveloppes).
+// Les créateurs invités à annoncer un résultat en 2026, regroupés (certains en ont annoncé plusieurs).
 function voix(): Voix[] {
   const parNom = new Map<string, Voix>();
   for (const c of [...PALMARES_2026, ANIME_DE_L_ANNEE]) {
@@ -29,7 +30,7 @@ export default function Equipe() {
     <>
       <EnTetePage
         titre="Les voix"
-        chapo="Une cérémonie communautaire, portée par des créateurs de la communauté. Voici l'organisateur et celles et ceux qui ont ouvert les enveloppes en 2026. Les présentateurs 2027 seront annoncés avant le live."
+        chapo="Une cérémonie communautaire, portée par des créateurs de la communauté : l'organisateur, les présentateurs du live et les créateurs invités à annoncer les résultats en 2026."
       />
 
       <section className={s.rico} aria-labelledby="rico-titre">
@@ -37,17 +38,19 @@ export default function Equipe() {
           <Image src="/visuels/logo-zenkai-noir.png" alt="" width={220} height={220} className={s.ricoEmbleme} />
         </div>
         <div className={s.ricoTexte}>
-          <p className={s.role}>Organisation et live</p>
+          <p className={s.role}>Organisation</p>
           <h2 id="rico-titre" className={`affiche ${s.ricoNom}`}>Rico</h2>
           <p className={s.ricoBio}>
-            Fondateur de Zenkai. Il organise la cérémonie, présente le live et a ouvert en 2026 les enveloppes du meilleur ending et de l&apos;animé de l&apos;année.
+            Fondateur de Zenkai. Il organise la cérémonie et a annoncé en 2026 les résultats du meilleur ending et de l&apos;animé de l&apos;année.
           </p>
           <a href={EDITION.tiktok} className="bouton">@ricokouame sur TikTok</a>
         </div>
       </section>
 
+      <VoixLive />
+
       <section className={s.liste} aria-labelledby="voix-titre">
-        <TitreAnime id="voix-titre" className={`affiche ${s.h2}`}>Les présentateurs 2026</TitreAnime>
+        <TitreAnime id="voix-titre" className={`affiche ${s.h2}`}>Les créateurs invités en 2026</TitreAnime>
         <ul className={s.grille}>
           {liste.map((v) => (
             <li key={v.nom} className={s.portrait}>

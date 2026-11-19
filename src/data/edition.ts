@@ -76,7 +76,14 @@ export const PALMARES_2026 = [
   { categorie: "Meilleur combat", gagnant: "Akaza vs Giyu & Tanjiro", img: v("combat-akavstan"), presentateur: "Alex Kagami", handle: "@alexkagami.manga", photo: v("pres-kagami") },
 ] as const;
 
-// Présentateurs qui ont ouvert les enveloppes en 2026 (palmares2026.ts, dépôt anime-awards).
+// Les présentateurs du live (source : page créateurs du site 2026).
+export const PRESENTATEURS_LIVE = [
+  { nom: "Pape", handle: "@papemorjf", photo: "/visuels/2026/pres-pape.webp", lien: "https://www.tiktok.com/@papemorjf" },
+  { nom: "Mr. Hunter", handle: "@mr.hunter2g", photo: "/visuels/2026/pres-hunter.webp", lien: "https://www.tiktok.com/@mr.hunter2g" },
+  { nom: "Braizanime", handle: "@braizanime", photo: "/visuels/2026/pres-braiz.webp", lien: "https://www.tiktok.com/@braizanime" },
+] as const;
+
+// Créateurs invités qui ont annoncé un résultat pendant le live 2026 (palmares2026.ts, dépôt anime-awards).
 export const PRESENTATEURS_2026 = [
   "Tempest", "Y-Gaëtan", "Hermione", "Daan", "Shadow", "Afro Joestar", "Stylouish", "Alex Kagami",
   "Jason", "Senior Sendo", "Afro Otaku", "Spyro", "Tsunade Desty", "Le Zumaki", "Jeremiah", "Elyza",

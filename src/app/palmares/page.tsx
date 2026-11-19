@@ -14,13 +14,13 @@ export default function Palmares() {
       <section className={s.nuit} aria-labelledby="palm-titre">
         <TitreAnime as="h1" id="palm-titre" className={`affiche ${s.titre}`}>Palmarès 2026</TitreAnime>
         <p className={s.chapo}>
-          Vingt-cinq enveloppes, ouvertes en direct pendant le live de la première édition. Le palmarès 2027 sera révélé ici après le live de mai.
+          Vingt-cinq résultats, annoncés en direct pendant le live de la première édition par des créateurs invités. Le palmarès 2027 sera révélé ici après le live de mai.
         </p>
         <GrandPrix img={gp.img} nom={gp.name} sous={gp.sub} credit={gp.credit} />
       </section>
 
       <section className={s.liste} aria-labelledby="env-titre">
-        <TitreAnime id="env-titre" className={`affiche ${s.h2}`}>Les 24 autres enveloppes</TitreAnime>
+        <TitreAnime id="env-titre" className={`affiche ${s.h2}`}>Les 24 autres résultats</TitreAnime>
         <ol className={s.grille}>
           {PALMARES_2026.map((c, i) => (
             <li key={c.id} className={s.enveloppe}>
@@ -40,7 +40,7 @@ export default function Palmares() {
                 )}
                 <p className={s.par}>
                   {c.presenter.photo && <Image src={c.presenter.photo} alt="" width={28} height={28} className={s.photo} />}
-                  Ouverte par {c.presenter.name}{c.presenter.handle ? <span> {c.presenter.handle}</span> : null}
+                  Annoncé par {c.presenter.name}{c.presenter.handle ? <span> {c.presenter.handle}</span> : null}
                 </p>
               </div>
             </li>

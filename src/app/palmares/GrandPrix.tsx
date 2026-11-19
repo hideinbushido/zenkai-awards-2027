@@ -26,7 +26,7 @@ export default function GrandPrix({ img, nom, sous, credit }: { img: string; nom
         <p className={`affiche ${s.gpNom}`}>{nom}</p>
         {sous && <p className={s.gpSous}>{sous}</p>}
         {credit && <p className={s.gpCredit}>{credit}</p>}
-        <p className={s.gpPar}>Enveloppe ouverte par Rico, @ricokouame</p>
+        <p className={s.gpPar}>Annoncé par Rico, @ricokouame</p>
       </div>
     </div>
   );

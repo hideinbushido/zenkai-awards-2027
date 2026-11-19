@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
+import Booster2D from "@/components/Booster2D";
 import EnTetePage from "@/components/EnTetePage";
 import { EDITION } from "@/data/edition";
 import s from "./page.module.css";
@@ -26,7 +26,7 @@ export default function Archives() {
             <p className={s.annee}>2027</p>
             <p className={`affiche ${s.nom}`}>Set Holo</p>
             <p className={s.texte}>La deuxième édition, en cours. Animés diffusés en 2026, votes au printemps, live en mai.</p>
-            <Image src="/visuels/booster-grand-prix.webp" alt="" width={210} height={360} className={s.paquet} />
+            <span className={s.paquet}><Booster2D famille="grand-prix" titre="Set Holo" sousTitre="2027" /></span>
             <div className={s.actions}>
               <Link className="bouton" href="/categories">Les catégories</Link>
             </div>

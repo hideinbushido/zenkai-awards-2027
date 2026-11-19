@@ -12,5 +12,6 @@
 .nom { font-size: clamp(56px, 7vw, 128px); }
 .texte { max-width: 40ch; font-size: clamp(16px, 1.2vw, 18px); color: var(--encre-douce); }
 .actions { display: flex; flex-wrap: wrap; gap: var(--e3); }
-.paquet { position: absolute; right: 6%; top: 8%; width: clamp(110px, 12vw, 190px); height: auto; rotate: 10deg; filter: drop-shadow(0 26px 26px oklch(0.25 0.04 285 / 0.3)); }
+.paquet { position: absolute; right: 6%; top: 8%; width: clamp(110px, 12vw, 190px); rotate: 10deg; }
+.paquet svg { display: block; width: 100%; height: auto; overflow: visible; }
 @media (max-width: 860px) { .sets { grid-template-columns: 1fr; } }

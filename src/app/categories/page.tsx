@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import EnTetePage from "@/components/EnTetePage";
 import TitreAnime from "@/components/TitreAnime";
-import { FAMILLES, imageBooster } from "@/data/boosters";
+import Booster2D from "@/components/Booster2D";
+import { FAMILLES } from "@/data/boosters";
 import { CATEGORIES } from "@/data/edition";
 import s from "./page.module.css";
 
@@ -35,11 +35,8 @@ export default function Categories() {
                   <li key={c.id}>
                     <Link href={`/categories/${c.id}`} className={s.booster}>
                       <span className={s.paquet}>
-                        <Image src={imageBooster(f.id)} alt="" width={420} height={720} sizes="(max-width: 760px) 44vw, 220px" />
-                        <span className={s.sticker}>
-                          <span className={s.num}>{String(n).padStart(2, "0")} / 25</span>
-                          <span className={s.nom}>{c.titre}</span>
-                        </span>
+                        <Booster2D famille={f.id} titre={c.court} sousTitre={`${String(n).padStart(2, "0")} / 25`} />
+                        <span className={s.cache}>{c.titre}</span>
                       </span>
                     </Link>
                   </li>
