@@ -1,0 +1,15 @@
+.page { position: relative; padding: calc(var(--e9) - 8px) var(--marge) var(--e8); display: grid; gap: var(--e6); }
+.tete { display: grid; gap: var(--e3); max-width: 760px; }
+.titre { font-size: clamp(44px, 8vw, 104px); line-height: 0.9; }
+.chapo { font-size: clamp(16px, 1.3vw, 19px); color: var(--encre-douce); max-width: 56ch; }
+.cadre {
+  position: relative; overflow: hidden; border-radius: var(--rayon);
+  height: min(900px, calc(100svh - 96px)); min-height: 560px;
+  background: oklch(0.1 0.02 290);
+}
+.scene { display: block; width: 100%; height: 100%; border: 0; }
+@media (max-width: 760px) {
+  .page { padding-inline: 0; }
+  .tete { padding-inline: var(--marge); }
+  .cadre { border-radius: 0; height: calc(100svh - 64px); }
+}

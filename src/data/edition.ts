@@ -44,7 +44,8 @@ export const CATEGORIES: Categorie[] = [
   { id: "annee", titre: "Animé de l'année", court: "Animé de l'année", famille: "grand-prix" },
 ];
 
-export type Nomine = { id: string; nom: string; detail?: string; img: string };
+// video : opening complet (public/openings) ; refrain : seconde où commence le refrain joué au survol.
+export type Nomine = { id: string; nom: string; detail?: string; img: string; video?: string; refrain?: number };
 
 const v = (f: string) => `/visuels/${f}.webp`;
 

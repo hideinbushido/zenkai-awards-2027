@@ -28,6 +28,15 @@
 .art { position: absolute; inset: 5px 5px 0; border-radius: 3.6% / 2.6%; overflow: hidden; }
 .art img { object-fit: cover; object-position: 50% 15%; }
 
+/* Refrain au survol : la vidéo recouvre l'illustration, recadrée comme elle */
+.extrait {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+  opacity: 0; transition: opacity 320ms ease; pointer-events: none;
+}
+.carte[data-lecture] .extrait { opacity: 1; }
+/* Mouvement réduit : le son du refrain reste, l'image ne bouge pas */
+@media (prefers-reduced-motion: reduce) { .extrait { display: none; } }
+
 /* Film holographique : bandes spectrales qui glissent avec le pointeur */
 .film {
   position: absolute; inset: 0; pointer-events: none;

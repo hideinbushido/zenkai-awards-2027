@@ -4,6 +4,8 @@ import type { Nomine } from "./edition";
 // (popularité, notes) le 18 novembre 2026. Visuels : affiches et portraits officiels AniList.
 // Musiques vérifiées sur MyAnimeList ; combats vérifiés dans la presse (CBR, ComicBook, Fandomwire).
 // À valider par l'équipe avant l'ouverture des votes.
+// Meilleur opening : les 17 openings fournis par l'équipe (dossier OPENING 2026), titres et artistes vérifiés
+// dans la presse (Anime News Network, Anime Corner) le 20 novembre 2026.
 export const NOMINES_2027: Record<string, Nomine[]> = {
   "annee": [
     {
@@ -729,40 +731,140 @@ export const NOMINES_2027: Record<string, Nomine[]> = {
   ],
   "opening": [
     {
-      "id": "aizo",
+      "id": "jjk-aizo",
       "nom": "AIZO",
       "detail": "King Gnu · Jujutsu Kaisen saison 3",
-      "img": "/visuels/2027/anime-172463.webp"
+      "img": "/visuels/2027/opening-jjk-aizo.webp",
+      "video": "/openings/jjk-aizo.mp4",
+      "refrain": 71.8
     },
     {
-      "id": "lulu",
-      "nom": "lulu.",
-      "detail": "Mrs. GREEN APPLE · Frieren saison 2",
-      "img": "/visuels/2027/anime-182255.webp"
-    },
-    {
-      "id": "kaze-no-anthem",
-      "nom": "Kaze no Anthem",
-      "detail": "Eve feat. suis (Yorushika) · Witch Hat Atelier",
-      "img": "/visuels/2027/anime-147105.webp"
-    },
-    {
-      "id": "test-me",
+      "id": "oshi-no-ko",
       "nom": "TEST ME",
       "detail": "CHANMINA · Oshi no Ko saison 3",
-      "img": "/visuels/2027/anime-182587.webp"
+      "img": "/visuels/2027/opening-oshi-no-ko.webp",
+      "video": "/openings/oshi-no-ko.mp4",
+      "refrain": 22.1
     },
     {
-      "id": "spin",
+      "id": "witch-hat",
+      "nom": "Kaze no Anthem",
+      "detail": "Eve feat. suis (Yorushika) · Witch Hat Atelier",
+      "img": "/visuels/2027/opening-witch-hat.webp",
+      "video": "/openings/witch-hat.mp4",
+      "refrain": 56.9
+    },
+    {
+      "id": "sbr-spin",
       "nom": "SPIN",
       "detail": "Kroi · JoJo : Steel Ball Run",
-      "img": "/visuels/2027/anime-190327.webp"
+      "img": "/visuels/2027/opening-sbr-spin.webp",
+      "video": "/openings/sbr-spin.mp4",
+      "refrain": 60.0
     },
     {
-      "id": "kasukana-hana",
-      "nom": "Kasukana Hana",
+      "id": "hells-paradise",
+      "nom": "Kasuka na Hana",
       "detail": "Tatsuya Kitani feat. BABYMETAL · Hell's Paradise saison 2",
-      "img": "/visuels/2027/anime-166613.webp"
+      "img": "/visuels/2027/opening-hells-paradise.webp",
+      "video": "/openings/hells-paradise.mp4",
+      "refrain": 70.3
+    },
+    {
+      "id": "one-piece",
+      "nom": "Luminous",
+      "detail": "AiNA THE END · One Piece, arc Elbaf",
+      "img": "/visuels/2027/opening-one-piece.webp",
+      "video": "/openings/one-piece.mp4",
+      "refrain": 68.4
+    },
+    {
+      "id": "bleach-ibull",
+      "nom": "I-BULL",
+      "detail": "jo0ji · Bleach TYBW : The Calamity",
+      "img": "/visuels/2027/opening-bleach-ibull.webp",
+      "video": "/openings/bleach-ibull.mp4",
+      "refrain": 69.4
+    },
+    {
+      "id": "nippon-sangoku",
+      "nom": "Hidane",
+      "detail": "Tatsuya Kitani · Nippon Sangoku",
+      "img": "/visuels/2027/opening-nippon-sangoku.webp",
+      "video": "/openings/nippon-sangoku.mp4",
+      "refrain": 75.3
+    },
+    {
+      "id": "daemons",
+      "nom": "Titre [À FOURNIR]",
+      "detail": "Artiste [À FOURNIR] · Daemons of the Shadow Realm",
+      "img": "/visuels/2027/opening-daemons.webp",
+      "video": "/openings/daemons.mp4",
+      "refrain": 76.9
+    },
+    {
+      "id": "rezero",
+      "nom": "Recollect",
+      "detail": "Konomi Suzuki feat. Ashnikko · Re:Zero saison 4",
+      "img": "/visuels/2027/opening-rezero.webp",
+      "video": "/openings/rezero.mp4",
+      "refrain": 48.2
+    },
+    {
+      "id": "cote",
+      "nom": "MONSTER",
+      "detail": "Eir Aoi · Classroom of the Elite saison 4",
+      "img": "/visuels/2027/opening-cote.webp",
+      "video": "/openings/cote.mp4",
+      "refrain": 61.6
+    },
+    {
+      "id": "wistoria",
+      "nom": "BELIEVERS",
+      "detail": "ASH DA HERO · Wistoria saison 2",
+      "img": "/visuels/2027/opening-wistoria.webp",
+      "video": "/openings/wistoria.mp4",
+      "refrain": 29.0
+    },
+    {
+      "id": "black-clover",
+      "nom": "Kienai Riyuu",
+      "detail": "WANIMA · Black Clover saison 2",
+      "img": "/visuels/2027/opening-black-clover.webp",
+      "video": "/openings/black-clover.mp4",
+      "refrain": 66.4
+    },
+    {
+      "id": "dbs-beerus",
+      "nom": "ONOGAMI",
+      "detail": "MEGATERA ZERO · Dragon Ball Super : Beerus",
+      "img": "/visuels/2027/opening-dbs-beerus.webp",
+      "video": "/openings/dbs-beerus.mp4",
+      "refrain": 66.6
+    },
+    {
+      "id": "tokyo-revengers",
+      "nom": "IGNITE",
+      "detail": "JO1 · Tokyo Revengers saison 4",
+      "img": "/visuels/2027/opening-tokyo-revengers.webp",
+      "video": "/openings/tokyo-revengers.mp4",
+      "refrain": 68.5
+    },
+    {
+      "id": "sentenced-hero",
+      "nom": "Kill the Noise",
+      "detail": "SPYAIR · Sentenced to Be a Hero",
+      "img": "/visuels/2027/opening-sentenced-hero.webp",
+      "video": "/openings/sentenced-hero.mp4",
+      "refrain": 72.0
+    },
+    {
+      "id": "marriage-toxin",
+      "nom": "Kill or Kiss",
+      "detail": "Yurina Hirate · Marriage Toxin",
+      "img": "/visuels/2027/opening-marriage-toxin.webp",
+      "video": "/openings/marriage-toxin.mp4",
+      "refrain": 44.5
     }
   ],
   "ending": [

@@ -13,6 +13,7 @@ export default function Nav() {
       </Link>
       <nav aria-label="Navigation principale" className={s.pilule}>
         <Link href="/categories">Catégories</Link>
+        <Link href="/booster">Booster</Link>
         <Link href="/palmares">Palmarès</Link>
         <Link href="/equipe">Équipe</Link>
         <Link href="/a-propos">À propos</Link>
