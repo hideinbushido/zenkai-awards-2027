@@ -14,8 +14,8 @@ export default function Connexion() {
   const [etat, setEtat] = useState<"" | "envoi" | "envoye" | "erreur">("");
   const [message, setMessage] = useState("");
 
-  // déjà connecté : direction le booster
-  useEffect(() => { if (session) router.replace("/booster"); }, [session, router]);
+  // déjà connecté : direction ses cartes
+  useEffect(() => { if (session) router.replace("/cartes"); }, [session, router]);
 
   const retour = () => `${window.location.origin}/booster`;
 

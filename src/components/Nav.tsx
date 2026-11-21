@@ -22,7 +22,7 @@ export default function Nav() {
         <Link href="/faq">FAQ</Link>
       </nav>
       <div className={s.droite}>
-        <Compte />
+        <div className={s.compteLarge}><Compte /></div>
         <Link href="/collection" className={`bouton-clair ${s.collection}`}>
           <span className={s.libelle}>Ma collection</span> <CompteurCollection className={s.compte} />
         </Link>
@@ -35,6 +35,7 @@ export default function Nav() {
             <Link href="/collection">Ma collection</Link>
             <Link href="/cartes">Mes cartes</Link>
             <Link href="/missions">Missions</Link>
+            <Link href="/connexion">Mon compte</Link>
             <Link href="/palmares">Palmarès 2026</Link>
             <Link href="/equipe">Équipe</Link>
             <Link href="/a-propos">À propos</Link>
