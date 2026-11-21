@@ -5,7 +5,8 @@ const A = window.ZKA;
 const IMG = "img/";
 // les cartes viennent du gabarit (cards.js) : chaque carte = image + infos + rareté
 const RANK = { eclat: 0, prisme: 1, spectre: 2, mirage: 3, zenkai: 4 };
-const WEIGHT = { eclat: 50, prisme: 25, spectre: 13, mirage: 9, zenkai: 3 };
+// chance qu'une carte du booster soit de cette rareté, en % (indépendant du nombre de cartes de chaque rareté)
+const WEIGHT = { eclat: 61, prisme: 20, spectre: 10, mirage: 5, zenkai: 4 };
 const LABEL = { eclat: "ÉCLAT", prisme: "PRISME", spectre: "SPECTRE", mirage: "MIRAGE", zenkai: "ZENKAI" };
 const POOL = window.ZK_CARDS.cards.map(c => Object.assign({}, c, {
   ill: c.base + "ill.webp", over: c.base + "over.webp", masks: c.base + "masks.png", full: c.base + "full.webp",
@@ -17,10 +18,13 @@ const POOL = window.ZK_CARDS.cards.map(c => Object.assign({}, c, {
 function drawBooster() {
   const left = POOL.slice(), out = [], n = Math.min(window.ZK_CARDS.booster || 10, left.length);
   while (out.length < n) {
-    const tot = left.reduce((s, c) => s + (WEIGHT[c.rarity] || 1), 0);
-    let r = Math.random() * tot, i = 0;
-    while ((r -= WEIGHT[left[i].rarity] || 1) > 0 && i < left.length - 1) i++;
-    out.push(left.splice(i, 1)[0]);
+    // 1) on tire la rareté selon WEIGHT (seulement parmi celles qui ont encore des cartes), 2) une carte au hasard de cette rareté
+    const dispo = Object.keys(WEIGHT).filter(k => left.some(c => c.rarity === k));
+    const tot = dispo.reduce((s, k) => s + WEIGHT[k], 0);
+    let r = Math.random() * tot, k = 0;
+    while ((r -= WEIGHT[dispo[k]]) > 0 && k < dispo.length - 1) k++;
+    const idx = left.map((c, j) => c.rarity === dispo[k] ? j : -1).filter(j => j >= 0);
+    out.push(left.splice(idx[Math.floor(Math.random() * idx.length)], 1)[0]);
   }
   return out.map(c => [c, Math.random()]).sort((a, b) => (RANK[a[0].rarity] - RANK[b[0].rarity]) || (a[1] - b[1])).map(x => x[0]);
 }
