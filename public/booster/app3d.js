@@ -17,9 +17,15 @@ const gsap = window.gsap;
 
 /* ================= cartes (même gabarit que la 2D) */
 const RANK = { eclat: 0, prisme: 1, spectre: 2, mirage: 3, zenkai: 4 };
-// chances PAR BOOSTER (10 cartes) d'avoir au moins une carte de cette rareté : Zenkai 4 %, Mirage 5 %, Spectre 10 %.
-// Converties en chance par carte : 1 - (1 - P)^(1/10). Prisme et Éclat se partagent le reste.
-const WEIGHT = { eclat: 78.033, prisme: 20.0, spectre: 1.048, mirage: 0.512, zenkai: 0.407 };
+// TIRAGE PAR BOOSTER
+// chance : probabilité qu'un booster contienne au moins une carte de cette rareté
+// encore : quand on en a une, chance d'en avoir une de plus (2e, puis 3e au maximum)
+const RARES = {
+  zenkai:  { chance: 0.04, encore: 0.25 },
+  mirage:  { chance: 0.05, encore: 0.25 },
+  spectre: { chance: 0.10, encore: 0.30 },
+};
+const PRISME_PAR_CARTE = 0.20;   // les autres places : Prisme 20 %, Éclat le reste
 const LABEL = { eclat: "ÉCLAT", prisme: "PRISME", spectre: "SPECTRE", mirage: "MIRAGE", zenkai: "ZENKAI" };
 const TINT = { eclat: [0.75, 0.72, 0.62], prisme: [0.85, 0.5, 0.9], spectre: [0.25, 0.45, 0.95], mirage: [0.7, 0.6, 1.0], zenkai: [1.0, 0.68, 0.25] };
 const POOL = window.ZK_CARDS.cards.map(c => Object.assign({}, c, {
@@ -30,14 +36,25 @@ const POOL = window.ZK_CARDS.cards.map(c => Object.assign({}, c, {
 }));
 function drawBooster() {
   const left = POOL.slice(), out = [], n = Math.min(window.ZK_CARDS.booster || 10, left.length);
-  while (out.length < n) {
-    // 1) on tire la rareté selon WEIGHT (seulement parmi celles qui ont encore des cartes), 2) une carte au hasard de cette rareté
-    const dispo = Object.keys(WEIGHT).filter(k => left.some(c => c.rarity === k));
-    const tot = dispo.reduce((s, k) => s + WEIGHT[k], 0);
-    let r = Math.random() * tot, k = 0;
-    while ((r -= WEIGHT[dispo[k]]) > 0 && k < dispo.length - 1) k++;
-    const idx = left.map((c, j) => c.rarity === dispo[k] ? j : -1).filter(j => j >= 0);
+  // une carte au hasard de cette rareté, sans doublon ; false s'il n'en reste plus
+  const prendre = r => {
+    const idx = left.map((c, j) => c.rarity === r ? j : -1).filter(j => j >= 0);
+    if (!idx.length) return false;
     out.push(left.splice(idx[Math.floor(Math.random() * idx.length)], 1)[0]);
+    return true;
+  };
+  // 1) les rares : décidées une fois pour tout le booster, avec parfois une 2e ou une 3e
+  for (const [r, { chance, encore }] of Object.entries(RARES)) {
+    if (Math.random() >= chance) continue;
+    let k = 1;
+    while (k < 3 && Math.random() < encore) k++;
+    for (let i = 0; i < k && out.length < n; i++) if (!prendre(r)) break;
+  }
+  // 2) le reste du booster : Prisme ou Éclat, carte par carte
+  while (out.length < n) {
+    const r = Math.random() < PRISME_PAR_CARTE ? "prisme" : "eclat";
+    if (!prendre(r) && !prendre(r === "prisme" ? "eclat" : "prisme"))
+      out.push(left.splice(Math.floor(Math.random() * left.length), 1)[0]);   // plus aucune carte commune : on prend ce qui reste
   }
   return out.map(c => [c, Math.random()]).sort((a, b) => (RANK[a[0].rarity] - RANK[b[0].rarity]) || (a[1] - b[1])).map(x => x[0]);
 }
