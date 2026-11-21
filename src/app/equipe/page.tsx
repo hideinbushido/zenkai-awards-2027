@@ -29,25 +29,25 @@ export default function Equipe() {
   return (
     <>
       <EnTetePage
-        titre="Les voix"
+        titre="L'équipe"
         chapo="Une cérémonie communautaire, portée par des créateurs de la communauté : l'organisateur, les présentateurs du live et les créateurs invités à annoncer les résultats en 2026."
       />
 
+      <VoixLive />
+
       <section className={s.rico} aria-labelledby="rico-titre">
-        <div className={s.ricoCarte} aria-hidden="true">
-          <Image src="/visuels/logo-zenkai-noir.png" alt="" width={220} height={220} className={s.ricoEmbleme} />
-        </div>
-        <div className={s.ricoTexte}>
-          <p className={s.role}>Organisation</p>
-          <h2 id="rico-titre" className={`affiche ${s.ricoNom}`}>Rico</h2>
-          <p className={s.ricoBio}>
-            Fondateur de Zenkai. Il organise la cérémonie et a annoncé en 2026 les résultats du meilleur ending et de l&apos;animé de l&apos;année.
-          </p>
+        <div className={`panneau-encre ${s.ricoBande}`}>
+          <Image src="/visuels/logo-zenkai-noir.png" alt="" width={96} height={96} className={s.ricoEmbleme} />
+          <div className={s.ricoTexte}>
+            <h2 id="rico-titre" className={`affiche ${s.ricoNom}`}>Rico, l&apos;organisateur</h2>
+            <p className={s.ricoBio}>
+              Fondateur de Zenkai. Il organise la cérémonie et a annoncé en 2026 les résultats du meilleur ending et de l&apos;animé de l&apos;année.
+            </p>
+          </div>
           <a href={EDITION.tiktok} className="bouton">@ricokouame sur TikTok</a>
         </div>
       </section>
 
-      <VoixLive />
 
       <section className={s.liste} aria-labelledby="voix-titre">
         <TitreAnime id="voix-titre" className={`affiche ${s.h2}`}>Les créateurs invités en 2026</TitreAnime>

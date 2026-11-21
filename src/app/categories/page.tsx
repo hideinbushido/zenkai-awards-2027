@@ -3,6 +3,7 @@ import Link from "next/link";
 import EnTetePage from "@/components/EnTetePage";
 import TitreAnime from "@/components/TitreAnime";
 import Booster2D from "@/components/Booster2D";
+import EtatBooster from "@/components/EtatBooster";
 import { FAMILLES } from "@/data/boosters";
 import { CATEGORIES } from "@/data/edition";
 import s from "./page.module.css";
@@ -38,6 +39,7 @@ export default function Categories() {
                         <Booster2D famille={f.id} titre={c.court} sousTitre={`${String(n).padStart(2, "0")} / 25`} />
                         <span className={s.cache}>{c.titre}</span>
                       </span>
+                      <EtatBooster categorie={c.id} />
                     </Link>
                   </li>
                 );

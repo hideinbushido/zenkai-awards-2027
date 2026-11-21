@@ -10,7 +10,7 @@ type Props = {
   detail?: string;
   numero: string; // ex. « 025 / 025 »
   rang?: string; // libellé de rareté
-  taille?: "grande" | "moyenne" | "petite";
+  taille?: "grande" | "moyenne" | "petite" | "fluide";
   priorite?: boolean;
   style?: CSSProperties;
   className?: string;
@@ -114,7 +114,7 @@ export default function CarteHolo({ img, nom, detail, numero, rang, taille = "mo
     <div className={`${s.scene} ${className ?? ""}`} style={style}>
       <div ref={ref} className={`${s.carte} ${s[taille]}`} onPointerEnter={joue} onPointerMove={bouge} onPointerLeave={sort}>
         <div className={s.art}>
-          <Image src={img} alt={nom} fill sizes={taille === "grande" ? "(max-width: 900px) 60vw, 340px" : "(max-width: 900px) 45vw, 240px"} priority={priorite} />
+          <Image src={img} alt={nom} fill sizes={taille === "grande" ? "(max-width: 900px) 60vw, 340px" : "(max-width: 900px) 45vw, 260px"} priority={priorite} />
           {extrait && <video ref={video} className={s.extrait} preload="none" playsInline aria-hidden="true" tabIndex={-1} />}
         </div>
         <div className={s.film} aria-hidden="true" />

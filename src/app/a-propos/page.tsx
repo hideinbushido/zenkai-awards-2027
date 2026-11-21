@@ -1,19 +1,23 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
+import Booster2D from "@/components/Booster2D";
+import CarteHolo from "@/components/CarteHolo";
 import Edition1 from "@/components/Edition1";
 import EnTetePage from "@/components/EnTetePage";
 import Manifeste from "@/components/Manifeste";
 import TitreAnime from "@/components/TitreAnime";
-import { EDITION } from "@/data/edition";
+import { EDITION, PRESENTATEURS_LIVE } from "@/data/edition";
+import { NOMINES_2027 } from "@/data/nomines2027";
 import s from "./page.module.css";
 
 export const metadata: Metadata = { title: "À propos · Zenkai Anime Awards 2027" };
 
 const ETAPES = [
-  { titre: "Ouvre", texte: "Chaque catégorie est un booster. Tu l'ouvres et ses nominés apparaissent, tous diffusés en 2026." },
+  { titre: "Ouvre", texte: "Chaque catégorie est un booster. Tu l'ouvres, ses nominés se posent devant toi, tous diffusés en 2026." },
   { titre: "Garde", texte: "Tu gardes ta carte préférée. Tu ne connais pas la catégorie ? Tu passes au booster suivant." },
-  { titre: "Confirme", texte: "Un lien arrive par email : un clic, et ton classeur compte. Une voix par adresse." },
-  { titre: "Révèle", texte: "En mai, en live sur TikTok, chaque prix est révélé par un créateur de la communauté." },
+  { titre: "Valide", texte: "Ta collection devient ton bulletin : un lien arrive par email, un clic, et ta voix compte. Une voix par adresse." },
+  { titre: "Révèle", texte: "En mai, en live sur TikTok, les présentateurs et les créateurs invités annoncent chaque résultat." },
 ];
 
 const CALENDRIER = [
@@ -29,17 +33,38 @@ export default function APropos() {
       <EnTetePage
         titre="Votée par les fans"
         chapo="Les Zenkai Anime Awards sont une cérémonie communautaire annuelle. Les fans choisissent leurs animés, personnages et moments de l'année, et les résultats sont révélés en direct, enveloppe par enveloppe."
-        aside={<Link href="/categories" className="bouton">Voir les catégories</Link>}
+        aside={<Link href="/categories" className="bouton">Ouvrir les boosters</Link>}
       />
 
       <Manifeste />
 
       <section className={s.section} aria-labelledby="gestes-titre">
-        <TitreAnime id="gestes-titre" className={`affiche ${s.h2}`}>Quatre gestes</TitreAnime>
-        <ol className={s.etapes}>
+        <TitreAnime id="gestes-titre" className={`affiche ${s.h2}`}>Du booster au live</TitreAnime>
+        <ol className={s.parcours}>
           {ETAPES.map((e, i) => (
             <li key={e.titre} className={s.etape}>
-              <span className={s.numero} aria-hidden="true">{i + 1}</span>
+              <div className={s.visuel} aria-hidden="true">
+                {i === 0 && <span className={s.miniBooster}><Booster2D famille="series" titre="Action" sousTitre="01 / 25" /></span>}
+                {i === 1 && (
+                  <span className={s.miniCartes}>
+                    {NOMINES_2027.annee.slice(0, 3).map((n, k) => (
+                      <span key={n.id} className={s.miniCarte} data-garde={k === 1 || undefined}><CarteHolo img={n.img} nom={n.nom} numero="25 / 25" taille="fluide" sansBandeau /></span>
+                    ))}
+                  </span>
+                )}
+                {i === 2 && (
+                  <span className={s.miniCollection}>
+                    <span className={s.miniCompte}><strong>18</strong> / 25</span>
+                    <span className={s.miniJauge}><i /></span>
+                  </span>
+                )}
+                {i === 3 && (
+                  <span className={s.miniLive}>
+                    {PRESENTATEURS_LIVE.map((p) => <Image key={p.nom} src={p.photo} alt="" width={84} height={84} className={s.avatar} />)}
+                    <span className={s.badgeLive}>Live · mai 2027</span>
+                  </span>
+                )}
+              </div>
               <h3 className={`affiche ${s.etapeTitre}`}>{e.titre}</h3>
               <p className={s.etapeTexte}>{e.texte}</p>
             </li>

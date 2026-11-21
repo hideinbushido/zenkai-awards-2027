@@ -1,15 +1,7 @@
-.zone { position: relative; z-index: 2; height: 220svh; }
-.panneau {
-  position: sticky; top: 0; height: 100svh;
-  display: grid; align-content: center; gap: var(--e7);
-  padding: 0 var(--marge);
-}
+.panneau { padding: clamp(72px, 9vw, 140px) var(--marge); }
 .phrase {
-  max-width: 17ch;
+  max-width: 22ch;
   font-family: var(--f-display), sans-serif; font-weight: 900; font-stretch: 62%;
-  font-size: clamp(44px, 7.4vw, 132px); line-height: 0.92; letter-spacing: -0.015em; text-transform: uppercase;
+  font-size: clamp(44px, 6.6vw, 120px); line-height: 0.92; letter-spacing: -0.015em; text-transform: uppercase;
 }
-.mot { opacity: 0.13; }
-.fort { color: var(--irise-violet); }
-.signature { font-family: var(--f-large), sans-serif; font-size: 12px; letter-spacing: 0.06em; color: var(--chrome-3); justify-self: end; }
-@media (prefers-reduced-motion: reduce) { .mot { opacity: 1; } }
+.mot { display: inline-block; white-space: pre; }

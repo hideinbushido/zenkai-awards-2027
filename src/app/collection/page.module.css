@@ -1,0 +1,40 @@
+.page { padding: calc(120px + var(--e5)) var(--marge) clamp(96px, 10vw, 160px); display: grid; gap: clamp(48px, 6vw, 88px); }
+
+.tete { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: var(--e6) var(--e8); align-items: end; }
+.titre { font-size: clamp(72px, 11vw, 200px); }
+.resume { display: grid; gap: var(--e4); justify-items: start; }
+.compte { font-size: clamp(20px, 1.8vw, 26px); }
+.compte strong { font-family: var(--f-display), sans-serif; font-weight: 900; font-stretch: 62%; font-size: 1.8em; font-variant-numeric: tabular-nums; }
+.texte { color: var(--encre-douce); font-size: clamp(16px, 1.2vw, 18px); max-width: 46ch; }
+.actions { display: flex; flex-wrap: wrap; gap: var(--e4); padding-top: var(--e2); }
+/* Jauge encrée remplie de foil */
+.jauge { grid-column: 1 / -1; height: 18px; border: 2.5px solid var(--encre); border-radius: 999px; background: oklch(0.99 0.003 260); overflow: hidden; }
+.jauge i { display: block; height: 100%; background: var(--spectre); border-right: 2.5px solid var(--encre); transition: width 600ms var(--ease-sortie); }
+
+.famille { display: grid; gap: var(--e5); }
+.nomFamille { font-family: var(--f-display), sans-serif; font-weight: 900; font-stretch: 62%; text-transform: uppercase; font-size: clamp(36px, 3.6vw, 64px); line-height: 0.9; display: flex; align-items: baseline; gap: var(--e4); padding-bottom: var(--e3); border-bottom: 2.5px solid var(--encre); }
+.nomFamille span { font-family: var(--f-large), sans-serif; font-weight: 400; font-stretch: 100%; font-size: 13px; color: var(--encre-douce); }
+
+.rangee { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(170px, 42vw), 1fr)); gap: clamp(20px, 2.2vw, 32px) clamp(14px, 1.6vw, 24px); }
+.emplacement { display: grid; gap: var(--e3); align-content: start; position: relative; }
+.cat { font-weight: 800; font-size: 14.5px; line-height: 1.2; min-height: 2.4em; }
+.lienCarte { display: block; border-radius: 14px; }
+.retirer { justify-self: start; font-size: 13.5px; font-weight: 700; color: var(--encre-douce); background: none; border: 0; padding: 4px 0; cursor: pointer; text-decoration: underline; text-underline-offset: 0.22em; }
+.retirer:hover { color: var(--encre); }
+
+/* Emplacement vide : contour pointillé, le booster en attente, estompé */
+.vide {
+  position: relative; display: grid; place-items: center; aspect-ratio: 63 / 88;
+  border: 2.5px dashed var(--encre-pale); border-radius: 14px; text-decoration: none;
+  background: oklch(0.99 0.003 260 / 0.55);
+  transition: border-color 200ms ease, background-color 200ms ease;
+}
+.mini { width: 62%; opacity: 0.55; transition: opacity 200ms ease, translate 300ms var(--ease-sortie); }
+.mini svg { display: block; width: 100%; height: auto; overflow: visible; }
+.ouvrir { position: absolute; bottom: 10px; font-weight: 800; font-size: 13px; padding: 6px 12px; border-radius: 8px; background: var(--encre); color: oklch(0.98 0.004 260); }
+@media (hover: hover) {
+  .vide:hover { border-color: var(--encre); background: oklch(0.99 0.003 260 / 0.85); }
+  .vide:hover .mini { opacity: 1; translate: 0 -6px; }
+}
+
+@media (max-width: 860px) { .tete { grid-template-columns: 1fr; } }

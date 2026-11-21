@@ -55,7 +55,7 @@ export default function Tenant() {
           <p className={s.credit}>{winner.credit} · résultat annoncé par {presenter.name} en direct</p>
           <p className={s.question}>Qui lui succède en mai&nbsp;?</p>
           <div className={s.actions}>
-            <Link href="/palmares" className={s.bouton}>Revoir le palmarès 2026</Link>
+            <Link href="/palmares" className={`bouton-clair ${s.bouton}`}>Revoir le palmarès 2026</Link>
             <a href={EDITION.resultats2026} className={s.lien} target="_blank" rel="noopener">Les résultats sur le site 2026</a>
           </div>
         </div>

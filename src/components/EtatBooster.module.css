@@ -1,0 +1,2 @@
+.etat { display: inline-block; max-width: 100%; margin-top: 14px; font-size: 13.5px; font-weight: 700; color: var(--encre-douce); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.garde { padding: 5px 10px; border-radius: 8px; background: var(--encre); color: oklch(0.98 0.004 260); }

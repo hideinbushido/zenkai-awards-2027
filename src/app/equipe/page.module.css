@@ -1,16 +1,10 @@
-.rico { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: clamp(32px, 5vw, 96px); align-items: center; padding: clamp(72px, 8vw, 128px) var(--marge); background: var(--voile); }
-.ricoCarte {
-  aspect-ratio: 63 / 88; max-width: 420px; width: 100%; justify-self: center;
-  border-radius: 24px; display: grid; place-items: center;
-  background: var(--nacre);
-  box-shadow: 0 40px 70px -36px oklch(0.3 0.06 285 / 0.55), inset 0 0 0 1px oklch(1 0 0 / 0.8);
-  rotate: -4deg;
-}
-.ricoEmbleme { width: 46%; height: auto; mix-blend-mode: multiply; }
-.ricoTexte { display: grid; gap: var(--e4); justify-items: start; }
-.role { font-size: 15px; font-weight: 600; color: var(--irise-violet); }
-.ricoNom { font-size: clamp(80px, 12vw, 220px); }
-.ricoBio { font-size: clamp(17px, 1.35vw, 20px); color: var(--encre-douce); max-width: 46ch; }
+/* L'organisation : une bande encrée, compacte */
+.rico { padding: 0 var(--marge) clamp(24px, 3vw, 40px); }
+.ricoBande { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: var(--e5) var(--e7); align-items: center; padding: clamp(20px, 2.4vw, 36px); }
+.ricoEmbleme { width: clamp(64px, 6vw, 96px); height: auto; mix-blend-mode: multiply; }
+.ricoTexte { display: grid; gap: var(--e3); }
+.ricoNom { font-size: clamp(40px, 4.6vw, 80px); }
+.ricoBio { font-size: clamp(16px, 1.2vw, 18px); color: var(--encre-douce); max-width: 60ch; }
 
 .liste { padding: clamp(88px, 10vw, 150px) var(--marge); }
 .h2 { font-size: clamp(48px, 6.4vw, 120px); }
@@ -24,4 +18,4 @@
 .handle { font-size: 14px; color: var(--encre-douce); }
 .cats { font-size: 13.5px; color: var(--irise-violet); }
 
-@media (max-width: 860px) { .rico { grid-template-columns: 1fr; } }
+@media (max-width: 860px) { .ricoBande { grid-template-columns: 1fr; justify-items: start; } }

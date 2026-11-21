@@ -1,9 +1,8 @@
 /* Remonte de 60svh : les boosters montent pendant que le nom s'efface */
 .etalage {
   position: relative; z-index: 2; margin-top: -60svh;
-  min-height: 100svh;
-  display: grid; grid-template-rows: 1fr auto; gap: var(--e6);
-  padding: clamp(80px, 9vw, 130px) var(--marge) clamp(64px, 7vw, 110px);
+  display: grid; gap: clamp(40px, 5vw, 72px);
+  padding: clamp(40px, 5vw, 80px) var(--marge) clamp(80px, 9vw, 130px);
 }
 .scene { position: relative; display: grid; place-items: center; min-height: clamp(320px, 42vw, 620px); }
 .paquet {
@@ -30,3 +29,14 @@
   .titre { grid-row: auto; }
 }
 @media (prefers-reduced-motion: reduce) { .flotte { animation: none; } }
+
+/* Trois temps, séparés par un trait d'encre ; pas de cadres */
+.temps { list-style: none; margin: 0; padding: var(--e5) 0 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 2.5px solid var(--encre); }
+.temps li { display: grid; gap: 4px; padding-right: var(--e5); }
+.temps li + li { padding-left: var(--e5); border-left: 2.5px dashed var(--encre); }
+.temps strong { font-size: clamp(36px, 3.6vw, 64px); font-weight: 900; }
+.temps span { color: var(--encre-douce); font-size: clamp(15px, 1.1vw, 17px); }
+@media (max-width: 640px) {
+  .temps { grid-template-columns: 1fr; gap: var(--e4); }
+  .temps li + li { padding-left: 0; border-left: 0; padding-top: var(--e4); border-top: 2.5px dashed var(--encre); }
+}

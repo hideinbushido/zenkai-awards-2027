@@ -60,13 +60,19 @@ export default function Etalage() {
       <div className={s.texte}>
         <h2 id="etalage-titre" className={`affiche ${s.titre}`}>25 boosters à ouvrir</h2>
         <p className={s.chapo}>
-          Chaque catégorie est un booster, ses nominés sont les cartes. Votes en {EDITION.votes.toLowerCase()}, résultats en live en mai.
+          Chaque catégorie est un booster, ses nominés sont les cartes. Ta collection devient ton vote en {EDITION.votes.toLowerCase()}.
         </p>
         <div className={s.actions}>
-          <Link href="/categories" className="bouton">Voir les catégories</Link>
-          <Link href="/a-propos" className="bouton-clair">Comment ça marche</Link>
+          <Link href="/categories" className="bouton">Ouvrir les boosters</Link>
+          <Link href="/collection" className="bouton-clair">Ma collection</Link>
         </div>
       </div>
+      {/* La mécanique en trois temps, sous l'étagère */}
+      <ol className={s.temps}>
+        <li><strong className="affiche">Ouvre</strong><span>un booster par catégorie</span></li>
+        <li><strong className="affiche">Garde</strong><span>une carte, ou passe</span></li>
+        <li><strong className="affiche">Révélé</strong><span>en live sur TikTok en mai</span></li>
+      </ol>
     </section>
   );
 }
