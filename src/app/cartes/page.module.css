@@ -1,0 +1,51 @@
+.page { padding: calc(var(--e9) - 8px) var(--marge) var(--e8); display: grid; gap: var(--e6); }
+.tete { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: var(--e5); }
+.titre { font-size: clamp(44px, 8vw, 104px); line-height: 0.9; }
+.chapo { margin-top: var(--e3); color: var(--encre-douce); font-variant-numeric: tabular-nums; }
+.actions { display: flex; flex-wrap: wrap; gap: var(--e3); }
+.vide { min-height: 60svh; display: grid; place-content: center; justify-items: start; gap: var(--e5); max-width: 520px; margin: 0 auto; }
+
+.barre { position: sticky; top: 76px; z-index: 5; display: grid; gap: var(--e3); }
+.onglets { display: flex; flex-wrap: wrap; gap: 6px; }
+.onglets button {
+  font: inherit; font-size: 14px; padding: 8px 14px; border-radius: 999px; border: 0; cursor: pointer;
+  background: oklch(0.99 0.003 260 / 0.9); color: var(--encre-douce); box-shadow: inset 0 0 0 1px var(--ligne);
+  transition: background-color 150ms ease, color 150ms ease;
+}
+.onglets button span { font-variant-numeric: tabular-nums; opacity: 0.7; margin-left: 4px; }
+.onglets button[aria-pressed="true"] { background: var(--encre); color: oklch(0.98 0.004 260); box-shadow: none; }
+.astuce { padding: var(--e4) var(--e5); border-radius: 16px; background: var(--fond-2); }
+
+.groupe { display: grid; gap: var(--e4); }
+.rarete { font-family: var(--f-large), sans-serif; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; display: flex; gap: 10px; align-items: baseline; }
+.rarete span { font-family: var(--f-texte), sans-serif; letter-spacing: 0; font-size: 14px; color: var(--encre-pale); font-variant-numeric: tabular-nums; }
+.r_zenkai { color: oklch(0.62 0.15 70); }
+.r_mirage { color: oklch(0.55 0.16 300); }
+.r_spectre { color: oklch(0.5 0.15 260); }
+.r_prisme { color: oklch(0.55 0.17 340); }
+.r_eclat { color: var(--encre-douce); }
+
+.grille { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: var(--e4); }
+.carte {
+  position: relative; display: block; width: 100%; aspect-ratio: 600 / 838; padding: 0; border: 0; border-radius: 12px; overflow: hidden;
+  background: var(--fond-3); cursor: pointer; transition: translate 200ms var(--ease-sortie), box-shadow 200ms ease;
+}
+button.carte:hover { translate: 0 -4px; box-shadow: 0 18px 30px -18px oklch(0.2 0.04 290 / 0.6); }
+.carte img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.qte {
+  position: absolute; right: 8px; bottom: 8px; padding: 3px 9px; border-radius: 999px; font-weight: 700; font-size: 13px;
+  background: var(--nuit); color: white; font-variant-numeric: tabular-nums;
+}
+.manque { cursor: default; display: grid; place-content: center; justify-items: center; gap: 6px; color: var(--encre-pale);
+  background: repeating-linear-gradient(135deg, var(--fond-2) 0 10px, var(--fond-3) 10px 20px); box-shadow: inset 0 0 0 1px var(--ligne); }
+.manque span { font-family: var(--f-display), sans-serif; font-weight: 800; font-size: 38px; }
+.manque small { font-size: 12px; }
+
+.vue { border: 0; padding: var(--e5); border-radius: var(--rayon); background: var(--nuit); color: white; max-width: min(92vw, 480px); }
+.vue::backdrop { background: oklch(0.1 0.02 290 / 0.75); backdrop-filter: blur(6px); }
+.vue img { width: 100%; height: auto; border-radius: 14px; display: block; }
+.vue p { margin: var(--e4) 0; }
+@media (max-width: 760px) {
+  .grille { grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); gap: var(--e3); }
+  .barre { top: 64px; }
+}

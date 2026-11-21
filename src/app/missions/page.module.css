@@ -1,0 +1,33 @@
+.page { padding: calc(var(--e9) - 8px) var(--marge) var(--e8); display: grid; gap: var(--e7); max-width: 900px; }
+.tete { display: grid; gap: var(--e3); }
+.titre { font-size: clamp(44px, 8vw, 104px); line-height: 0.9; }
+.chapo { color: var(--encre-douce); max-width: 56ch; }
+.gain { justify-self: start; padding: 8px 16px; border-radius: 999px; background: var(--spectre); color: var(--nuit); font-weight: 700; }
+.vide { min-height: 60svh; display: grid; place-content: center; justify-items: start; gap: var(--e5); max-width: 520px; margin: 0 auto; }
+.bloc { display: grid; gap: var(--e4); }
+.sous { font-family: var(--f-large), sans-serif; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; }
+.sous small { font-family: var(--f-texte), sans-serif; letter-spacing: 0; text-transform: none; font-size: 13px; color: var(--encre-pale); margin-left: 8px; }
+.liste { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--e3); }
+.mission {
+  display: grid; grid-template-columns: 1fr auto auto; align-items: center; gap: var(--e4);
+  padding: var(--e4) var(--e5); border-radius: 18px; background: oklch(0.995 0.003 260 / 0.9); box-shadow: inset 0 0 0 1px var(--ligne);
+}
+.faite { opacity: 0.6; }
+.infos { display: grid; gap: 4px; min-width: 0; }
+.nom { font-weight: 700; }
+.desc { color: var(--encre-douce); font-size: 14.5px; }
+.jauge { position: relative; margin-top: 6px; height: 8px; max-width: 280px; border-radius: 999px; background: var(--fond-3); }
+.jauge span { position: absolute; inset: 0 auto 0 0; border-radius: inherit; background: var(--spectre); }
+.jauge small { position: absolute; right: -6px; top: 50%; translate: 100% -50%; font-size: 12px; color: var(--encre-pale); font-variant-numeric: tabular-nums; }
+.prix { display: inline-flex; align-items: center; gap: 6px; font-weight: 800; font-variant-numeric: tabular-nums; }
+.piece {
+  width: 18px; height: 18px; border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, oklch(0.97 0.08 95), oklch(0.8 0.15 75) 55%, oklch(0.6 0.13 60));
+  box-shadow: inset 0 0 0 1.5px oklch(0.55 0.12 60 / 0.6);
+}
+.mission :global(.bouton) { padding: 10px 20px; font-size: 14.5px; }
+.ok, .attente { font-size: 14px; color: var(--encre-pale); min-width: 96px; text-align: center; }
+@media (max-width: 600px) {
+  .mission { grid-template-columns: 1fr auto; }
+  .mission > :last-child { grid-column: 1 / -1; justify-self: start; }
+}

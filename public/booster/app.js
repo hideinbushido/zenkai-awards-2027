@@ -47,6 +47,12 @@ function drawBooster() {
   return out.map(c => [c, Math.random()]).sort((a, b) => (RANK[a[0].rarity] - RANK[b[0].rarity]) || (a[1] - b[1])).map(x => x[0]);
 }
 let DECK = drawBooster();
+// booster d'un compte : les cartes sont tirées par le serveur et arrivent par l'adresse (?deck=ID,ID,...)
+const DECK_URL = new URLSearchParams(location.search).get("deck");
+if (DECK_URL) {
+  const d = DECK_URL.split(",").map(id => POOL.find(c => c.id === id)).filter(Boolean);
+  if (d.length) DECK = d;
+}
 window.ZK_BG.prepare(DECK);
 window.__zkDeck = ids => { DECK = ids.map(id => POOL.find(c => c.id === id)).filter(Boolean); window.ZK_BG.prepare(DECK); };
 window.__zkTL = () => tl;
@@ -613,6 +619,7 @@ async function openViewer(c) {
 $("#vclose").onclick = () => { viewer.style.display = "none"; };
 viewer.addEventListener("click", e => { if (e.target === viewer) viewer.style.display = "none"; });
 $("#again").onclick = () => {
+  if (DECK_URL) { parent.postMessage({ type: "zk:encore" }, location.origin); return; }   // le site gère le booster suivant
   idx = 0; DECK = drawBooster(); state = "booster"; FX = [];
   gsap.set(window.ZK_BG.el, { opacity: 0 }); window.ZK_BG.el.pause(); window.ZK_BG.prepare(DECK);
   $("#recap").style.display = "none";

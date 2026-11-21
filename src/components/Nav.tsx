@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Compte from "./Compte";
 import CompteurCollection from "./CompteurCollection";
 import NavAuto from "./NavAuto";
 import s from "./Nav.module.css";
@@ -21,6 +22,7 @@ export default function Nav() {
         <Link href="/faq">FAQ</Link>
       </nav>
       <div className={s.droite}>
+        <Compte />
         <Link href="/collection" className={`bouton-clair ${s.collection}`}>
           <span className={s.libelle}>Ma collection</span> <CompteurCollection className={s.compte} />
         </Link>
@@ -31,6 +33,8 @@ export default function Nav() {
             <Link href="/categories">Catégories</Link>
             <Link href="/booster">Booster</Link>
             <Link href="/collection">Ma collection</Link>
+            <Link href="/cartes">Mes cartes</Link>
+            <Link href="/missions">Missions</Link>
             <Link href="/palmares">Palmarès 2026</Link>
             <Link href="/equipe">Équipe</Link>
             <Link href="/a-propos">À propos</Link>
