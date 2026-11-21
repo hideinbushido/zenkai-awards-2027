@@ -5,8 +5,9 @@ const A = window.ZKA;
 const IMG = "img/";
 // les cartes viennent du gabarit (cards.js) : chaque carte = image + infos + rareté
 const RANK = { eclat: 0, prisme: 1, spectre: 2, mirage: 3, zenkai: 4 };
-// chance qu'une carte du booster soit de cette rareté, en % (indépendant du nombre de cartes de chaque rareté)
-const WEIGHT = { eclat: 61, prisme: 20, spectre: 10, mirage: 5, zenkai: 4 };
+// chances PAR BOOSTER (10 cartes) d'avoir au moins une carte de cette rareté : Zenkai 4 %, Mirage 5 %, Spectre 10 %.
+// Converties en chance par carte : 1 - (1 - P)^(1/10). Prisme et Éclat se partagent le reste.
+const WEIGHT = { eclat: 78.033, prisme: 20.0, spectre: 1.048, mirage: 0.512, zenkai: 0.407 };
 const LABEL = { eclat: "ÉCLAT", prisme: "PRISME", spectre: "SPECTRE", mirage: "MIRAGE", zenkai: "ZENKAI" };
 const POOL = window.ZK_CARDS.cards.map(c => Object.assign({}, c, {
   ill: c.base + "ill.webp", over: c.base + "over.webp", masks: c.base + "masks.png", full: c.base + "full.webp",
