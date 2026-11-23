@@ -15,6 +15,19 @@
 }
 .paquet { height: min(560px, 70%); width: auto; filter: drop-shadow(0 40px 60px oklch(0 0 0 / 0.6)); animation: flotte 5s ease-in-out infinite; }
 @keyframes flotte { 50% { translate: 0 -12px; rotate: -1.5deg; } }
+.ecran { isolation: isolate; background: #19151c; }
+.ecran::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(90deg, #21182055, #17131af7 76%), url("/booster/img/mur_manga.webp") center / cover;
+  opacity: .58;
+}
+.cadre { border: 1px solid #87755c; box-shadow: 0 16px 40px #2f231b1a; }
+.titre { letter-spacing: -.055em; }
+.ecranTexteBloc { border-inline-start: 1px solid #cba86a; padding-inline-start: clamp(18px, 3vw, 42px); }
+@media (max-width: 760px) {
+  .ecranTexteBloc { border-inline-start: 0; padding-inline-start: 0; }
+  .ecran::before { background-image: linear-gradient(0deg, #17131a 3%, #20172266 80%), url("/booster/img/mur_manga.webp"); }
+}
 .ecranTexteBloc { display: grid; gap: var(--e4); justify-items: start; }
 .ecranTitre { font-family: var(--f-display), sans-serif; font-weight: 800; font-size: clamp(28px, 3vw, 42px); line-height: 1; }
 .ecranTexte { color: oklch(0.8 0.02 270); }

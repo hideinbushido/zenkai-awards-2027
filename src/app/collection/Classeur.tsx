@@ -4,7 +4,7 @@ import Link from "next/link";
 import Booster2D from "@/components/Booster2D";
 import CarteHolo from "@/components/CarteHolo";
 import { FAMILLES, nominesDe } from "@/data/boosters";
-import { CATEGORIES, EDITION } from "@/data/edition";
+import { CATEGORIES } from "@/data/edition";
 import { retirerCarte, useCollection } from "@/lib/collection";
 import s from "./page.module.css";
 
@@ -20,7 +20,7 @@ export default function Classeur() {
         <div className={s.resume}>
           <p className={s.compte}><strong>{n}</strong> carte{n > 1 ? "s" : ""} sur 25</p>
           <p className={s.texte}>
-            Une carte par booster. Tu peux passer ceux que tu ne connais pas. Quand les votes ouvriront en {EDITION.votes.toLowerCase()}, ta collection deviendra ton bulletin.
+            Une carte par booster. Tu peux passer ceux que tu ne connais pas. Retrouve ici tes choix avant la validation du vote.
           </p>
           <div className={s.actions}>
             <Link href="/categories" className="bouton">{n ? "Continuer à ouvrir" : "Ouvrir mon premier booster"}</Link>

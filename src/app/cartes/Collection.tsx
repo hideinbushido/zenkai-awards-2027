@@ -20,6 +20,8 @@ export default function Collection() {
   const [cartes, setCartes] = useState<Carte[]>([]);
   const [miennes, setMiennes] = useState<Record<string, number>>({});
   const [charge, setCharge] = useState(false);
+  const [erreurInventaire, setErreurInventaire] = useState(false);
+  const [essai, reessayer] = useState(0);
   const [anime, setAnime] = useState("tous");
   const [filtre, setFiltre] = useState<"toutes" | "possedees" | "manquantes">("possedees");
   const [vue, setVue] = useState<Carte | null>(null);
@@ -37,22 +39,30 @@ export default function Collection() {
 
   useEffect(() => {
     if (!session) return;
+    let active = true;
     const sb = supabase();
     Promise.all([
-      sb.from("cartes").select("id, anime, rarete, nom, special").eq("actif", true),
+      sb.from("cartes").select("id, anime, rarete, nom, special, actif"),
       sb.from("collection").select("*"),
       sb.from("zenkai_ouvertures").select("obtenu,resultat").order("obtenu",{ascending:false}).limit(1000),
     ]).then(([c, m, journal]) => {
+      if (!active) return;
+      setErreurInventaire(Boolean(c.error || m.error));
+      if (c.error || m.error) return;
       const dates:Record<string,string>=Object.fromEntries((m.data??[]).map(row=>[row.carte_id,String(row.obtenue_le??row.obtenu_le??row.created_at??"")]));
       for(const opening of [...(journal.data??[])].reverse()){
-        for(const id of opening.resultat.cartes)dates[id]=opening.obtenu;
+        for(const id of opening.resultat.cartes) {
+          if (!dates[id] || opening.obtenu < dates[id]) dates[id] = opening.obtenu;
+        }
       }
       setOrdre(dates);
-      setCartes((c.data as Carte[]) ?? []);
+      const owned=new Set((m.data??[]).map(row=>row.carte_id));
+      setCartes((c.data??[]).filter(row=>row.actif||owned.has(row.id)));
       setMiennes(Object.fromEntries(((m.data as { carte_id: string; quantite: number }[]) ?? []).map(r => [r.carte_id, r.quantite])));
       setCharge(true);
     });
-  }, [session]);
+    return () => { active = false; };
+  }, [session, essai]);
 
   useEffect(() => { if (vue) dlg.current?.showModal(); else dlg.current?.close(); }, [vue]);
 
@@ -68,9 +78,9 @@ export default function Collection() {
     return (
       <section className={s.page}>
         <div className={s.vide}>
-          <h1 className={`affiche ${s.titre}`}>Mes cartes</h1>
+          <h1 className={`affiche ${s.titre}`}>Ma collection</h1>
           <p>Connecte-toi pour retrouver tes cartes et ouvrir ton booster offert du jour.</p>
-          <Link href="/connexion" className="bouton">Se connecter</Link>
+          <Link href="/connexion" className="bouton">Se connecter</Link> <Link href="/catalogue" className="bouton-clair">Explorer le catalogue</Link>
         </div>
       </section>
     );
@@ -81,7 +91,7 @@ export default function Collection() {
     <section className={s.page} aria-labelledby="col-titre">
       <header className={s.tete}>
         <div>
-          <h1 id="col-titre" className={`affiche ${s.titre}`}>Mes cartes</h1>
+          <h1 id="col-titre" className={`affiche ${s.titre}`}>Ma collection</h1>
           <p className={s.chapo}>{profil?.pseudo ? `${profil.pseudo} · ` : ""}{charge ? `${eu} cartes différentes` : "Chargement…"}{etat ? ` · ${jetons(etat.jetons)}` : ""}</p>
         </div>
         <div className={s.actions}><Link href="/amis" className="bouton-clair">Mes amis</Link>
@@ -109,7 +119,8 @@ export default function Collection() {
         </div>
       </div>
 
-      {charge && eu === 0 && (
+      {erreurInventaire && <p role="alert">Impossible de charger tes cartes. <button className="bouton-clair" onClick={() => reessayer(essai + 1)}>Réessayer</button></p>}
+      {!erreurInventaire && charge && eu === 0 && (
         <p className={s.astuce}>Ta collection est vide pour l&apos;instant. <Link href="/booster">Ouvre ton booster offert</Link> pour tes premières cartes.</p>
       )}
 
@@ -141,7 +152,7 @@ export default function Collection() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           {variantesAnimees.has(vue.id) ? <video controls loop playsInline muted preload="none" poster={img(vue.id)} src={"/booster/variantes/"+vue.id+".mp4"} style={{maxHeight:"58svh",maxWidth:"100%"}}/> : <img src={img(vue.id)} alt={`${vue.nom}, ${LABEL[vue.rarete]}`} />}
           <p><strong>{vue.nom}</strong> · {vue.anime} · {LABEL[vue.rarete]}{miennes[vue.id] > 1 ? ` · ×${miennes[vue.id]}` : ""}</p>
-          <button className="bouton" onClick={()=>toggleCover(vue.id)}>{cover.includes(vue.id)?"Retirer de la couverture":"Exposer sur ma couverture"}</button><p role="status">{message}</p>
+          <button className="bouton" onClick={()=>toggleCover(vue.id)}>{cover.includes(vue.id)?"Retirer de la couverture":"Exposer sur ma couverture"}</button>{cover.includes(vue.id)&&cover.indexOf(vue.id)>0&&<button className="bouton-clair" onClick={async()=>{const next=[vue.id,...cover.filter(id=>id!==vue.id)];const {error}=await supabase().auth.updateUser({data:{vitrine:next}});setMessage(error?"Modification indisponible.":"Carte placée en première position.")}}>Placer en première position</button>}<p role="status">{message}</p>
           <button type="button" className="bouton-clair" onClick={() => setVue(null)}>Fermer</button>
         </>)}
       </dialog>

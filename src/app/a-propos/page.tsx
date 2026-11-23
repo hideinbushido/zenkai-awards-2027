@@ -14,9 +14,9 @@ import s from "./page.module.css";
 export const metadata: Metadata = { title: "À propos · Zenkai Anime Awards 2027" };
 
 const ETAPES = [
-  { titre: "Ouvre", texte: "Chaque catégorie est un booster. Tu l'ouvres, ses nominés se posent devant toi, tous diffusés en 2026." },
+  { titre: "Ouvre", texte: "Parcours les nominés de chaque catégorie. Dans les catégories musicales, écoute les morceaux avant de choisir." },
   { titre: "Garde", texte: "Tu gardes ta carte préférée. Tu ne connais pas la catégorie ? Tu passes au booster suivant." },
-  { titre: "Valide", texte: "Ta collection devient ton bulletin : un lien arrive par email, un clic, et ta voix compte. Une voix par adresse." },
+  { titre: "Valide", texte: "Retrouve tes choix dans Mon bulletin. Pendant les votes, connecte-toi avec une adresse confirmée pour les valider." },
   { titre: "Révèle", texte: "En mai, en live sur TikTok, les présentateurs et les créateurs invités annoncent chaque résultat." },
 ];
 
@@ -31,15 +31,16 @@ export default function APropos() {
   return (
     <>
       <EnTetePage
-        titre="Votée par les fans"
+        titre="Les Zenkai Anime Awards"
         chapo="Les Zenkai Anime Awards sont une cérémonie communautaire annuelle. Les fans choisissent leurs animés, personnages et moments de l'année, et les résultats sont révélés en direct, enveloppe par enveloppe."
-        aside={<Link href="/categories" className="bouton">Ouvrir les boosters</Link>}
+        aside={<Link href="/categories" className="bouton">Explorer les catégories</Link>}
       />
 
       <Manifeste />
+      <section className={s.collectionEditoriale}><div><h2>Les cartes après le live</h2><p>Retrouve une illustration, ouvre un booster et compose ta couverture avec les cartes que tu veux montrer à tes amis.</p><Link className="bouton" href="/catalogue">Feuilleter le catalogue</Link></div><div className={s.exemples}>{["BLEACH-012","MARRIAGETOXIC-011","HELLSParadise-011"].map(id=><img key={id} src={"/booster/img/cards/"+id+"/full.webp"} alt={id} loading="lazy"/>)}</div></section>
 
       <section className={s.section} aria-labelledby="gestes-titre">
-        <TitreAnime id="gestes-titre" className={`affiche ${s.h2}`}>Du booster au live</TitreAnime>
+        <TitreAnime id="gestes-titre" className={`affiche ${s.h2}`}>Des nominés au live</TitreAnime>
         <ol className={s.parcours}>
           {ETAPES.map((e, i) => (
             <li key={e.titre} className={s.etape}>

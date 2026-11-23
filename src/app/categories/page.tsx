@@ -14,8 +14,8 @@ export default function Categories() {
   return (
     <>
       <EnTetePage
-        titre="25 boosters"
-        chapo="Chaque catégorie est un booster, ses nominés sont les cartes. Ouvre ceux que tu connais, passe les autres. L'animé de l'année se garde pour la fin."
+        titre="Les catégories"
+        chapo="Parcours les nominés par famille et ajoute tes favoris à ton bulletin. L'animé de l'année se garde pour la fin."
       />
 
       {FAMILLES.map((f) => {
@@ -26,7 +26,7 @@ export default function Categories() {
               <div className={s.colle}>
                 <TitreAnime id={`f-${f.id}`} className={`affiche ${s.titre}`}>{f.nom}</TitreAnime>
                 <p className={s.texte}>{f.texte}</p>
-                <p className={s.compte}>{cats.length} booster{cats.length > 1 ? "s" : ""}</p>
+                <p className={s.compte}>{cats.length} catégorie{cats.length > 1 ? "s" : ""}</p>
               </div>
             </div>
             <ul className={s.grille}>

@@ -46,3 +46,5 @@
   .derriere, .edTete { grid-template-columns: 1fr; }
 }
 @media (max-width: 600px) { .parcours, .frise { grid-template-columns: 1fr; } }
+
+.collectionEditoriale{padding:clamp(38px,7vw,112px) var(--marge);background:#201c24;color:#fbf2dc;display:grid;grid-template-columns:1fr 1.2fr;align-items:center;gap:6vw}.collectionEditoriale h2{font:italic 500 clamp(42px,6vw,100px)/.98 Georgia,serif;letter-spacing:-.05em}.collectionEditoriale p{max-width:42ch;margin:24px 0}.exemples{display:flex;align-items:center;justify-content:center}.exemples img{width:33%;border-radius:7px;box-shadow:0 12px 28px #0007}.exemples img:first-child{transform:rotate(-7deg) translateY(9%)}.exemples img:nth-child(2){z-index:1}.exemples img:last-child{transform:rotate(7deg) translateY(9%)}@media(max-width:720px){.collectionEditoriale{grid-template-columns:1fr}.exemples{padding-bottom:20px}}
