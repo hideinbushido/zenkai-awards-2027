@@ -24,7 +24,7 @@ export default function Nav() {
       <div className={s.droite}>
         <div className={s.compteLarge}><Compte /></div>
         <Link href="/collection" className={`bouton-clair ${s.collection}`}>
-          <span className={s.libelle}>Ma collection</span> <CompteurCollection className={s.compte} />
+          <span className={s.libelle}>Mon bulletin</span> <CompteurCollection className={s.compte} />
         </Link>
         {/* Menu téléphone */}
         <details className={s.menu}>
@@ -32,8 +32,8 @@ export default function Nav() {
           <nav aria-label="Navigation mobile" className={`panneau-encre ${s.liste}`}>
             <Link href="/categories">Catégories</Link>
             <Link href="/booster">Booster</Link>
-            <Link href="/collection">Ma collection</Link>
-            <Link href="/cartes">Mes cartes</Link>
+            <Link href="/collection">Mon bulletin</Link>
+            <Link href="/cartes">Ma collection</Link>
             <Link href="/missions">Missions</Link>
             <Link href="/connexion">Mon compte</Link>
             <Link href="/palmares">Palmarès 2026</Link>

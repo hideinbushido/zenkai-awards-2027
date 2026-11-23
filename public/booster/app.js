@@ -57,7 +57,7 @@ window.ZK_BG.prepare(DECK);
 window.__zkDeck = ids => { DECK = ids.map(id => POOL.find(c => c.id === id)).filter(Boolean); window.ZK_BG.prepare(DECK); };
 window.__zkTL = () => tl;
 // pré-chargement
-[...POOL.flatMap(c => [c.ill, c.over, c.masks, c.full]), ...POOL[0] ? [] : [], IMG + "dos.webp", IMG + "embleme.png",
+[...DECK.flatMap(c => [c.ill, c.over, c.masks, c.full]), IMG + "dos.webp", IMG + "embleme.png",
  ...["lueur", "bande", "flammes", "couronne", "eclats"].map(k => IMG + "frames/zenkai_" + k + ".webp")]
   .forEach(s => { const i = new Image(); i.src = s; });
 

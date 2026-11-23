@@ -1,5 +1,5 @@
 import Etalage from "@/components/Etalage";
-import Hero from "@/components/Hero";
+import OpeningStage from "@/components/OpeningStage";
 import Tenant from "@/components/Tenant";
 import VoixLive from "@/components/VoixLive";
 
@@ -7,7 +7,7 @@ import VoixLive from "@/components/VoixLive";
 export default function Accueil() {
   return (
     <>
-      <Hero />
+      <OpeningStage />
       <Etalage />
       <Tenant />
       <VoixLive />

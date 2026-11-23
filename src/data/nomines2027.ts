@@ -730,6 +730,7 @@ export const NOMINES_2027: Record<string, Nomine[]> = {
     }
   ],
   "opening": [
+    {"id":"ignis","nom":"Ignis","detail":"Takanori Nishikawa · Fire Force","img":"/nominations/FIREforce-opening.webp","video":"/openings/ignis.mp4"},
     {
       "id": "jjk-aizo",
       "nom": "AIZO",
@@ -796,8 +797,8 @@ export const NOMINES_2027: Record<string, Nomine[]> = {
     },
     {
       "id": "daemons",
-      "nom": "Titre [À FOURNIR]",
-      "detail": "Artiste [À FOURNIR] · Daemons of the Shadow Realm",
+      "nom": "Tobu Toki",
+      "detail": "Vaundy · Daemons of the Shadow Realm",
       "img": "/visuels/2027/opening-daemons.webp",
       "video": "/openings/daemons.mp4",
       "refrain": 76.9

@@ -16,7 +16,7 @@ export default function Classeur() {
   return (
     <div className={s.page}>
       <header className={s.tete}>
-        <h1 className={`affiche ${s.titre}`}>Ma collection</h1>
+        <h1 className={`affiche ${s.titre}`}>Mon bulletin</h1>
         <div className={s.resume}>
           <p className={s.compte}><strong>{n}</strong> carte{n > 1 ? "s" : ""} sur 25</p>
           <p className={s.texte}>
