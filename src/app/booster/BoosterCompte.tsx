@@ -39,11 +39,18 @@ export default function BoosterCompte() {
 
   async function ouvrir() {
     setOuverture(true); setErreur("");
-    const { data, error } = await supabase().rpc("ouvrir_booster");
+    const requestKey=storageKey+"-demande";
+    let requestId=crypto.randomUUID() as string;
+    try{requestId=localStorage.getItem(requestKey)||requestId;localStorage.setItem(requestKey,requestId)}catch{}
+    let result=await supabase().rpc("zenkai_ouvrir",{demande_id:requestId});
+    // Compatibility with deployments where the ledger migration is still pending.
+    if(result.error?.code==="PGRST202")result=await supabase().rpc("ouvrir_booster");
+    const {data,error}=result;
     setOuverture(false);
     if (error) { setErreur(error.message.includes("aucun jeton") ? "Plus de booster offert aujourd'hui, et pas de jeton." : "L'ouverture n'a pas marché. Réessaie."); compteChange(); return; }
     const cartes=(data as { cartes: string[] }).cartes;
     try{sessionStorage.setItem(storageKey,JSON.stringify(cartes))}catch{}
+    try{localStorage.removeItem(requestKey)}catch{}
     setDeck(cartes);
     compteChange();
   }

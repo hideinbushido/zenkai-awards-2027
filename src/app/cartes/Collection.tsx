@@ -41,8 +41,13 @@ export default function Collection() {
     Promise.all([
       sb.from("cartes").select("id, anime, rarete, nom, special").eq("actif", true),
       sb.from("collection").select("*"),
-    ]).then(([c, m]) => {
-      setOrdre(Object.fromEntries((m.data??[]).map(row=>[row.carte_id,String(row.obtenue_le??row.obtenu_le??row.created_at??"")])));
+      sb.from("zenkai_ouvertures").select("obtenu,resultat").order("obtenu",{ascending:false}).limit(1000),
+    ]).then(([c, m, journal]) => {
+      const dates:Record<string,string>=Object.fromEntries((m.data??[]).map(row=>[row.carte_id,String(row.obtenue_le??row.obtenu_le??row.created_at??"")]));
+      for(const opening of [...(journal.data??[])].reverse()){
+        for(const id of opening.resultat.cartes)dates[id]=opening.obtenu;
+      }
+      setOrdre(dates);
       setCartes((c.data as Carte[]) ?? []);
       setMiennes(Object.fromEntries(((m.data as { carte_id: string; quantite: number }[]) ?? []).map(r => [r.carte_id, r.quantite])));
       setCharge(true);
