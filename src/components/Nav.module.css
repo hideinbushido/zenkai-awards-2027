@@ -36,3 +36,10 @@
   .libelle { display: none; }
   .compteLarge { display: none; }
 }
+.nav{background:linear-gradient(180deg,#15131bef,#17151de8);color:#fff5df;border-bottom:1px solid #ab987655;padding-block:10px;gap:12px;backdrop-filter:blur(12px)}
+.marque{font-weight:700;letter-spacing:.04em}.embleme{mix-blend-mode:normal;border-radius:50%}
+.pilule{background:none;border:0;box-shadow:none;gap:2px}
+.pilule a{position:relative;color:#f1eadc;border-radius:2px;padding:10px clamp(8px,1vw,17px)}
+.pilule a::after{content:"";position:absolute;bottom:4px;left:12px;right:12px;height:1px;background:#e3bf7f;transform:scaleX(0);transition:transform .22s ease}
+.pilule a:hover,.pilule a:focus-visible{background:#ffffff0c;color:white}.pilule a:hover::after,.pilule a:focus-visible::after{transform:scaleX(1)}.liste{color:var(--encre);max-height:74svh;overflow:auto}
+@media(min-width:861px) and (max-width:1180px){.nav{grid-template-columns:1fr auto}.pilule{display:none}.menu{display:block}}

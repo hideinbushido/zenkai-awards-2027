@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import {useEffect,useRef} from "react";
 import type {Nomine} from "@/data/edition";
 import s from "./Ruban.module.css";
@@ -19,6 +19,9 @@ export default function Ruban({entries,images,index,onSelect}:Props){
    let width=0,height=0,pitch=1,x0=0,start=0,previousX=0,previousTime=0,speed=0,dragging=false,bending=0;
    let wheelTimer:ReturnType<typeof setTimeout>|undefined;
    const reduced=matchMedia("(prefers-reduced-motion: reduce)");
+   // The spine follows the hand. Each successive strip relaxes towards its
+   // neighbour, so a change of direction travels out towards both edges.
+   const folds=new Float32Array(19);
    const textures=new Map<number,HTMLImageElement>();
    let disposed=false;
    function schedule(){if(!frame&&!disposed)frame=requestAnimationFrame(draw)}
@@ -36,8 +39,16 @@ export default function Ruban({entries,images,index,onSelect}:Props){
      const velocity=(position-before)/dt*1000;
      bending+=(Math.max(-1,Math.min(1,velocity*.21))-bending)*(1-Math.exp(-dt/75));
      if(reduced.matches)bending=0;
+     folds[0]=0;
+     let settling=false;
+     const relaxation=1-Math.exp(-dt/25);
+     for(let j=folds.length-1;j>0;j--){
+       const desired=folds[j-1]+bending*(2*j-1)/324;
+       folds[j]=reduced.matches?0:folds[j]+(desired-folds[j])*relaxation;
+       settling ||= Math.abs(folds[j])>.002;
+     }
      ctx.clearRect(0,0,width,height);
-     const h=Math.min(height*.90,width*.79/.716),w=h*.716;
+     const h=Math.min(height*.94,width*.84/.716),w=h*.716;
      pitch=w+Math.min(76,Math.max(24,width*.037));
      const visible=Math.ceil(width/pitch/2)+1;
      for(let slot=Math.floor(position)-visible;slot<=Math.ceil(position)+visible;slot++){
@@ -50,16 +61,16 @@ export default function Ruban({entries,images,index,onSelect}:Props){
        ctx.globalAlpha=1-depth*.36;
        for(let j=0;j<slices;j++){
          const u=j/slices,z=u*2-1;
-         const edge=z*z,flex=bending*edge;
+         const flex=folds[Math.abs(j-18)];
          const dx=center+(u-.5)*cw-flex*cw*.078;
-         const nextZ=2*(j+1)/slices-1;
-         const dw=cw/slices-bending*(nextZ*nextZ-edge)*cw*.078;
+         const nextFlex=folds[Math.abs(j+1-18)];
+         const dw=cw/slices-(nextFlex-flex)*cw*.078;
          const dy=top+Math.abs(flex)*ch*.052+flex*z*ch*.018;
          ctx.drawImage(img,u*img.naturalWidth,0,img.naturalWidth/slices,img.naturalHeight,dx,dy,dw+.5,ch-Math.abs(flex)*ch*.055);
        }
      }
      ctx.globalAlpha=1;
-     if(Math.abs(target-position)>.001||Math.abs(bending)>.004)schedule();
+     if(Math.abs(target-position)>.001||Math.abs(bending)>.004||settling)schedule();
      else if(!dragging&&Number.isInteger(target)&&wrap(target)!==lastIndex){lastIndex=wrap(target);model.current.onSelect(lastIndex)}
    }
    function resize(){if(!el||!ctx)return;const b=el.getBoundingClientRect();width=b.width;height=b.height;const d=Math.min(devicePixelRatio||1,2);el.width=Math.round(width*d);el.height=Math.round(height*d);ctx.setTransform(d,0,0,d,0,0);schedule()}

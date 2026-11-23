@@ -9,3 +9,6 @@
 .chapo { font-size: clamp(17px, 1.4vw, 21px); color: var(--encre-douce); max-width: 52ch; }
 .aside { display: flex; flex-wrap: wrap; gap: var(--e3); }
 @media (max-width: 760px) { .bas { grid-template-columns: 1fr; } }
+.tete{min-height:clamp(330px,58svh,650px);gap:clamp(20px,3vw,48px)}
+.titre{font-size:clamp(58px,10vw,180px);letter-spacing:-.065em;line-height:.95;text-wrap:balance}
+.bas{border-top-color:#897d715e}.chapo{line-height:1.5}

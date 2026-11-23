@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 import Link from "next/link";
 import Compte from "./Compte";
 import CompteurCollection from "./CompteurCollection";
@@ -10,7 +10,7 @@ export default function Nav() {
     <header className={s.nav} data-nav>
       <NavAuto />
       <Link href="/" className={s.marque} aria-label="Zenkai Anime Awards, accueil">
-        <Image src="/visuels/logo-zenkai-noir.png" alt="" width={30} height={30} className={s.embleme} />
+        <Image src="/visuels/logo-zenkai-or.png" alt="" width={30} height={30} className={s.embleme} />
         <span>Zenkai</span>
       </Link>
       <nav aria-label="Navigation principale" className={s.pilule}>
@@ -46,3 +46,4 @@ export default function Nav() {
     </header>
   );
 }
+
