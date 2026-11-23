@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useMemo, useRef, useState } from "react";
+import { variantesAnimees } from "@/data/variantes";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { supabase } from "@/lib/supabase";
@@ -133,7 +134,7 @@ export default function Collection() {
       <dialog ref={dlg} className={s.vue} onClose={() => setVue(null)} onClick={e => { if (e.target === dlg.current) setVue(null); }}>
         {vue && (<>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={img(vue.id)} alt={`${vue.nom}, ${LABEL[vue.rarete]}`} />
+          {variantesAnimees.has(vue.id) ? <video controls loop playsInline muted preload="none" poster={img(vue.id)} src={"/booster/variantes/"+vue.id+".mp4"} style={{maxHeight:"58svh",maxWidth:"100%"}}/> : <img src={img(vue.id)} alt={`${vue.nom}, ${LABEL[vue.rarete]}`} />}
           <p><strong>{vue.nom}</strong> · {vue.anime} · {LABEL[vue.rarete]}{miennes[vue.id] > 1 ? ` · ×${miennes[vue.id]}` : ""}</p>
           <button className="bouton" onClick={()=>toggleCover(vue.id)}>{cover.includes(vue.id)?"Retirer de la couverture":"Exposer sur ma couverture"}</button><p role="status">{message}</p>
           <button type="button" className="bouton-clair" onClick={() => setVue(null)}>Fermer</button>

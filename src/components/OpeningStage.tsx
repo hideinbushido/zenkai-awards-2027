@@ -18,6 +18,7 @@ export default function OpeningStage({ category }: { category?: string }) {
   const following = CATEGORIES[CATEGORIES.findIndex(c => c.id === category)+1];
   const entries = category ? NOMINES_2027[category] : featured;
   const [index,setIndex] = useState(0);
+  const [grid,setGrid] = useState(false);
   const [muted,setMuted] = useState(true);
   const [playing,setPlaying] = useState(false);
   const video = useRef<HTMLVideoElement>(null);
@@ -43,14 +44,14 @@ export default function OpeningStage({ category }: { category?: string }) {
     const el = video.current;
     if (!el) return;
     let active = true;
-    if (playing) el.play().catch(() => { if(active) setPlaying(false); });
+    if (playing && !grid) el.play().catch(() => { if(active) setPlaying(false); });
     else el.pause();
     return () => { active = false; };
-  },[current.id,playing]);
+  },[current.id,playing,grid]);
   function advance(step:number) {
     setIndex(i => (i+step+entries.length)%entries.length);
   }
-  return <section className={s.stage} aria-label={gallery?group?.titre:"ZENKAI Anime Awards 2027"}>
+  return <section onKeyDown={e=>{if(e.key==="ArrowLeft"||e.key==="ArrowRight"){e.preventDefault();advance(e.key==="ArrowLeft"?-1:1)}}} className={s.stage} aria-label={gallery?group?.titre:"ZENKAI Anime Awards 2027"}>
     <video ref={video} className={s.movie} src={current.video} poster={current.img} muted={muted} playsInline preload="metadata" onEnded={()=>advance(1)} />
     <div className={s.layout}>
       <div className={s.copy}>
@@ -77,6 +78,8 @@ export default function OpeningStage({ category }: { category?: string }) {
       <button aria-label="Opening précédent" onClick={()=>advance(-1)}>←</button><span>{index+1} / {entries.length}</span><button aria-label="Opening suivant" onClick={()=>advance(1)}>→</button>
       {current.video && <><button onClick={()=>setMuted(!muted)}>{muted?"Activer le son":"Couper le son"}</button>
       <button onClick={()=>setPlaying(!playing)}>{playing?"Pause":"Lecture"}</button></>}
+      {gallery && <button aria-expanded={grid} onClick={()=>setGrid(!grid)}>{grid?"Fermer la liste":"Tous les nominés"}</button>}
     </footer>
+    {grid && <div className={s.index}>{entries.map((n,i)=><button key={n.id} aria-pressed={index===i} onClick={()=>{setIndex(i);setGrid(false)}}><img src={category==="opening" && art[n.id]?"/nominations/"+art[n.id]+"-opening.webp":n.img} alt="" loading="lazy"/><span>{n.nom}</span></button>)}</div>}
   </section>;
 }

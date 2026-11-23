@@ -7,3 +7,5 @@
 .controls strong{font:700 clamp(24px,3vw,46px)/1 var(--f-display),sans-serif;letter-spacing:-.04em}.controls span{font-variant-numeric:tabular-nums}.controls div{color:#e2d7c8}.card{filter:drop-shadow(0 12px 18px #05030685)}
 
 .deck{position:relative;isolation:isolate;margin-inline:3vw}.card{z-index:1;user-select:none;cursor:grab}.card:active{cursor:grabbing}.neighbor{position:absolute;top:14%;bottom:14%;width:82%;padding:0;border:0;background:#19151b;cursor:pointer;overflow:hidden}.neighbor img{width:100%;height:100%;object-fit:cover;opacity:.68}.neighbor[data-side="-1"]{left:-13%;transform:perspective(700px) rotateY(22deg) rotate(-7deg)}.neighbor[data-side="1"]{right:-13%;transform:perspective(700px) rotateY(-22deg) rotate(7deg)}@media(max-width:700px){.deck{align-self:center}.copy h1{font-size:clamp(40px,10vw,69px)}}
+
+.index{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:16px}.index button{background:#1a171b;border:1px solid #766d65;color:white;cursor:pointer}.index img{width:100%;height:160px;object-fit:contain}.index span{display:block;padding:8px}.index button[aria-pressed=true]{outline:2px solid #dfc593}

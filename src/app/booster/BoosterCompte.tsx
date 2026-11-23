@@ -17,6 +17,12 @@ function attente(iso?: string) {
 export default function BoosterCompte() {
   const { pret, session, etat } = useCompte();
   const [deck, setDeck] = useState<string[] | null>(null);
+  const [recap,setRecap] = useState(false);
+  const storageKey = session ? "zk-ouverture-"+session.user.id : "";
+  useEffect(()=>{
+    if(!storageKey)return;
+    try{const saved=JSON.parse(sessionStorage.getItem(storageKey)??"null");if(Array.isArray(saved)&&saved.length===10&&saved.every(x=>typeof x==="string"))setDeck(saved);}catch{}
+  },[storageKey]);
   const [ouverture, setOuverture] = useState(false);
   const [erreur, setErreur] = useState("");
   const [, tic] = useState(0);
@@ -24,26 +30,30 @@ export default function BoosterCompte() {
   // « Ouvrir un autre booster » dans la scène : retour à l'écran du compte
   useEffect(() => {
     const ecoute = (e: MessageEvent) => {
-      if (e.origin === window.location.origin && e.data?.type === "zk:encore") { setDeck(null); compteChange(); }
+      if (e.origin === window.location.origin && e.data?.type === "zk:encore") { try{sessionStorage.removeItem(storageKey)}catch{} setRecap(false);setDeck(null); compteChange(); }
     };
     window.addEventListener("message", ecoute);
     const t = setInterval(() => tic(x => x + 1), 30000);
     return () => { window.removeEventListener("message", ecoute); clearInterval(t); };
-  }, []);
+  }, [storageKey]);
 
   async function ouvrir() {
     setOuverture(true); setErreur("");
     const { data, error } = await supabase().rpc("ouvrir_booster");
     setOuverture(false);
     if (error) { setErreur(error.message.includes("aucun jeton") ? "Plus de booster offert aujourd'hui, et pas de jeton." : "L'ouverture n'a pas marché. Réessaie."); compteChange(); return; }
-    setDeck((data as { cartes: string[] }).cartes);
+    const cartes=(data as { cartes: string[] }).cartes;
+    try{sessionStorage.setItem(storageKey,JSON.stringify(cartes))}catch{}
+    setDeck(cartes);
     compteChange();
   }
 
   if (deck) {
     return (
-      <iframe className={s.scene} src={`/booster/index.html?embed=1&deck=${encodeURIComponent(deck.join(","))}`}
-        title="Ouverture de ton booster HOLO" allow="autoplay; fullscreen" allowFullScreen />
+      <div style={{height:"100%",display:"flex",flexDirection:"column"}}>
+        <div><button className="bouton-clair" onClick={()=>setRecap(!recap)}>{recap?"Rejouer la révélation":"Tout révéler"}</button> <Link className="bouton-clair" href="/cartes">Ma collection</Link></div>
+        {recap ? <div style={{overflow:"auto",padding:16}}><div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(115px,1fr))",gap:12}}>{deck.map((id,i)=><img key={i} src={"/booster/img/cards/"+id+"/full.webp"} alt={id} style={{width:"100%"}}/>)}</div><button className="bouton" onClick={()=>{try{sessionStorage.removeItem(storageKey)}catch{} setRecap(false);setDeck(null);compteChange()}}>Terminer</button></div> : <iframe className={s.scene} src={`/booster/index.html?embed=1&deck=${encodeURIComponent(deck.join(","))}`}
+        title="Ouverture de ton booster HOLO" allow="autoplay; fullscreen" allowFullScreen />}</div>
     );
   }
 
