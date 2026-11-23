@@ -1,0 +1,1 @@
+﻿.ribbon{display:block;width:100%;height:clamp(180px,45svh,570px);touch-action:pan-y;cursor:grab;user-select:none}.ribbon:active{cursor:grabbing}.ribbon:focus-visible{outline:2px solid #e4c995;outline-offset:-4px}

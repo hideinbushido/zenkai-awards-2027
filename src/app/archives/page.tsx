@@ -28,7 +28,7 @@ export default function Archives() {
             <p className={s.texte}>La deuxième édition, en cours. Animés diffusés en 2026, votes au printemps, live en mai.</p>
             <span className={s.paquet}><Booster2D famille="grand-prix" titre="Set Holo" sousTitre="2027" /></span>
             <div className={s.actions}>
-              <Link className="bouton" href="/categories">Les catégories</Link>
+              <Link className="bouton" href="/voter">Édition 2027</Link><Link className="bouton-clair" href="/categories">Les catégories</Link>
             </div>
           </li>
         </ul>

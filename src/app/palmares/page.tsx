@@ -1,3 +1,4 @@
+import EditionLive from "@/components/EditionLive";
 import type { Metadata } from "next";
 import Image from "next/image";
 import TitreAnime from "@/components/TitreAnime";
@@ -16,6 +17,7 @@ export default function Palmares() {
         <p className={s.chapo}>
           Vingt-cinq résultats, annoncés en direct pendant le live de la première édition par des créateurs invités. Le palmarès 2027 sera révélé ici après le live de mai.
         </p>
+        <EditionLive compact />
         <GrandPrix img={gp.img} nom={gp.name} sous={gp.sub} credit={gp.credit} />
       </section>
 

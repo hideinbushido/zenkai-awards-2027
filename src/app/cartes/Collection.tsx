@@ -79,7 +79,7 @@ export default function Collection() {
           <h1 id="col-titre" className={`affiche ${s.titre}`}>Mes cartes</h1>
           <p className={s.chapo}>{profil?.pseudo ? `${profil.pseudo} · ` : ""}{charge ? `${eu} cartes différentes` : "Chargement…"}{etat ? ` · ${jetons(etat.jetons)}` : ""}</p>
         </div>
-        <div className={s.actions}>
+        <div className={s.actions}><Link href="/amis" className="bouton-clair">Mes amis</Link>
           <Link href="/booster" className="bouton">{etat?.gratuit_dispo ? "Ouvrir mon booster offert" : "Booster"}</Link>
           <Link href="/missions" className="bouton-clair">Missions</Link>
           <button type="button" className="bouton-clair" onClick={async () => { await supabase().auth.signOut(); router.push("/"); }}>Se déconnecter</button>

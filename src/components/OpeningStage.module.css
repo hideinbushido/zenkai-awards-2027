@@ -9,3 +9,12 @@
 .deck{position:relative;isolation:isolate;margin-inline:3vw}.card{z-index:1;user-select:none;cursor:grab}.card:active{cursor:grabbing}.neighbor{position:absolute;top:14%;bottom:14%;width:82%;padding:0;border:0;background:#19151b;cursor:pointer;overflow:hidden}.neighbor img{width:100%;height:100%;object-fit:cover;opacity:.68}.neighbor[data-side="-1"]{left:-13%;transform:perspective(700px) rotateY(22deg) rotate(-7deg)}.neighbor[data-side="1"]{right:-13%;transform:perspective(700px) rotateY(-22deg) rotate(7deg)}@media(max-width:700px){.deck{align-self:center}.copy h1{font-size:clamp(40px,10vw,69px)}}
 
 .index{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:16px}.index button{background:#1a171b;border:1px solid #766d65;color:white;cursor:pointer}.index img{width:100%;height:160px;object-fit:contain}.index span{display:block;padding:8px}.index button[aria-pressed=true]{outline:2px solid #dfc593}
+
+.stage[data-gallery=true]{padding:clamp(82px,10vh,116px) 0 24px;gap:18px;min-height:100svh;align-content:center}
+.stage[data-gallery=true] .layout{display:grid;grid-template-columns:minmax(0,1fr);gap:8px}
+.stage[data-gallery=true] .copy{display:contents}
+.stage[data-gallery=true] .copy>a{justify-self:center;color:#e3d9ca}
+.stage[data-gallery=true] .copy h1{text-align:center;font:italic 500 clamp(32px,4.8vw,80px)/1 Georgia,serif;letter-spacing:-.045em}
+.stage[data-gallery=true] .actions{grid-row:4;justify-content:center;margin:0 16px}
+.stage[data-gallery=true] .controls{width:min(1100px,92%);justify-self:center}
+@media(max-width:700px){.stage[data-gallery=true] .controls{justify-content:center}.stage[data-gallery=true] .controls div{text-align:center}.stage[data-gallery=true] .actions a,.stage[data-gallery=true] .actions button,.stage[data-gallery=true] .controls button{padding:9px 12px}.stage[data-gallery=true]{padding-top:75px}}

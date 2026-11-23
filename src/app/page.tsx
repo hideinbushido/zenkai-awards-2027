@@ -1,3 +1,4 @@
+import EditionLive from "@/components/EditionLive";
 import Etalage from "@/components/Etalage";
 import OpeningStage from "@/components/OpeningStage";
 import Tenant from "@/components/Tenant";
@@ -9,7 +10,8 @@ export default function Accueil() {
     <>
       <OpeningStage />
       <Etalage />
-      <Tenant />
+      <EditionLive compact />
+        <Tenant />
       <VoixLive />
     </>
   );

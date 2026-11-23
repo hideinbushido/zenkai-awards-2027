@@ -14,10 +14,11 @@ export default function Connexion() {
   const [etat, setEtat] = useState<"" | "envoi" | "envoye" | "erreur">("");
   const [message, setMessage] = useState("");
 
+  const destination = () => { const to=new URLSearchParams(window.location.search).get("retour"); return to==="voter"?"/voter":to==="amis"?"/amis":to==="regie"?"/regie":"/cartes"; };
   // déjà connecté : direction ses cartes
-  useEffect(() => { if (session) router.replace("/cartes"); }, [session, router]);
+  useEffect(() => { if (session) router.replace(destination()); }, [session, router]);
 
-  const retour = () => `${window.location.origin}/booster`;
+  const retour = () => window.location.origin+destination();
 
   async function oauth(f: Fournisseur) {
     setMessage("");

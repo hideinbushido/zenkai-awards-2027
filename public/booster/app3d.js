@@ -84,7 +84,7 @@ const bloom = new UnrealBloomPass(new THREE.Vector2(512, 512), 0.45, 0.6, 0.9);
 composer.addPass(bloom);
 // objectif : brume de chaleur, exposition, aberration chromatique, vignette, grain (rendu « caméra »)
 const lens = new ShaderPass({
-  uniforms: { tDiffuse: { value: null }, uT: { value: 0 }, uHaze: { value: 0 }, uExp: { value: 1 }, uCA: { value: 0.0025 }, uGrain: { value: 0.035 }, uVig: { value: 0.55 }, uRes: { value: new THREE.Vector2(1, 1) } },
+  uniforms: { tDiffuse: { value: null }, uT: { value: 0 }, uHaze: { value: 0 }, uExp: { value: 1 }, uCA: { value: 0.0007 }, uGrain: { value: 0.012 }, uVig: { value: 0.55 }, uRes: { value: new THREE.Vector2(1, 1) } },
   vertexShader: `varying vec2 vUv;void main(){vUv=uv;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.);}`,
   fragmentShader: `uniform sampler2D tDiffuse;uniform float uT,uHaze,uExp,uCA,uGrain,uVig;uniform vec2 uRes;varying vec2 vUv;
 float hash(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}

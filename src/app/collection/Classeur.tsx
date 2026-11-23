@@ -24,7 +24,7 @@ export default function Classeur() {
           </p>
           <div className={s.actions}>
             <Link href="/categories" className="bouton">{n ? "Continuer à ouvrir" : "Ouvrir mon premier booster"}</Link>
-            <button type="button" className="bouton-clair" disabled aria-disabled="true">Valider en mars</button>
+            <Link href="/voter" className="bouton-clair">Validation du bulletin</Link>
           </div>
         </div>
         <div className={s.jauge} aria-hidden="true"><i style={{ width: `${(n / 25) * 100}%` }} /></div>

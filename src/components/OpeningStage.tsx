@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
+import Ruban from "./Ruban";
 import Link from "next/link";
 import { NOMINES_2027 } from "@/data/nomines2027";
 import { garderCarte, useCollection } from "@/lib/collection";
@@ -51,7 +52,7 @@ export default function OpeningStage({ category }: { category?: string }) {
   function advance(step:number) {
     setIndex(i => (i+step+entries.length)%entries.length);
   }
-  return <section onKeyDown={e=>{if(e.key==="ArrowLeft"||e.key==="ArrowRight"){e.preventDefault();advance(e.key==="ArrowLeft"?-1:1)}}} className={s.stage} aria-label={gallery?group?.titre:"ZENKAI Anime Awards 2027"}>
+  return <section onKeyDown={e=>{if(e.key==="ArrowLeft"||e.key==="ArrowRight"){e.preventDefault();advance(e.key==="ArrowLeft"?-1:1)}}} className={s.stage} data-gallery={gallery} aria-label={gallery?group?.titre:"ZENKAI Anime Awards 2027"}>
     <video ref={video} className={s.movie} src={current.video} poster={current.img} muted={muted} playsInline preload="metadata" onEnded={()=>advance(1)} />
     <div className={s.layout}>
       <div className={s.copy}>
@@ -63,7 +64,7 @@ export default function OpeningStage({ category }: { category?: string }) {
           <Link href="/collection">Mon bulletin</Link>{following && <Link href={"/categories/"+following.id}>Catégorie suivante →</Link>}</> : <>
           <Link href="/categories/opening">Découvrir les nominés</Link><Link href="/booster">Ouvrir un booster</Link></>}</div>
       </div>
-      <div className={s.deck}>{gallery && [-1,1].map(step=>{const other=entries[(index+entries.length+step)%entries.length];return <button className={s.neighbor} data-side={step} key={step} aria-label={other.nom} onClick={()=>advance(step)}><img alt="" src={category==="opening" && art[other.id]?"/nominations/"+art[other.id]+"-opening.webp":other.img}/></button>})}
+      {gallery ? <Ruban entries={entries} index={index} onSelect={setIndex} images={entries.map(n=>category==="opening"&&art[n.id]?"/nominations/"+art[n.id]+"-opening.webp":n.img)}/> : <div className={s.deck}>
       <figure className={s.card} data-foil={!!file} key={current.id} onPointerDown={e=>{touch.current=e.clientX;e.currentTarget.setPointerCapture(e.pointerId)}} onPointerMove={e=>{
         if(touch.current===null || matchMedia("(prefers-reduced-motion: reduce)").matches)return;
         const drag=Math.max(-75,Math.min(75,e.clientX-touch.current));
@@ -72,7 +73,7 @@ export default function OpeningStage({ category }: { category?: string }) {
         const delta=touch.current===null?0:e.clientX-touch.current;touch.current=null;e.currentTarget.style.transform="";if(Math.abs(delta)>40)advance(delta<0?1:-1);
       }}>
         <img draggable={false} src={file?"/nominations/"+file+"-opening.webp":current.img} alt={file?"Carte Zenkai · "+current.nom:current.nom} />
-      </figure></div>
+      </figure></div>}
     </div>
     <footer className={s.controls}><div aria-live="polite"><strong>{current.nom}</strong><br/>{current.detail}</div>
       <button aria-label="Opening précédent" onClick={()=>advance(-1)}>←</button><span>{index+1} / {entries.length}</span><button aria-label="Opening suivant" onClick={()=>advance(1)}>→</button>

@@ -1,0 +1,1 @@
+﻿.panel{margin:clamp(24px,5vw,90px) auto;padding:clamp(24px,5vw,72px);width:min(94%,1200px);border-block:1px solid currentColor;background:var(--fond,#faf8f1)}.panel h2{font:800 clamp(38px,6vw,92px)/1 var(--f-display),sans-serif;letter-spacing:-.05em;margin:.2em 0}.panel p{margin:1em 0}.panel article{border-top:1px solid #a59c88;padding:1em 0}.panel a,.panel button{margin:4px}
