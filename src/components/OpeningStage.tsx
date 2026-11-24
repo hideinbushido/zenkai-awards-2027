@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import Ruban from "./Ruban";
+import Decode from "./Decode";
 import Link from "next/link";
 import { NOMINES_2027 } from "@/data/nomines2027";
 import { garderCarte, useCollection } from "@/lib/collection";
@@ -57,8 +58,8 @@ export default function OpeningStage({ category }: { category?: string }) {
     <div className={s.layout}>
       <div className={s.copy}>
         {gallery ? <><Link href="/categories">← Catégories</Link><h1>{group?.titre}</h1></> : <>
-          <div className={s.brand}><img src="/visuels/logo-zenkai-or.png" alt="" /><h1>ZENKAI</h1></div>
-          <p className={s.edition}>Anime Awards <i>2027</i></p></>}
+          <div className={s.brand}><img src="/visuels/logo-zenkai-or.png" alt="" /><Decode as="h1" texte="ZENKAI" duree={1.2} delai={0.15} /></div>
+          <p className={s.edition}><Decode texte="Anime Awards" duree={1} delai={0.45} /> <i><Decode texte="2027" duree={0.7} delai={0.9} /></i></p></>}
         <div className={s.actions}>{gallery ? <>
           <button onClick={()=>garderCarte(category!,current.id)}>{bulletin[category!]===current.id?"Dans mon bulletin":"Ajouter à mon bulletin"}</button>
           <Link href="/collection">Mon bulletin</Link>{following && <Link href={"/categories/"+following.id}>Catégorie suivante →</Link>}</> : <>

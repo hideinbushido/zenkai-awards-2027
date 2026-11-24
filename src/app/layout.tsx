@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Archivo, Michroma, Onest } from "next/font/google";
+import localFont from "next/font/local";
 import Defilement from "@/components/Defilement";
 import Fin from "@/components/Fin";
 import Nav from "@/components/Nav";
@@ -8,6 +9,7 @@ import "./globals.css";
 
 const large = Michroma({ weight: "400", subsets: ["latin"], variable: "--f-large" });
 const texte = Onest({ subsets: ["latin"], variable: "--f-texte" });
+const serif = localFont({ src: "../fonts/serif-italique.woff2", style: "italic", weight: "400", variable: "--f-serif", display: "swap" });
 const display = Archivo({ subsets: ["latin"], axes: ["wdth"], variable: "--f-display" });
 
 export const metadata: Metadata = {
@@ -17,7 +19,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="fr" className={`${large.variable} ${texte.variable} ${display.variable}`}>
+    <html lang="fr" className={`${large.variable} ${texte.variable} ${display.variable} ${serif.variable}`}>
       <body>
         <Nav />
         <Defilement>

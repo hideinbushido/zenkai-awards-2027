@@ -1,17 +1,20 @@
-import EditionLive from "@/components/EditionLive";
-import Etalage from "@/components/Etalage";
+import IndexCategories from "@/components/IndexCategories";
 import OpeningStage from "@/components/OpeningStage";
+import PacksAnime from "@/components/PacksAnime";
 import Tenant from "@/components/Tenant";
+import VitrineNomines from "@/components/VitrineNomines";
 import VoixLive from "@/components/VoixLive";
 
-// Accueil : court, comme en 2026. Tout le détail vit dans « À propos ».
+// Accueil plein écran : l'opening en héros, les 25 catégories en index, les boosters,
+// des nominés d'autres catégories avec leur carte, le tenant du titre, puis les voix du live.
 export default function Accueil() {
   return (
     <>
       <OpeningStage />
-      <Etalage />
-      <EditionLive compact />
-        <Tenant />
+      <IndexCategories />
+      <PacksAnime />
+      <VitrineNomines />
+      <Tenant />
       <VoixLive />
     </>
   );
