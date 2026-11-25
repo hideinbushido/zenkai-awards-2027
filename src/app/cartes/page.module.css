@@ -51,3 +51,6 @@ button.carte:hover { translate: 0 -4px; box-shadow: 0 18px 30px -18px oklch(0.2 
 }
 
 .vitrine{padding:24px 0;border-block:1px solid currentColor;margin:24px 0}.vitrine div{display:flex;gap:14px}.vitrine button{background:none;border:0;padding:0;max-width:28%}.vitrine img{width:min(100%,185px);height:auto}.vitrine a{text-decoration:underline}
+
+.chargement { margin: 0; padding: 16px 20px; border-radius: 4px; background: #f4f1ea0d; border: 1px solid #f4f1ea1f; color: #f4f1eacc; }
+.chargement a { color: inherit; }
