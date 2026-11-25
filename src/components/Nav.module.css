@@ -43,3 +43,8 @@
 .pilule a::after{content:"";position:absolute;bottom:4px;left:12px;right:12px;height:1px;background:#e3bf7f;transform:scaleX(0);transition:transform .22s ease}
 .pilule a:hover,.pilule a:focus-visible{background:#ffffff0c;color:white}.pilule a:hover::after,.pilule a:focus-visible::after{transform:scaleX(1)}.liste{color:var(--encre);max-height:74svh;overflow:auto}
 @media(min-width:861px) and (max-width:1180px){.nav{grid-template-columns:1fr auto}.pilule{display:none}.menu{display:block}}
+
+/* Sur une page à héros plein écran : en haut de page, la barre disparaît dans la vidéo */
+.nav{transition:transform .35s ease,background-color .4s ease,border-color .4s ease,backdrop-filter .4s ease}
+:global(html:has([data-plein-ecran])) .nav[data-haut]{background:linear-gradient(180deg,#0a080d8c,#0a080d00);border-bottom-color:transparent;box-shadow:none;backdrop-filter:none}
+.logo{display:block;height:clamp(30px,3.4vw,40px);width:auto}

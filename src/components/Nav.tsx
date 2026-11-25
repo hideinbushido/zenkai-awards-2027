@@ -10,8 +10,7 @@ export default function Nav() {
     <header className={s.nav} data-nav>
       <NavAuto />
       <Link href="/" className={s.marque} aria-label="Zenkai Anime Awards, accueil">
-        <Image src="/visuels/logo-zenkai-or.png" alt="" width={30} height={30} className={s.embleme} />
-        <span>Zenkai</span>
+        <Image src="/visuels/logo-zenkai-complet.png" alt="" width={568} height={139} className={s.logo} priority />
       </Link>
       <nav aria-label="Navigation principale" className={s.pilule}>
         <Link href="/categories">Catégories</Link>

@@ -23,6 +23,7 @@ export default function NavAuto() {
     let dernier = scrollY, attente = false;
     const verifie = () => {
       const y = scrollY;
+      nav.toggleAttribute("data-haut", y < 40);
       if (Math.abs(y - dernier) > 6) {
         nav.toggleAttribute("data-cache", y > dernier && y > 200);
         dernier = y;
@@ -31,6 +32,7 @@ export default function NavAuto() {
     };
     const surScroll = () => { if (!attente) { attente = true; requestAnimationFrame(verifie); } };
     addEventListener("scroll", surScroll, { passive: true });
+    nav.toggleAttribute("data-haut", scrollY < 40);
     return () => {
       removeEventListener("scroll", surScroll);
       document.removeEventListener("click", fermer);

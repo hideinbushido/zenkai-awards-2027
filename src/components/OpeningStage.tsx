@@ -23,6 +23,7 @@ export default function OpeningStage({ category }: { category?: string }) {
   const [grid,setGrid] = useState(false);
   const [muted,setMuted] = useState(true);
   const [playing,setPlaying] = useState(false);
+  const [petit,setPetit] = useState(false);
   const video = useRef<HTMLVideoElement>(null);
   const touch = useRef<number | null>(null);
   const bulletin = useCollection();
@@ -31,6 +32,7 @@ export default function OpeningStage({ category }: { category?: string }) {
   useEffect(() => {
     const frame = requestAnimationFrame(() => {
       setPlaying(!matchMedia("(prefers-reduced-motion: reduce)").matches);
+      setPetit(innerWidth < 900);
       if (!gallery) {
         let previous = "";
         try { previous = sessionStorage.getItem("zenkai-vedette") || ""; } catch {}
@@ -53,8 +55,8 @@ export default function OpeningStage({ category }: { category?: string }) {
   function advance(step:number) {
     setIndex(i => (i+step+entries.length)%entries.length);
   }
-  return <section onKeyDown={e=>{if(e.key==="ArrowLeft"||e.key==="ArrowRight"){e.preventDefault();advance(e.key==="ArrowLeft"?-1:1)}}} className={s.stage} data-gallery={gallery} aria-label={gallery?group?.titre:"ZENKAI Anime Awards 2027"}>
-    <video ref={video} className={s.movie} src={current.video} poster={current.img} muted={muted} playsInline preload="metadata" onEnded={()=>advance(1)} />
+  return <section onKeyDown={e=>{if(e.key==="ArrowLeft"||e.key==="ArrowRight"){e.preventDefault();advance(e.key==="ArrowLeft"?-1:1)}}} className={s.stage} data-gallery={gallery} data-plein-ecran={gallery?undefined:""} aria-label={gallery?group?.titre:"ZENKAI Anime Awards 2027"}>
+    <video ref={video} className={s.movie} src={petit && art[current.id] && current.video ? current.video.replace("/openings/","/openings/720/") : current.video} poster={current.img} muted={muted} playsInline preload="metadata" onEnded={()=>advance(1)} />
     <div className={s.layout}>
       <div className={s.copy}>
         {gallery ? <><Link href="/categories">← Catégories</Link><h1>{group?.titre}</h1></> : <>
