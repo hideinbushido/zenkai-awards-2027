@@ -71,7 +71,7 @@ export default function VitrineNomines() {
   const v = VITRINE[actif];
   return (
     <section ref={ref} className={s.section} style={{ height: `${VITRINE.length * 100 + 40}svh` }} aria-labelledby="vitrine-titre">
-      <div className={s.scene}>
+      <div className={s.scene} data-fondu>
         {VITRINE.map((x, i) => (
           <video key={x.video} ref={(n) => { videos.current[i] = n; }} className={s.video} data-actif={i === actif}
             src={`/videos/vitrine/${x.video}.mp4`} poster={`/videos/vitrine/${x.video}.jpg`} muted loop playsInline preload="none" aria-hidden="true" />

@@ -1,4 +1,4 @@
-.section { position: relative; padding: clamp(24px, 4vw, 64px) var(--marge) clamp(96px, 10vw, 160px); }
+.section { position: relative; padding: max(30svh, clamp(24px, 4vw, 64px)) var(--marge) clamp(96px, 10vw, 160px); }
 
 /* Contrepoint nuit, avec l'or de la première édition */
 .panneau {

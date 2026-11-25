@@ -21,6 +21,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="fr" className={`${large.variable} ${texte.variable} ${display.variable} ${serif.variable}`}>
       <body>
+        <div className="grain" aria-hidden="true" />
         <Nav />
         <Defilement>
           <div className="contenu">

@@ -27,7 +27,7 @@ export default function VoixLive({ titreNiveau = 2 }: { titreNiveau?: 2 | 3 }) {
 
   return (
     <section ref={ref} className={s.section} aria-labelledby="voix-live-titre">
-      <div className={s.tete}>
+      <div className={s.tete} data-entree>
         <Titre id="voix-live-titre" className={`affiche ${s.titre}`}>Les voix du live</Titre>
         <p className={s.texte}>
           Pape, Mr. Hunter et Braizanime animent la cérémonie, en direct sur le TikTok de @ricokouame. Rendez-vous en {EDITION.live.toLowerCase()}.

@@ -1,7 +1,7 @@
-.section { position: relative; height: 260svh; background: #07060a; color: #f4f1ea; }
+.section { position: relative; z-index: 1; height: 260svh; background: #08070b; color: #f4f1ea; }
 .scene { position: sticky; top: 0; height: 100svh; overflow: hidden; isolation: isolate; display: grid; grid-template-rows: auto 1fr auto; padding: clamp(80px, 11vh, 120px) var(--marge) clamp(24px, 5vh, 56px); }
 .video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; opacity: 0.55; }
-.voile { position: absolute; inset: 0; z-index: -1; background: radial-gradient(60% 55% at 50% 58%, transparent, #07060ad9 80%), linear-gradient(#07060a, transparent 30%, transparent 70%, #07060a); }
+.voile { position: absolute; inset: 0; z-index: -1; background: radial-gradient(60% 55% at 50% 58%, transparent, #08070bd9 80%), linear-gradient(#08070b, transparent 30%, transparent 70%, #08070b); }
 
 .tete { display: flex; align-items: flex-end; justify-content: space-between; gap: var(--e6); }
 .pile { margin: 0; display: grid; font: 800 13px/1.15 var(--f-display), sans-serif; letter-spacing: 0.1em; }
@@ -39,3 +39,6 @@
   .rangee { display: flex; justify-content: center; gap: 1.5vw; }
   .paquet { grid-area: auto; }
 }
+
+/* Couture avec la section précédente */
+.section::before { content: ""; position: absolute; left: 0; right: 0; bottom: 100%; height: 35svh; pointer-events: none; z-index: 2; background: linear-gradient(#08070b00, #08070bb3 55%, #08070b); }

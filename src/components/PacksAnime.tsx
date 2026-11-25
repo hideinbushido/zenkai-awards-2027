@@ -44,12 +44,12 @@ export default function PacksAnime() {
 
   return (
     <section ref={ref} className={s.section} aria-labelledby="packs-titre">
-      <div className={s.scene}>
+      <div className={s.scene} data-fondu>
         <video className={s.video} src="/booster/bg/defaut_1.mp4" poster="/booster/bg/defaut_1.jpg" autoPlay muted loop playsInline preload="none" aria-hidden="true" />
         <div className={s.voile} />
         <header className={s.tete}>
           <p className={s.pile}><Decode quand="vue" texte="HOLO" /><Decode quand="vue" texte="BOOSTERS" delai={0.1} /><Decode quand="vue" texte="ÉDITION 2027" delai={0.2} /></p>
-          <h2 id="packs-titre" className={s.titre}><em>Ouvre ton</em> <strong>booster</strong></h2>
+          <h2 id="packs-titre" className={s.titre} data-entree><em>Ouvre ton</em> <strong>booster</strong></h2>
         </header>
         <ul className={s.rangee}>
           {PACKS.map((p) => (

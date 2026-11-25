@@ -65,7 +65,7 @@ export default function IndexCategories() {
 
       <header className={s.tete}>
         <p className={s.sur}><span>Édition</span><span>2027</span><span>Les nominations</span></p>
-        <h2 id="index-titre" className={s.titre}>
+        <h2 id="index-titre" className={s.titre} data-entree>
           <em>Vingt-cinq</em>
           <strong>catégories</strong>
         </h2>
