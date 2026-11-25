@@ -27,12 +27,12 @@
 .nom[data-actif="true"] { color: #f6f2e9; translate: 1.2vw 0; }
 .nom:focus-visible { outline-offset: 6px; }
 
-.panneau { position: sticky; top: 24svh; align-self: start; display: grid; gap: var(--e4); }
+.panneau { position: sticky; top: 0; height: 100svh; align-self: start; display: grid; align-content: center; gap: clamp(10px, 2svh, 22px); padding: 6svh 0; box-sizing: border-box; }
 .pile { margin: 0; display: grid; font: 800 13px/1.15 var(--f-display), sans-serif; letter-spacing: 0.08em; text-transform: uppercase; }
 .long { margin: 0; font: italic 400 clamp(26px, 2.3vw, 40px)/1 var(--f-serif), Georgia, serif; }
-.vignettes { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
-.vignettes li { display: grid; gap: 6px; font-size: 12px; line-height: 1.25; color: #f4f1eab3; }
-.vignettes img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 4px; }
+.vignettes { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, max-content); gap: 10px; }
+.vignettes li { display: grid; gap: 6px; width: calc(min(25svh, 230px) * 0.75); font-size: 12px; line-height: 1.25; color: #f4f1eab3; }
+.vignettes img { width: 100%; height: min(25svh, 230px); aspect-ratio: 3 / 4; object-fit: cover; border-radius: 4px; }
 .voir { justify-self: start; font: 700 13px/1 var(--f-display), sans-serif; letter-spacing: 0.06em; text-transform: uppercase; padding: 14px 20px; background: #f6f2e9; color: #0b0a0e; border-radius: 2px; text-decoration: none; transition: transform 300ms var(--ease-sortie); }
 .voir:hover { transform: translateY(-2px); }
 
