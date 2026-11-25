@@ -1,0 +1,57 @@
+.galerie { position: relative; height: 100svh; overflow: hidden; isolation: isolate; background: #08070b; color: #f4f1ea; touch-action: none; user-select: none; }
+
+/* Fond : l'image du nominé floutée, puis son opening quand on s'arrête dessus */
+.fond { position: absolute; inset: -8%; background: center / cover no-repeat; filter: blur(40px) saturate(1.3) brightness(0.55); opacity: 0; transition: opacity 900ms var(--ease-sortie); z-index: -3; }
+.fond[data-visible] { opacity: 1; }
+.video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 1000ms var(--ease-sortie); z-index: -2; }
+.video[data-visible] { opacity: 0.55; }
+.voile { position: absolute; inset: 0; z-index: -1; background: radial-gradient(90% 70% at 50% 45%, transparent, #08070bcc 85%), linear-gradient(#08070b99, transparent 22%, transparent 62%, #08070bf0); }
+.scene { position: absolute; inset: 0; width: 100%; height: 100%; display: block; cursor: grab; }
+
+/* Habillage : petites étiquettes en capitales grasses, comme AUGE */
+.hud { position: absolute; inset: 0; pointer-events: none; font: 800 12px/1.15 var(--f-display), sans-serif; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0; transition: opacity 600ms var(--ease-sortie) 200ms; }
+.galerie[data-pret] .hud { opacity: 1; }
+.galerie[data-ouvert] .hud { opacity: 0; transition-delay: 0ms; }
+.hud a { pointer-events: auto; color: inherit; text-decoration: none; }
+.retour { position: absolute; left: clamp(18px, 3vw, 48px); top: clamp(84px, 11vh, 110px); }
+.cat { position: absolute; left: 50%; top: clamp(84px, 11vh, 110px); translate: -50% 0; margin: 0; }
+.cat em { font: italic 400 1.25em/1 var(--f-serif), Georgia, serif; letter-spacing: 0; text-transform: none; margin-left: 0.4em; }
+.suivante { position: absolute; right: clamp(18px, 3vw, 48px); top: clamp(84px, 11vh, 110px); }
+.marque { position: absolute; left: clamp(18px, 3vw, 48px); bottom: clamp(40px, 6vh, 64px); margin: 0; font-size: 11px; letter-spacing: 0.16em; color: #f4f1eaa6; }
+.aide { position: absolute; right: clamp(18px, 3vw, 48px); bottom: clamp(40px, 6vh, 64px); margin: 0; font-size: 11px; color: #f4f1ea80; }
+
+.etiquette { position: absolute; left: 0; top: 0; display: grid; font: 800 12px/1.15 var(--f-display), sans-serif; letter-spacing: 0.08em; pointer-events: none; will-change: transform; opacity: 0; transition: opacity 400ms; }
+.galerie[data-pret] .etiquette { opacity: 1; }
+.galerie[data-ouvert] .etiquette { opacity: 0; }
+
+/* Fiche : la carte part à gauche, les lignes se décodent à droite */
+.fiche { position: absolute; inset: 0; display: grid; grid-template-columns: 1fr 1fr; align-items: center; padding: clamp(90px, 12vh, 130px) clamp(18px, 4vw, 72px) clamp(28px, 6vh, 64px); }
+.ficheTexte { grid-column: 2; display: grid; gap: clamp(14px, 2.2vh, 24px); max-width: 560px; }
+.rang { margin: 0; font: 800 12px/1.2 var(--f-display), sans-serif; letter-spacing: 0.12em; min-height: 1.2em; }
+.ficheTitre { margin: 0; font: 900 clamp(46px, 6.4vw, 120px)/0.86 var(--f-display), sans-serif; font-stretch: 75%; letter-spacing: -0.03em; overflow-wrap: anywhere; }
+.lignes { margin: 0; display: grid; grid-template-columns: 9.5em 1fr; gap: 10px 18px; font-size: 15px; }
+.lignes dt { font: 800 11px/1.6 var(--f-display), sans-serif; letter-spacing: 0.12em; color: #f4f1ea99; min-height: 1.6em; }
+.lignes dd { margin: 0; color: #f4f1eae0; min-height: 1.4em; }
+.boutons { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px; }
+.boutons button { font: 700 13px/1 var(--f-display), sans-serif; letter-spacing: 0.06em; text-transform: uppercase; padding: 15px 20px; border-radius: 2px; border: 1px solid #f4f1ea55; background: #08070b80; color: inherit; cursor: pointer; transition: transform 300ms var(--ease-sortie); }
+.boutons .principal { background: linear-gradient(118deg, #f6e4af, #fff8e6 42%, #e3c58a); color: #1b150e; border-color: transparent; }
+.boutons button:hover { transform: translateY(-2px); }
+
+/* Intro : un point, ZENKAI, la catégorie qui se décode, le compteur */
+.chargement { position: absolute; inset: 0; display: grid; place-content: center; justify-items: center; gap: 10px; background: #08070b; z-index: 5; pointer-events: none; }
+.point { width: 8px; height: 8px; border-radius: 50%; background: #f4f1ea; animation: pulse 1s ease-in-out infinite alternate; }
+.zenkai { margin: 0; font: 900 clamp(42px, 7vw, 110px)/0.9 var(--f-display), sans-serif; font-stretch: 75%; font-style: italic; transform: skewX(-9deg); background: linear-gradient(165deg, #fff2d4 15%, #a99079 35%, #fff7e3 42%, #877b87 46%, #f3e3cb 65%, #be9d69); background-clip: text; color: transparent; }
+.iSous { margin: 0; font: italic 400 clamp(22px, 2.4vw, 38px)/1 var(--f-serif), Georgia, serif; }
+.compteur { margin: 8px 0 0; font: 700 12px/1 var(--f-display), sans-serif; letter-spacing: 0.2em; font-variant-numeric: tabular-nums; color: #f4f1ea99; }
+@keyframes pulse { to { transform: scale(1.6); opacity: 0.5; } }
+
+@media (max-width: 760px) {
+  .cat { display: none; }
+  .aide { display: none; }
+  .marque { bottom: 22px; }
+  .fiche { grid-template-columns: 1fr; align-items: end; padding-top: 50svh; overflow-y: auto; }
+  .ficheTexte { grid-column: 1; gap: 12px; }
+  .ficheTitre { font-size: clamp(36px, 11vw, 60px); }
+  .lignes { grid-template-columns: 7.5em 1fr; font-size: 14px; }
+}
+@media (prefers-reduced-motion: reduce) { .point { animation: none; } }
