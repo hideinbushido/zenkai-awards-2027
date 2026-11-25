@@ -4,7 +4,7 @@
 .fond { position: absolute; inset: -8%; background: center / cover no-repeat; filter: blur(40px) saturate(1.3) brightness(0.55); opacity: 0; transition: opacity 900ms var(--ease-sortie); z-index: -3; }
 .fond[data-visible] { opacity: 1; }
 .video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 1000ms var(--ease-sortie); z-index: -2; }
-.video[data-visible] { opacity: 0.55; }
+.video[data-visible] { opacity: 0.8; }
 .voile { position: absolute; inset: 0; z-index: -1; background: radial-gradient(90% 70% at 50% 45%, transparent, #08070bcc 85%), linear-gradient(#08070b99, transparent 22%, transparent 62%, #08070bf0); }
 .scene { position: absolute; inset: 0; width: 100%; height: 100%; display: block; cursor: grab; }
 

@@ -242,8 +242,15 @@ export default function GalerieCourbe({ categorie }: { categorie: string }) {
       sv.dataset.visible = "1"; delete fonds[fondActif].dataset.visible; fondActif = 1 - fondActif;
       delete videos[vActive].dataset.visible; clearTimeout(minuteur);
       if (n.video && !reduit) minuteur = window.setTimeout(() => {
-        const v = videos[1 - vActive]; v.src = source(n.video!); v.muted = true;
-        v.oncanplay = () => { v.oncanplay = null; v.play().catch(() => {}); v.dataset.visible = "1"; videos[vActive].pause(); vActive = 1 - vActive; };
+        // preload="none" empêchait le chargement : on charge et on lance nous-mêmes, puis on montre la vidéo quand elle joue
+        const v = videos[1 - vActive], ancienne = videos[vActive], attendu = n.id;
+        v.muted = true; v.preload = "auto"; v.src = source(n.video!); v.load();
+        v.onplaying = () => {
+          v.onplaying = null;
+          if (liste[fondI]?.id !== attendu) { v.pause(); return; }
+          v.dataset.visible = "1"; delete ancienne.dataset.visible; ancienne.pause(); vActive = videos.indexOf(v);
+        };
+        v.play().catch(() => {});
       }, 380);
       const [a, b] = (n.detail ?? "").split(" · ");
       decoder($("[data-e-titre]"), n.nom.toUpperCase(), 0.6);
@@ -395,8 +402,8 @@ export default function GalerieCourbe({ categorie }: { categorie: string }) {
     <section ref={racine} className={s.galerie} data-plein-ecran="" data-lenis-prevent="" data-ouvert={ouvertId ? "1" : undefined} aria-label={`${cat.titre} : les nominés`}>
       <div className={s.fond} data-fond="a" aria-hidden="true" />
       <div className={s.fond} data-fond="b" aria-hidden="true" />
-      <video className={s.video} data-video="a" playsInline loop preload="none" aria-hidden="true" />
-      <video className={s.video} data-video="b" playsInline loop preload="none" aria-hidden="true" />
+      <video className={s.video} data-video="a" muted playsInline loop preload="none" aria-hidden="true" />
+      <video className={s.video} data-video="b" muted playsInline loop preload="none" aria-hidden="true" />
       <div className={s.voile} aria-hidden="true" />
       <canvas className={s.scene} aria-hidden="true" />
 
