@@ -3904,11 +3904,11 @@
 "credit": "© Koyoharu Gotōge / Shueisha, Aniplex, ufotable",
 "rarete": "eclat",
 "special": null,
-"nom": "Inosuke Hashibira",
+"nom": "Akaza",
 "type": "PERSONNAGE",
 "num": 10,
 "total": 107,
-"fichier": "010_ECLAT_Inosuke-Hashibira.jpg"
+"fichier": "010_ECLAT_Akaza.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/Demon Slayer/a04c9376efbb4abf37a70805c5b9c024.jpg",
@@ -3946,11 +3946,11 @@
 "credit": "© Koyoharu Gotōge / Shueisha, Aniplex, ufotable",
 "rarete": "eclat",
 "special": null,
-"nom": "Kokushibō",
+"nom": "Tengen Uzui",
 "type": "PERSONNAGE",
 "num": 13,
 "total": 107,
-"fichier": "013_ECLAT_Kokushibo.jpg"
+"fichier": "013_ECLAT_Tengen-Uzui.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/Demon Slayer/cb0932611d58d459ba22bd171943fdfb.jpg",
@@ -4422,11 +4422,11 @@
 "credit": "© Koyoharu Gotōge / Shueisha, Aniplex, ufotable",
 "rarete": "prisme",
 "special": null,
-"nom": "Muzan Kibutsuji",
+"nom": "Doma",
 "type": "PERSONNAGE",
 "num": 47,
 "total": 107,
-"fichier": "047_PRISME_Muzan-Kibutsuji.jpg"
+"fichier": "047_PRISME_Doma.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/Demon Slayer/e67edc9306353be191dc571653098be9.jpg",
@@ -4505,12 +4505,12 @@
 "anime": "Demon Slayer",
 "credit": "© Koyoharu Gotōge / Shueisha, Aniplex, ufotable",
 "rarete": "spectre",
-"special": null,
+"special": "ekonte",
 "nom": "Zenitsu Agatsuma",
 "type": "PERSONNAGE",
 "num": 53,
 "total": 107,
-"fichier": "053_SPECTRE_Zenitsu-Agatsuma.jpg"
+"fichier": "053_SPECTRE_EKONTE_Zenitsu-Agatsuma.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/Demon Slayer/21e91eaff0f07e9f33618c20fbeeb315.jpg",
@@ -4645,12 +4645,12 @@
 "anime": "Demon Slayer",
 "credit": "© Koyoharu Gotōge / Shueisha, Aniplex, ufotable",
 "rarete": "spectre",
-"special": null,
+"special": "reiatsu",
 "nom": "Hantengu",
 "type": "PERSONNAGE",
 "num": 63,
 "total": 107,
-"fichier": "063_SPECTRE_Hantengu.jpg"
+"fichier": "063_SPECTRE_REIATSU_Hantengu.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/Demon Slayer/bb843110665df9619f1edb2b784565cf.jpg",
@@ -4716,11 +4716,11 @@
 "credit": "© Koyoharu Gotōge / Shueisha, Aniplex, ufotable",
 "rarete": "spectre",
 "special": null,
-"nom": "Tanjirō Kamado",
+"nom": "Giyu Tomioka",
 "type": "PERSONNAGE",
 "num": 68,
 "total": 107,
-"fichier": "068_SPECTRE_Tanjiro-Kamado.jpg"
+"fichier": "068_SPECTRE_Giyu-Tomioka.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/Demon Slayer/e1d5f0953c39703c9e08bfede288f7ee.jpg",
@@ -4730,11 +4730,11 @@
 "credit": "© Koyoharu Gotōge / Shueisha, Aniplex, ufotable",
 "rarete": "spectre",
 "special": null,
-"nom": "Tanjirō Kamado",
+"nom": "Tanjiro & Rengoku",
 "type": "PERSONNAGE",
 "num": 69,
 "total": 107,
-"fichier": "069_SPECTRE_Tanjiro-Kamado.jpg"
+"fichier": "069_SPECTRE_Tanjiro-Rengoku.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/Demon Slayer/ef9c50011e69c4b30cb722c2ef05215a.jpg",
@@ -4757,12 +4757,12 @@
 "anime": "Demon Slayer",
 "credit": "© Koyoharu Gotōge / Shueisha, Aniplex, ufotable",
 "rarete": "spectre",
-"special": null,
+"special": "celluloid",
 "nom": "Hantengu",
 "type": "PERSONNAGE",
 "num": 71,
 "total": 107,
-"fichier": "071_SPECTRE_Hantengu.jpg"
+"fichier": "071_SPECTRE_CELLULOID_Hantengu.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/Demon Slayer/f58473e1765384c63f91a259b9082a05.jpg",
@@ -4883,12 +4883,12 @@
 "anime": "Demon Slayer",
 "credit": "© Koyoharu Gotōge / Shueisha, Aniplex, ufotable",
 "rarete": "mirage",
-"special": null,
+"special": "sakuga",
 "nom": "Zenitsu Agatsuma",
 "type": "PERSONNAGE",
 "num": 80,
 "total": 107,
-"fichier": "080_MIRAGE_Zenitsu-Agatsuma.jpg"
+"fichier": "080_MIRAGE_SAKUGA_Zenitsu-Agatsuma.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/Demon Slayer/75d3ac6453aaba0f7288c2a9b7fe0712.jpg",
@@ -4898,11 +4898,11 @@
 "credit": "© Koyoharu Gotōge / Shueisha, Aniplex, ufotable",
 "rarete": "mirage",
 "special": null,
-"nom": "Kokushibō",
+"nom": "Kyojuro Rengoku",
 "type": "PERSONNAGE",
 "num": 81,
 "total": 107,
-"fichier": "081_MIRAGE_Kokushibo.jpg"
+"fichier": "081_MIRAGE_Kyojuro-Rengoku.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/Demon Slayer/85520b53a40a0851f563a249d9a8c72a.jpg",
@@ -4968,11 +4968,11 @@
 "credit": "© Koyoharu Gotōge / Shueisha, Aniplex, ufotable",
 "rarete": "mirage",
 "special": "hanga",
-"nom": "Les Piliers",
+"nom": "Demon Slayer",
 "type": "ILLUSTRATION",
 "num": 86,
 "total": 107,
-"fichier": "086_MIRAGE_HANGA_Les-Piliers.jpg"
+"fichier": "086_MIRAGE_HANGA_Demon-Slayer.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/Demon Slayer/fe80fe8bf48ae4c4aca169ff5356a169.jpg",
@@ -5009,12 +5009,12 @@
 "anime": "Demon Slayer",
 "credit": "© Koyoharu Gotōge / Shueisha, Aniplex, ufotable",
 "rarete": "zenkai",
-"special": null,
+"special": "hanga",
 "nom": "Muichirō Tokitō",
 "type": "PERSONNAGE",
 "num": 89,
 "total": 107,
-"fichier": "089_ZENKAI_Muichiro-Tokito.jpg"
+"fichier": "089_ZENKAI_HANGA_Muichiro-Tokito.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/Demon Slayer/1f9e1faf46500630b9df1b6ea921faca.jpg",
@@ -5037,12 +5037,12 @@
 "anime": "Demon Slayer",
 "credit": "© Koyoharu Gotōge / Shueisha, Aniplex, ufotable",
 "rarete": "zenkai",
-"special": null,
-"nom": "Tanjirō Kamado",
+"special": "genga",
+"nom": "Giyu Tomioka",
 "type": "PERSONNAGE",
 "num": 91,
 "total": 107,
-"fichier": "091_ZENKAI_Tanjiro-Kamado.jpg"
+"fichier": "091_ZENKAI_GENGA_Giyu-Tomioka.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/Demon Slayer/2dbceade280da4590b6b66c803a97346.jpg",
@@ -5051,12 +5051,12 @@
 "anime": "Demon Slayer",
 "credit": "© Koyoharu Gotōge / Shueisha, Aniplex, ufotable",
 "rarete": "zenkai",
-"special": null,
+"special": "reiatsu",
 "nom": "Akaza",
 "type": "PERSONNAGE",
 "num": 92,
 "total": 107,
-"fichier": "092_ZENKAI_Akaza.jpg"
+"fichier": "092_ZENKAI_REIATSU_Akaza.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/Demon Slayer/4a6e78d41dd416bdec740feef779fa1a.jpg",
@@ -5163,12 +5163,12 @@
 "anime": "Demon Slayer",
 "credit": "© Koyoharu Gotōge / Shueisha, Aniplex, ufotable",
 "rarete": "zenkai",
-"special": null,
+"special": "celluloid",
 "nom": "Tanjirō Kamado",
 "type": "PERSONNAGE",
 "num": 100,
 "total": 107,
-"fichier": "100_ZENKAI_Tanjiro-Kamado.jpg"
+"fichier": "100_ZENKAI_CELLULOID_Tanjiro-Kamado.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/Demon Slayer/9f57cd8dbb15bbbd6a119f6a667a5aa7.jpg",
@@ -5205,12 +5205,12 @@
 "anime": "Demon Slayer",
 "credit": "© Koyoharu Gotōge / Shueisha, Aniplex, ufotable",
 "rarete": "zenkai",
-"special": null,
-"nom": "Gyōmei Himejima",
+"special": "sumi",
+"nom": "Tengen Uzui",
 "type": "PERSONNAGE",
 "num": 103,
 "total": 107,
-"fichier": "103_ZENKAI_Gyomei-Himejima.jpg"
+"fichier": "103_ZENKAI_SUMI_Tengen-Uzui.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/Demon Slayer/b9ea2ee4baa2176a71a92cf99d1bbf5d.jpg",
@@ -5233,12 +5233,12 @@
 "anime": "Demon Slayer",
 "credit": "© Koyoharu Gotōge / Shueisha, Aniplex, ufotable",
 "rarete": "zenkai",
-"special": null,
+"special": "sakuga",
 "nom": "Tanjirō Kamado",
 "type": "PERSONNAGE",
 "num": 105,
 "total": 107,
-"fichier": "105_ZENKAI_Tanjiro-Kamado.jpg"
+"fichier": "105_ZENKAI_SAKUGA_Tanjiro-Kamado.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/Demon Slayer/téléchargé (4).jpeg",
@@ -5261,12 +5261,12 @@
 "anime": "Demon Slayer",
 "credit": "© Koyoharu Gotōge / Shueisha, Aniplex, ufotable",
 "rarete": "zenkai",
-"special": null,
+"special": "sumi",
 "nom": "Dōma",
 "type": "PERSONNAGE",
 "num": 107,
 "total": 107,
-"fichier": "107_ZENKAI_Doma.jpg"
+"fichier": "107_ZENKAI_SUMI_Doma.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/Dr.Stone/2578e10f598e358e83cc8319e826c1e8.jpg",

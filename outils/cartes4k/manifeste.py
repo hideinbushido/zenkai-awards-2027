@@ -180,6 +180,22 @@ TRANSFO = {
 for a, d in TRANSFO.items():
     for n, t in d.items(): CORR.setdefault((a, n), {})["type"] = t
 
+# Corrections de Rico (26/11) : Demon Slayer passées en spéciales, noms corrigés
+for k, v in {("Demon Slayer", 103): dict(nom="Tengen Uzui", special="sumi"), ("Demon Slayer", 107): dict(special="sumi"),
+             ("Demon Slayer", 105): dict(special="sakuga"), ("Demon Slayer", 100): dict(special="celluloid"),
+             ("Demon Slayer", 92): dict(special="reiatsu"), ("Demon Slayer", 91): dict(nom="Giyu Tomioka", special="genga"),
+             ("Demon Slayer", 89): dict(special="hanga")}.items():
+    CORR.setdefault(k, {}).update(v)
+
+# Corrections de Rico (26/11, 2e série) : Demon Slayer
+for k, v in {("Demon Slayer", 86): dict(nom="Demon Slayer", type="ILLUSTRATION"), ("Demon Slayer", 81): dict(nom="Kyojuro Rengoku"),
+             ("Demon Slayer", 80): dict(special="sakuga"), ("Demon Slayer", 71): dict(special="celluloid"),
+             ("Demon Slayer", 68): dict(nom="Giyu Tomioka"), ("Demon Slayer", 69): dict(nom="Tanjiro & Rengoku"),
+             ("Demon Slayer", 63): dict(special="reiatsu"), ("Demon Slayer", 53): dict(special="ekonte"),
+             ("Demon Slayer", 47): dict(nom="Doma"), ("Demon Slayer", 13): dict(nom="Tengen Uzui"),
+             ("Demon Slayer", 10): dict(nom="Akaza")}.items():
+    CORR.setdefault(k, {}).update(v)
+
 # Dragon Ball : anime selon le tri du disque (CARTES 4K\DBZ, \DBGT, le reste = Super)
 # et transformation visible, écrite sur la petite ligne au-dessus du nom.
 DBZ = {1, 3, 4, 6, 7, 8, 10, 11, 12, 14, 15, 16, 19, 23, 24, 26, 28, 29, 31, 32, 34, 35, 37, 40, 42, 43, 44, 50, 53, 56, 57, 58,
