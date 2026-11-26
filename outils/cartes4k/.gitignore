@@ -1,0 +1,5 @@
+__pycache__/
+lot/
+sortie/*
+!sortie/.gitkeep
+modeles/cadre_zenkai_combo.npz
