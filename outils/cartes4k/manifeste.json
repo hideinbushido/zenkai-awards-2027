@@ -21,11 +21,11 @@
 "credit": "© Yūki Tabata / Shueisha, TV Tokyo, Pierrot",
 "rarete": "eclat",
 "special": null,
-"nom": "Inconnu",
-"type": "PERSONNAGE",
+"nom": "Black Clover",
+"type": "ILLUSTRATION",
 "num": 2,
 "total": 50,
-"fichier": "002_ECLAT_Inconnu.jpg"
+"fichier": "002_ECLAT_Black-Clover.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/BLACKCLOVER/6f85440fd2e606bc1b4d69d33ad6c041.jpg",
@@ -119,11 +119,11 @@
 "credit": "© Yūki Tabata / Shueisha, TV Tokyo, Pierrot",
 "rarete": "eclat",
 "special": null,
-"nom": "Inconnu",
+"nom": "Magna Swing",
 "type": "PERSONNAGE",
 "num": 9,
 "total": 50,
-"fichier": "009_ECLAT_Inconnu.jpg"
+"fichier": "009_ECLAT_Magna-Swing.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/BLACKCLOVER/e282002c0fd82efc383933e4842bff4c.jpg",
@@ -134,7 +134,7 @@
 "rarete": "eclat",
 "special": null,
 "nom": "Asta",
-"type": "PERSONNAGE",
+"type": "BLACK ASTA",
 "num": 10,
 "total": 50,
 "fichier": "010_ECLAT_Asta.jpg"
@@ -161,11 +161,11 @@
 "credit": "© Yūki Tabata / Shueisha, TV Tokyo, Pierrot",
 "rarete": "eclat",
 "special": null,
-"nom": "Inconnu",
+"nom": "Zenon Zogratis",
 "type": "PERSONNAGE",
 "num": 12,
 "total": 50,
-"fichier": "012_ECLAT_Inconnu.jpg"
+"fichier": "012_ECLAT_Zenon-Zogratis.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/BLACKCLOVER/599c031d0fd00bb6f3d7f4eafe328e95.jpg",
@@ -217,11 +217,11 @@
 "credit": "© Yūki Tabata / Shueisha, TV Tokyo, Pierrot",
 "rarete": "prisme",
 "special": null,
-"nom": "Inconnu",
-"type": "PERSONNAGE",
+"nom": "Black Clover",
+"type": "ILLUSTRATION",
 "num": 16,
 "total": 50,
-"fichier": "016_PRISME_Inconnu.jpg"
+"fichier": "016_PRISME_Black-Clover.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/BLACKCLOVER/BC26.jpg",
@@ -273,11 +273,11 @@
 "credit": "© Yūki Tabata / Shueisha, TV Tokyo, Pierrot",
 "rarete": "prisme",
 "special": null,
-"nom": "Inconnu",
-"type": "PERSONNAGE",
+"nom": "Black Clover",
+"type": "ILLUSTRATION",
 "num": 20,
 "total": 50,
-"fichier": "020_PRISME_Inconnu.jpg"
+"fichier": "020_PRISME_Black-Clover.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/BLACKCLOVER/0841f00446ecb69296811267d4473830.jpg",
@@ -316,7 +316,7 @@
 "rarete": "spectre",
 "special": null,
 "nom": "Asta",
-"type": "PERSONNAGE",
+"type": "BLACK ASTA",
 "num": 23,
 "total": 50,
 "fichier": "023_SPECTRE_Asta.jpg"
@@ -343,11 +343,11 @@
 "credit": "© Yūki Tabata / Shueisha, TV Tokyo, Pierrot",
 "rarete": "spectre",
 "special": null,
-"nom": "Inconnu",
+"nom": "Charmy Pappitson",
 "type": "PERSONNAGE",
 "num": 25,
 "total": 50,
-"fichier": "025_SPECTRE_Inconnu.jpg"
+"fichier": "025_SPECTRE_Charmy-Pappitson.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/BLACKCLOVER/BC19.png",
@@ -358,7 +358,7 @@
 "rarete": "spectre",
 "special": "sakuga",
 "nom": "Asta & Yuno",
-"type": "PERSONNAGE",
+"type": "DEVIL UNION · SPIRIT DIVE",
 "num": 26,
 "total": 50,
 "fichier": "026_SPECTRE_SAKUGA_Asta-Yuno.jpg"
@@ -372,7 +372,7 @@
 "rarete": "spectre",
 "special": null,
 "nom": "Asta",
-"type": "PERSONNAGE",
+"type": "DEVIL UNION",
 "num": 27,
 "total": 50,
 "fichier": "027_SPECTRE_Asta.jpg"
@@ -386,7 +386,7 @@
 "rarete": "spectre",
 "special": null,
 "nom": "Asta & Liebe",
-"type": "PERSONNAGE",
+"type": "DEVIL UNION",
 "num": 28,
 "total": 50,
 "fichier": "028_SPECTRE_Asta-Liebe.jpg"
@@ -400,7 +400,7 @@
 "rarete": "spectre",
 "special": null,
 "nom": "Asta",
-"type": "PERSONNAGE",
+"type": "BLACK ASTA",
 "num": 29,
 "total": 50,
 "fichier": "029_SPECTRE_Asta.jpg"
@@ -414,7 +414,7 @@
 "rarete": "spectre",
 "special": "celluloid",
 "nom": "Asta",
-"type": "PERSONNAGE",
+"type": "DEVIL UNION",
 "num": 30,
 "total": 50,
 "fichier": "030_SPECTRE_CELLULOID_Asta.jpg"
@@ -428,7 +428,7 @@
 "rarete": "spectre",
 "special": null,
 "nom": "Asta & Yuno",
-"type": "PERSONNAGE",
+"type": "BLACK ASTA · SPIRIT DIVE",
 "num": 31,
 "total": 50,
 "fichier": "031_SPECTRE_Asta-Yuno.jpg"
@@ -512,7 +512,7 @@
 "rarete": "mirage",
 "special": null,
 "nom": "Asta & Yuno",
-"type": "PERSONNAGE",
+"type": "DEVIL UNION · SPIRIT DIVE",
 "num": 37,
 "total": 50,
 "fichier": "037_MIRAGE_Asta-Yuno.jpg"
@@ -540,7 +540,7 @@
 "rarete": "mirage",
 "special": null,
 "nom": "Yuno",
-"type": "PERSONNAGE",
+"type": "SPIRIT DIVE",
 "num": 39,
 "total": 50,
 "fichier": "039_MIRAGE_Yuno.jpg"
@@ -568,7 +568,7 @@
 "rarete": "zenkai",
 "special": null,
 "nom": "Asta & Yuno",
-"type": "PERSONNAGE",
+"type": "DEVIL UNION · SPIRIT DIVE",
 "num": 41,
 "total": 50,
 "fichier": "041_ZENKAI_Asta-Yuno.jpg"
@@ -638,11 +638,11 @@
 "credit": "© Yūki Tabata / Shueisha, TV Tokyo, Pierrot",
 "rarete": "zenkai",
 "special": "ekonte",
-"nom": "Inconnu",
+"nom": "Magna Swing",
 "type": "PERSONNAGE",
 "num": 46,
 "total": 50,
-"fichier": "046_ZENKAI_EKONTE_Inconnu.jpg"
+"fichier": "046_ZENKAI_EKONTE_Magna-Swing.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/BLACKCLOVER/BLACKCLOVER.webp",
@@ -667,7 +667,7 @@
 "rarete": "zenkai",
 "special": null,
 "nom": "Noelle Silva",
-"type": "PERSONNAGE",
+"type": "VALKYRIE",
 "num": 48,
 "total": 50,
 "fichier": "048_ZENKAI_Noelle-Silva.jpg"
@@ -709,11 +709,11 @@
 "credit": "© Tite Kubo / Shueisha, TV Tokyo, dentsu, Pierrot",
 "rarete": "eclat",
 "special": null,
-"nom": "Inconnu",
+"nom": "Yhwach",
 "type": "PERSONNAGE",
 "num": 1,
 "total": 67,
-"fichier": "001_ECLAT_Inconnu.jpg"
+"fichier": "001_ECLAT_Yhwach.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/BLEACH/1bfd9c97f3c5d8bf3dab8913295dee05.jpg",
@@ -849,11 +849,11 @@
 "credit": "© Tite Kubo / Shueisha, TV Tokyo, dentsu, Pierrot",
 "rarete": "eclat",
 "special": null,
-"nom": "Inconnu",
+"nom": "Yhwach",
 "type": "PERSONNAGE",
 "num": 11,
 "total": 67,
-"fichier": "011_ECLAT_Inconnu.jpg"
+"fichier": "011_ECLAT_Yhwach.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/BLEACH/e3d15ab867154ea3c483369ed690d2d7.jpg",
@@ -920,7 +920,7 @@
 "rarete": "prisme",
 "special": null,
 "nom": "Kisuke Urahara",
-"type": "PERSONNAGE",
+"type": "BANKAI",
 "num": 16,
 "total": 67,
 "fichier": "016_PRISME_Kisuke-Urahara.jpg"
@@ -1144,7 +1144,7 @@
 "rarete": "spectre",
 "special": null,
 "nom": "Tōshirō Hitsugaya",
-"type": "PERSONNAGE",
+"type": "BANKAI",
 "num": 32,
 "total": 67,
 "fichier": "032_SPECTRE_Toshiro-Hitsugaya.jpg"
@@ -1256,7 +1256,7 @@
 "rarete": "spectre",
 "special": null,
 "nom": "Ichigo Kurosaki",
-"type": "PERSONNAGE",
+"type": "BANKAI",
 "num": 40,
 "total": 67,
 "fichier": "040_SPECTRE_Ichigo-Kurosaki.jpg"
@@ -1298,7 +1298,7 @@
 "rarete": "mirage",
 "special": null,
 "nom": "Rukia Kuchiki",
-"type": "PERSONNAGE",
+"type": "BANKAI",
 "num": 43,
 "total": 67,
 "fichier": "043_MIRAGE_Rukia-Kuchiki.jpg"
@@ -1312,7 +1312,7 @@
 "rarete": "mirage",
 "special": null,
 "nom": "Grimmjow Jaegerjaquez",
-"type": "PERSONNAGE",
+"type": "RESURRECCIÓN",
 "num": 44,
 "total": 67,
 "fichier": "044_MIRAGE_Grimmjow-Jaegerjaquez.jpg"
@@ -1354,7 +1354,7 @@
 "rarete": "mirage",
 "special": null,
 "nom": "Byakuya Kuchiki",
-"type": "PERSONNAGE",
+"type": "BANKAI",
 "num": 47,
 "total": 67,
 "fichier": "047_MIRAGE_Byakuya-Kuchiki.jpg"
@@ -1367,11 +1367,11 @@
 "credit": "© Tite Kubo / Shueisha, TV Tokyo, dentsu, Pierrot",
 "rarete": "mirage",
 "special": null,
-"nom": "Inconnu",
+"nom": "Byakuya Kuchiki",
 "type": "PERSONNAGE",
 "num": 48,
 "total": 67,
-"fichier": "048_MIRAGE_Inconnu.jpg"
+"fichier": "048_MIRAGE_Byakuya-Kuchiki.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/BLEACH/6732e84447a033cd4d39f6280d557809.jpg",
@@ -1382,7 +1382,7 @@
 "rarete": "mirage",
 "special": null,
 "nom": "Shinji Hirako",
-"type": "PERSONNAGE",
+"type": "SHIKAI",
 "num": 49,
 "total": 67,
 "fichier": "049_MIRAGE_Shinji-Hirako.jpg"
@@ -1452,7 +1452,7 @@
 "rarete": "mirage",
 "special": "genga",
 "nom": "Ichigo Kurosaki",
-"type": "PERSONNAGE",
+"type": "BANKAI",
 "num": 54,
 "total": 67,
 "fichier": "054_MIRAGE_GENGA_Ichigo-Kurosaki.jpg"
@@ -1495,7 +1495,7 @@
 "rarete": "zenkai",
 "special": null,
 "nom": "Kenpachi Zaraki",
-"type": "PERSONNAGE",
+"type": "BANKAI",
 "num": 57,
 "total": 67,
 "fichier": "057_ZENKAI_Kenpachi-Zaraki.jpg"
@@ -1523,7 +1523,7 @@
 "rarete": "zenkai",
 "special": null,
 "nom": "Ichigo Kurosaki",
-"type": "PERSONNAGE",
+"type": "BANKAI",
 "num": 59,
 "total": 67,
 "fichier": "059_ZENKAI_Ichigo-Kurosaki.jpg"
@@ -1536,11 +1536,11 @@
 "credit": "© Tite Kubo / Shueisha, TV Tokyo, dentsu, Pierrot",
 "rarete": "zenkai",
 "special": null,
-"nom": "Inconnu",
+"nom": "Sosuke Aizen",
 "type": "PERSONNAGE",
 "num": 60,
 "total": 67,
-"fichier": "060_ZENKAI_Inconnu.jpg"
+"fichier": "060_ZENKAI_Sosuke-Aizen.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/BLEACH/b04dce603a001047ffb13004b7c2f259.jpg",
@@ -1551,7 +1551,7 @@
 "rarete": "zenkai",
 "special": null,
 "nom": "Yoruichi Shihōin",
-"type": "PERSONNAGE",
+"type": "SHUNKO",
 "num": 61,
 "total": 67,
 "fichier": "061_ZENKAI_Yoruichi-Shihoin.jpg"
@@ -1565,7 +1565,7 @@
 "rarete": "zenkai",
 "special": "celluloid",
 "nom": "Shinji Hirako",
-"type": "PERSONNAGE",
+"type": "SHIKAI",
 "num": 62,
 "total": 67,
 "fichier": "062_ZENKAI_CELLULOID_Shinji-Hirako.jpg"
@@ -1579,7 +1579,7 @@
 "rarete": "zenkai",
 "special": null,
 "nom": "Ichigo Kurosaki",
-"type": "PERSONNAGE",
+"type": "HOLLOW",
 "num": 63,
 "total": 67,
 "fichier": "063_ZENKAI_Ichigo-Kurosaki.jpg"
@@ -1593,7 +1593,7 @@
 "rarete": "zenkai",
 "special": null,
 "nom": "Ichigo Kurosaki",
-"type": "PERSONNAGE",
+"type": "VASTO LORDE",
 "num": 64,
 "total": 67,
 "fichier": "064_ZENKAI_Ichigo-Kurosaki.jpg"
@@ -1802,11 +1802,11 @@
 "credit": "© Shōgo Kinugasa, Tomoseshunsaku / KADOKAWA, Lerche",
 "rarete": "eclat",
 "special": null,
-"nom": "Inconnu",
+"nom": "Riku Utomiya",
 "type": "PERSONNAGE",
 "num": 12,
 "total": 39,
-"fichier": "012_ECLAT_Inconnu.jpg"
+"fichier": "012_ECLAT_Riku-Utomiya.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/ClassroomOFTHEelite/214a631a9f414555ba9715e59fb308f2.jpg",
@@ -1886,11 +1886,11 @@
 "credit": "© Shōgo Kinugasa, Tomoseshunsaku / KADOKAWA, Lerche",
 "rarete": "spectre",
 "special": null,
-"nom": "Inconnu",
+"nom": "Takuya Yagami",
 "type": "PERSONNAGE",
 "num": 18,
 "total": 39,
-"fichier": "018_SPECTRE_Inconnu.jpg"
+"fichier": "018_SPECTRE_Takuya-Yagami.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/ClassroomOFTHEelite/5fc43f5346b667e5d0dd5866af4e91f4.jpg",
@@ -1914,11 +1914,11 @@
 "credit": "© Shōgo Kinugasa, Tomoseshunsaku / KADOKAWA, Lerche",
 "rarete": "spectre",
 "special": "hanga",
-"nom": "Inconnu",
+"nom": "Kiyotaka Ayanokoji",
 "type": "PERSONNAGE",
 "num": 20,
 "total": 39,
-"fichier": "020_SPECTRE_HANGA_Inconnu.jpg"
+"fichier": "020_SPECTRE_HANGA_Kiyotaka-Ayanokoji.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/ClassroomOFTHEelite/SPECTRE/9a9db86790e6bebe9fc7739572ee703a.jpg",
@@ -1956,11 +1956,11 @@
 "credit": "© Shōgo Kinugasa, Tomoseshunsaku / KADOKAWA, Lerche",
 "rarete": "spectre",
 "special": null,
-"nom": "Inconnu",
+"nom": "Kazuomi Hosen",
 "type": "PERSONNAGE",
 "num": 23,
 "total": 39,
-"fichier": "023_SPECTRE_Inconnu.jpg"
+"fichier": "023_SPECTRE_Kazuomi-Hosen.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/ClassroomOFTHEelite/112c3e76ada1437627388b4de210dbd1.jpg",
@@ -2012,11 +2012,11 @@
 "credit": "© Shōgo Kinugasa, Tomoseshunsaku / KADOKAWA, Lerche",
 "rarete": "mirage",
 "special": null,
-"nom": "Inconnu",
+"nom": "Kiyotaka & Suzune",
 "type": "PERSONNAGE",
 "num": 27,
 "total": 39,
-"fichier": "027_MIRAGE_Inconnu.jpg"
+"fichier": "027_MIRAGE_Kiyotaka-Suzune.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/ClassroomOFTHEelite/da6eddbb11dd6c1eb67384dcde05c6e2.jpg",
@@ -2082,11 +2082,11 @@
 "credit": "© Shōgo Kinugasa, Tomoseshunsaku / KADOKAWA, Lerche",
 "rarete": "zenkai",
 "special": "genga",
-"nom": "Inconnu",
+"nom": "Kiyotaka Ayanokoji",
 "type": "PERSONNAGE",
 "num": 32,
 "total": 39,
-"fichier": "032_ZENKAI_GENGA_Inconnu.jpg"
+"fichier": "032_ZENKAI_GENGA_Kiyotaka-Ayanokoji.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/ClassroomOFTHEelite/ZENKAI/6654f3a30201edf2cc325ac9167b3370.jpg",
@@ -2096,11 +2096,11 @@
 "credit": "© Shōgo Kinugasa, Tomoseshunsaku / KADOKAWA, Lerche",
 "rarete": "zenkai",
 "special": null,
-"nom": "Inconnu",
+"nom": "Takuya Yagami",
 "type": "PERSONNAGE",
 "num": 33,
 "total": 39,
-"fichier": "033_ZENKAI_Inconnu.jpg"
+"fichier": "033_ZENKAI_Takuya-Yagami.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/ClassroomOFTHEelite/ZENKAI/7600a064cceffc3cc47fc2bf67be7b5a.jpg",
@@ -2261,7 +2261,7 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/1a59e5671b3cd5d380d5beaa9e51859d.jpg",
 "origine": "DBSBEERUS/ECLAT/1a59e5671b3cd5d380d5beaa9e51859d.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "eclat",
 "special": null,
@@ -2275,7 +2275,7 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/1cf41bfc1c56bed007204f19aa4b6a10.jpg",
 "origine": "DBSBEERUS/ECLAT/1cf41bfc1c56bed007204f19aa4b6a10.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball GT",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "eclat",
 "special": null,
@@ -2289,12 +2289,12 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/256c7e7851227365dafd6c7b27505edf.jpg",
 "origine": "DBSBEERUS/ECLAT/256c7e7851227365dafd6c7b27505edf.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "eclat",
 "special": null,
 "nom": "Trunks",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN",
 "num": 3,
 "total": 108,
 "fichier": "003_ECLAT_Trunks.jpg"
@@ -2303,7 +2303,7 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/2d942ae7a568dbac5142e5e29b5c374c.jpg",
 "origine": "DBSBEERUS/ECLAT/2d942ae7a568dbac5142e5e29b5c374c.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "eclat",
 "special": null,
@@ -2322,7 +2322,7 @@
 "rarete": "eclat",
 "special": null,
 "nom": "Beerus & Son Goku",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN GOD",
 "num": 5,
 "total": 108,
 "fichier": "005_ECLAT_Beerus-Son-Goku.jpg"
@@ -2331,7 +2331,7 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/3b6c9ca8804aabafbd9a1bad8297425c.jpg",
 "origine": "DBSBEERUS/ECLAT/3b6c9ca8804aabafbd9a1bad8297425c.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "eclat",
 "special": null,
@@ -2345,7 +2345,7 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/4b073f95687180615bba7aa1506bd2c7.jpg",
 "origine": "DBSBEERUS/ECLAT/4b073f95687180615bba7aa1506bd2c7.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "eclat",
 "special": null,
@@ -2359,7 +2359,7 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/53a876b9ce1f9ba79b52fb78afed35d1.jpg",
 "origine": "DBSBEERUS/ECLAT/53a876b9ce1f9ba79b52fb78afed35d1.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "eclat",
 "special": null,
@@ -2387,7 +2387,7 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/7225d44b710bfe3565102151958a1313.jpg",
 "origine": "DBSBEERUS/ECLAT/7225d44b710bfe3565102151958a1313.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "eclat",
 "special": null,
@@ -2401,12 +2401,12 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/72de5dd970b0f479be24c0a36d163ec1.jpg",
 "origine": "DBSBEERUS/ECLAT/72de5dd970b0f479be24c0a36d163ec1.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "eclat",
 "special": null,
 "nom": "Majin Buu",
-"type": "PERSONNAGE",
+"type": "FORME ORIGINELLE",
 "num": 11,
 "total": 108,
 "fichier": "011_ECLAT_Majin-Buu.jpg"
@@ -2415,7 +2415,7 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/7d72e053ac024688f52aedf3b43f109e.jpg",
 "origine": "DBSBEERUS/ECLAT/7d72e053ac024688f52aedf3b43f109e.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "eclat",
 "special": null,
@@ -2443,7 +2443,7 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/80a483eabb2e6a3e31a1aaca988d5193.jpg",
 "origine": "DBSBEERUS/ECLAT/80a483eabb2e6a3e31a1aaca988d5193.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "eclat",
 "special": null,
@@ -2457,7 +2457,7 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/962f1b6c2d450bfd503555254d0b4e5e.jpg",
 "origine": "DBSBEERUS/ECLAT/962f1b6c2d450bfd503555254d0b4e5e.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "eclat",
 "special": null,
@@ -2471,12 +2471,12 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/9cc8786cc189c639eef3880a4ad4ff9f.jpg",
 "origine": "DBSBEERUS/ECLAT/9cc8786cc189c639eef3880a4ad4ff9f.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "eclat",
 "special": null,
 "nom": "Son Gohan & Cell",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN 2",
 "num": 16,
 "total": 108,
 "fichier": "016_ECLAT_Son-Gohan-Cell.jpg"
@@ -2490,7 +2490,7 @@
 "rarete": "eclat",
 "special": null,
 "nom": "Piccolo & Son Gohan",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN",
 "num": 17,
 "total": 108,
 "fichier": "017_ECLAT_Piccolo-Son-Gohan.jpg"
@@ -2504,7 +2504,7 @@
 "rarete": "eclat",
 "special": null,
 "nom": "Frost",
-"type": "PERSONNAGE",
+"type": "QUATRIÈME FORME",
 "num": 18,
 "total": 108,
 "fichier": "018_ECLAT_Frost.jpg"
@@ -2513,12 +2513,12 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/Majin Vegeta and Trunks.jpeg",
 "origine": "DBSBEERUS/ECLAT/Majin Vegeta and Trunks.jpeg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "eclat",
 "special": null,
 "nom": "Vegeta & Trunks",
-"type": "PERSONNAGE",
+"type": "MAJIN",
 "num": 19,
 "total": 108,
 "fichier": "019_ECLAT_Vegeta-Trunks.jpg"
@@ -2527,7 +2527,7 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/a8b2ab3fcaaad40e82e757eb62ce1d86.jpg",
 "origine": "DBSBEERUS/ECLAT/a8b2ab3fcaaad40e82e757eb62ce1d86.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball GT",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "eclat",
 "special": null,
@@ -2546,7 +2546,7 @@
 "rarete": "eclat",
 "special": null,
 "nom": "Son Goku",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN GOD",
 "num": 21,
 "total": 108,
 "fichier": "021_ECLAT_Son-Goku.jpg"
@@ -2560,7 +2560,7 @@
 "rarete": "eclat",
 "special": null,
 "nom": "Hit & Son Goku",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN GOD",
 "num": 22,
 "total": 108,
 "fichier": "022_ECLAT_Hit-Son-Goku.jpg"
@@ -2569,12 +2569,12 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/bd2633874f08b31d78db324b4f8dacd3.jpg",
 "origine": "DBSBEERUS/ECLAT/bd2633874f08b31d78db324b4f8dacd3.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "eclat",
 "special": null,
 "nom": "Son Gohan du futur",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN",
 "num": 23,
 "total": 108,
 "fichier": "023_ECLAT_Son-Gohan-du-futur.jpg"
@@ -2583,12 +2583,12 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/c654930b6e7ae05dd29c96233c12e29c.jpg",
 "origine": "DBSBEERUS/ECLAT/c654930b6e7ae05dd29c96233c12e29c.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "eclat",
 "special": null,
 "nom": "Freezer & Cooler",
-"type": "PERSONNAGE",
+"type": "FORME FINALE",
 "num": 24,
 "total": 108,
 "fichier": "024_ECLAT_Freezer-Cooler.jpg"
@@ -2611,7 +2611,7 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/dd79eed050516144514aa945080b9c25.jpg",
 "origine": "DBSBEERUS/ECLAT/dd79eed050516144514aa945080b9c25.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "eclat",
 "special": null,
@@ -2639,7 +2639,7 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/e87033512cefb61ec13205105e545c20.jpg",
 "origine": "DBSBEERUS/ECLAT/e87033512cefb61ec13205105e545c20.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "eclat",
 "special": null,
@@ -2653,7 +2653,7 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/f236578881abdb25ca62bf1fb069c8d2.jpg",
 "origine": "DBSBEERUS/ECLAT/f236578881abdb25ca62bf1fb069c8d2.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "eclat",
 "special": null,
@@ -2672,7 +2672,7 @@
 "rarete": "eclat",
 "special": null,
 "nom": "Piccolo",
-"type": "PERSONNAGE",
+"type": "ORANGE PICCOLO",
 "num": 30,
 "total": 108,
 "fichier": "030_ECLAT_Piccolo.jpg"
@@ -2681,12 +2681,12 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/téléchargé (1).jpeg",
 "origine": "DBSBEERUS/ECLAT/téléchargé (1).jpeg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "eclat",
 "special": null,
 "nom": "Vegeta",
-"type": "PERSONNAGE",
+"type": "MAJIN",
 "num": 31,
 "total": 108,
 "fichier": "031_ECLAT_Vegeta.jpg"
@@ -2695,12 +2695,12 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/téléchargé (13).jpeg",
 "origine": "DBSBEERUS/ECLAT/téléchargé (13).jpeg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "eclat",
 "special": null,
 "nom": "Freezer & Cooler",
-"type": "PERSONNAGE",
+"type": "FORME FINALE",
 "num": 32,
 "total": 108,
 "fichier": "032_ECLAT_Freezer-Cooler.jpg"
@@ -2723,7 +2723,7 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/téléchargé (5).jpeg",
 "origine": "DBSBEERUS/ECLAT/téléchargé (5).jpeg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "eclat",
 "special": null,
@@ -2737,12 +2737,12 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/téléchargé.jpeg",
 "origine": "DBSBEERUS/ECLAT/téléchargé.jpeg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "eclat",
 "special": null,
 "nom": "Vegeta",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN",
 "num": 35,
 "total": 108,
 "fichier": "035_ECLAT_Vegeta.jpg"
@@ -2765,12 +2765,12 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/3c43867b97df934332f127db551fb30d.jpg",
 "origine": "DBSBEERUS/PRISME/3c43867b97df934332f127db551fb30d.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "prisme",
 "special": null,
 "nom": "Freezer & Cooler",
-"type": "PERSONNAGE",
+"type": "FORME FINALE",
 "num": 37,
 "total": 108,
 "fichier": "037_PRISME_Freezer-Cooler.jpg"
@@ -2784,7 +2784,7 @@
 "rarete": "prisme",
 "special": null,
 "nom": "Son Goku & Beerus",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN GOD",
 "num": 38,
 "total": 108,
 "fichier": "038_PRISME_Son-Goku-Beerus.jpg"
@@ -2807,7 +2807,7 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/744457e681d31103fca4c2a0a378667b.jpg",
 "origine": "DBSBEERUS/PRISME/744457e681d31103fca4c2a0a378667b.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "prisme",
 "special": null,
@@ -2826,7 +2826,7 @@
 "rarete": "prisme",
 "special": null,
 "nom": "Son Goku",
-"type": "PERSONNAGE",
+"type": "ULTRA INSTINCT",
 "num": 41,
 "total": 108,
 "fichier": "041_PRISME_Son-Goku.jpg"
@@ -2835,7 +2835,7 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/8b881e3ccc3e7aef134b0758a05df174.jpg",
 "origine": "DBSBEERUS/PRISME/8b881e3ccc3e7aef134b0758a05df174.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "prisme",
 "special": null,
@@ -2849,7 +2849,7 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/Son Gohan (Dragon Ball).jpeg",
 "origine": "DBSBEERUS/PRISME/Son Gohan (Dragon Ball).jpeg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "prisme",
 "special": null,
@@ -2863,12 +2863,12 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/PRISME/a2ab49e43fbb7901ee77dfbbd2cbbeb0.jpg",
 "origine": "DBSBEERUS/PRISME/a2ab49e43fbb7901ee77dfbbd2cbbeb0.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "prisme",
 "special": null,
 "nom": "Son Goku",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN",
 "num": 44,
 "total": 108,
 "fichier": "044_PRISME_Son-Goku.jpg"
@@ -2896,7 +2896,7 @@
 "rarete": "prisme",
 "special": null,
 "nom": "Son Goku",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN GOD",
 "num": 46,
 "total": 108,
 "fichier": "046_PRISME_Son-Goku.jpg"
@@ -2938,7 +2938,7 @@
 "rarete": "prisme",
 "special": null,
 "nom": "Son Goku",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN GOD",
 "num": 49,
 "total": 108,
 "fichier": "049_PRISME_Son-Goku.jpg"
@@ -2947,7 +2947,7 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/ec1956dbc5cf1d25cf2008a9eef319f6.jpg",
 "origine": "DBSBEERUS/PRISME/ec1956dbc5cf1d25cf2008a9eef319f6.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "prisme",
 "special": null,
@@ -2989,12 +2989,12 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/téléchargé (2).jpeg",
 "origine": "DBSBEERUS/PRISME/téléchargé (2).jpeg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "prisme",
 "special": null,
 "nom": "Vegeta",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN",
 "num": 53,
 "total": 108,
 "fichier": "053_PRISME_Vegeta.jpg"
@@ -3022,7 +3022,7 @@
 "rarete": "spectre",
 "special": null,
 "nom": "Trunks",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN",
 "num": 55,
 "total": 108,
 "fichier": "055_SPECTRE_Trunks.jpg"
@@ -3031,12 +3031,12 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/2cab411229cd5e27445e1a0572e7df4b.jpg",
 "origine": "DBSBEERUS/SPECTRE/2cab411229cd5e27445e1a0572e7df4b.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "spectre",
 "special": null,
 "nom": "Son Goten",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN",
 "num": 56,
 "total": 108,
 "fichier": "056_SPECTRE_Son-Goten.jpg"
@@ -3045,12 +3045,12 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/384e9720c87f03fd869e344896b20769.jpg",
 "origine": "DBSBEERUS/SPECTRE/384e9720c87f03fd869e344896b20769.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "spectre",
 "special": null,
 "nom": "Trunks",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN",
 "num": 57,
 "total": 108,
 "fichier": "057_SPECTRE_Trunks.jpg"
@@ -3059,12 +3059,12 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/675e236d0fbcfdb22485d948cf275734.jpg",
 "origine": "DBSBEERUS/SPECTRE/675e236d0fbcfdb22485d948cf275734.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "spectre",
 "special": "hanga",
 "nom": "Gotenks",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN",
 "num": 58,
 "total": 108,
 "fichier": "058_SPECTRE_HANGA_Gotenks.jpg"
@@ -3087,12 +3087,12 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/SPECTRE/81e31a3ddf05953f71cae0c965c94a47.jpg",
 "origine": "DBSBEERUS/SPECTRE/81e31a3ddf05953f71cae0c965c94a47.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "spectre",
 "special": null,
 "nom": "Son Gohan & Cell",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN 2",
 "num": 60,
 "total": 108,
 "fichier": "060_SPECTRE_Son-Gohan-Cell.jpg"
@@ -3101,12 +3101,12 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/Kamehameha_.jpeg",
 "origine": "DBSBEERUS/SPECTRE/Kamehameha_.jpeg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "spectre",
 "special": null,
 "nom": "Son Gohan",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN 2",
 "num": 61,
 "total": 108,
 "fichier": "061_SPECTRE_Son-Gohan.jpg"
@@ -3115,12 +3115,12 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/SPECTRE/a0db3b8e5c327b313bab63999896093f.jpg",
 "origine": "DBSBEERUS/SPECTRE/a0db3b8e5c327b313bab63999896093f.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "spectre",
 "special": "reiatsu",
 "nom": "Trunks",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN",
 "num": 62,
 "total": 108,
 "fichier": "062_SPECTRE_REIATSU_Trunks.jpg"
@@ -3129,12 +3129,12 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/af5eaa4f0ae6a9cf30005c15f876cbca.jpg",
 "origine": "DBSBEERUS/SPECTRE/af5eaa4f0ae6a9cf30005c15f876cbca.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "spectre",
 "special": null,
 "nom": "Gogeta",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN",
 "num": 63,
 "total": 108,
 "fichier": "063_SPECTRE_Gogeta.jpg"
@@ -3143,12 +3143,12 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/b279bf76951e55d0b114b30b2c48323d.jpg",
 "origine": "DBSBEERUS/SPECTRE/b279bf76951e55d0b114b30b2c48323d.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "spectre",
 "special": null,
 "nom": "Son Gohan",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN 2",
 "num": 64,
 "total": 108,
 "fichier": "064_SPECTRE_Son-Gohan.jpg"
@@ -3171,12 +3171,12 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/e1b348838acf4a2bad03e4e963439ad5.jpg",
 "origine": "DBSBEERUS/SPECTRE/e1b348838acf4a2bad03e4e963439ad5.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "spectre",
 "special": "ekonte",
 "nom": "Trunks",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN",
 "num": 66,
 "total": 108,
 "fichier": "066_SPECTRE_EKONTE_Trunks.jpg"
@@ -3185,12 +3185,12 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/ee2dc8bce44b34bab66fe9ec985a35e4.jpg",
 "origine": "DBSBEERUS/SPECTRE/ee2dc8bce44b34bab66fe9ec985a35e4.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "spectre",
 "special": null,
 "nom": "Trunks",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN",
 "num": 67,
 "total": 108,
 "fichier": "067_SPECTRE_Trunks.jpg"
@@ -3199,12 +3199,12 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/f1aedbcfb7318f0ec211b15104a7286d.jpg",
 "origine": "DBSBEERUS/SPECTRE/f1aedbcfb7318f0ec211b15104a7286d.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "spectre",
 "special": null,
 "nom": "Son Goten & Trunks",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN",
 "num": 68,
 "total": 108,
 "fichier": "068_SPECTRE_Son-Goten-Trunks.jpg"
@@ -3227,12 +3227,12 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/téléchargé (12).jpeg",
 "origine": "DBSBEERUS/SPECTRE/téléchargé (12).jpeg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "spectre",
 "special": "genga",
 "nom": "Trunks & Mecha Freezer",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN",
 "num": 70,
 "total": 108,
 "fichier": "070_SPECTRE_GENGA_Trunks-Mecha-Freezer.jpg"
@@ -3241,7 +3241,7 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/téléchargé (18).jpeg",
 "origine": "DBSBEERUS/SPECTRE/téléchargé (18).jpeg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "spectre",
 "special": null,
@@ -3255,12 +3255,12 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/téléchargé (19).jpeg",
 "origine": "DBSBEERUS/SPECTRE/téléchargé (19).jpeg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "spectre",
 "special": null,
 "nom": "Son Gohan & Son Goku",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN 2",
 "num": 72,
 "total": 108,
 "fichier": "072_SPECTRE_Son-Gohan-Son-Goku.jpg"
@@ -3274,7 +3274,7 @@
 "rarete": "mirage",
 "special": null,
 "nom": "Son Goku & Vegeta",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN GOD",
 "num": 73,
 "total": 108,
 "fichier": "073_MIRAGE_Son-Goku-Vegeta.jpg"
@@ -3287,11 +3287,11 @@
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "mirage",
 "special": "sakuga",
-"nom": "Gogeta Super Saiyan 4",
-"type": "PERSONNAGE",
+"nom": "Gogeta",
+"type": "SUPER SAIYAN 4",
 "num": 74,
 "total": 108,
-"fichier": "074_MIRAGE_SAKUGA_Gogeta-Super-Saiyan-4.jpg"
+"fichier": "074_MIRAGE_SAKUGA_Gogeta.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/376724ca045b4c30a19c0ec83ed6b8d1.jpg",
@@ -3302,7 +3302,7 @@
 "rarete": "mirage",
 "special": null,
 "nom": "Trunks",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN",
 "num": 75,
 "total": 108,
 "fichier": "075_MIRAGE_Trunks.jpg"
@@ -3330,7 +3330,7 @@
 "rarete": "mirage",
 "special": null,
 "nom": "Piccolo & Son Gohan",
-"type": "PERSONNAGE",
+"type": "ORANGE PICCOLO & BEAST",
 "num": 77,
 "total": 108,
 "fichier": "077_MIRAGE_Piccolo-Son-Gohan.jpg"
@@ -3344,7 +3344,7 @@
 "rarete": "mirage",
 "special": "celluloid",
 "nom": "Son Goku & Vegeta",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN BLUE",
 "num": 78,
 "total": 108,
 "fichier": "078_MIRAGE_CELLULOID_Son-Goku-Vegeta.jpg"
@@ -3372,7 +3372,7 @@
 "rarete": "mirage",
 "special": null,
 "nom": "Son Gohan",
-"type": "PERSONNAGE",
+"type": "BEAST",
 "num": 80,
 "total": 108,
 "fichier": "080_MIRAGE_Son-Gohan.jpg"
@@ -3381,12 +3381,12 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/e971604375b72cba22b380d682a7a7d2.jpg",
 "origine": "DBSBEERUS/MIRAGE/e971604375b72cba22b380d682a7a7d2.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "mirage",
 "special": null,
 "nom": "Son Gohan du futur",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN",
 "num": 81,
 "total": 108,
 "fichier": "081_MIRAGE_Son-Gohan-du-futur.jpg"
@@ -3395,12 +3395,12 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/téléchargé (3).jpeg",
 "origine": "DBSBEERUS/MIRAGE/téléchargé (3).jpeg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "mirage",
 "special": "sumi",
 "nom": "Son Gohan",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN 2",
 "num": 82,
 "total": 108,
 "fichier": "082_MIRAGE_SUMI_Son-Gohan.jpg"
@@ -3414,7 +3414,7 @@
 "rarete": "mirage",
 "special": null,
 "nom": "Son Gohan",
-"type": "PERSONNAGE",
+"type": "BEAST",
 "num": 83,
 "total": 108,
 "fichier": "083_MIRAGE_Son-Gohan.jpg"
@@ -3423,12 +3423,12 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/ZENKAI/1ecdc3d1217df51b6b2a0bb7d576fbb0.jpg",
 "origine": "DBSBEERUS/ZENKAI/1ecdc3d1217df51b6b2a0bb7d576fbb0.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "zenkai",
 "special": null,
 "nom": "Son Gohan",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN 2",
 "num": 84,
 "total": 108,
 "fichier": "084_ZENKAI_Son-Gohan.jpg"
@@ -3437,7 +3437,7 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/21feba2da08b391e88148c34785f7d47.jpg",
 "origine": "DBSBEERUS/ZENKAI/21feba2da08b391e88148c34785f7d47.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "zenkai",
 "special": null,
@@ -3466,12 +3466,12 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/41d8b01b9122f71fed57337cc9e2ee4b.jpg",
 "origine": "DBSBEERUS/ZENKAI/41d8b01b9122f71fed57337cc9e2ee4b.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "zenkai",
 "special": null,
 "nom": "Son Gohan",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN 2",
 "num": 87,
 "total": 108,
 "fichier": "087_ZENKAI_Son-Gohan.jpg"
@@ -3480,7 +3480,7 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/4a240b5ec84679d3c1f7ebcc09dc5b74.jpg",
 "origine": "DBSBEERUS/ZENKAI/4a240b5ec84679d3c1f7ebcc09dc5b74.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball GT",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "zenkai",
 "special": null,
@@ -3499,7 +3499,7 @@
 "rarete": "zenkai",
 "special": null,
 "nom": "Son Goku & Vegeta",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN BLUE",
 "num": 89,
 "total": 108,
 "fichier": "089_ZENKAI_Son-Goku-Vegeta.jpg"
@@ -3508,7 +3508,7 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/55af9ecd7122b73b5bd933e292f98077.jpg",
 "origine": "DBSBEERUS/ZENKAI/55af9ecd7122b73b5bd933e292f98077.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "zenkai",
 "special": "reiatsu",
@@ -3522,12 +3522,12 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/56f6dfbd5306a16f01f66f9a57bb36eb.jpg",
 "origine": "DBSBEERUS/ZENKAI/56f6dfbd5306a16f01f66f9a57bb36eb.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "zenkai",
 "special": null,
 "nom": "Trunks",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN",
 "num": 91,
 "total": 108,
 "fichier": "091_ZENKAI_Trunks.jpg"
@@ -3536,7 +3536,7 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/5fbd76c36a242201942a6fcabfc7120f.jpg",
 "origine": "DBSBEERUS/ZENKAI/5fbd76c36a242201942a6fcabfc7120f.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "zenkai",
 "special": null,
@@ -3555,7 +3555,7 @@
 "rarete": "zenkai",
 "special": null,
 "nom": "Son Gohan",
-"type": "PERSONNAGE",
+"type": "BEAST",
 "num": 93,
 "total": 108,
 "fichier": "093_ZENKAI_Son-Gohan.jpg"
@@ -3564,12 +3564,12 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/822f45f891228261b3ef17d869ae3b4f.jpg",
 "origine": "DBSBEERUS/ZENKAI/822f45f891228261b3ef17d869ae3b4f.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "zenkai",
 "special": "ekonte",
 "nom": "Son Goku",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN",
 "num": 94,
 "total": 108,
 "fichier": "094_ZENKAI_EKONTE_Son-Goku.jpg"
@@ -3583,7 +3583,7 @@
 "rarete": "zenkai",
 "special": null,
 "nom": "Son Goku & Vegeta",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN GOD",
 "num": 95,
 "total": 108,
 "fichier": "095_ZENKAI_Son-Goku-Vegeta.jpg"
@@ -3592,12 +3592,12 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/9e000fcd53e27a61440cccb2f93148b0.jpg",
 "origine": "DBSBEERUS/ZENKAI/9e000fcd53e27a61440cccb2f93148b0.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "zenkai",
 "special": null,
 "nom": "Gogeta",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN",
 "num": 96,
 "total": 108,
 "fichier": "096_ZENKAI_Gogeta.jpg"
@@ -3611,7 +3611,7 @@
 "rarete": "zenkai",
 "special": null,
 "nom": "Son Goku",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN 4",
 "num": 97,
 "total": 108,
 "fichier": "097_ZENKAI_Son-Goku.jpg"
@@ -3620,12 +3620,12 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/b2a0382b961b05c0698bed95e603934b.jpg",
 "origine": "DBSBEERUS/ZENKAI/b2a0382b961b05c0698bed95e603934b.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "zenkai",
 "special": "genga",
 "nom": "Son Goku",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN",
 "num": 98,
 "total": 108,
 "fichier": "098_ZENKAI_GENGA_Son-Goku.jpg"
@@ -3634,12 +3634,12 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/caf37194b3dcdcefd4a81aa1fc696088.jpg",
 "origine": "DBSBEERUS/ZENKAI/caf37194b3dcdcefd4a81aa1fc696088.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "zenkai",
 "special": "celluloid",
 "nom": "Son Gohan du futur",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN",
 "num": 99,
 "total": 108,
 "fichier": "099_ZENKAI_CELLULOID_Son-Gohan-du-futur.jpg"
@@ -3653,7 +3653,7 @@
 "rarete": "zenkai",
 "special": null,
 "nom": "Vegetto",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN BLUE",
 "num": 100,
 "total": 108,
 "fichier": "100_ZENKAI_Vegetto.jpg"
@@ -3662,12 +3662,12 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/e406f74f426f73da78a9e6ed8baaacbf.jpg",
 "origine": "DBSBEERUS/ZENKAI/e406f74f426f73da78a9e6ed8baaacbf.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "zenkai",
 "special": null,
 "nom": "Son Goku & Son Gohan",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN 2",
 "num": 101,
 "total": 108,
 "fichier": "101_ZENKAI_Son-Goku-Son-Gohan.jpg"
@@ -3676,12 +3676,12 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/e5cadd3caa4884a3f1417591b6b673f9.jpg",
 "origine": "DBSBEERUS/ZENKAI/e5cadd3caa4884a3f1417591b6b673f9.jpg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "zenkai",
 "special": "sakuga",
 "nom": "Son Gohan du futur",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN",
 "num": 102,
 "total": 108,
 "fichier": "102_ZENKAI_SAKUGA_Son-Gohan-du-futur.jpg"
@@ -3695,7 +3695,7 @@
 "rarete": "zenkai",
 "special": "reiatsu",
 "nom": "Son Goku",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN GOD",
 "num": 103,
 "total": 108,
 "fichier": "103_ZENKAI_REIATSU_Son-Goku.jpg"
@@ -3709,7 +3709,7 @@
 "rarete": "zenkai",
 "special": null,
 "nom": "Son Gohan",
-"type": "PERSONNAGE",
+"type": "BEAST",
 "num": 104,
 "total": 108,
 "fichier": "104_ZENKAI_Son-Gohan.jpg"
@@ -3718,7 +3718,7 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/téléchargé (17).jpeg",
 "origine": "DBSBEERUS/ZENKAI/téléchargé (17).jpeg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "zenkai",
 "special": null,
@@ -3732,12 +3732,12 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/téléchargé (7).jpeg",
 "origine": "DBSBEERUS/ZENKAI/téléchargé (7).jpeg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "zenkai",
 "special": "celluloid",
 "nom": "Son Gohan",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN 2",
 "num": 106,
 "total": 108,
 "fichier": "106_ZENKAI_CELLULOID_Son-Gohan.jpg"
@@ -3746,12 +3746,12 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/téléchargé (8).jpeg",
 "origine": "DBSBEERUS/ZENKAI/téléchargé (8).jpeg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "zenkai",
 "special": null,
 "nom": "Son Gohan",
-"type": "PERSONNAGE",
+"type": "SUPER SAIYAN 2",
 "num": 107,
 "total": 108,
 "fichier": "107_ZENKAI_Son-Gohan.jpg"
@@ -3760,7 +3760,7 @@
 "src": "/mnt/user-data/uploads/OPENING 2026/DBSBEERUS/téléchargé (9).jpeg",
 "origine": "DBSBEERUS/ZENKAI/téléchargé (9).jpeg",
 "dossier": "DBSBEERUS",
-"anime": "Dragon Ball Super",
+"anime": "Dragon Ball Z",
 "credit": "© Bird Studio / Shueisha, Toei Animation",
 "rarete": "zenkai",
 "special": null,
@@ -3918,11 +3918,11 @@
 "credit": "© Koyoharu Gotōge / Shueisha, Aniplex, ufotable",
 "rarete": "eclat",
 "special": null,
-"nom": "Inconnu",
+"nom": "Kyojuro Rengoku",
 "type": "PERSONNAGE",
 "num": 11,
 "total": 107,
-"fichier": "011_ECLAT_Inconnu.jpg"
+"fichier": "011_ECLAT_Kyojuro-Rengoku.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/Demon Slayer/a60fba0728411848cf8dc71259fc2b7b.jpg",
@@ -4086,11 +4086,11 @@
 "credit": "© Koyoharu Gotōge / Shueisha, Aniplex, ufotable",
 "rarete": "prisme",
 "special": null,
-"nom": "Inconnu",
+"nom": "Susamaru & Yahaba",
 "type": "PERSONNAGE",
 "num": 23,
 "total": 107,
-"fichier": "023_PRISME_Inconnu.jpg"
+"fichier": "023_PRISME_Susamaru-Yahaba.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/Demon Slayer/0943b65b5038430a2d56ca3c7a2e48e7.jpg",
@@ -4534,11 +4534,11 @@
 "credit": "© Koyoharu Gotōge / Shueisha, Aniplex, ufotable",
 "rarete": "spectre",
 "special": null,
-"nom": "Inconnu",
+"nom": "Akaza",
 "type": "PERSONNAGE",
 "num": 55,
 "total": 107,
-"fichier": "055_SPECTRE_Inconnu.jpg"
+"fichier": "055_SPECTRE_Akaza.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/Demon Slayer/38394a22bdc3da098c2407e296a248c6.jpg",
@@ -4744,11 +4744,11 @@
 "credit": "© Koyoharu Gotōge / Shueisha, Aniplex, ufotable",
 "rarete": "spectre",
 "special": "genga",
-"nom": "Inconnu",
+"nom": "Akaza",
 "type": "PERSONNAGE",
 "num": 70,
 "total": 107,
-"fichier": "070_SPECTRE_GENGA_Inconnu.jpg"
+"fichier": "070_SPECTRE_GENGA_Akaza.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/Demon Slayer/f1e3377d98dde6c10d044d08f0ca3738.jpg",
@@ -4842,11 +4842,11 @@
 "credit": "© Koyoharu Gotōge / Shueisha, Aniplex, ufotable",
 "rarete": "mirage",
 "special": null,
-"nom": "Inconnu",
+"nom": "Akaza",
 "type": "PERSONNAGE",
 "num": 77,
 "total": 107,
-"fichier": "077_MIRAGE_Inconnu.jpg"
+"fichier": "077_MIRAGE_Akaza.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/Demon Slayer/3565901592619528406eb84d3104bfc9.jpg",
@@ -5458,11 +5458,11 @@
 "credit": "© Atsushi Ōkubo / Kōdansha, David Production",
 "rarete": "prisme",
 "special": null,
-"nom": "Inconnu",
+"nom": "Moonlight Mask",
 "type": "PERSONNAGE",
 "num": 9,
 "total": 33,
-"fichier": "009_PRISME_Inconnu.jpg"
+"fichier": "009_PRISME_Moonlight-Mask.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/FIREforce/15e45937137aa4a7d0ee222c54005798.jpg",
@@ -5584,11 +5584,11 @@
 "credit": "© Atsushi Ōkubo / Kōdansha, David Production",
 "rarete": "spectre",
 "special": "hanga",
-"nom": "Inconnu",
+"nom": "Dragon",
 "type": "PERSONNAGE",
 "num": 18,
 "total": 33,
-"fichier": "018_SPECTRE_HANGA_Inconnu.jpg"
+"fichier": "018_SPECTRE_HANGA_Dragon.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/FIREforce/833e11eada03a7a187516d8c3edac191.jpg",
@@ -5782,11 +5782,11 @@
 "credit": "© Atsushi Ōkubo / Kōdansha, David Production",
 "rarete": "zenkai",
 "special": null,
-"nom": "Inconnu",
+"nom": "Dragon",
 "type": "PERSONNAGE",
 "num": 32,
 "total": 33,
-"fichier": "032_ZENKAI_Inconnu.jpg"
+"fichier": "032_ZENKAI_Dragon.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/FIREforce/e7e10b60dfef18629656a5bf51013712.jpg",
@@ -5796,11 +5796,11 @@
 "credit": "© Atsushi Ōkubo / Kōdansha, David Production",
 "rarete": "zenkai",
 "special": null,
-"nom": "Inconnu",
+"nom": "Arthur Boyle",
 "type": "PERSONNAGE",
 "num": 33,
 "total": 33,
-"fichier": "033_ZENKAI_Inconnu.jpg"
+"fichier": "033_ZENKAI_Arthur-Boyle.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/GACHIAKUTA/7920dea1f747b664172538af25900fde.jpg",
@@ -5810,11 +5810,11 @@
 "credit": "© Kei Urana, Hideyoshi Andō / Kōdansha, Bones Film",
 "rarete": "spectre",
 "special": "sakuga",
-"nom": "Inconnu",
+"nom": "Semiu",
 "type": "PERSONNAGE",
 "num": 1,
 "total": 1,
-"fichier": "001_SPECTRE_SAKUGA_Inconnu.jpg"
+"fichier": "001_SPECTRE_SAKUGA_Semiu.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/HELLSParadise/ECLAT/1299256deb346765d577664e2fcee61b.jpg",
@@ -5838,11 +5838,11 @@
 "credit": "© Yūji Kaku / Shueisha, Twin Engine, MAPPA",
 "rarete": "eclat",
 "special": null,
-"nom": "Inconnu",
+"nom": "Senta",
 "type": "PERSONNAGE",
 "num": 2,
 "total": 36,
-"fichier": "002_ECLAT_Inconnu.jpg"
+"fichier": "002_ECLAT_Senta.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/HELLSParadise/ECLAT/1abf66512bc81eba2136ae8ebcd2e449.jpg",
@@ -5852,11 +5852,11 @@
 "credit": "© Yūji Kaku / Shueisha, Twin Engine, MAPPA",
 "rarete": "eclat",
 "special": null,
-"nom": "Inconnu",
+"nom": "Fuchi",
 "type": "PERSONNAGE",
 "num": 3,
 "total": 36,
-"fichier": "003_ECLAT_Inconnu.jpg"
+"fichier": "003_ECLAT_Fuchi.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/HELLSParadise/2b21315e1252f2ebb0139786457fce74.jpg",
@@ -5908,11 +5908,11 @@
 "credit": "© Yūji Kaku / Shueisha, Twin Engine, MAPPA",
 "rarete": "eclat",
 "special": null,
-"nom": "Inconnu",
+"nom": "Chobei",
 "type": "PERSONNAGE",
 "num": 7,
 "total": 36,
-"fichier": "007_ECLAT_Inconnu.jpg"
+"fichier": "007_ECLAT_Chobei.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/HELLSParadise/ECLAT/5998f41b414ee075e788a3b449059ca3.jpg",
@@ -5922,11 +5922,11 @@
 "credit": "© Yūji Kaku / Shueisha, Twin Engine, MAPPA",
 "rarete": "eclat",
 "special": null,
-"nom": "Inconnu",
+"nom": "Ju Fa",
 "type": "PERSONNAGE",
 "num": 8,
 "total": 36,
-"fichier": "008_ECLAT_Inconnu.jpg"
+"fichier": "008_ECLAT_Ju-Fa.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/HELLSParadise/ECLAT/b19d1a83b1eccfc049f6a6225b0e8780.jpg",
@@ -5964,11 +5964,11 @@
 "credit": "© Yūji Kaku / Shueisha, Twin Engine, MAPPA",
 "rarete": "prisme",
 "special": null,
-"nom": "Inconnu",
+"nom": "Shugen",
 "type": "PERSONNAGE",
 "num": 11,
 "total": 36,
-"fichier": "011_PRISME_Inconnu.jpg"
+"fichier": "011_PRISME_Shugen.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/HELLSParadise/61740431ceeb22c7b33811af7cd705c6.jpg",
@@ -6006,11 +6006,11 @@
 "credit": "© Yūji Kaku / Shueisha, Twin Engine, MAPPA",
 "rarete": "prisme",
 "special": null,
-"nom": "Inconnu",
+"nom": "Sagiri",
 "type": "PERSONNAGE",
 "num": 14,
 "total": 36,
-"fichier": "014_PRISME_Inconnu.jpg"
+"fichier": "014_PRISME_Sagiri.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/HELLSParadise/139a16aed90998fdcf58b8a622704147.jpg",
@@ -6062,11 +6062,11 @@
 "credit": "© Yūji Kaku / Shueisha, Twin Engine, MAPPA",
 "rarete": "spectre",
 "special": "celluloid",
-"nom": "Inconnu",
+"nom": "Jikka",
 "type": "PERSONNAGE",
 "num": 18,
 "total": 36,
-"fichier": "018_SPECTRE_CELLULOID_Inconnu.jpg"
+"fichier": "018_SPECTRE_CELLULOID_Jikka.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/HELLSParadise/3159345b934762136d64878c392d3e5d.jpg",
@@ -6076,11 +6076,11 @@
 "credit": "© Yūji Kaku / Shueisha, Twin Engine, MAPPA",
 "rarete": "spectre",
 "special": null,
-"nom": "Inconnu",
+"nom": "Mu Dan",
 "type": "PERSONNAGE",
 "num": 19,
 "total": 36,
-"fichier": "019_SPECTRE_Inconnu.jpg"
+"fichier": "019_SPECTRE_Mu-Dan.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/HELLSParadise/69b3d27ac21c19e3daebf5906d10b926.jpg",
@@ -6090,11 +6090,11 @@
 "credit": "© Yūji Kaku / Shueisha, Twin Engine, MAPPA",
 "rarete": "spectre",
 "special": null,
-"nom": "Inconnu",
+"nom": "Shion & Tenza",
 "type": "PERSONNAGE",
 "num": 20,
 "total": 36,
-"fichier": "020_SPECTRE_Inconnu.jpg"
+"fichier": "020_SPECTRE_Shion-Tenza.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/HELLSParadise/c990c03e7b0ab0092bcf340e0cee27fd.jpg",
@@ -6160,11 +6160,11 @@
 "credit": "© Yūji Kaku / Shueisha, Twin Engine, MAPPA",
 "rarete": "mirage",
 "special": null,
-"nom": "Inconnu",
+"nom": "Shion",
 "type": "PERSONNAGE",
 "num": 25,
 "total": 36,
-"fichier": "025_MIRAGE_Inconnu.jpg"
+"fichier": "025_MIRAGE_Shion.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/HELLSParadise/cd36f29ec2debf056c0e019c065f84b3.jpg",
@@ -6216,11 +6216,11 @@
 "credit": "© Yūji Kaku / Shueisha, Twin Engine, MAPPA",
 "rarete": "zenkai",
 "special": null,
-"nom": "Inconnu",
+"nom": "Yuzuriha",
 "type": "PERSONNAGE",
 "num": 29,
 "total": 36,
-"fichier": "029_ZENKAI_Inconnu.jpg"
+"fichier": "029_ZENKAI_Yuzuriha.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/HELLSParadise/7c856fd4f56205fdc35db675758cbaab.jpg",
@@ -6301,11 +6301,11 @@
 "credit": "© Yūji Kaku / Shueisha, Twin Engine, MAPPA",
 "rarete": "zenkai",
 "special": null,
-"nom": "Inconnu",
+"nom": "Chobei",
 "type": "PERSONNAGE",
 "num": 35,
 "total": 36,
-"fichier": "035_ZENKAI_Inconnu.jpg"
+"fichier": "035_ZENKAI_Chobei.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/HELLSParadise/ZENKAI/f7d023b007ebb740c97366b3fa799cfe.jpg",
@@ -6343,11 +6343,11 @@
 "credit": "© Gege Akutami / Shueisha, MAPPA",
 "rarete": "eclat",
 "special": null,
-"nom": "Inconnu",
+"nom": "Megumi Fushiguro",
 "type": "PERSONNAGE",
 "num": 2,
 "total": 98,
-"fichier": "002_ECLAT_Inconnu.jpg"
+"fichier": "002_ECLAT_Megumi-Fushiguro.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/JJK/125c7c333f73eaf14b4b0be8a9092b67.jpg",
@@ -6413,11 +6413,11 @@
 "credit": "© Gege Akutami / Shueisha, MAPPA",
 "rarete": "eclat",
 "special": null,
-"nom": "Inconnu",
+"nom": "Kinji Hakari",
 "type": "PERSONNAGE",
 "num": 7,
 "total": 98,
-"fichier": "007_ECLAT_Inconnu.jpg"
+"fichier": "007_ECLAT_Kinji-Hakari.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/JJK/85faacb3cf63c94b67507fbb29d799ca.jpg",
@@ -6819,11 +6819,11 @@
 "credit": "© Gege Akutami / Shueisha, MAPPA",
 "rarete": "prisme",
 "special": null,
-"nom": "Inconnu",
+"nom": "Noritoshi Kamo",
 "type": "PERSONNAGE",
 "num": 36,
 "total": 98,
-"fichier": "036_PRISME_Inconnu.jpg"
+"fichier": "036_PRISME_Noritoshi-Kamo.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/JJK/c2383c24ec4fafa5b94af4716e8ab0f5.jpg",
@@ -6931,11 +6931,11 @@
 "credit": "© Gege Akutami / Shueisha, MAPPA",
 "rarete": "spectre",
 "special": null,
-"nom": "Inconnu",
+"nom": "Yuji & Mahito",
 "type": "PERSONNAGE",
 "num": 44,
 "total": 98,
-"fichier": "044_SPECTRE_Inconnu.jpg"
+"fichier": "044_SPECTRE_Yuji-Mahito.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/JJK/4eedabd8ec43b8b15f1eed921a9cc278.jpg",
@@ -7001,11 +7001,11 @@
 "credit": "© Gege Akutami / Shueisha, MAPPA",
 "rarete": "spectre",
 "special": "celluloid",
-"nom": "Inconnu",
+"nom": "Hiromi Higuruma",
 "type": "PERSONNAGE",
 "num": 49,
 "total": 98,
-"fichier": "049_SPECTRE_CELLULOID_Inconnu.jpg"
+"fichier": "049_SPECTRE_CELLULOID_Hiromi-Higuruma.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/JJK/8021445b51172127a66cedc5ba511620.jpg",
@@ -7015,11 +7015,11 @@
 "credit": "© Gege Akutami / Shueisha, MAPPA",
 "rarete": "spectre",
 "special": null,
-"nom": "Inconnu",
+"nom": "Choso",
 "type": "PERSONNAGE",
 "num": 50,
 "total": 98,
-"fichier": "050_SPECTRE_Inconnu.jpg"
+"fichier": "050_SPECTRE_Choso.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/JJK/8144ea0ed98039e051d528d358aaa192.jpg",
@@ -7071,11 +7071,11 @@
 "credit": "© Gege Akutami / Shueisha, MAPPA",
 "rarete": "spectre",
 "special": null,
-"nom": "Inconnu",
+"nom": "Mechamaru",
 "type": "PERSONNAGE",
 "num": 54,
 "total": 98,
-"fichier": "054_SPECTRE_Inconnu.jpg"
+"fichier": "054_SPECTRE_Mechamaru.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/JJK/e09d0272fad136a61f564d065a8324a3.jpg",
@@ -7155,11 +7155,11 @@
 "credit": "© Gege Akutami / Shueisha, MAPPA",
 "rarete": "mirage",
 "special": null,
-"nom": "Inconnu",
+"nom": "Satoru Gojo",
 "type": "PERSONNAGE",
 "num": 60,
 "total": 98,
-"fichier": "060_MIRAGE_Inconnu.jpg"
+"fichier": "060_MIRAGE_Satoru-Gojo.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/JJK/1b0aff2247b80d081540cbf598c1c903.jpg",
@@ -7281,11 +7281,11 @@
 "credit": "© Gege Akutami / Shueisha, MAPPA",
 "rarete": "mirage",
 "special": "genga",
-"nom": "Inconnu",
+"nom": "Hajime Kashimo",
 "type": "PERSONNAGE",
 "num": 69,
 "total": 98,
-"fichier": "069_MIRAGE_GENGA_Inconnu.jpg"
+"fichier": "069_MIRAGE_GENGA_Hajime-Kashimo.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/JJK/c31ccd93c65146e6c00bef259a89fc52.jpg",
@@ -7674,11 +7674,11 @@
 "credit": "© Gege Akutami / Shueisha, MAPPA",
 "rarete": "zenkai",
 "special": "genga",
-"nom": "Inconnu",
+"nom": "Maki Zen'in",
 "type": "PERSONNAGE",
 "num": 97,
 "total": 98,
-"fichier": "097_ZENKAI_GENGA_Inconnu.jpg"
+"fichier": "097_ZENKAI_GENGA_Maki-Zen-in.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/JJK/f83eab8ae9b70797d977dc5ec0d4c111.jpg",
@@ -7688,11 +7688,11 @@
 "credit": "© Gege Akutami / Shueisha, MAPPA",
 "rarete": "zenkai",
 "special": null,
-"nom": "Inconnu",
+"nom": "Nobara Kugisaki",
 "type": "PERSONNAGE",
 "num": 98,
 "total": 98,
-"fichier": "098_ZENKAI_Inconnu.jpg"
+"fichier": "098_ZENKAI_Nobara-Kugisaki.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/JOJOSBR/46fcd3b744855f821787bc44e447a369.jpg",
@@ -8179,11 +8179,11 @@
 "credit": "© Joumyaku, Mizuki Yoda / Shueisha",
 "rarete": "spectre",
 "special": null,
-"nom": "Inconnu",
-"type": "PERSONNAGE",
+"nom": "Marriagetoxin",
+"type": "ILLUSTRATION",
 "num": 10,
 "total": 13,
-"fichier": "010_SPECTRE_Inconnu.jpg"
+"fichier": "010_SPECTRE_Marriagetoxin.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/MARRIAGETOXIC/Marriage1.jpg",
@@ -8251,7 +8251,7 @@
 "rarete": "prisme",
 "special": null,
 "nom": "Izuku Midoriya",
-"type": "PERSONNAGE",
+"type": "DARK DEKU",
 "num": 2,
 "total": 11,
 "fichier": "002_PRISME_Izuku-Midoriya.jpg"
@@ -8321,7 +8321,7 @@
 "rarete": "mirage",
 "special": null,
 "nom": "Izuku Midoriya",
-"type": "PERSONNAGE",
+"type": "FULL COWL",
 "num": 7,
 "total": 11,
 "fichier": "007_MIRAGE_Izuku-Midoriya.jpg"
@@ -8404,11 +8404,11 @@
 "credit": "© Ikka Matsuki / Shogakukan",
 "rarete": "prisme",
 "special": null,
-"nom": "Inconnu",
+"nom": "Tonotsugu & Goh Sugoh",
 "type": "PERSONNAGE",
 "num": 2,
 "total": 7,
-"fichier": "002_PRISME_Inconnu.jpg"
+"fichier": "002_PRISME_Tonotsugu-Goh-Sugoh.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/Nippun Sengoku/e5cfd8a01a74d2565f4f23d0a58074f3.jpg",
@@ -8418,11 +8418,11 @@
 "credit": "© Ikka Matsuki / Shogakukan",
 "rarete": "prisme",
 "special": null,
-"nom": "Inconnu",
+"nom": "Tonotsugu & Sugoh",
 "type": "PERSONNAGE",
 "num": 3,
 "total": 7,
-"fichier": "003_PRISME_Inconnu.jpg"
+"fichier": "003_PRISME_Tonotsugu-Sugoh.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/Nippun Sengoku/51c0493ecd1c43bf0973ef8fdf43f11c.jpg",
@@ -8432,11 +8432,11 @@
 "credit": "© Ikka Matsuki / Shogakukan",
 "rarete": "spectre",
 "special": null,
-"nom": "Inconnu",
+"nom": "Yoshitsune Asama & Aoteru Misumi",
 "type": "PERSONNAGE",
 "num": 4,
 "total": 7,
-"fichier": "004_SPECTRE_Inconnu.jpg"
+"fichier": "004_SPECTRE_Yoshitsune-Asama-Aoteru-Misumi.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/Nippun Sengoku/4921a92c797f075b95cdad12264c5d1b.jpg",
@@ -8504,7 +8504,7 @@
 "rarete": "prisme",
 "special": null,
 "nom": "Monkey D. Luffy",
-"type": "PERSONNAGE",
+"type": "GEAR 4",
 "num": 2,
 "total": 10,
 "fichier": "002_PRISME_Monkey-D-Luffy.jpg"
@@ -8574,7 +8574,7 @@
 "rarete": "spectre",
 "special": "celluloid",
 "nom": "Monkey D. Luffy",
-"type": "PERSONNAGE",
+"type": "GEAR 4",
 "num": 7,
 "total": 10,
 "fichier": "007_SPECTRE_CELLULOID_Monkey-D-Luffy.jpg"
@@ -8587,11 +8587,11 @@
 "credit": "© Eiichirō Oda / Shueisha, Toei Animation",
 "rarete": "mirage",
 "special": null,
-"nom": "Inconnu",
+"nom": "Shamrock",
 "type": "PERSONNAGE",
 "num": 8,
 "total": 10,
-"fichier": "008_MIRAGE_Inconnu.jpg"
+"fichier": "008_MIRAGE_Shamrock.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/ONEPIECE/a15b339c9bfbcf880a6a9c42cd904761.jpg",
@@ -8602,7 +8602,7 @@
 "rarete": "mirage",
 "special": null,
 "nom": "Monkey D. Luffy",
-"type": "PERSONNAGE",
+"type": "GEAR 5",
 "num": 9,
 "total": 10,
 "fichier": "009_MIRAGE_Monkey-D-Luffy.jpg"
@@ -8746,11 +8746,11 @@
 "credit": "© Fujino Ōmori, Toshi Aoi / Kōdansha, Actas",
 "rarete": "eclat",
 "special": null,
-"nom": "Inconnu",
+"nom": "Workner",
 "type": "PERSONNAGE",
 "num": 6,
 "total": 26,
-"fichier": "006_ECLAT_Inconnu.jpg"
+"fichier": "006_ECLAT_Workner.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/Wistoria/ff98f647551e8b092672ddd91f57f806.jpg",
@@ -8774,11 +8774,11 @@
 "credit": "© Fujino Ōmori, Toshi Aoi / Kōdansha, Actas",
 "rarete": "prisme",
 "special": null,
-"nom": "Inconnu",
+"nom": "Elfaria",
 "type": "PERSONNAGE",
 "num": 8,
 "total": 26,
-"fichier": "008_PRISME_Inconnu.jpg"
+"fichier": "008_PRISME_Elfaria.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/Wistoria/PRISME/62df1d9082ccca72991b91437ad2f88f.jpg",
@@ -8830,11 +8830,11 @@
 "credit": "© Fujino Ōmori, Toshi Aoi / Kōdansha, Actas",
 "rarete": "prisme",
 "special": null,
-"nom": "Inconnu",
+"nom": "Rosti Nauman",
 "type": "PERSONNAGE",
 "num": 12,
 "total": 26,
-"fichier": "012_PRISME_Inconnu.jpg"
+"fichier": "012_PRISME_Rosti-Nauman.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/Wistoria/50070a3049e3ed0a5283e0c4b93d17d5.jpg",
@@ -8886,11 +8886,11 @@
 "credit": "© Fujino Ōmori, Toshi Aoi / Kōdansha, Actas",
 "rarete": "mirage",
 "special": "hanga",
-"nom": "Inconnu",
+"nom": "Will Serfort",
 "type": "PERSONNAGE",
 "num": 16,
 "total": 26,
-"fichier": "016_MIRAGE_HANGA_Inconnu.jpg"
+"fichier": "016_MIRAGE_HANGA_Will-Serfort.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/Wistoria/a5818c9c4434b8e6dae1decfa6b53237.jpg",
@@ -8900,11 +8900,11 @@
 "credit": "© Fujino Ōmori, Toshi Aoi / Kōdansha, Actas",
 "rarete": "mirage",
 "special": null,
-"nom": "Inconnu",
+"nom": "Edward",
 "type": "PERSONNAGE",
 "num": 17,
 "total": 26,
-"fichier": "017_MIRAGE_Inconnu.jpg"
+"fichier": "017_MIRAGE_Edward.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/Wistoria/eaf2178c7ef5d4d24a3480a34f380ae1.jpg",
@@ -8956,11 +8956,11 @@
 "credit": "© Fujino Ōmori, Toshi Aoi / Kōdansha, Actas",
 "rarete": "zenkai",
 "special": null,
-"nom": "Inconnu",
+"nom": "Zeo",
 "type": "PERSONNAGE",
 "num": 21,
 "total": 26,
-"fichier": "021_ZENKAI_Inconnu.jpg"
+"fichier": "021_ZENKAI_Zeo.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/Wistoria/ZENKAI/765bf8832f4db5cef818650a57abed80.jpg",
@@ -8999,11 +8999,11 @@
 "credit": "© Fujino Ōmori, Toshi Aoi / Kōdansha, Actas",
 "rarete": "zenkai",
 "special": "ekonte",
-"nom": "Inconnu",
+"nom": "Aron Mastreas",
 "type": "PERSONNAGE",
 "num": 24,
 "total": 26,
-"fichier": "024_ZENKAI_EKONTE_Inconnu.jpg"
+"fichier": "024_ZENKAI_EKONTE_Aron-Mastreas.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/Wistoria/ZENKAI/9782811697532_large.webp",
@@ -9013,11 +9013,11 @@
 "credit": "© Fujino Ōmori, Toshi Aoi / Kōdansha, Actas",
 "rarete": "zenkai",
 "special": null,
-"nom": "Inconnu",
+"nom": "Finn",
 "type": "PERSONNAGE",
 "num": 25,
 "total": 26,
-"fichier": "025_ZENKAI_Inconnu.jpg"
+"fichier": "025_ZENKAI_Finn.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/Wistoria/cf61ce3ae8675c65a774ab61678c8007.jpg",
@@ -9041,11 +9041,11 @@
 "credit": "© Hiromu Arakawa / Square Enix, Bones Film",
 "rarete": "eclat",
 "special": null,
-"nom": "Inconnu",
+"nom": "Hidari",
 "type": "PERSONNAGE",
 "num": 1,
 "total": 17,
-"fichier": "001_ECLAT_Inconnu.jpg"
+"fichier": "001_ECLAT_Hidari.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/YominoTsugai/379a5c540f899d9352e1ce343fd60433.jpg",
@@ -9055,11 +9055,11 @@
 "credit": "© Hiromu Arakawa / Square Enix, Bones Film",
 "rarete": "eclat",
 "special": null,
-"nom": "Inconnu",
+"nom": "Dextre",
 "type": "PERSONNAGE",
 "num": 2,
 "total": 17,
-"fichier": "002_ECLAT_Inconnu.jpg"
+"fichier": "002_ECLAT_Dextre.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/YominoTsugai/6ad4a18f01f41012f768db8600ecc37b.jpg",
@@ -9069,11 +9069,11 @@
 "credit": "© Hiromu Arakawa / Square Enix, Bones Film",
 "rarete": "eclat",
 "special": null,
-"nom": "Inconnu",
+"nom": "Hidari",
 "type": "PERSONNAGE",
 "num": 3,
 "total": 17,
-"fichier": "003_ECLAT_Inconnu.jpg"
+"fichier": "003_ECLAT_Hidari.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/YominoTsugai/75c5b7bd8d2cc5a3174bd56f0dee0517.jpg",
@@ -9111,11 +9111,11 @@
 "credit": "© Hiromu Arakawa / Square Enix, Bones Film",
 "rarete": "prisme",
 "special": null,
-"nom": "Inconnu",
+"nom": "Ivan",
 "type": "PERSONNAGE",
 "num": 6,
 "total": 17,
-"fichier": "006_PRISME_Inconnu.jpg"
+"fichier": "006_PRISME_Ivan.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/YominoTsugai/f748f1f3f016d0c5025afdbfb13469b3.jpg",
@@ -9125,11 +9125,11 @@
 "credit": "© Hiromu Arakawa / Square Enix, Bones Film",
 "rarete": "prisme",
 "special": null,
-"nom": "Inconnu",
+"nom": "Hidari",
 "type": "PERSONNAGE",
 "num": 7,
 "total": 17,
-"fichier": "007_PRISME_Inconnu.jpg"
+"fichier": "007_PRISME_Hidari.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/YominoTsugai/1eaeabc5d3afc232095524459a91454b.jpg",
@@ -9139,11 +9139,11 @@
 "credit": "© Hiromu Arakawa / Square Enix, Bones Film",
 "rarete": "spectre",
 "special": null,
-"nom": "Inconnu",
+"nom": "Jin Kagemori",
 "type": "PERSONNAGE",
 "num": 8,
 "total": 17,
-"fichier": "008_SPECTRE_Inconnu.jpg"
+"fichier": "008_SPECTRE_Jin-Kagemori.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/YominoTsugai/626f4bdfaf0c359153aaabf79379658c.jpg",
@@ -9153,11 +9153,11 @@
 "credit": "© Hiromu Arakawa / Square Enix, Bones Film",
 "rarete": "spectre",
 "special": "genga",
-"nom": "Inconnu",
+"nom": "Gabby",
 "type": "PERSONNAGE",
 "num": 9,
 "total": 17,
-"fichier": "009_SPECTRE_GENGA_Inconnu.jpg"
+"fichier": "009_SPECTRE_GENGA_Gabby.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/YominoTsugai/ac49c31cd6ae3b5ba24663fc6d79f01f.jpg",
@@ -9195,11 +9195,11 @@
 "credit": "© Hiromu Arakawa / Square Enix, Bones Film",
 "rarete": "mirage",
 "special": null,
-"nom": "Inconnu",
+"nom": "Jin Kagemori",
 "type": "PERSONNAGE",
 "num": 12,
 "total": 17,
-"fichier": "012_MIRAGE_Inconnu.jpg"
+"fichier": "012_MIRAGE_Jin-Kagemori.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/YominoTsugai/MIRAGE/41d60f656f9c45a4077f983907de4d44.jpg",
@@ -9280,11 +9280,11 @@
 "credit": "© Kamome Shirahama / Kōdansha, Bug Films",
 "rarete": "eclat",
 "special": null,
-"nom": "Inconnu",
+"nom": "Yinny",
 "type": "PERSONNAGE",
 "num": 1,
 "total": 43,
-"fichier": "001_ECLAT_Inconnu.jpg"
+"fichier": "001_ECLAT_Yinny.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/witchHATatelier/266fd6f02a2d324de1d6ecf325508473.jpg",
@@ -9588,11 +9588,11 @@
 "credit": "© Kamome Shirahama / Kōdansha, Bug Films",
 "rarete": "prisme",
 "special": null,
-"nom": "Inconnu",
+"nom": "Custas",
 "type": "PERSONNAGE",
 "num": 23,
 "total": 43,
-"fichier": "023_PRISME_Inconnu.jpg"
+"fichier": "023_PRISME_Custas.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/witchHATatelier/f26f9550f59e70b141b5b940fb01b193.jpg",
@@ -9728,11 +9728,11 @@
 "credit": "© Kamome Shirahama / Kōdansha, Bug Films",
 "rarete": "mirage",
 "special": null,
-"nom": "Inconnu",
+"nom": "Qifrey",
 "type": "PERSONNAGE",
 "num": 33,
 "total": 43,
-"fichier": "033_MIRAGE_Inconnu.jpg"
+"fichier": "033_MIRAGE_Qifrey.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/witchHATatelier/420b1ebaed516cfb87ec3a1b37462f5a.jpg",
@@ -9855,11 +9855,11 @@
 "credit": "© Kamome Shirahama / Kōdansha, Bug Films",
 "rarete": "zenkai",
 "special": null,
-"nom": "Inconnu",
+"nom": "Agott",
 "type": "PERSONNAGE",
 "num": 42,
 "total": 43,
-"fichier": "042_ZENKAI_Inconnu.jpg"
+"fichier": "042_ZENKAI_Agott.jpg"
 },
 {
 "src": "/mnt/user-data/uploads/OPENING 2026/witchHATatelier/b4aa3e2678910275388bc1266e28f334.jpg",
