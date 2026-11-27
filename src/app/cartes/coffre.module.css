@@ -157,6 +157,25 @@
 .position { margin: 0; font-size: 12px; color: #f4f1ea66; }
 .fermer { position: absolute; top: clamp(18px, 3vh, 30px); right: var(--marge); width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--trait); background: transparent; color: var(--papier); cursor: pointer; font-size: 16px; }
 
+/* Holo au survol, réservé aux Éclat (paillettes argentées) et aux Prisme (arc-en-ciel qui suit le pointeur) */
+.holo { position: absolute; inset: 0; pointer-events: none; opacity: 0; transition: opacity 300ms ease; mix-blend-mode: color-dodge; z-index: 1; }
+.carte[data-r="eclat"] .holo, .grande[data-r="eclat"] .holo {
+  background:
+    radial-gradient(circle at var(--mx) var(--my), #ffffff55, transparent 38%),
+    repeating-linear-gradient(115deg, #c9d3e855 0 2px, transparent 2px 7px),
+    linear-gradient(125deg, transparent 25%, #e6ecff66 calc(var(--mx) * 0.6 + 10%), transparent 70%);
+}
+.carte[data-r="prisme"] .holo, .grande[data-r="prisme"] .holo { mix-blend-mode: soft-light;
+  background:
+    radial-gradient(circle at var(--mx) var(--my), #ffffff66, transparent 35%),
+    linear-gradient(115deg, #ff4fa3 0%, #ffb84d 16%, #f7ff6b 30%, #5dffb2 46%, #4fc7ff 62%, #9a6bff 78%, #ff4fa3 100%);
+  background-size: 100% 100%, 260% 260%;
+  background-position: center, calc(var(--mx) * 1.4) calc(var(--my) * 1.4);
+}
+.carte[data-r="eclat"][data-survol] .holo, .grande[data-r="eclat"][data-survol] .holo { opacity: 0.45; }
+.carte[data-r="prisme"][data-survol] .holo, .grande[data-r="prisme"][data-survol] .holo { opacity: 0.75; }
+.clip { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+
 @media (max-width: 900px) {
   .tete { grid-template-columns: minmax(0, 1fr); }
   .bilan, .actions { min-width: 0; }
@@ -180,5 +199,5 @@
 }
 @media (prefers-reduced-motion: reduce) {
   .carte, .grande, .jauge i { transition: none; animation: none; }
-  .balayage { display: none; }
+  .balayage, .holo { display: none; }
 }

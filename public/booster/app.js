@@ -16,8 +16,11 @@ const RARES = {
 const PRISME_PAR_CARTE = 0.20;   // les autres places : Prisme 20 %, Éclat le reste
 const LABEL = { eclat: "ÉCLAT", prisme: "PRISME", spectre: "SPECTRE", mirage: "MIRAGE", zenkai: "ZENKAI" };
 const POOL = window.ZK_CARDS.cards.map(c => Object.assign({}, c, {
-  ill: c.base + "ill.webp", over: c.base + "over.webp", masks: c.base + "masks.png", full: c.base + "full.webp",
-  asm: c.rarity === "zenkai" ? [["ill", c.base + "ill.webp"], ["voile", c.base + "voile.webp"], ["lueur", IMG + "frames/zenkai_lueur.webp"],
+  ill: c.base + (c.flat ? "full.webp" : "ill.webp"), over: c.flat ? IMG + "vide.png" : c.base + "over.webp",
+  masks: c.flat ? IMG + "masque_vide.png" : c.base + "masks.png", full: c.base + "full.webp",
+  // cartes officielles : une seule image finie (cadre compris) ; l'assemblage Zenkai garde ses étapes, calques vides
+  asm: c.rarity === "zenkai" && c.flat ? [["ill", c.base + "full.webp"], ...["voile", "lueur", "bande", "flammes", "couronne", "eclats", "infos"].map(k => [k, IMG + "vide.png"])]
+    : c.rarity === "zenkai" ? [["ill", c.base + "ill.webp"], ["voile", c.base + "voile.webp"], ["lueur", IMG + "frames/zenkai_lueur.webp"],
     ["bande", IMG + "frames/zenkai_bande.webp"], ["flammes", IMG + "frames/zenkai_flammes.webp"], ["couronne", IMG + "frames/zenkai_couronne.webp"],
     ["eclats", IMG + "frames/zenkai_eclats.webp"], ["infos", c.base + "infos.webp"]] : null,
 }));

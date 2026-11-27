@@ -60,7 +60,7 @@ export default function Collection() {
         <div className={s.vide}>
           <h1 className={`affiche ${s.titre}`}>Ma collection</h1>
           <p>Connecte-toi pour retrouver tes cartes et ouvrir ton booster offert du jour.</p>
-          <Link href="/connexion" className="bouton">Se connecter</Link> <Link href="/catalogue" className="bouton-clair">Explorer le catalogue</Link>
+          <Link href="/connexion" className="bouton">Se connecter</Link> <Link href="/booster" className="bouton-clair">Ouvrir un booster</Link>
         </div>
       </section>
     );
