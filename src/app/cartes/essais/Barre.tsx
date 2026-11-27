@@ -7,7 +7,6 @@ export const ESSAIS = [
   { slug: "tunnel", titre: "Tunnel", ref: "Folioir" },
   { slug: "angle", titre: "Angle", ref: "Angled Gallery" },
   { slug: "adn", titre: "ADN", ref: "DNA Carousel" },
-  { slug: "vertical", titre: "Vertical", ref: "Slider Verticalix" },
 ] as const;
 
 export default function Barre({ actif, sombre = false }: { actif: string; sombre?: boolean }) {

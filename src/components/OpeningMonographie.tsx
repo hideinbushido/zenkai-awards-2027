@@ -9,6 +9,7 @@ import { useCallback, useEffect, useRef, useState, type CSSProperties } from "re
 import { CATEGORIES } from "@/data/edition";
 import { NOMINES_2027 } from "@/data/nomines2027";
 import { garderCarte, useCollection } from "@/lib/collection";
+import { carteNomine } from "@/data/cartesNomines";
 import s from "./OpeningMonographie.module.css";
 
 type Nomine = { id: string; nom: string; detail?: string; img: string; video?: string; refrain?: number };
@@ -17,7 +18,7 @@ const N = LISTE.length;
 const pad = (n: number) => String(n).padStart(2, "0");
 const CAT = "opening";
 
-export default function OpeningMonographie() {
+export default function OpeningMonographie({ bascule }: { bascule?: React.ReactNode }) {
   const idx = CATEGORIES.findIndex(c => c.id === CAT);
   const suivante = CATEGORIES[(idx + 1) % CATEGORIES.length];
   const bulletin = useCollection();
@@ -115,12 +116,14 @@ export default function OpeningMonographie() {
   const n = LISTE[i];
   const [artiste, oeuvre] = (n.detail ?? "").split(" · ");
   const choisi = bulletin[CAT] === n.id;
+  const carte = carteNomine(n.id, n.img);
 
   return (
     <section className={s.page} data-plein-ecran="" data-lenis-prevent="" aria-label="Meilleur opening : les nominés">
       <header className={s.hud}>
         <Link href="/categories">← Catégories</Link>
         <p><span>Meilleur opening</span> <em>{pad(idx + 1)} / {CATEGORIES.length}</em></p>
+        {bascule}
         <Link href={`/categories/${suivante.id}`}>{suivante.court} →</Link>
       </header>
 
@@ -150,6 +153,13 @@ export default function OpeningMonographie() {
         <figcaption key={n.id}>{oeuvre} · opening</figcaption>
       </figure>
 
+      {carte.vraie && (
+        <div className={s.carte} key={n.id + "c"} aria-hidden>
+          <img src={carte.carte} alt="" />
+          {carte.anim && <video src={carte.anim} autoPlay muted loop playsInline onPlaying={e => e.currentTarget.classList.add(s.joue)} />}
+        </div>
+      )}
+
       <div ref={ruban} className={s.ruban} aria-label="Tous les openings nominés">
         <div ref={piste} className={s.piste}>
           {[0, 1, 2].flatMap(copie => LISTE.map((m, k) => (
@@ -157,7 +167,7 @@ export default function OpeningMonographie() {
               aria-hidden={copie !== 1} tabIndex={copie === 1 ? 0 : -1}
               onClick={() => { if (!tire.current) setI(k); }}>
               <span className={s.num}>{pad(k + 1)}</span>
-              <img src={m.img} alt={copie === 1 ? m.nom : ""} draggable={false} loading="lazy" decoding="async" />
+              <img src={carteNomine(m.id, m.img).vignette} alt={copie === 1 ? m.nom : ""} draggable={false} loading="lazy" decoding="async" />
               <span className={s.nomV}>{m.nom}</span>
             </button>
           )))}
