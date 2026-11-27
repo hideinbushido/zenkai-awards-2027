@@ -95,6 +95,41 @@ def sakuga_mirage(art, A, B):
         frames.append((img * A + B).astype(np.float16))
     return frames
 
+def sakuga_mirage_remanence(art, A, B, fenetre):
+    """4 s : deux élans. Les rémanences surgissent loin derrière et rattrapent le personnage en un
+    éclair (le smear), petit tremblement à l'arrivée ; les traits d'action défilent en continu."""
+    rgb = petit(art.rgb); pm = petit(art.perso); coul = couleur_perso(art)
+    if pm.mean() < 0.03:             # même repli que la carte fixe : zone centrale gardée nette
+        el = ((xx - FW * 0.5) / (FW * 0.46)) ** 2 + ((yy - FH * 0.46) / (FH * 0.44)) ** 2
+        pm = np.clip((1.15 - el) / 0.5, 0, 1).astype(np.float32)
+    base = petit(fenetre)
+    ang = np.deg2rad(-28); dx, dy = np.cos(ang), np.sin(ang)
+    S = FW / 2400
+    r = np.random.default_rng(12); proj = (xx * -dy + yy * dx)
+    N = 96; frames = []
+    for i in range(N):
+        s = (i / 24) % 2.0
+        u = 0.0 if s < 0.35 else min(1.0, (s - 0.35) / 0.4)          # 0 = loin, 1 = rattrapé
+        el = (1 - u) ** 2 if 0.35 <= s < 0.75 else 0.0
+        f = base.copy()
+        if el > 0:
+            for dist, a in ((330, 0.4), (220, 0.55), (110, 0.7)):
+                d = dist * S * (0.4 + 2.2 * el)
+                M = np.float32([[1, 0, -dx * d], [0, 1, -dy * d]])
+                g = cv2.warpAffine(rgb, M, (FW, FH), borderMode=cv2.BORDER_REFLECT)
+                gm = cv2.warpAffine(pm, M, (FW, FH)) * (1 - pm)
+                t = np.clip(g * 0.45 + coul * 0.75, 0, 1)
+                f = f * (1 - (gm * a * el)[..., None]) + t * (gm * a * el)[..., None]
+        if 0.75 <= s < 0.95:                                              # tremblement à l'arrivée
+            k = (np.random.default_rng(i).random(2) - 0.5) * 10 * S * (0.95 - s) / 0.2
+            f = cv2.warpAffine(f, np.float32([[1, 0, k[0]], [0, 1, k[1]]]), (FW, FH), borderMode=cv2.BORDER_REFLECT)
+        decal = (i * 0.012) % 1.0                                          # traits d'action qui défilent
+        bande = r.random(900); idx = (((proj - proj.min()) / (proj.max() - proj.min()) + decal) % 1.0 * 899).astype(int)
+        lignes = (bande[idx] > 0.965).astype(np.float32) * (1 - pm) * 0.35
+        f = 1 - (1 - f) * (1 - lignes[..., None])
+        frames.append((f * A + B).astype(np.float16))
+    return frames
+
 # ------------------------------------------------------------ ZENKAI : caméra 2.5D
 def sakuga_zenkai(art, A, B):
     art.perso = np.maximum(art.perso, C.flou(art.large, 2))
@@ -260,8 +295,9 @@ def faire(e):
         S1.GENGA_LAVIS = False; trait_seul, _, _ = capture(fn, art, r); S1.GENGA_LAVIS = True
         frames = genga_spectre(art, A, B, plein, trait_seul)
     else:
-        _, A, B = capture(fn, art, r)
-        frames = {"spectre": sakuga_spectre, "mirage": sakuga_mirage, "zenkai": sakuga_zenkai}[r](art, A, B)
+        fenetre, A, B = capture(fn, art, r)
+        if r == "mirage": frames = sakuga_mirage_remanence(art, A, B, fenetre)
+        else: frames = {"spectre": sakuga_spectre, "zenkai": sakuga_zenkai}[r](art, A, B)
     ecrire(frames, sortie, base, perso, zenkai=(r == "zenkai"))
     print("anim", e["fichier"], flush=True)
 

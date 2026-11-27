@@ -21,7 +21,7 @@ FOND = np.array([8, 7, 11], np.float32) / 255
 SORTIE = SORTIE_LOT
 
 VARIANTES = dict(S2.VARIANTES)
-VARIANTES["ekonte"] = {"spectre": S1.ekonte_complet, "mirage": S1.ekonte_mirage, "zenkai": S1.ekonte_croquis}
+VARIANTES["ekonte"] = {"spectre": S1.ekonte_planches, "mirage": S1.ekonte_mirage, "zenkai": S1.ekonte_croquis}
 
 modele = ModelLoader().load_from_file(os.path.join(BASE, "modeles", "anime6b.pth")).eval()
 session = new_session("isnet-anime")
