@@ -37,7 +37,7 @@ export default function APropos() {
       />
 
       <Manifeste />
-      <section className={s.collectionEditoriale}><div><h2>Les cartes après le live</h2><p>Retrouve une illustration, ouvre un booster et compose ta couverture avec les cartes que tu veux montrer à tes amis.</p><Link className="bouton" href="/catalogue">Feuilleter le catalogue</Link></div><div className={s.exemples}>{["BLEACH-012","MARRIAGETOXIC-011","HELLSParadise-011"].map(id=><img key={id} src={"/booster/img/cards/"+id+"/full.webp"} alt={id} loading="lazy"/>)}</div></section>
+      <section className={s.collectionEditoriale}><div><h2>Les cartes après le live</h2><p>Retrouve une illustration, ouvre un booster et compose ta couverture avec les cartes que tu veux montrer à tes amis.</p><Link className="bouton" href="/booster">Ouvrir un booster</Link></div><div className={s.exemples}>{["BLEACH-012","MARRIAGETOXIC-011","HELLSParadise-011"].map(id=><img key={id} src={"/booster/img/cards/"+id+"/full.webp"} alt={id} loading="lazy"/>)}</div></section>
 
       <section className={s.section} aria-labelledby="gestes-titre">
         <TitreAnime id="gestes-titre" className={`affiche ${s.h2}`}>Des nominés au live</TitreAnime>

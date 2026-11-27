@@ -8,13 +8,13 @@ import s from "./VitrineNomines.module.css";
 
 // Des nominés d'autres catégories, chacun avec sa carte ZENKAI, sur un extrait de son animé.
 const VITRINE = [
-  { categorie: "Meilleur protagoniste", court: "protagoniste", nom: "Gabimaru", anime: "Hell's Paradise saison 2", carte: "HELLSParadise-013", video: "hells-paradise",
+  { categorie: "Meilleur protagoniste", court: "protagoniste", nom: "Gabimaru", anime: "Hell's Paradise saison 2", carte: "HELLSParadise-028", video: "hells-paradise",
     texte: "Le ninja qui voulait seulement rentrer chez lui. La saison 2 le pousse plus loin que jamais sur l'île de Shinsenkyō." },
-  { categorie: "Meilleur antagoniste", court: "antagoniste", nom: "Yhwach", anime: "Bleach TYBW : The Calamity", carte: "BLEACH-055", video: "bleach-ibull",
+  { categorie: "Meilleur antagoniste", court: "antagoniste", nom: "Yhwach", anime: "Bleach TYBW : The Calamity", carte: "BLEACH-033", video: "bleach-ibull",
     texte: "Le père des Quincy voit l'avenir et le réécrit. The Calamity en fait l'ennemi le plus écrasant de la saga." },
-  { categorie: "Meilleur personnage masculin", court: "masculin", nom: "Shinra Kusakabe", anime: "Fire Force saison 3", carte: "FIREforce-011", video: "ignis",
+  { categorie: "Meilleur personnage masculin", court: "masculin", nom: "Shinra Kusakabe", anime: "Fire Force saison 3", carte: "FIREforce-031", video: "ignis",
     texte: "Le pompier aux pieds de diable court vers la vérité sur l'Adolla Burst, quitte à brûler tout le reste." },
-  { categorie: "Meilleur sensei", court: "sensei", nom: "Yami Sukehiro", anime: "Black Clover saison 2", carte: "BLACKCLOVER-009", video: "black-clover",
+  { categorie: "Meilleur sensei", court: "sensei", nom: "Yami Sukehiro", anime: "Black Clover saison 2", carte: "BLACKCLOVER-045", video: "black-clover",
     texte: "Le capitaine du Taureau Noir apprend à ses recrues à dépasser leurs limites, maintenant, pas plus tard." },
 ];
 const pad = (n: number) => String(n).padStart(2, "0");

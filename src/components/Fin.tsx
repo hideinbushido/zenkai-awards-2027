@@ -21,7 +21,7 @@ export default function Fin() {
         <Link href="/palmares">Palmarès</Link>
         <Link href="/equipe">Équipe</Link>
         <Link href="/faq">FAQ et règlement</Link>
-        <Link href="/archives">Archives</Link><Link href="/catalogue">Catalogue</Link><Link href="/amis">Mes amis</Link><Link href="/voter">Édition 2027</Link>
+        <Link href="/archives">Archives</Link><Link href="/amis">Mes amis</Link><Link href="/voter">Édition 2027</Link>
       </nav>
       <p className={s.geant} aria-hidden="true">ZENKAI</p>
     </footer>

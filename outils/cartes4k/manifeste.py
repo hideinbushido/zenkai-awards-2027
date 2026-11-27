@@ -76,7 +76,7 @@ CORR = {("BLACKCLOVER", 40): dict(nom="Asta & Lucifero"), ("BLACKCLOVER", 41): d
         ("DBSBEERUS", 103): dict(special="reiatsu"), ("DBSBEERUS", 97): dict(anime="Dragon Ball Daima"),
         ("DBSBEERUS", 79): dict(nom="Granolah"), ("DBSBEERUS", 78): dict(nom="Son Goku & Vegeta"),
         ("DBSBEERUS", 55): dict(nom="Trunks"), ("DBSBEERUS", 102): dict(nom="Son Gohan du futur"),
-        ("DBSBEERUS", 99): dict(nom="Son Gohan du futur", special="celluloid"), ("DBSBEERUS", 85): dict(nom="Son Gohan du futur, Piccolo & Son Goku"), ("DBSBEERUS", 81): dict(nom="Son Gohan du futur"), ("DBSBEERUS", 72): dict(nom="Son Gohan & Son Goku"), ("DBSBEERUS", 62): dict(nom="Trunks"), ("DBSBEERUS", 57): dict(nom="Trunks"), ("DBSBEERUS", 74): dict(nom="Gogeta Super Saiyan 4", anime="Dragon Ball GT"), ("JOJOSBR", 2): dict(nom="Johnny Joestar"),
+        ("DBSBEERUS", 99): dict(nom="Son Gohan du futur", special="celluloid"), ("DBSBEERUS", 85): dict(nom="Son Gohan du futur, Piccolo & Son Goku"), ("DBSBEERUS", 81): dict(nom="Son Gohan du futur"), ("DBSBEERUS", 72): dict(nom="Son Gohan & Son Goku"), ("DBSBEERUS", 62): dict(nom="Trunks"), ("DBSBEERUS", 57): dict(nom="Trunks"), ("DBSBEERUS", 74): dict(nom="Gogeta Super Saiyan 4", anime="Dragon Ball GT"), ("JOJOSBR", 2): dict(nom="Diego Brando"),
         ("JOJOSBR", 3): dict(nom="Steel Ball Run", type="ILLUSTRATION"), ("JOJOSBR", 5): dict(nom="Diego Brando"),
         ("JOJOSBR", 11): dict(nom="Diego Brando"), ("JOJOSBR", 10): dict(nom="Jodio Joestar", anime="The JOJOLands"),
         ("JOJOSBR", 20): dict(nom="Jodio Joestar", anime="The JOJOLands"), ("JOJOSBR", 22): dict(nom="Jodio Joestar", anime="The JOJOLands"),

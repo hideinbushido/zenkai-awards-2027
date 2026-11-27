@@ -1,1 +1,1 @@
-{"id": "BLEACH-030", "rarity": "eclat", "name": "Kisuke Urahara", "anime": "Bleach", "type": "personnage", "base": "img/cards/BLEACH-030/", "twinkle": [], "special": null, "fichier": "030_ECLAT_Kisuke-Urahara"}
+{"id": "BLEACH-030", "rarity": "spectre", "name": "Shinji Hirako", "anime": "Bleach", "type": "PERSONNAGE", "special": "sakuga", "nomine": null, "base": "img/cards/BLEACH-030/", "flat": true, "video": true, "fichier": "030_SPECTRE_SAKUGA_Shinji-Hirako"}

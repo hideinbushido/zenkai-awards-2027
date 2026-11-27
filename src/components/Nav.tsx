@@ -15,7 +15,6 @@ export default function Nav() {
       <nav aria-label="Navigation principale" className={s.pilule}>
         <Link href="/categories">Catégories</Link>
         <Link href="/booster">Booster</Link>
-        <Link href="/catalogue">Catalogue</Link>
         <Link href="/palmares">Palmarès</Link>
         <Link href="/equipe">Équipe</Link>
         <Link href="/a-propos">À propos</Link>
@@ -32,7 +31,6 @@ export default function Nav() {
           <nav aria-label="Navigation mobile" className={`panneau-encre ${s.liste}`}>
             <Link href="/categories">Catégories</Link>
             <Link href="/booster">Booster</Link>
-            <Link href="/catalogue">Catalogue</Link>
             <Link href="/collection">Mon bulletin</Link>
             <Link href="/cartes">Ma collection</Link>
             <Link href="/amis">Mes amis</Link>

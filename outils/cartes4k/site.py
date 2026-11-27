@@ -8,7 +8,7 @@ python site.py <dossier_lot> <dossier_disque> <public_booster>
 Écrit img/cards/<ID>/full.webp + carte.json, variantes/<ID>.mp4, cards.js et catalogue.json
 (liste pour la table « cartes » de Supabase). L'identifiant d'une carte est <DOSSIER>-<NNN>.
 """
-import json, os, shutil, subprocess, sys
+import json, os, re, shutil, subprocess, sys
 from PIL import Image
 
 BASE = os.path.dirname(os.path.abspath(__file__))
@@ -32,7 +32,7 @@ def main():
         shutil.rmtree(d, ignore_errors=True); os.makedirs(d)
     cards, catalogue, manquantes, videos = [], [], [], []
     for e in man:
-        cid = f"{e['dossier']}-{e['num']:03d}"
+        cid = f"{re.sub(r'[^A-Za-z0-9]', '', e['dossier'])}-{e['num']:03d}"   # identifiant sans espace ni point (liens, contrôles)
         jpg = trouver(e, ".jpg")
         if not jpg:
             manquantes.append(cid); continue

@@ -1,0 +1,5634 @@
+[
+{
+"id": "BLACKCLOVER-001",
+"anime": "Black Clover",
+"rarete": "eclat",
+"nom": "Black Clover",
+"type": "ILLUSTRATION",
+"special": null
+},
+{
+"id": "BLACKCLOVER-002",
+"anime": "Black Clover",
+"rarete": "eclat",
+"nom": "Black Clover",
+"type": "ILLUSTRATION",
+"special": null
+},
+{
+"id": "BLACKCLOVER-003",
+"anime": "Black Clover",
+"rarete": "eclat",
+"nom": "Asta & Fanzell Kruger",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLACKCLOVER-004",
+"anime": "Black Clover",
+"rarete": "eclat",
+"nom": "Lichita & Liebe",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLACKCLOVER-005",
+"anime": "Black Clover",
+"rarete": "eclat",
+"nom": "Nacht Faust",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLACKCLOVER-006",
+"anime": "Black Clover",
+"rarete": "eclat",
+"nom": "Nacht Faust",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLACKCLOVER-007",
+"anime": "Black Clover",
+"rarete": "eclat",
+"nom": "Asta & Yuno",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLACKCLOVER-008",
+"anime": "Black Clover",
+"rarete": "eclat",
+"nom": "Black Clover",
+"type": "ILLUSTRATION",
+"special": null
+},
+{
+"id": "BLACKCLOVER-009",
+"anime": "Black Clover",
+"rarete": "eclat",
+"nom": "Magna Swing",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLACKCLOVER-010",
+"anime": "Black Clover",
+"rarete": "eclat",
+"nom": "Asta",
+"type": "BLACK ASTA",
+"special": null
+},
+{
+"id": "BLACKCLOVER-011",
+"anime": "Black Clover",
+"rarete": "eclat",
+"nom": "Asta & Kiato",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLACKCLOVER-012",
+"anime": "Black Clover",
+"rarete": "eclat",
+"nom": "Zenon Zogratis",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLACKCLOVER-013",
+"anime": "Black Clover",
+"rarete": "prisme",
+"nom": "Black Clover",
+"type": "ILLUSTRATION",
+"special": null
+},
+{
+"id": "BLACKCLOVER-014",
+"anime": "Black Clover",
+"rarete": "prisme",
+"nom": "Yami Sukehiro",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLACKCLOVER-015",
+"anime": "Black Clover",
+"rarete": "prisme",
+"nom": "Yami & Asta",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLACKCLOVER-016",
+"anime": "Black Clover",
+"rarete": "prisme",
+"nom": "Black Clover",
+"type": "ILLUSTRATION",
+"special": null
+},
+{
+"id": "BLACKCLOVER-017",
+"anime": "Black Clover",
+"rarete": "prisme",
+"nom": "Vanica Zogratis",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLACKCLOVER-018",
+"anime": "Black Clover",
+"rarete": "prisme",
+"nom": "Black Clover",
+"type": "ILLUSTRATION",
+"special": null
+},
+{
+"id": "BLACKCLOVER-019",
+"anime": "Black Clover",
+"rarete": "prisme",
+"nom": "Lichita & Liebe",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLACKCLOVER-020",
+"anime": "Black Clover",
+"rarete": "prisme",
+"nom": "Black Clover",
+"type": "ILLUSTRATION",
+"special": null
+},
+{
+"id": "BLACKCLOVER-021",
+"anime": "Black Clover",
+"rarete": "spectre",
+"nom": "Yami & Asta",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLACKCLOVER-022",
+"anime": "Black Clover",
+"rarete": "spectre",
+"nom": "Nacht Faust",
+"type": "PERSONNAGE",
+"special": "genga"
+},
+{
+"id": "BLACKCLOVER-023",
+"anime": "Black Clover",
+"rarete": "spectre",
+"nom": "Asta",
+"type": "BLACK ASTA",
+"special": null
+},
+{
+"id": "BLACKCLOVER-024",
+"anime": "Black Clover",
+"rarete": "spectre",
+"nom": "Asta",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLACKCLOVER-025",
+"anime": "Black Clover",
+"rarete": "spectre",
+"nom": "Charmy Pappitson",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLACKCLOVER-026",
+"anime": "Black Clover",
+"rarete": "spectre",
+"nom": "Asta & Yuno",
+"type": "DEVIL UNION · SPIRIT DIVE",
+"special": "sakuga"
+},
+{
+"id": "BLACKCLOVER-027",
+"anime": "Black Clover",
+"rarete": "spectre",
+"nom": "Asta",
+"type": "DEVIL UNION",
+"special": null
+},
+{
+"id": "BLACKCLOVER-028",
+"anime": "Black Clover",
+"rarete": "spectre",
+"nom": "Asta & Liebe",
+"type": "DEVIL UNION",
+"special": null
+},
+{
+"id": "BLACKCLOVER-029",
+"anime": "Black Clover",
+"rarete": "spectre",
+"nom": "Asta",
+"type": "BLACK ASTA",
+"special": null
+},
+{
+"id": "BLACKCLOVER-030",
+"anime": "Black Clover",
+"rarete": "spectre",
+"nom": "Asta",
+"type": "DEVIL UNION",
+"special": "celluloid"
+},
+{
+"id": "BLACKCLOVER-031",
+"anime": "Black Clover",
+"rarete": "spectre",
+"nom": "Asta & Yuno",
+"type": "BLACK ASTA · SPIRIT DIVE",
+"special": null
+},
+{
+"id": "BLACKCLOVER-032",
+"anime": "Black Clover",
+"rarete": "mirage",
+"nom": "Asta & Yuno",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLACKCLOVER-033",
+"anime": "Black Clover",
+"rarete": "mirage",
+"nom": "Luck Voltia",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLACKCLOVER-034",
+"anime": "Black Clover",
+"rarete": "mirage",
+"nom": "Mereoleona Vermillion",
+"type": "PERSONNAGE",
+"special": "sumi"
+},
+{
+"id": "BLACKCLOVER-035",
+"anime": "Black Clover",
+"rarete": "mirage",
+"nom": "Asta & Yami",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLACKCLOVER-036",
+"anime": "Black Clover",
+"rarete": "mirage",
+"nom": "Taureaux Noirs",
+"type": "ILLUSTRATION",
+"special": null
+},
+{
+"id": "BLACKCLOVER-037",
+"anime": "Black Clover",
+"rarete": "mirage",
+"nom": "Asta & Yuno",
+"type": "DEVIL UNION · SPIRIT DIVE",
+"special": null
+},
+{
+"id": "BLACKCLOVER-038",
+"anime": "Black Clover",
+"rarete": "mirage",
+"nom": "Luck Voltia",
+"type": "PERSONNAGE",
+"special": "hanga"
+},
+{
+"id": "BLACKCLOVER-039",
+"anime": "Black Clover",
+"rarete": "mirage",
+"nom": "Yuno",
+"type": "SPIRIT DIVE",
+"special": null
+},
+{
+"id": "BLACKCLOVER-040",
+"anime": "Black Clover",
+"rarete": "zenkai",
+"nom": "Asta & Lucifero",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLACKCLOVER-041",
+"anime": "Black Clover",
+"rarete": "zenkai",
+"nom": "Asta & Yuno",
+"type": "DEVIL UNION · SPIRIT DIVE",
+"special": null
+},
+{
+"id": "BLACKCLOVER-042",
+"anime": "Black Clover",
+"rarete": "zenkai",
+"nom": "Asta",
+"type": "PERSONNAGE",
+"special": "reiatsu"
+},
+{
+"id": "BLACKCLOVER-043",
+"anime": "Black Clover",
+"rarete": "zenkai",
+"nom": "Asta",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLACKCLOVER-044",
+"anime": "Black Clover",
+"rarete": "zenkai",
+"nom": "Asta & Yuno",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLACKCLOVER-045",
+"anime": "Black Clover",
+"rarete": "zenkai",
+"nom": "Yami Sukehiro",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLACKCLOVER-046",
+"anime": "Black Clover",
+"rarete": "zenkai",
+"nom": "Magna Swing",
+"type": "PERSONNAGE",
+"special": "ekonte"
+},
+{
+"id": "BLACKCLOVER-047",
+"anime": "Black Clover",
+"rarete": "zenkai",
+"nom": "Black Clover",
+"type": "ILLUSTRATION",
+"special": null
+},
+{
+"id": "BLACKCLOVER-048",
+"anime": "Black Clover",
+"rarete": "zenkai",
+"nom": "Noelle Silva",
+"type": "VALKYRIE",
+"special": null
+},
+{
+"id": "BLACKCLOVER-049",
+"anime": "Black Clover",
+"rarete": "zenkai",
+"nom": "Meilleur opening",
+"type": "NOMINÉ",
+"special": null
+},
+{
+"id": "BLACKCLOVER-050",
+"anime": "Black Clover",
+"rarete": "zenkai",
+"nom": "Yami, Asta & Yuno",
+"type": "PERSONNAGE",
+"special": "genga"
+},
+{
+"id": "BLEACH-001",
+"anime": "Bleach",
+"rarete": "eclat",
+"nom": "Yhwach",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-002",
+"anime": "Bleach",
+"rarete": "eclat",
+"nom": "Tōshirō Hitsugaya",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-003",
+"anime": "Bleach",
+"rarete": "eclat",
+"nom": "Tōshirō Hitsugaya",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-004",
+"anime": "Bleach",
+"rarete": "eclat",
+"nom": "Shunsui Kyōraku",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-005",
+"anime": "Bleach",
+"rarete": "eclat",
+"nom": "Kisuke Urahara",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-006",
+"anime": "Bleach",
+"rarete": "eclat",
+"nom": "Kaname Tōsen",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-007",
+"anime": "Bleach",
+"rarete": "eclat",
+"nom": "Sōsuke Aizen",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-008",
+"anime": "Bleach",
+"rarete": "eclat",
+"nom": "Kisuke Urahara",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-009",
+"anime": "Bleach",
+"rarete": "eclat",
+"nom": "Nelliel Tu Odelschwanck",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-010",
+"anime": "Bleach",
+"rarete": "eclat",
+"nom": "Shunsui Kyōraku",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-011",
+"anime": "Bleach",
+"rarete": "eclat",
+"nom": "Yhwach",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-012",
+"anime": "Bleach",
+"rarete": "eclat",
+"nom": "Kisuke Urahara",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-013",
+"anime": "Bleach",
+"rarete": "eclat",
+"nom": "Shunsui Kyōraku",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-014",
+"anime": "Bleach",
+"rarete": "eclat",
+"nom": "Nelliel Tu Odelschwanck",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-015",
+"anime": "Bleach",
+"rarete": "prisme",
+"nom": "Sōsuke Aizen",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-016",
+"anime": "Bleach",
+"rarete": "prisme",
+"nom": "Kisuke Urahara",
+"type": "BANKAI",
+"special": null
+},
+{
+"id": "BLEACH-017",
+"anime": "Bleach",
+"rarete": "prisme",
+"nom": "Kisuke Urahara",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-018",
+"anime": "Bleach",
+"rarete": "prisme",
+"nom": "Sōsuke Aizen",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-019",
+"anime": "Bleach",
+"rarete": "prisme",
+"nom": "Shunsui Kyōraku",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-020",
+"anime": "Bleach",
+"rarete": "prisme",
+"nom": "Kenpachi Zaraki",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-021",
+"anime": "Bleach",
+"rarete": "prisme",
+"nom": "Yhwach",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-022",
+"anime": "Bleach",
+"rarete": "prisme",
+"nom": "Retsu Unohana",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-023",
+"anime": "Bleach",
+"rarete": "prisme",
+"nom": "Soi Fon",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-024",
+"anime": "Bleach",
+"rarete": "prisme",
+"nom": "Ichigo Kurosaki",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-025",
+"anime": "Bleach",
+"rarete": "prisme",
+"nom": "Soi Fon",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-026",
+"anime": "Bleach",
+"rarete": "prisme",
+"nom": "Yoruichi Shihōin",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-027",
+"anime": "Bleach",
+"rarete": "spectre",
+"nom": "Kenpachi Zaraki",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-028",
+"anime": "Bleach",
+"rarete": "spectre",
+"nom": "Grimmjow Jaegerjaquez",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-029",
+"anime": "Bleach",
+"rarete": "spectre",
+"nom": "Grimmjow Jaegerjaquez",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-030",
+"anime": "Bleach",
+"rarete": "spectre",
+"nom": "Shinji Hirako",
+"type": "PERSONNAGE",
+"special": "sakuga"
+},
+{
+"id": "BLEACH-031",
+"anime": "Bleach",
+"rarete": "spectre",
+"nom": "Uryū Ishida",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-032",
+"anime": "Bleach",
+"rarete": "spectre",
+"nom": "Tōshirō Hitsugaya",
+"type": "BANKAI",
+"special": null
+},
+{
+"id": "BLEACH-033",
+"anime": "Bleach",
+"rarete": "spectre",
+"nom": "Yhwach",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-034",
+"anime": "Bleach",
+"rarete": "spectre",
+"nom": "Ichigo Kurosaki",
+"type": "PERSONNAGE",
+"special": "celluloid"
+},
+{
+"id": "BLEACH-035",
+"anime": "Bleach",
+"rarete": "spectre",
+"nom": "Shunsui Kyōraku",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-036",
+"anime": "Bleach",
+"rarete": "spectre",
+"nom": "Uryū Ishida",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-037",
+"anime": "Bleach",
+"rarete": "spectre",
+"nom": "Kisuke Urahara",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-038",
+"anime": "Bleach",
+"rarete": "spectre",
+"nom": "Jugram Haschwalth",
+"type": "PERSONNAGE",
+"special": "sumi"
+},
+{
+"id": "BLEACH-039",
+"anime": "Bleach",
+"rarete": "spectre",
+"nom": "Kaname Tōsen",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-040",
+"anime": "Bleach",
+"rarete": "spectre",
+"nom": "Ichigo Kurosaki",
+"type": "BANKAI",
+"special": null
+},
+{
+"id": "BLEACH-041",
+"anime": "Bleach",
+"rarete": "spectre",
+"nom": "Kisuke Urahara",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-042",
+"anime": "Bleach",
+"rarete": "spectre",
+"nom": "Kenpachi Zaraki",
+"type": "PERSONNAGE",
+"special": "hanga"
+},
+{
+"id": "BLEACH-043",
+"anime": "Bleach",
+"rarete": "mirage",
+"nom": "Rukia Kuchiki",
+"type": "BANKAI",
+"special": null
+},
+{
+"id": "BLEACH-044",
+"anime": "Bleach",
+"rarete": "mirage",
+"nom": "Grimmjow Jaegerjaquez",
+"type": "RESURRECCIÓN",
+"special": null
+},
+{
+"id": "BLEACH-045",
+"anime": "Bleach",
+"rarete": "mirage",
+"nom": "Tōshirō Hitsugaya",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-046",
+"anime": "Bleach",
+"rarete": "mirage",
+"nom": "Nelliel Tu Odelschwanck",
+"type": "PERSONNAGE",
+"special": "reiatsu"
+},
+{
+"id": "BLEACH-047",
+"anime": "Bleach",
+"rarete": "mirage",
+"nom": "Byakuya Kuchiki",
+"type": "BANKAI",
+"special": null
+},
+{
+"id": "BLEACH-048",
+"anime": "Bleach",
+"rarete": "mirage",
+"nom": "Byakuya Kuchiki",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-049",
+"anime": "Bleach",
+"rarete": "mirage",
+"nom": "Shinji Hirako",
+"type": "SHIKAI",
+"special": null
+},
+{
+"id": "BLEACH-050",
+"anime": "Bleach",
+"rarete": "mirage",
+"nom": "Jugram Haschwalth",
+"type": "PERSONNAGE",
+"special": "ekonte"
+},
+{
+"id": "BLEACH-051",
+"anime": "Bleach",
+"rarete": "mirage",
+"nom": "Tōshirō Hitsugaya",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-052",
+"anime": "Bleach",
+"rarete": "mirage",
+"nom": "Byakuya Kuchiki",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-053",
+"anime": "Bleach",
+"rarete": "mirage",
+"nom": "Ichigo Kurosaki",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-054",
+"anime": "Bleach",
+"rarete": "mirage",
+"nom": "Ichigo Kurosaki",
+"type": "BANKAI",
+"special": "genga"
+},
+{
+"id": "BLEACH-055",
+"anime": "Bleach",
+"rarete": "mirage",
+"nom": "Sōsuke Aizen",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-056",
+"anime": "Bleach",
+"rarete": "zenkai",
+"nom": "Meilleur opening",
+"type": "NOMINÉ",
+"special": null
+},
+{
+"id": "BLEACH-057",
+"anime": "Bleach",
+"rarete": "zenkai",
+"nom": "Kenpachi Zaraki",
+"type": "BANKAI",
+"special": null
+},
+{
+"id": "BLEACH-058",
+"anime": "Bleach",
+"rarete": "zenkai",
+"nom": "Uryū Ishida",
+"type": "PERSONNAGE",
+"special": "sakuga"
+},
+{
+"id": "BLEACH-059",
+"anime": "Bleach",
+"rarete": "zenkai",
+"nom": "Ichigo Kurosaki",
+"type": "BANKAI",
+"special": null
+},
+{
+"id": "BLEACH-060",
+"anime": "Bleach",
+"rarete": "zenkai",
+"nom": "Sosuke Aizen",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-061",
+"anime": "Bleach",
+"rarete": "zenkai",
+"nom": "Yoruichi Shihōin",
+"type": "SHUNKO",
+"special": null
+},
+{
+"id": "BLEACH-062",
+"anime": "Bleach",
+"rarete": "zenkai",
+"nom": "Shinji Hirako",
+"type": "SHIKAI",
+"special": "celluloid"
+},
+{
+"id": "BLEACH-063",
+"anime": "Bleach",
+"rarete": "zenkai",
+"nom": "Ichigo Kurosaki",
+"type": "HOLLOW",
+"special": null
+},
+{
+"id": "BLEACH-064",
+"anime": "Bleach",
+"rarete": "zenkai",
+"nom": "Ichigo Kurosaki",
+"type": "VASTO LORDE",
+"special": null
+},
+{
+"id": "BLEACH-065",
+"anime": "Bleach",
+"rarete": "zenkai",
+"nom": "Tōshirō Hitsugaya",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "BLEACH-066",
+"anime": "Bleach",
+"rarete": "zenkai",
+"nom": "Ichigo & Rukia",
+"type": "PERSONNAGE",
+"special": "sumi"
+},
+{
+"id": "BLEACH-067",
+"anime": "Bleach",
+"rarete": "zenkai",
+"nom": "Kisuke Urahara",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "ClassroomOFTHEelite-001",
+"anime": "Classroom of the Elite",
+"rarete": "eclat",
+"nom": "Honami Ichinose",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "ClassroomOFTHEelite-002",
+"anime": "Classroom of the Elite",
+"rarete": "eclat",
+"nom": "Sae Chabashira",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "ClassroomOFTHEelite-003",
+"anime": "Classroom of the Elite",
+"rarete": "eclat",
+"nom": "Yōsuke Hirata",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "ClassroomOFTHEelite-004",
+"anime": "Classroom of the Elite",
+"rarete": "eclat",
+"nom": "Kakeru Ryūen",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "ClassroomOFTHEelite-005",
+"anime": "Classroom of the Elite",
+"rarete": "eclat",
+"nom": "Arisu Sakayanagi",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "ClassroomOFTHEelite-006",
+"anime": "Classroom of the Elite",
+"rarete": "eclat",
+"nom": "Sae Chabashira",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "ClassroomOFTHEelite-007",
+"anime": "Classroom of the Elite",
+"rarete": "eclat",
+"nom": "Honami Ichinose",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "ClassroomOFTHEelite-008",
+"anime": "Classroom of the Elite",
+"rarete": "eclat",
+"nom": "Keisei Yukimura",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "ClassroomOFTHEelite-009",
+"anime": "Classroom of the Elite",
+"rarete": "eclat",
+"nom": "Kei Karuizawa",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "ClassroomOFTHEelite-010",
+"anime": "Classroom of the Elite",
+"rarete": "eclat",
+"nom": "Honami Ichinose",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "ClassroomOFTHEelite-011",
+"anime": "Classroom of the Elite",
+"rarete": "eclat",
+"nom": "Keisei Yukimura",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "ClassroomOFTHEelite-012",
+"anime": "Classroom of the Elite",
+"rarete": "eclat",
+"nom": "Riku Utomiya",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "ClassroomOFTHEelite-013",
+"anime": "Classroom of the Elite",
+"rarete": "prisme",
+"nom": "Sae Chabashira",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "ClassroomOFTHEelite-014",
+"anime": "Classroom of the Elite",
+"rarete": "prisme",
+"nom": "Suzune Horikita",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "ClassroomOFTHEelite-015",
+"anime": "Classroom of the Elite",
+"rarete": "prisme",
+"nom": "Classroom of the Elite",
+"type": "ILLUSTRATION",
+"special": null
+},
+{
+"id": "ClassroomOFTHEelite-016",
+"anime": "Classroom of the Elite",
+"rarete": "prisme",
+"nom": "Kei Karuizawa",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "ClassroomOFTHEelite-017",
+"anime": "Classroom of the Elite",
+"rarete": "prisme",
+"nom": "Kei Karuizawa",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "ClassroomOFTHEelite-018",
+"anime": "Classroom of the Elite",
+"rarete": "spectre",
+"nom": "Takuya Yagami",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "ClassroomOFTHEelite-019",
+"anime": "Classroom of the Elite",
+"rarete": "spectre",
+"nom": "Ayanokōji & Sakayanagi",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "ClassroomOFTHEelite-020",
+"anime": "Classroom of the Elite",
+"rarete": "spectre",
+"nom": "Kiyotaka Ayanokoji",
+"type": "PERSONNAGE",
+"special": "hanga"
+},
+{
+"id": "ClassroomOFTHEelite-021",
+"anime": "Classroom of the Elite",
+"rarete": "spectre",
+"nom": "Kiyotaka Ayanokōji",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "ClassroomOFTHEelite-022",
+"anime": "Classroom of the Elite",
+"rarete": "spectre",
+"nom": "Ayanokōji & Karuizawa",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "ClassroomOFTHEelite-023",
+"anime": "Classroom of the Elite",
+"rarete": "spectre",
+"nom": "Kazuomi Hosen",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "ClassroomOFTHEelite-024",
+"anime": "Classroom of the Elite",
+"rarete": "mirage",
+"nom": "Kei Karuizawa",
+"type": "PERSONNAGE",
+"special": "reiatsu"
+},
+{
+"id": "ClassroomOFTHEelite-025",
+"anime": "Classroom of the Elite",
+"rarete": "mirage",
+"nom": "Ken Sudō",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "ClassroomOFTHEelite-026",
+"anime": "Classroom of the Elite",
+"rarete": "mirage",
+"nom": "Sae Chabashira",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "ClassroomOFTHEelite-027",
+"anime": "Classroom of the Elite",
+"rarete": "mirage",
+"nom": "Kiyotaka & Suzune",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "ClassroomOFTHEelite-028",
+"anime": "Classroom of the Elite",
+"rarete": "mirage",
+"nom": "Kei Karuizawa",
+"type": "PERSONNAGE",
+"special": "ekonte"
+},
+{
+"id": "ClassroomOFTHEelite-029",
+"anime": "Classroom of the Elite",
+"rarete": "mirage",
+"nom": "Arisu Sakayanagi",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "ClassroomOFTHEelite-030",
+"anime": "Classroom of the Elite",
+"rarete": "zenkai",
+"nom": "Kei Karuizawa",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "ClassroomOFTHEelite-031",
+"anime": "Classroom of the Elite",
+"rarete": "zenkai",
+"nom": "Kiyotaka Ayanokōji",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "ClassroomOFTHEelite-032",
+"anime": "Classroom of the Elite",
+"rarete": "zenkai",
+"nom": "Kiyotaka Ayanokoji",
+"type": "PERSONNAGE",
+"special": "genga"
+},
+{
+"id": "ClassroomOFTHEelite-033",
+"anime": "Classroom of the Elite",
+"rarete": "zenkai",
+"nom": "Takuya Yagami",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "ClassroomOFTHEelite-034",
+"anime": "Classroom of the Elite",
+"rarete": "zenkai",
+"nom": "Meilleur opening",
+"type": "NOMINÉ",
+"special": null
+},
+{
+"id": "ClassroomOFTHEelite-035",
+"anime": "Classroom of the Elite",
+"rarete": "zenkai",
+"nom": "Ayanokōji & Sakayanagi",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "ClassroomOFTHEelite-036",
+"anime": "Classroom of the Elite",
+"rarete": "zenkai",
+"nom": "Suzune Horikita",
+"type": "PERSONNAGE",
+"special": "sakuga"
+},
+{
+"id": "ClassroomOFTHEelite-037",
+"anime": "Classroom of the Elite",
+"rarete": "zenkai",
+"nom": "Arisu Sakayanagi",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "ClassroomOFTHEelite-038",
+"anime": "Classroom of the Elite",
+"rarete": "zenkai",
+"nom": "Suzune Horikita",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "ClassroomOFTHEelite-039",
+"anime": "Classroom of the Elite",
+"rarete": "zenkai",
+"nom": "Kiyotaka Ayanokōji",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DANDADAN-001",
+"anime": "Dandadan",
+"rarete": "spectre",
+"nom": "Okarun",
+"type": "PERSONNAGE",
+"special": "celluloid"
+},
+{
+"id": "DANDADAN-002",
+"anime": "Dandadan",
+"rarete": "mirage",
+"nom": "Okarun",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DANDADAN-003",
+"anime": "Dandadan",
+"rarete": "zenkai",
+"nom": "Okarun",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DANDADAN-004",
+"anime": "Dandadan",
+"rarete": "zenkai",
+"nom": "Okarun",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DANDADAN-005",
+"anime": "Dandadan",
+"rarete": "zenkai",
+"nom": "Okarun",
+"type": "PERSONNAGE",
+"special": "sumi"
+},
+{
+"id": "DBSBEERUS-001",
+"anime": "Dragon Ball Z",
+"rarete": "eclat",
+"nom": "Son Goku & Mr. Satan",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DBSBEERUS-002",
+"anime": "Dragon Ball GT",
+"rarete": "eclat",
+"nom": "Son Goku",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DBSBEERUS-003",
+"anime": "Dragon Ball Z",
+"rarete": "eclat",
+"nom": "Trunks",
+"type": "SUPER SAIYAN",
+"special": null
+},
+{
+"id": "DBSBEERUS-004",
+"anime": "Dragon Ball Z",
+"rarete": "eclat",
+"nom": "Gotenks",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DBSBEERUS-005",
+"anime": "Dragon Ball Super",
+"rarete": "eclat",
+"nom": "Beerus & Son Goku",
+"type": "SUPER SAIYAN GOD",
+"special": null
+},
+{
+"id": "DBSBEERUS-006",
+"anime": "Dragon Ball Z",
+"rarete": "eclat",
+"nom": "Gotenks",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DBSBEERUS-007",
+"anime": "Dragon Ball Z",
+"rarete": "eclat",
+"nom": "Son Gohan",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DBSBEERUS-008",
+"anime": "Dragon Ball Z",
+"rarete": "eclat",
+"nom": "Mr. Satan & Dende",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DBSBEERUS-009",
+"anime": "Dragon Ball Super",
+"rarete": "eclat",
+"nom": "Planète de Beerus",
+"type": "ILLUSTRATION",
+"special": null
+},
+{
+"id": "DBSBEERUS-010",
+"anime": "Dragon Ball Z",
+"rarete": "eclat",
+"nom": "Raditz & Son Goku",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DBSBEERUS-011",
+"anime": "Dragon Ball Z",
+"rarete": "eclat",
+"nom": "Majin Buu",
+"type": "FORME ORIGINELLE",
+"special": null
+},
+{
+"id": "DBSBEERUS-012",
+"anime": "Dragon Ball Z",
+"rarete": "eclat",
+"nom": "Mr. Satan & Majin Buu",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DBSBEERUS-013",
+"anime": "Dragon Ball Super",
+"rarete": "eclat",
+"nom": "Krilin",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DBSBEERUS-014",
+"anime": "Dragon Ball Z",
+"rarete": "eclat",
+"nom": "Krilin",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DBSBEERUS-015",
+"anime": "Dragon Ball Z",
+"rarete": "eclat",
+"nom": "Tortue Géniale",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DBSBEERUS-016",
+"anime": "Dragon Ball Z",
+"rarete": "eclat",
+"nom": "Son Gohan & Cell",
+"type": "SUPER SAIYAN 2",
+"special": null
+},
+{
+"id": "DBSBEERUS-017",
+"anime": "Dragon Ball Super",
+"rarete": "eclat",
+"nom": "Piccolo & Son Gohan",
+"type": "SUPER SAIYAN",
+"special": null
+},
+{
+"id": "DBSBEERUS-018",
+"anime": "Dragon Ball Super",
+"rarete": "eclat",
+"nom": "Frost",
+"type": "QUATRIÈME FORME",
+"special": null
+},
+{
+"id": "DBSBEERUS-019",
+"anime": "Dragon Ball Z",
+"rarete": "eclat",
+"nom": "Vegeta & Trunks",
+"type": "MAJIN",
+"special": null
+},
+{
+"id": "DBSBEERUS-020",
+"anime": "Dragon Ball GT",
+"rarete": "eclat",
+"nom": "Son Goku & Shenron",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DBSBEERUS-021",
+"anime": "Dragon Ball Super",
+"rarete": "eclat",
+"nom": "Son Goku",
+"type": "SUPER SAIYAN GOD",
+"special": null
+},
+{
+"id": "DBSBEERUS-022",
+"anime": "Dragon Ball Super",
+"rarete": "eclat",
+"nom": "Hit & Son Goku",
+"type": "SUPER SAIYAN GOD",
+"special": null
+},
+{
+"id": "DBSBEERUS-023",
+"anime": "Dragon Ball Z",
+"rarete": "eclat",
+"nom": "Son Gohan du futur",
+"type": "SUPER SAIYAN",
+"special": null
+},
+{
+"id": "DBSBEERUS-024",
+"anime": "Dragon Ball Z",
+"rarete": "eclat",
+"nom": "Freezer & Cooler",
+"type": "FORME FINALE",
+"special": null
+},
+{
+"id": "DBSBEERUS-025",
+"anime": "Dragon Ball Super",
+"rarete": "eclat",
+"nom": "Beerus",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DBSBEERUS-026",
+"anime": "Dragon Ball Z",
+"rarete": "eclat",
+"nom": "Buutenks & Buuhan",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DBSBEERUS-027",
+"anime": "Dragon Ball Super",
+"rarete": "eclat",
+"nom": "Cell Max & Gohan",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DBSBEERUS-028",
+"anime": "Dragon Ball Z",
+"rarete": "eclat",
+"nom": "Bardock",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DBSBEERUS-029",
+"anime": "Dragon Ball Z",
+"rarete": "eclat",
+"nom": "Bardock",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DBSBEERUS-030",
+"anime": "Dragon Ball Super",
+"rarete": "eclat",
+"nom": "Piccolo",
+"type": "ORANGE PICCOLO",
+"special": null
+},
+{
+"id": "DBSBEERUS-031",
+"anime": "Dragon Ball Z",
+"rarete": "eclat",
+"nom": "Vegeta",
+"type": "MAJIN",
+"special": null
+},
+{
+"id": "DBSBEERUS-032",
+"anime": "Dragon Ball Z",
+"rarete": "eclat",
+"nom": "Freezer & Cooler",
+"type": "FORME FINALE",
+"special": null
+},
+{
+"id": "DBSBEERUS-033",
+"anime": "Dragon Ball Super",
+"rarete": "eclat",
+"nom": "Whis",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DBSBEERUS-034",
+"anime": "Dragon Ball Z",
+"rarete": "eclat",
+"nom": "Son Gohan",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DBSBEERUS-035",
+"anime": "Dragon Ball Z",
+"rarete": "eclat",
+"nom": "Vegeta",
+"type": "SUPER SAIYAN",
+"special": null
+},
+{
+"id": "DBSBEERUS-036",
+"anime": "Dragon Ball Super",
+"rarete": "prisme",
+"nom": "Granolah",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DBSBEERUS-037",
+"anime": "Dragon Ball Z",
+"rarete": "prisme",
+"nom": "Freezer & Cooler",
+"type": "FORME FINALE",
+"special": null
+},
+{
+"id": "DBSBEERUS-038",
+"anime": "Dragon Ball Super",
+"rarete": "prisme",
+"nom": "Son Goku & Beerus",
+"type": "SUPER SAIYAN GOD",
+"special": null
+},
+{
+"id": "DBSBEERUS-039",
+"anime": "Dragon Ball Super",
+"rarete": "prisme",
+"nom": "Beerus",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DBSBEERUS-040",
+"anime": "Dragon Ball Z",
+"rarete": "prisme",
+"nom": "Son Gohan",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DBSBEERUS-041",
+"anime": "Dragon Ball Super",
+"rarete": "prisme",
+"nom": "Son Goku",
+"type": "ULTRA INSTINCT",
+"special": null
+},
+{
+"id": "DBSBEERUS-042",
+"anime": "Dragon Ball Z",
+"rarete": "prisme",
+"nom": "Bardock",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DBSBEERUS-043",
+"anime": "Dragon Ball Z",
+"rarete": "prisme",
+"nom": "Son Gohan",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DBSBEERUS-044",
+"anime": "Dragon Ball Z",
+"rarete": "prisme",
+"nom": "Son Goku",
+"type": "SUPER SAIYAN",
+"special": null
+},
+{
+"id": "DBSBEERUS-045",
+"anime": "Dragon Ball Super",
+"rarete": "prisme",
+"nom": "Beerus",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DBSBEERUS-046",
+"anime": "Dragon Ball Super",
+"rarete": "prisme",
+"nom": "Son Goku",
+"type": "SUPER SAIYAN GOD",
+"special": null
+},
+{
+"id": "DBSBEERUS-047",
+"anime": "Dragon Ball Super",
+"rarete": "prisme",
+"nom": "Piccolo",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DBSBEERUS-048",
+"anime": "Dragon Ball Super",
+"rarete": "prisme",
+"nom": "Jiren",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DBSBEERUS-049",
+"anime": "Dragon Ball Super",
+"rarete": "prisme",
+"nom": "Son Goku",
+"type": "SUPER SAIYAN GOD",
+"special": null
+},
+{
+"id": "DBSBEERUS-050",
+"anime": "Dragon Ball Z",
+"rarete": "prisme",
+"nom": "Son Goku",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DBSBEERUS-051",
+"anime": "Dragon Ball Super",
+"rarete": "prisme",
+"nom": "Golden Freezer",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DBSBEERUS-052",
+"anime": "Dragon Ball Super",
+"rarete": "prisme",
+"nom": "Black Freezer",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DBSBEERUS-053",
+"anime": "Dragon Ball Z",
+"rarete": "prisme",
+"nom": "Vegeta",
+"type": "SUPER SAIYAN",
+"special": null
+},
+{
+"id": "DBSBEERUS-054",
+"anime": "Dragon Ball Super",
+"rarete": "prisme",
+"nom": "Piccolo & Son Gohan",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DBSBEERUS-055",
+"anime": "Dragon Ball Super",
+"rarete": "spectre",
+"nom": "Trunks",
+"type": "SUPER SAIYAN",
+"special": null
+},
+{
+"id": "DBSBEERUS-056",
+"anime": "Dragon Ball Z",
+"rarete": "spectre",
+"nom": "Son Goten",
+"type": "SUPER SAIYAN",
+"special": null
+},
+{
+"id": "DBSBEERUS-057",
+"anime": "Dragon Ball Z",
+"rarete": "spectre",
+"nom": "Trunks",
+"type": "SUPER SAIYAN",
+"special": null
+},
+{
+"id": "DBSBEERUS-058",
+"anime": "Dragon Ball Z",
+"rarete": "spectre",
+"nom": "Gotenks",
+"type": "SUPER SAIYAN",
+"special": "hanga"
+},
+{
+"id": "DBSBEERUS-059",
+"anime": "Dragon Ball Super",
+"rarete": "spectre",
+"nom": "Bardock",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DBSBEERUS-060",
+"anime": "Dragon Ball Z",
+"rarete": "spectre",
+"nom": "Son Gohan & Cell",
+"type": "SUPER SAIYAN 2",
+"special": null
+},
+{
+"id": "DBSBEERUS-061",
+"anime": "Dragon Ball Z",
+"rarete": "spectre",
+"nom": "Son Gohan",
+"type": "SUPER SAIYAN 2",
+"special": null
+},
+{
+"id": "DBSBEERUS-062",
+"anime": "Dragon Ball Z",
+"rarete": "spectre",
+"nom": "Trunks",
+"type": "SUPER SAIYAN",
+"special": "reiatsu"
+},
+{
+"id": "DBSBEERUS-063",
+"anime": "Dragon Ball Z",
+"rarete": "spectre",
+"nom": "Gogeta",
+"type": "SUPER SAIYAN",
+"special": null
+},
+{
+"id": "DBSBEERUS-064",
+"anime": "Dragon Ball Z",
+"rarete": "spectre",
+"nom": "Son Gohan",
+"type": "SUPER SAIYAN 2",
+"special": null
+},
+{
+"id": "DBSBEERUS-065",
+"anime": "Dragon Ball Super",
+"rarete": "spectre",
+"nom": "Jiren & Son Goku",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DBSBEERUS-066",
+"anime": "Dragon Ball Z",
+"rarete": "spectre",
+"nom": "Trunks",
+"type": "SUPER SAIYAN",
+"special": "ekonte"
+},
+{
+"id": "DBSBEERUS-067",
+"anime": "Dragon Ball Z",
+"rarete": "spectre",
+"nom": "Trunks",
+"type": "SUPER SAIYAN",
+"special": null
+},
+{
+"id": "DBSBEERUS-068",
+"anime": "Dragon Ball Z",
+"rarete": "spectre",
+"nom": "Son Goten & Trunks",
+"type": "SUPER SAIYAN",
+"special": null
+},
+{
+"id": "DBSBEERUS-069",
+"anime": "Dragon Ball Super",
+"rarete": "spectre",
+"nom": "Son Gohan",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DBSBEERUS-070",
+"anime": "Dragon Ball Z",
+"rarete": "spectre",
+"nom": "Trunks & Mecha Freezer",
+"type": "SUPER SAIYAN",
+"special": "genga"
+},
+{
+"id": "DBSBEERUS-071",
+"anime": "Dragon Ball Z",
+"rarete": "spectre",
+"nom": "Son Gohan",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DBSBEERUS-072",
+"anime": "Dragon Ball Z",
+"rarete": "spectre",
+"nom": "Son Gohan & Son Goku",
+"type": "SUPER SAIYAN 2",
+"special": null
+},
+{
+"id": "DBSBEERUS-073",
+"anime": "Dragon Ball Super",
+"rarete": "mirage",
+"nom": "Son Goku & Vegeta",
+"type": "SUPER SAIYAN GOD",
+"special": null
+},
+{
+"id": "DBSBEERUS-074",
+"anime": "Dragon Ball GT",
+"rarete": "mirage",
+"nom": "Gogeta",
+"type": "SUPER SAIYAN 4",
+"special": "sakuga"
+},
+{
+"id": "DBSBEERUS-075",
+"anime": "Dragon Ball Super",
+"rarete": "mirage",
+"nom": "Trunks",
+"type": "SUPER SAIYAN",
+"special": null
+},
+{
+"id": "DBSBEERUS-076",
+"anime": "Dragon Ball Super",
+"rarete": "mirage",
+"nom": "Son Goku & Freezer",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DBSBEERUS-077",
+"anime": "Dragon Ball Super",
+"rarete": "mirage",
+"nom": "Piccolo & Son Gohan",
+"type": "ORANGE PICCOLO & BEAST",
+"special": null
+},
+{
+"id": "DBSBEERUS-078",
+"anime": "Dragon Ball Super",
+"rarete": "mirage",
+"nom": "Son Goku & Vegeta",
+"type": "SUPER SAIYAN BLUE",
+"special": "celluloid"
+},
+{
+"id": "DBSBEERUS-079",
+"anime": "Dragon Ball Super",
+"rarete": "mirage",
+"nom": "Granolah",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DBSBEERUS-080",
+"anime": "Dragon Ball Super",
+"rarete": "mirage",
+"nom": "Son Gohan",
+"type": "BEAST",
+"special": null
+},
+{
+"id": "DBSBEERUS-081",
+"anime": "Dragon Ball Z",
+"rarete": "mirage",
+"nom": "Son Gohan du futur",
+"type": "SUPER SAIYAN",
+"special": null
+},
+{
+"id": "DBSBEERUS-082",
+"anime": "Dragon Ball Z",
+"rarete": "mirage",
+"nom": "Son Gohan",
+"type": "SUPER SAIYAN 2",
+"special": "sumi"
+},
+{
+"id": "DBSBEERUS-083",
+"anime": "Dragon Ball Super",
+"rarete": "mirage",
+"nom": "Son Gohan",
+"type": "BEAST",
+"special": null
+},
+{
+"id": "DBSBEERUS-084",
+"anime": "Dragon Ball Z",
+"rarete": "zenkai",
+"nom": "Son Gohan",
+"type": "SUPER SAIYAN 2",
+"special": null
+},
+{
+"id": "DBSBEERUS-085",
+"anime": "Dragon Ball Z",
+"rarete": "zenkai",
+"nom": "Son Gohan du futur, Piccolo & Son Goku",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DBSBEERUS-086",
+"anime": "Dragon Ball Super",
+"rarete": "zenkai",
+"nom": "Meilleur opening",
+"type": "NOMINÉ",
+"special": null
+},
+{
+"id": "DBSBEERUS-087",
+"anime": "Dragon Ball Z",
+"rarete": "zenkai",
+"nom": "Son Gohan",
+"type": "SUPER SAIYAN 2",
+"special": null
+},
+{
+"id": "DBSBEERUS-088",
+"anime": "Dragon Ball GT",
+"rarete": "zenkai",
+"nom": "Son Goku",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DBSBEERUS-089",
+"anime": "Dragon Ball Super",
+"rarete": "zenkai",
+"nom": "Son Goku & Vegeta",
+"type": "SUPER SAIYAN BLUE",
+"special": null
+},
+{
+"id": "DBSBEERUS-090",
+"anime": "Dragon Ball Z",
+"rarete": "zenkai",
+"nom": "Bardock",
+"type": "PERSONNAGE",
+"special": "reiatsu"
+},
+{
+"id": "DBSBEERUS-091",
+"anime": "Dragon Ball Z",
+"rarete": "zenkai",
+"nom": "Trunks",
+"type": "SUPER SAIYAN",
+"special": null
+},
+{
+"id": "DBSBEERUS-092",
+"anime": "Dragon Ball Z",
+"rarete": "zenkai",
+"nom": "Son Goku",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DBSBEERUS-093",
+"anime": "Dragon Ball Super",
+"rarete": "zenkai",
+"nom": "Son Gohan",
+"type": "BEAST",
+"special": null
+},
+{
+"id": "DBSBEERUS-094",
+"anime": "Dragon Ball Z",
+"rarete": "zenkai",
+"nom": "Son Goku",
+"type": "SUPER SAIYAN",
+"special": "ekonte"
+},
+{
+"id": "DBSBEERUS-095",
+"anime": "Dragon Ball Super",
+"rarete": "zenkai",
+"nom": "Son Goku & Vegeta",
+"type": "SUPER SAIYAN GOD",
+"special": null
+},
+{
+"id": "DBSBEERUS-096",
+"anime": "Dragon Ball Z",
+"rarete": "zenkai",
+"nom": "Gogeta",
+"type": "SUPER SAIYAN",
+"special": null
+},
+{
+"id": "DBSBEERUS-097",
+"anime": "Dragon Ball Daima",
+"rarete": "zenkai",
+"nom": "Son Goku",
+"type": "SUPER SAIYAN 4",
+"special": null
+},
+{
+"id": "DBSBEERUS-098",
+"anime": "Dragon Ball Z",
+"rarete": "zenkai",
+"nom": "Son Goku",
+"type": "SUPER SAIYAN",
+"special": "genga"
+},
+{
+"id": "DBSBEERUS-099",
+"anime": "Dragon Ball Z",
+"rarete": "zenkai",
+"nom": "Son Gohan du futur",
+"type": "SUPER SAIYAN",
+"special": "celluloid"
+},
+{
+"id": "DBSBEERUS-100",
+"anime": "Dragon Ball Super",
+"rarete": "zenkai",
+"nom": "Vegetto",
+"type": "SUPER SAIYAN BLUE",
+"special": null
+},
+{
+"id": "DBSBEERUS-101",
+"anime": "Dragon Ball Z",
+"rarete": "zenkai",
+"nom": "Son Goku & Son Gohan",
+"type": "SUPER SAIYAN 2",
+"special": null
+},
+{
+"id": "DBSBEERUS-102",
+"anime": "Dragon Ball Z",
+"rarete": "zenkai",
+"nom": "Son Gohan du futur",
+"type": "SUPER SAIYAN",
+"special": "sakuga"
+},
+{
+"id": "DBSBEERUS-103",
+"anime": "Dragon Ball Super",
+"rarete": "zenkai",
+"nom": "Son Goku",
+"type": "SUPER SAIYAN GOD",
+"special": "reiatsu"
+},
+{
+"id": "DBSBEERUS-104",
+"anime": "Dragon Ball Super",
+"rarete": "zenkai",
+"nom": "Son Gohan",
+"type": "BEAST",
+"special": null
+},
+{
+"id": "DBSBEERUS-105",
+"anime": "Dragon Ball Z",
+"rarete": "zenkai",
+"nom": "Bardock",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DBSBEERUS-106",
+"anime": "Dragon Ball Z",
+"rarete": "zenkai",
+"nom": "Son Gohan",
+"type": "SUPER SAIYAN 2",
+"special": "celluloid"
+},
+{
+"id": "DBSBEERUS-107",
+"anime": "Dragon Ball Z",
+"rarete": "zenkai",
+"nom": "Son Gohan",
+"type": "SUPER SAIYAN 2",
+"special": null
+},
+{
+"id": "DBSBEERUS-108",
+"anime": "Dragon Ball Z",
+"rarete": "zenkai",
+"nom": "Son Goku & Son Gohan",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-001",
+"anime": "Demon Slayer",
+"rarete": "eclat",
+"nom": "Tengen Uzui",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-002",
+"anime": "Demon Slayer",
+"rarete": "eclat",
+"nom": "Kyōjurō Rengoku",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-003",
+"anime": "Demon Slayer",
+"rarete": "eclat",
+"nom": "Genya Shinazugawa",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-004",
+"anime": "Demon Slayer",
+"rarete": "eclat",
+"nom": "Akaza",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-005",
+"anime": "Demon Slayer",
+"rarete": "eclat",
+"nom": "Obanai Iguro",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-006",
+"anime": "Demon Slayer",
+"rarete": "eclat",
+"nom": "Yoriichi Tsugikuni",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-007",
+"anime": "Demon Slayer",
+"rarete": "eclat",
+"nom": "Kyōjurō Rengoku",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-008",
+"anime": "Demon Slayer",
+"rarete": "eclat",
+"nom": "Tengen Uzui",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-009",
+"anime": "Demon Slayer",
+"rarete": "eclat",
+"nom": "Tamayo & Yushirō",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-010",
+"anime": "Demon Slayer",
+"rarete": "eclat",
+"nom": "Akaza",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-011",
+"anime": "Demon Slayer",
+"rarete": "eclat",
+"nom": "Kyojuro Rengoku",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-012",
+"anime": "Demon Slayer",
+"rarete": "eclat",
+"nom": "Zōhakuten",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-013",
+"anime": "Demon Slayer",
+"rarete": "eclat",
+"nom": "Tengen Uzui",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-014",
+"anime": "Demon Slayer",
+"rarete": "eclat",
+"nom": "Rui",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-015",
+"anime": "Demon Slayer",
+"rarete": "eclat",
+"nom": "Tengen Uzui",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-016",
+"anime": "Demon Slayer",
+"rarete": "eclat",
+"nom": "Zenitsu Agatsuma",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-017",
+"anime": "Demon Slayer",
+"rarete": "eclat",
+"nom": "Rui",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-018",
+"anime": "Demon Slayer",
+"rarete": "eclat",
+"nom": "Dōma",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-019",
+"anime": "Demon Slayer",
+"rarete": "eclat",
+"nom": "Tengen Uzui",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-020",
+"anime": "Demon Slayer",
+"rarete": "eclat",
+"nom": "Tengen Uzui",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-021",
+"anime": "Demon Slayer",
+"rarete": "eclat",
+"nom": "Zenitsu Agatsuma",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-022",
+"anime": "Demon Slayer",
+"rarete": "prisme",
+"nom": "Sakonji Urokodaki",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-023",
+"anime": "Demon Slayer",
+"rarete": "prisme",
+"nom": "Susamaru & Yahaba",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-024",
+"anime": "Demon Slayer",
+"rarete": "prisme",
+"nom": "Muzan Kibutsuji",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-025",
+"anime": "Demon Slayer",
+"rarete": "prisme",
+"nom": "Tengen Uzui",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-026",
+"anime": "Demon Slayer",
+"rarete": "prisme",
+"nom": "Kyōjurō Rengoku",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-027",
+"anime": "Demon Slayer",
+"rarete": "prisme",
+"nom": "Tengen Uzui",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-028",
+"anime": "Demon Slayer",
+"rarete": "prisme",
+"nom": "Sanemi Shinazugawa",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-029",
+"anime": "Demon Slayer",
+"rarete": "prisme",
+"nom": "Tengen Uzui",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-030",
+"anime": "Demon Slayer",
+"rarete": "prisme",
+"nom": "Gyōmei Himejima",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-031",
+"anime": "Demon Slayer",
+"rarete": "prisme",
+"nom": "Obanai Iguro",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-032",
+"anime": "Demon Slayer",
+"rarete": "prisme",
+"nom": "Dōma",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-033",
+"anime": "Demon Slayer",
+"rarete": "prisme",
+"nom": "Zenitsu Agatsuma",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-034",
+"anime": "Demon Slayer",
+"rarete": "prisme",
+"nom": "Giyū & Tanjirō",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-035",
+"anime": "Demon Slayer",
+"rarete": "prisme",
+"nom": "Nakime",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-036",
+"anime": "Demon Slayer",
+"rarete": "prisme",
+"nom": "Yoriichi Tsugikuni",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-037",
+"anime": "Demon Slayer",
+"rarete": "prisme",
+"nom": "Kokushibō",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-038",
+"anime": "Demon Slayer",
+"rarete": "prisme",
+"nom": "Obanai Iguro",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-039",
+"anime": "Demon Slayer",
+"rarete": "prisme",
+"nom": "Dōma",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-040",
+"anime": "Demon Slayer",
+"rarete": "prisme",
+"nom": "Akaza",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-041",
+"anime": "Demon Slayer",
+"rarete": "prisme",
+"nom": "Demon Slayer",
+"type": "ILLUSTRATION",
+"special": null
+},
+{
+"id": "DemonSlayer-042",
+"anime": "Demon Slayer",
+"rarete": "prisme",
+"nom": "Kokushibō",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-043",
+"anime": "Demon Slayer",
+"rarete": "prisme",
+"nom": "Zōhakuten",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-044",
+"anime": "Demon Slayer",
+"rarete": "prisme",
+"nom": "Tanjirō Kamado",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-045",
+"anime": "Demon Slayer",
+"rarete": "prisme",
+"nom": "Giyū Tomioka",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-046",
+"anime": "Demon Slayer",
+"rarete": "prisme",
+"nom": "Akaza",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-047",
+"anime": "Demon Slayer",
+"rarete": "prisme",
+"nom": "Doma",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-048",
+"anime": "Demon Slayer",
+"rarete": "prisme",
+"nom": "Tanjirō Kamado",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-049",
+"anime": "Demon Slayer",
+"rarete": "prisme",
+"nom": "Muichirō Tokitō",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-050",
+"anime": "Demon Slayer",
+"rarete": "prisme",
+"nom": "Yoriichi Tsugikuni",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-051",
+"anime": "Demon Slayer",
+"rarete": "prisme",
+"nom": "Daki & Gyūtarō",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-052",
+"anime": "Demon Slayer",
+"rarete": "prisme",
+"nom": "Demon Slayer",
+"type": "ILLUSTRATION",
+"special": null
+},
+{
+"id": "DemonSlayer-053",
+"anime": "Demon Slayer",
+"rarete": "spectre",
+"nom": "Zenitsu Agatsuma",
+"type": "PERSONNAGE",
+"special": "ekonte"
+},
+{
+"id": "DemonSlayer-054",
+"anime": "Demon Slayer",
+"rarete": "spectre",
+"nom": "Muichirō Tokitō",
+"type": "PERSONNAGE",
+"special": "sumi"
+},
+{
+"id": "DemonSlayer-055",
+"anime": "Demon Slayer",
+"rarete": "spectre",
+"nom": "Akaza",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-056",
+"anime": "Demon Slayer",
+"rarete": "spectre",
+"nom": "Tengen Uzui",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-057",
+"anime": "Demon Slayer",
+"rarete": "spectre",
+"nom": "Tanjirō Kamado",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-058",
+"anime": "Demon Slayer",
+"rarete": "spectre",
+"nom": "Kyōjurō Rengoku",
+"type": "PERSONNAGE",
+"special": "hanga"
+},
+{
+"id": "DemonSlayer-059",
+"anime": "Demon Slayer",
+"rarete": "spectre",
+"nom": "Sanemi & Kokushibō",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-060",
+"anime": "Demon Slayer",
+"rarete": "spectre",
+"nom": "Tanjirō & Yoriichi",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-061",
+"anime": "Demon Slayer",
+"rarete": "spectre",
+"nom": "Demon Slayer",
+"type": "ILLUSTRATION",
+"special": null
+},
+{
+"id": "DemonSlayer-062",
+"anime": "Demon Slayer",
+"rarete": "spectre",
+"nom": "Tanjirō Kamado",
+"type": "PERSONNAGE",
+"special": "reiatsu"
+},
+{
+"id": "DemonSlayer-063",
+"anime": "Demon Slayer",
+"rarete": "spectre",
+"nom": "Hantengu",
+"type": "PERSONNAGE",
+"special": "reiatsu"
+},
+{
+"id": "DemonSlayer-064",
+"anime": "Demon Slayer",
+"rarete": "spectre",
+"nom": "Giyū Tomioka",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-065",
+"anime": "Demon Slayer",
+"rarete": "spectre",
+"nom": "Dōma",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-066",
+"anime": "Demon Slayer",
+"rarete": "spectre",
+"nom": "Zenitsu Agatsuma",
+"type": "PERSONNAGE",
+"special": "ekonte"
+},
+{
+"id": "DemonSlayer-067",
+"anime": "Demon Slayer",
+"rarete": "spectre",
+"nom": "Akaza",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-068",
+"anime": "Demon Slayer",
+"rarete": "spectre",
+"nom": "Giyu Tomioka",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-069",
+"anime": "Demon Slayer",
+"rarete": "spectre",
+"nom": "Tanjiro & Rengoku",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-070",
+"anime": "Demon Slayer",
+"rarete": "spectre",
+"nom": "Akaza",
+"type": "PERSONNAGE",
+"special": "genga"
+},
+{
+"id": "DemonSlayer-071",
+"anime": "Demon Slayer",
+"rarete": "spectre",
+"nom": "Hantengu",
+"type": "PERSONNAGE",
+"special": "celluloid"
+},
+{
+"id": "DemonSlayer-072",
+"anime": "Demon Slayer",
+"rarete": "spectre",
+"nom": "Yoriichi Tsugikuni",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-073",
+"anime": "Demon Slayer",
+"rarete": "spectre",
+"nom": "Kokushibō",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-074",
+"anime": "Demon Slayer",
+"rarete": "spectre",
+"nom": "Lunes Supérieures",
+"type": "ILLUSTRATION",
+"special": "sakuga"
+},
+{
+"id": "DemonSlayer-075",
+"anime": "Demon Slayer",
+"rarete": "mirage",
+"nom": "Dōma",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-076",
+"anime": "Demon Slayer",
+"rarete": "mirage",
+"nom": "Kyōjurō Rengoku",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-077",
+"anime": "Demon Slayer",
+"rarete": "mirage",
+"nom": "Akaza",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-078",
+"anime": "Demon Slayer",
+"rarete": "mirage",
+"nom": "Akaza",
+"type": "PERSONNAGE",
+"special": "celluloid"
+},
+{
+"id": "DemonSlayer-079",
+"anime": "Demon Slayer",
+"rarete": "mirage",
+"nom": "Zenitsu Agatsuma",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-080",
+"anime": "Demon Slayer",
+"rarete": "mirage",
+"nom": "Zenitsu Agatsuma",
+"type": "PERSONNAGE",
+"special": "sakuga"
+},
+{
+"id": "DemonSlayer-081",
+"anime": "Demon Slayer",
+"rarete": "mirage",
+"nom": "Kyojuro Rengoku",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-082",
+"anime": "Demon Slayer",
+"rarete": "mirage",
+"nom": "Muichirō Tokitō",
+"type": "PERSONNAGE",
+"special": "sumi"
+},
+{
+"id": "DemonSlayer-083",
+"anime": "Demon Slayer",
+"rarete": "mirage",
+"nom": "Giyū Tomioka",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-084",
+"anime": "Demon Slayer",
+"rarete": "mirage",
+"nom": "Demon Slayer",
+"type": "ILLUSTRATION",
+"special": null
+},
+{
+"id": "DemonSlayer-085",
+"anime": "Demon Slayer",
+"rarete": "mirage",
+"nom": "Obanai Iguro",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-086",
+"anime": "Demon Slayer",
+"rarete": "mirage",
+"nom": "Demon Slayer",
+"type": "ILLUSTRATION",
+"special": "hanga"
+},
+{
+"id": "DemonSlayer-087",
+"anime": "Demon Slayer",
+"rarete": "mirage",
+"nom": "Demon Slayer",
+"type": "ILLUSTRATION",
+"special": null
+},
+{
+"id": "DemonSlayer-088",
+"anime": "Demon Slayer",
+"rarete": "mirage",
+"nom": "Obanai Iguro",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-089",
+"anime": "Demon Slayer",
+"rarete": "zenkai",
+"nom": "Muichirō Tokitō",
+"type": "PERSONNAGE",
+"special": "hanga"
+},
+{
+"id": "DemonSlayer-090",
+"anime": "Demon Slayer",
+"rarete": "zenkai",
+"nom": "Tanjirō Kamado",
+"type": "PERSONNAGE",
+"special": "reiatsu"
+},
+{
+"id": "DemonSlayer-091",
+"anime": "Demon Slayer",
+"rarete": "zenkai",
+"nom": "Giyu Tomioka",
+"type": "PERSONNAGE",
+"special": "genga"
+},
+{
+"id": "DemonSlayer-092",
+"anime": "Demon Slayer",
+"rarete": "zenkai",
+"nom": "Akaza",
+"type": "PERSONNAGE",
+"special": "reiatsu"
+},
+{
+"id": "DemonSlayer-093",
+"anime": "Demon Slayer",
+"rarete": "zenkai",
+"nom": "Dōma",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-094",
+"anime": "Demon Slayer",
+"rarete": "zenkai",
+"nom": "Kyōjurō Rengoku",
+"type": "PERSONNAGE",
+"special": "ekonte"
+},
+{
+"id": "DemonSlayer-095",
+"anime": "Demon Slayer",
+"rarete": "zenkai",
+"nom": "Obanai Iguro",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-096",
+"anime": "Demon Slayer",
+"rarete": "zenkai",
+"nom": "Tanjirō Kamado",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-097",
+"anime": "Demon Slayer",
+"rarete": "zenkai",
+"nom": "Tengen Uzui",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-098",
+"anime": "Demon Slayer",
+"rarete": "zenkai",
+"nom": "Les Piliers",
+"type": "ILLUSTRATION",
+"special": "genga"
+},
+{
+"id": "DemonSlayer-099",
+"anime": "Demon Slayer",
+"rarete": "zenkai",
+"nom": "Sanemi & Kokushibō",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-100",
+"anime": "Demon Slayer",
+"rarete": "zenkai",
+"nom": "Tanjirō Kamado",
+"type": "PERSONNAGE",
+"special": "celluloid"
+},
+{
+"id": "DemonSlayer-101",
+"anime": "Demon Slayer",
+"rarete": "zenkai",
+"nom": "Tanjirō, Zenitsu & Inosuke",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-102",
+"anime": "Demon Slayer",
+"rarete": "zenkai",
+"nom": "Dōma",
+"type": "PERSONNAGE",
+"special": "sakuga"
+},
+{
+"id": "DemonSlayer-103",
+"anime": "Demon Slayer",
+"rarete": "zenkai",
+"nom": "Tengen Uzui",
+"type": "PERSONNAGE",
+"special": "sumi"
+},
+{
+"id": "DemonSlayer-104",
+"anime": "Demon Slayer",
+"rarete": "zenkai",
+"nom": "Tanjirō Kamado",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DemonSlayer-105",
+"anime": "Demon Slayer",
+"rarete": "zenkai",
+"nom": "Tanjirō Kamado",
+"type": "PERSONNAGE",
+"special": "sakuga"
+},
+{
+"id": "DemonSlayer-106",
+"anime": "Demon Slayer",
+"rarete": "zenkai",
+"nom": "Zenitsu Agatsuma",
+"type": "PERSONNAGE",
+"special": "celluloid"
+},
+{
+"id": "DemonSlayer-107",
+"anime": "Demon Slayer",
+"rarete": "zenkai",
+"nom": "Dōma",
+"type": "PERSONNAGE",
+"special": "sumi"
+},
+{
+"id": "DrStone-001",
+"anime": "Dr. Stone",
+"rarete": "prisme",
+"nom": "Senkū Ishigami",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DrStone-002",
+"anime": "Dr. Stone",
+"rarete": "spectre",
+"nom": "Senkū Ishigami",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DrStone-003",
+"anime": "Dr. Stone",
+"rarete": "spectre",
+"nom": "Senkū Ishigami",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "DrStone-004",
+"anime": "Dr. Stone",
+"rarete": "zenkai",
+"nom": "Senkū Ishigami",
+"type": "PERSONNAGE",
+"special": "sumi"
+},
+{
+"id": "DrStone-005",
+"anime": "Dr. Stone",
+"rarete": "zenkai",
+"nom": "Senkū Ishigami",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "FIREforce-001",
+"anime": "Fire Force",
+"rarete": "eclat",
+"nom": "Fire Force",
+"type": "ILLUSTRATION",
+"special": null
+},
+{
+"id": "FIREforce-002",
+"anime": "Fire Force",
+"rarete": "eclat",
+"nom": "Shinra Kusakabe",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "FIREforce-003",
+"anime": "Fire Force",
+"rarete": "eclat",
+"nom": "Shinra & Arthur",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "FIREforce-004",
+"anime": "Fire Force",
+"rarete": "eclat",
+"nom": "Tamaki Kotatsu",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "FIREforce-005",
+"anime": "Fire Force",
+"rarete": "eclat",
+"nom": "Hibana",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "FIREforce-006",
+"anime": "Fire Force",
+"rarete": "eclat",
+"nom": "Tamaki Kotatsu",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "FIREforce-007",
+"anime": "Fire Force",
+"rarete": "eclat",
+"nom": "Shinra Kusakabe",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "FIREforce-008",
+"anime": "Fire Force",
+"rarete": "eclat",
+"nom": "Shinra Kusakabe",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "FIREforce-009",
+"anime": "Fire Force",
+"rarete": "prisme",
+"nom": "Moonlight Mask",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "FIREforce-010",
+"anime": "Fire Force",
+"rarete": "prisme",
+"nom": "Fire Force",
+"type": "ILLUSTRATION",
+"special": null
+},
+{
+"id": "FIREforce-011",
+"anime": "Fire Force",
+"rarete": "prisme",
+"nom": "Benimaru Shinmon",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "FIREforce-012",
+"anime": "Fire Force",
+"rarete": "prisme",
+"nom": "Shinra Kusakabe",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "FIREforce-013",
+"anime": "Fire Force",
+"rarete": "prisme",
+"nom": "Arthur Boyle",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "FIREforce-014",
+"anime": "Fire Force",
+"rarete": "prisme",
+"nom": "Shinra Kusakabe",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "FIREforce-015",
+"anime": "Fire Force",
+"rarete": "prisme",
+"nom": "Shinra Kusakabe",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "FIREforce-016",
+"anime": "Fire Force",
+"rarete": "spectre",
+"nom": "Joker & Shinra",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "FIREforce-017",
+"anime": "Fire Force",
+"rarete": "spectre",
+"nom": "Shinra Kusakabe",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "FIREforce-018",
+"anime": "Fire Force",
+"rarete": "spectre",
+"nom": "Dragon",
+"type": "PERSONNAGE",
+"special": "hanga"
+},
+{
+"id": "FIREforce-019",
+"anime": "Fire Force",
+"rarete": "spectre",
+"nom": "Benimaru Shinmon",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "FIREforce-020",
+"anime": "Fire Force",
+"rarete": "spectre",
+"nom": "Arthur Boyle & Dragon",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "FIREforce-021",
+"anime": "Fire Force",
+"rarete": "mirage",
+"nom": "Arthur Boyle",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "FIREforce-022",
+"anime": "Fire Force",
+"rarete": "mirage",
+"nom": "Arthur Boyle",
+"type": "PERSONNAGE",
+"special": "reiatsu"
+},
+{
+"id": "FIREforce-023",
+"anime": "Fire Force",
+"rarete": "mirage",
+"nom": "Arthur Boyle",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "FIREforce-024",
+"anime": "Fire Force",
+"rarete": "zenkai",
+"nom": "Benimaru Shinmon",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "FIREforce-025",
+"anime": "Fire Force",
+"rarete": "zenkai",
+"nom": "Arthur Boyle",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "FIREforce-026",
+"anime": "Fire Force",
+"rarete": "zenkai",
+"nom": "Arthur Boyle",
+"type": "PERSONNAGE",
+"special": "ekonte"
+},
+{
+"id": "FIREforce-027",
+"anime": "Fire Force",
+"rarete": "zenkai",
+"nom": "Fire Force",
+"type": "ILLUSTRATION",
+"special": null
+},
+{
+"id": "FIREforce-028",
+"anime": "Fire Force",
+"rarete": "zenkai",
+"nom": "Shinra Kusakabe",
+"type": "PERSONNAGE",
+"special": "sumi"
+},
+{
+"id": "FIREforce-029",
+"anime": "Fire Force",
+"rarete": "zenkai",
+"nom": "Benimaru Shinmon",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "FIREforce-030",
+"anime": "Fire Force",
+"rarete": "zenkai",
+"nom": "Meilleur opening",
+"type": "NOMINÉ",
+"special": null
+},
+{
+"id": "FIREforce-031",
+"anime": "Fire Force",
+"rarete": "zenkai",
+"nom": "Shinra Kusakabe",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "FIREforce-032",
+"anime": "Fire Force",
+"rarete": "zenkai",
+"nom": "Dragon",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "FIREforce-033",
+"anime": "Fire Force",
+"rarete": "zenkai",
+"nom": "Arthur Boyle",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "GACHIAKUTA-001",
+"anime": "Gachiakuta",
+"rarete": "spectre",
+"nom": "Semiu",
+"type": "PERSONNAGE",
+"special": "sakuga"
+},
+{
+"id": "HELLSParadise-001",
+"anime": "Hell's Paradise",
+"rarete": "eclat",
+"nom": "Gantetsusai",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "HELLSParadise-002",
+"anime": "Hell's Paradise",
+"rarete": "eclat",
+"nom": "Senta",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "HELLSParadise-003",
+"anime": "Hell's Paradise",
+"rarete": "eclat",
+"nom": "Fuchi",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "HELLSParadise-004",
+"anime": "Hell's Paradise",
+"rarete": "eclat",
+"nom": "Aza Chōbei",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "HELLSParadise-005",
+"anime": "Hell's Paradise",
+"rarete": "eclat",
+"nom": "Nurugai",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "HELLSParadise-006",
+"anime": "Hell's Paradise",
+"rarete": "eclat",
+"nom": "Yuzuriha",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "HELLSParadise-007",
+"anime": "Hell's Paradise",
+"rarete": "eclat",
+"nom": "Chobei",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "HELLSParadise-008",
+"anime": "Hell's Paradise",
+"rarete": "eclat",
+"nom": "Ju Fa",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "HELLSParadise-009",
+"anime": "Hell's Paradise",
+"rarete": "eclat",
+"nom": "Gantetsusai",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "HELLSParadise-010",
+"anime": "Hell's Paradise",
+"rarete": "prisme",
+"nom": "Sagiri",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "HELLSParadise-011",
+"anime": "Hell's Paradise",
+"rarete": "prisme",
+"nom": "Shugen",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "HELLSParadise-012",
+"anime": "Hell's Paradise",
+"rarete": "prisme",
+"nom": "Tensen",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "HELLSParadise-013",
+"anime": "Hell's Paradise",
+"rarete": "prisme",
+"nom": "Yuzuriha",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "HELLSParadise-014",
+"anime": "Hell's Paradise",
+"rarete": "prisme",
+"nom": "Sagiri",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "HELLSParadise-015",
+"anime": "Hell's Paradise",
+"rarete": "spectre",
+"nom": "Aza Chōbei",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "HELLSParadise-016",
+"anime": "Hell's Paradise",
+"rarete": "spectre",
+"nom": "Gabimaru",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "HELLSParadise-017",
+"anime": "Hell's Paradise",
+"rarete": "spectre",
+"nom": "Yuzuriha & Gabimaru",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "HELLSParadise-018",
+"anime": "Hell's Paradise",
+"rarete": "spectre",
+"nom": "Jikka",
+"type": "PERSONNAGE",
+"special": "celluloid"
+},
+{
+"id": "HELLSParadise-019",
+"anime": "Hell's Paradise",
+"rarete": "spectre",
+"nom": "Mu Dan",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "HELLSParadise-020",
+"anime": "Hell's Paradise",
+"rarete": "spectre",
+"nom": "Shion & Tenza",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "HELLSParadise-021",
+"anime": "Hell's Paradise",
+"rarete": "spectre",
+"nom": "Jika",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "HELLSParadise-022",
+"anime": "Hell's Paradise",
+"rarete": "spectre",
+"nom": "Shion",
+"type": "PERSONNAGE",
+"special": "sumi"
+},
+{
+"id": "HELLSParadise-023",
+"anime": "Hell's Paradise",
+"rarete": "mirage",
+"nom": "Tensen",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "HELLSParadise-024",
+"anime": "Hell's Paradise",
+"rarete": "mirage",
+"nom": "Shugen",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "HELLSParadise-025",
+"anime": "Hell's Paradise",
+"rarete": "mirage",
+"nom": "Shion",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "HELLSParadise-026",
+"anime": "Hell's Paradise",
+"rarete": "mirage",
+"nom": "Gabimaru",
+"type": "PERSONNAGE",
+"special": "hanga"
+},
+{
+"id": "HELLSParadise-027",
+"anime": "Hell's Paradise",
+"rarete": "zenkai",
+"nom": "Shion",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "HELLSParadise-028",
+"anime": "Hell's Paradise",
+"rarete": "zenkai",
+"nom": "Gabimaru",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "HELLSParadise-029",
+"anime": "Hell's Paradise",
+"rarete": "zenkai",
+"nom": "Yuzuriha",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "HELLSParadise-030",
+"anime": "Hell's Paradise",
+"rarete": "zenkai",
+"nom": "Yuzuriha",
+"type": "PERSONNAGE",
+"special": "reiatsu"
+},
+{
+"id": "HELLSParadise-031",
+"anime": "Hell's Paradise",
+"rarete": "zenkai",
+"nom": "Shion",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "HELLSParadise-032",
+"anime": "Hell's Paradise",
+"rarete": "zenkai",
+"nom": "Gabimaru & Sagiri",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "HELLSParadise-033",
+"anime": "Hell's Paradise",
+"rarete": "zenkai",
+"nom": "Meilleur opening",
+"type": "NOMINÉ",
+"special": null
+},
+{
+"id": "HELLSParadise-034",
+"anime": "Hell's Paradise",
+"rarete": "zenkai",
+"nom": "Gabimaru",
+"type": "PERSONNAGE",
+"special": "ekonte"
+},
+{
+"id": "HELLSParadise-035",
+"anime": "Hell's Paradise",
+"rarete": "zenkai",
+"nom": "Chobei",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "HELLSParadise-036",
+"anime": "Hell's Paradise",
+"rarete": "zenkai",
+"nom": "Gabimaru",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-001",
+"anime": "Jujutsu Kaisen",
+"rarete": "eclat",
+"nom": "Mahito",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-002",
+"anime": "Jujutsu Kaisen",
+"rarete": "eclat",
+"nom": "Megumi Fushiguro",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-003",
+"anime": "Jujutsu Kaisen",
+"rarete": "eclat",
+"nom": "Nanami & Itadori",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-004",
+"anime": "Jujutsu Kaisen",
+"rarete": "eclat",
+"nom": "Atsuya Kusakabe",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-005",
+"anime": "Jujutsu Kaisen",
+"rarete": "eclat",
+"nom": "Toge Inumaki",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-006",
+"anime": "Jujutsu Kaisen",
+"rarete": "eclat",
+"nom": "Maki Zen'in",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-007",
+"anime": "Jujutsu Kaisen",
+"rarete": "eclat",
+"nom": "Kinji Hakari",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-008",
+"anime": "Jujutsu Kaisen",
+"rarete": "eclat",
+"nom": "Kento Nanami",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-009",
+"anime": "Jujutsu Kaisen",
+"rarete": "eclat",
+"nom": "Mei Mei",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-010",
+"anime": "Jujutsu Kaisen",
+"rarete": "eclat",
+"nom": "Mahito",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-011",
+"anime": "Jujutsu Kaisen",
+"rarete": "eclat",
+"nom": "Yūji Itadori",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-012",
+"anime": "Jujutsu Kaisen",
+"rarete": "eclat",
+"nom": "Kenjaku",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-013",
+"anime": "Jujutsu Kaisen",
+"rarete": "eclat",
+"nom": "Jujutsu Kaisen",
+"type": "ILLUSTRATION",
+"special": null
+},
+{
+"id": "JJK-014",
+"anime": "Jujutsu Kaisen",
+"rarete": "eclat",
+"nom": "Toge Inumaki",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-015",
+"anime": "Jujutsu Kaisen",
+"rarete": "eclat",
+"nom": "Maki Zen'in",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-016",
+"anime": "Jujutsu Kaisen",
+"rarete": "eclat",
+"nom": "Kinji Hakari",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-017",
+"anime": "Jujutsu Kaisen",
+"rarete": "eclat",
+"nom": "Yūta Okkotsu",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-018",
+"anime": "Jujutsu Kaisen",
+"rarete": "eclat",
+"nom": "Gojō & Nanami",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-019",
+"anime": "Jujutsu Kaisen",
+"rarete": "eclat",
+"nom": "Hiromi Higuruma",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-020",
+"anime": "Jujutsu Kaisen",
+"rarete": "eclat",
+"nom": "Toge Inumaki",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-021",
+"anime": "Jujutsu Kaisen",
+"rarete": "prisme",
+"nom": "Chōsō",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-022",
+"anime": "Jujutsu Kaisen",
+"rarete": "prisme",
+"nom": "Megumi Fushiguro",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-023",
+"anime": "Jujutsu Kaisen",
+"rarete": "prisme",
+"nom": "Tōji Fushiguro",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-024",
+"anime": "Jujutsu Kaisen",
+"rarete": "prisme",
+"nom": "Kento Nanami",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-025",
+"anime": "Jujutsu Kaisen",
+"rarete": "prisme",
+"nom": "Jujutsu Kaisen",
+"type": "ILLUSTRATION",
+"special": null
+},
+{
+"id": "JJK-026",
+"anime": "Jujutsu Kaisen",
+"rarete": "prisme",
+"nom": "Toge Inumaki",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-027",
+"anime": "Jujutsu Kaisen",
+"rarete": "prisme",
+"nom": "Toge Inumaki",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-028",
+"anime": "Jujutsu Kaisen",
+"rarete": "prisme",
+"nom": "Kento Nanami",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-029",
+"anime": "Jujutsu Kaisen",
+"rarete": "prisme",
+"nom": "Maki, Yūta & Panda",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-030",
+"anime": "Jujutsu Kaisen",
+"rarete": "prisme",
+"nom": "Maki Zen'in",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-031",
+"anime": "Jujutsu Kaisen",
+"rarete": "prisme",
+"nom": "Kinji Hakari",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-032",
+"anime": "Jujutsu Kaisen",
+"rarete": "prisme",
+"nom": "Tōji Fushiguro",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-033",
+"anime": "Jujutsu Kaisen",
+"rarete": "prisme",
+"nom": "Yūji Itadori",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-034",
+"anime": "Jujutsu Kaisen",
+"rarete": "prisme",
+"nom": "Chōsō & Itadori",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-035",
+"anime": "Jujutsu Kaisen",
+"rarete": "prisme",
+"nom": "Toge Inumaki",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-036",
+"anime": "Jujutsu Kaisen",
+"rarete": "prisme",
+"nom": "Noritoshi Kamo",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-037",
+"anime": "Jujutsu Kaisen",
+"rarete": "prisme",
+"nom": "Mahito",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-038",
+"anime": "Jujutsu Kaisen",
+"rarete": "prisme",
+"nom": "Kento Nanami",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-039",
+"anime": "Jujutsu Kaisen",
+"rarete": "prisme",
+"nom": "Yūta Okkotsu",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-040",
+"anime": "Jujutsu Kaisen",
+"rarete": "spectre",
+"nom": "Satoru Gojō",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-041",
+"anime": "Jujutsu Kaisen",
+"rarete": "spectre",
+"nom": "Ryōmen Sukuna",
+"type": "PERSONNAGE",
+"special": "genga"
+},
+{
+"id": "JJK-042",
+"anime": "Jujutsu Kaisen",
+"rarete": "spectre",
+"nom": "Hajime Kashimo",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-043",
+"anime": "Jujutsu Kaisen",
+"rarete": "spectre",
+"nom": "Nobara Kugisaki",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-044",
+"anime": "Jujutsu Kaisen",
+"rarete": "spectre",
+"nom": "Yuji & Mahito",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-045",
+"anime": "Jujutsu Kaisen",
+"rarete": "spectre",
+"nom": "Chōsō",
+"type": "PERSONNAGE",
+"special": "sakuga"
+},
+{
+"id": "JJK-046",
+"anime": "Jujutsu Kaisen",
+"rarete": "spectre",
+"nom": "Itadori & Okkotsu",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-047",
+"anime": "Jujutsu Kaisen",
+"rarete": "spectre",
+"nom": "Nobara Kugisaki",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-048",
+"anime": "Jujutsu Kaisen",
+"rarete": "spectre",
+"nom": "Kasumi Miwa",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-049",
+"anime": "Jujutsu Kaisen",
+"rarete": "spectre",
+"nom": "Hiromi Higuruma",
+"type": "PERSONNAGE",
+"special": "celluloid"
+},
+{
+"id": "JJK-050",
+"anime": "Jujutsu Kaisen",
+"rarete": "spectre",
+"nom": "Choso",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-051",
+"anime": "Jujutsu Kaisen",
+"rarete": "spectre",
+"nom": "Yuta Okkotsu",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-052",
+"anime": "Jujutsu Kaisen",
+"rarete": "spectre",
+"nom": "Ryōmen Sukuna",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-053",
+"anime": "Jujutsu Kaisen",
+"rarete": "spectre",
+"nom": "Yūta Okkotsu",
+"type": "PERSONNAGE",
+"special": "sumi"
+},
+{
+"id": "JJK-054",
+"anime": "Jujutsu Kaisen",
+"rarete": "spectre",
+"nom": "Mechamaru",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-055",
+"anime": "Jujutsu Kaisen",
+"rarete": "spectre",
+"nom": "Maki Zen'in",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-056",
+"anime": "Jujutsu Kaisen",
+"rarete": "spectre",
+"nom": "Tōji Fushiguro",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-057",
+"anime": "Jujutsu Kaisen",
+"rarete": "spectre",
+"nom": "Maki Zen'in",
+"type": "PERSONNAGE",
+"special": "hanga"
+},
+{
+"id": "JJK-058",
+"anime": "Jujutsu Kaisen",
+"rarete": "mirage",
+"nom": "Hana Kurusu",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-059",
+"anime": "Jujutsu Kaisen",
+"rarete": "mirage",
+"nom": "Ryomen Sukuna",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-060",
+"anime": "Jujutsu Kaisen",
+"rarete": "mirage",
+"nom": "Satoru Gojo",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-061",
+"anime": "Jujutsu Kaisen",
+"rarete": "mirage",
+"nom": "Nobara Kugisaki",
+"type": "PERSONNAGE",
+"special": "reiatsu"
+},
+{
+"id": "JJK-062",
+"anime": "Jujutsu Kaisen",
+"rarete": "mirage",
+"nom": "Nobara Kugisaki",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-063",
+"anime": "Jujutsu Kaisen",
+"rarete": "mirage",
+"nom": "Hiromi Higuruma",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-064",
+"anime": "Jujutsu Kaisen",
+"rarete": "mirage",
+"nom": "Yūta Okkotsu",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-065",
+"anime": "Jujutsu Kaisen",
+"rarete": "mirage",
+"nom": "Mahito",
+"type": "PERSONNAGE",
+"special": "ekonte"
+},
+{
+"id": "JJK-066",
+"anime": "Jujutsu Kaisen",
+"rarete": "mirage",
+"nom": "Maki Zen'in",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-067",
+"anime": "Jujutsu Kaisen",
+"rarete": "mirage",
+"nom": "Kinji Hakari",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-068",
+"anime": "Jujutsu Kaisen",
+"rarete": "mirage",
+"nom": "Toge Inumaki",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-069",
+"anime": "Jujutsu Kaisen",
+"rarete": "mirage",
+"nom": "Hajime Kashimo",
+"type": "PERSONNAGE",
+"special": "genga"
+},
+{
+"id": "JJK-070",
+"anime": "Jujutsu Kaisen",
+"rarete": "mirage",
+"nom": "Yuta Okkotsu",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-071",
+"anime": "Jujutsu Kaisen",
+"rarete": "mirage",
+"nom": "Ryōmen Sukuna",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-072",
+"anime": "Jujutsu Kaisen",
+"rarete": "mirage",
+"nom": "Nobara Kugisaki",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-073",
+"anime": "Jujutsu Kaisen",
+"rarete": "mirage",
+"nom": "Kasumi Miwa",
+"type": "PERSONNAGE",
+"special": "sakuga"
+},
+{
+"id": "JJK-074",
+"anime": "Jujutsu Kaisen",
+"rarete": "mirage",
+"nom": "Maki Zen'in",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-075",
+"anime": "Jujutsu Kaisen",
+"rarete": "mirage",
+"nom": "Maki Zen'in",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-076",
+"anime": "Jujutsu Kaisen",
+"rarete": "zenkai",
+"nom": "Satoru Gojō",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-077",
+"anime": "Jujutsu Kaisen",
+"rarete": "zenkai",
+"nom": "Satoru Gojō",
+"type": "PERSONNAGE",
+"special": "reiatsu"
+},
+{
+"id": "JJK-078",
+"anime": "Jujutsu Kaisen",
+"rarete": "zenkai",
+"nom": "Tōji Fushiguro",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-079",
+"anime": "Jujutsu Kaisen",
+"rarete": "zenkai",
+"nom": "Kinji Hakari",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-080",
+"anime": "Jujutsu Kaisen",
+"rarete": "zenkai",
+"nom": "Satoru Gojō",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-081",
+"anime": "Jujutsu Kaisen",
+"rarete": "zenkai",
+"nom": "Jujutsu Kaisen",
+"type": "ILLUSTRATION",
+"special": "sumi"
+},
+{
+"id": "JJK-082",
+"anime": "Jujutsu Kaisen",
+"rarete": "zenkai",
+"nom": "Satoru Gojō",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-083",
+"anime": "Jujutsu Kaisen",
+"rarete": "zenkai",
+"nom": "Megumi Fushiguro",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-084",
+"anime": "Jujutsu Kaisen",
+"rarete": "zenkai",
+"nom": "Ryōmen Sukuna",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-085",
+"anime": "Jujutsu Kaisen",
+"rarete": "zenkai",
+"nom": "Satoru Gojo",
+"type": "PERSONNAGE",
+"special": "hanga"
+},
+{
+"id": "JJK-086",
+"anime": "Jujutsu Kaisen",
+"rarete": "zenkai",
+"nom": "Suguru Geto & Yuta Okkotsu",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-087",
+"anime": "Jujutsu Kaisen",
+"rarete": "zenkai",
+"nom": "Nobara Kugisaki",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-088",
+"anime": "Jujutsu Kaisen",
+"rarete": "zenkai",
+"nom": "Satoru Gojō",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-089",
+"anime": "Jujutsu Kaisen",
+"rarete": "zenkai",
+"nom": "Meilleur opening",
+"type": "NOMINÉ",
+"special": null
+},
+{
+"id": "JJK-090",
+"anime": "Jujutsu Kaisen",
+"rarete": "zenkai",
+"nom": "Yūji Itadori",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-091",
+"anime": "Jujutsu Kaisen",
+"rarete": "zenkai",
+"nom": "Hajime Kashimo",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-092",
+"anime": "Jujutsu Kaisen",
+"rarete": "zenkai",
+"nom": "Itadori & Chōsō",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-093",
+"anime": "Jujutsu Kaisen",
+"rarete": "zenkai",
+"nom": "Megumi & Itadori",
+"type": "PERSONNAGE",
+"special": "ekonte"
+},
+{
+"id": "JJK-094",
+"anime": "Jujutsu Kaisen",
+"rarete": "zenkai",
+"nom": "Toge Inumaki",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-095",
+"anime": "Jujutsu Kaisen",
+"rarete": "zenkai",
+"nom": "Yūta Okkotsu",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-096",
+"anime": "Jujutsu Kaisen",
+"rarete": "zenkai",
+"nom": "Kento Nanami",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JJK-097",
+"anime": "Jujutsu Kaisen",
+"rarete": "zenkai",
+"nom": "Maki Zen'in",
+"type": "PERSONNAGE",
+"special": "genga"
+},
+{
+"id": "JJK-098",
+"anime": "Jujutsu Kaisen",
+"rarete": "zenkai",
+"nom": "Nobara Kugisaki",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JOJOSBR-001",
+"anime": "Steel Ball Run",
+"rarete": "eclat",
+"nom": "Gyro Zeppeli",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JOJOSBR-002",
+"anime": "Steel Ball Run",
+"rarete": "eclat",
+"nom": "Diego Brando",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JOJOSBR-003",
+"anime": "Steel Ball Run",
+"rarete": "eclat",
+"nom": "Steel Ball Run",
+"type": "ILLUSTRATION",
+"special": null
+},
+{
+"id": "JOJOSBR-004",
+"anime": "Steel Ball Run",
+"rarete": "eclat",
+"nom": "Johnny Joestar",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JOJOSBR-005",
+"anime": "Steel Ball Run",
+"rarete": "prisme",
+"nom": "Diego Brando",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JOJOSBR-006",
+"anime": "Steel Ball Run",
+"rarete": "prisme",
+"nom": "Gyro Zeppeli",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JOJOSBR-007",
+"anime": "Steel Ball Run",
+"rarete": "prisme",
+"nom": "Steel Ball Run",
+"type": "ILLUSTRATION",
+"special": null
+},
+{
+"id": "JOJOSBR-008",
+"anime": "Steel Ball Run",
+"rarete": "prisme",
+"nom": "Johnny Joestar",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JOJOSBR-009",
+"anime": "Steel Ball Run",
+"rarete": "spectre",
+"nom": "Gyro Zeppeli",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JOJOSBR-010",
+"anime": "The JOJOLands",
+"rarete": "spectre",
+"nom": "Jodio Joestar",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JOJOSBR-011",
+"anime": "Steel Ball Run",
+"rarete": "spectre",
+"nom": "Diego Brando",
+"type": "PERSONNAGE",
+"special": "sakuga"
+},
+{
+"id": "JOJOSBR-012",
+"anime": "Steel Ball Run",
+"rarete": "spectre",
+"nom": "Gyro & Johnny",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JOJOSBR-013",
+"anime": "Steel Ball Run",
+"rarete": "spectre",
+"nom": "Gyro Zeppeli",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JOJOSBR-014",
+"anime": "Steel Ball Run",
+"rarete": "mirage",
+"nom": "Gyro Zeppeli",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JOJOSBR-015",
+"anime": "Steel Ball Run",
+"rarete": "mirage",
+"nom": "Johnny Joestar",
+"type": "PERSONNAGE",
+"special": "celluloid"
+},
+{
+"id": "JOJOSBR-016",
+"anime": "Steel Ball Run",
+"rarete": "mirage",
+"nom": "Johnny Joestar",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JOJOSBR-017",
+"anime": "Steel Ball Run",
+"rarete": "mirage",
+"nom": "Johnny Joestar",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JOJOSBR-018",
+"anime": "Steel Ball Run",
+"rarete": "zenkai",
+"nom": "Meilleur opening",
+"type": "NOMINÉ",
+"special": null
+},
+{
+"id": "JOJOSBR-019",
+"anime": "Steel Ball Run",
+"rarete": "zenkai",
+"nom": "Gyro Zeppeli",
+"type": "PERSONNAGE",
+"special": "sumi"
+},
+{
+"id": "JOJOSBR-020",
+"anime": "The JOJOLands",
+"rarete": "zenkai",
+"nom": "Jodio Joestar",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JOJOSBR-021",
+"anime": "Steel Ball Run",
+"rarete": "zenkai",
+"nom": "Gyro & Johnny",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JOJOSBR-022",
+"anime": "The JOJOLands",
+"rarete": "zenkai",
+"nom": "Jodio Joestar",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "JOJOSBR-023",
+"anime": "Steel Ball Run",
+"rarete": "zenkai",
+"nom": "Johnny Joestar",
+"type": "PERSONNAGE",
+"special": "hanga"
+},
+{
+"id": "KillBLUE-001",
+"anime": "Kill Blue",
+"rarete": "eclat",
+"nom": "Jūzō Ōgami",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "KillBLUE-002",
+"anime": "Kill Blue",
+"rarete": "eclat",
+"nom": "Kill Blue",
+"type": "ILLUSTRATION",
+"special": null
+},
+{
+"id": "MARRIAGETOXIC-001",
+"anime": "Marriagetoxin",
+"rarete": "eclat",
+"nom": "Hikaru Gero",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "MARRIAGETOXIC-002",
+"anime": "Marriagetoxin",
+"rarete": "eclat",
+"nom": "Hikaru Gero",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "MARRIAGETOXIC-003",
+"anime": "Marriagetoxin",
+"rarete": "eclat",
+"nom": "Mei Kinosaki",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "MARRIAGETOXIC-004",
+"anime": "Marriagetoxin",
+"rarete": "prisme",
+"nom": "Mei Kinosaki",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "MARRIAGETOXIC-005",
+"anime": "Marriagetoxin",
+"rarete": "prisme",
+"nom": "Mei Kinosaki",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "MARRIAGETOXIC-006",
+"anime": "Marriagetoxin",
+"rarete": "prisme",
+"nom": "Mei Kinosaki",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "MARRIAGETOXIC-007",
+"anime": "Marriagetoxin",
+"rarete": "prisme",
+"nom": "Mei Kinosaki",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "MARRIAGETOXIC-008",
+"anime": "Marriagetoxin",
+"rarete": "prisme",
+"nom": "Mei Kinosaki",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "MARRIAGETOXIC-009",
+"anime": "Marriagetoxin",
+"rarete": "spectre",
+"nom": "Hikaru & Mei",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "MARRIAGETOXIC-010",
+"anime": "Marriagetoxin",
+"rarete": "spectre",
+"nom": "Marriagetoxin",
+"type": "ILLUSTRATION",
+"special": null
+},
+{
+"id": "MARRIAGETOXIC-011",
+"anime": "Marriagetoxin",
+"rarete": "mirage",
+"nom": "Hikaru & Mei",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "MARRIAGETOXIC-012",
+"anime": "Marriagetoxin",
+"rarete": "zenkai",
+"nom": "Meilleur opening",
+"type": "NOMINÉ",
+"special": null
+},
+{
+"id": "MARRIAGETOXIC-013",
+"anime": "Marriagetoxin",
+"rarete": "zenkai",
+"nom": "Hikaru & Mei",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "MHA-001",
+"anime": "My Hero Academia",
+"rarete": "eclat",
+"nom": "Izuku Midoriya",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "MHA-002",
+"anime": "My Hero Academia",
+"rarete": "prisme",
+"nom": "Izuku Midoriya",
+"type": "DARK DEKU",
+"special": null
+},
+{
+"id": "MHA-003",
+"anime": "My Hero Academia",
+"rarete": "prisme",
+"nom": "Izuku Midoriya",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "MHA-004",
+"anime": "My Hero Academia",
+"rarete": "spectre",
+"nom": "All Might",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "MHA-005",
+"anime": "My Hero Academia",
+"rarete": "spectre",
+"nom": "All Might",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "MHA-006",
+"anime": "My Hero Academia",
+"rarete": "spectre",
+"nom": "All Might",
+"type": "PERSONNAGE",
+"special": "ekonte"
+},
+{
+"id": "MHA-007",
+"anime": "My Hero Academia",
+"rarete": "mirage",
+"nom": "Izuku Midoriya",
+"type": "FULL COWL",
+"special": null
+},
+{
+"id": "MHA-008",
+"anime": "My Hero Academia",
+"rarete": "mirage",
+"nom": "Izuku Midoriya",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "MHA-009",
+"anime": "My Hero Academia",
+"rarete": "zenkai",
+"nom": "Izuku Midoriya",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "MHA-010",
+"anime": "My Hero Academia",
+"rarete": "zenkai",
+"nom": "Katsuki Bakugō",
+"type": "PERSONNAGE",
+"special": "genga"
+},
+{
+"id": "MHA-011",
+"anime": "My Hero Academia",
+"rarete": "zenkai",
+"nom": "Deku & Bakugō",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "NippunSengoku-001",
+"anime": "Nippon Sangoku",
+"rarete": "eclat",
+"nom": "Nippon Sangoku",
+"type": "ILLUSTRATION",
+"special": null
+},
+{
+"id": "NippunSengoku-002",
+"anime": "Nippon Sangoku",
+"rarete": "prisme",
+"nom": "Tonotsugu & Goh Sugoh",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "NippunSengoku-003",
+"anime": "Nippon Sangoku",
+"rarete": "prisme",
+"nom": "Tonotsugu & Sugoh",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "NippunSengoku-004",
+"anime": "Nippon Sangoku",
+"rarete": "spectre",
+"nom": "Yoshitsune Asama & Aoteru Misumi",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "NippunSengoku-005",
+"anime": "Nippon Sangoku",
+"rarete": "zenkai",
+"nom": "Aoteru Misumi",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "NippunSengoku-006",
+"anime": "Nippon Sangoku",
+"rarete": "zenkai",
+"nom": "Aoteru Misumi",
+"type": "PERSONNAGE",
+"special": "sakuga"
+},
+{
+"id": "NippunSengoku-007",
+"anime": "Nippon Sangoku",
+"rarete": "zenkai",
+"nom": "Meilleur opening",
+"type": "NOMINÉ",
+"special": null
+},
+{
+"id": "ONEPIECE-001",
+"anime": "One Piece",
+"rarete": "eclat",
+"nom": "Roger & Luffy",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "ONEPIECE-002",
+"anime": "One Piece",
+"rarete": "prisme",
+"nom": "Monkey D. Luffy",
+"type": "GEAR 4",
+"special": null
+},
+{
+"id": "ONEPIECE-003",
+"anime": "One Piece",
+"rarete": "prisme",
+"nom": "Gol D. Roger",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "ONEPIECE-004",
+"anime": "One Piece",
+"rarete": "prisme",
+"nom": "Kid, Luffy & Law",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "ONEPIECE-005",
+"anime": "One Piece",
+"rarete": "spectre",
+"nom": "Monkey D. Luffy",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "ONEPIECE-006",
+"anime": "One Piece",
+"rarete": "spectre",
+"nom": "Shanks",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "ONEPIECE-007",
+"anime": "One Piece",
+"rarete": "spectre",
+"nom": "Monkey D. Luffy",
+"type": "GEAR 4",
+"special": "celluloid"
+},
+{
+"id": "ONEPIECE-008",
+"anime": "One Piece",
+"rarete": "mirage",
+"nom": "Shamrock",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "ONEPIECE-009",
+"anime": "One Piece",
+"rarete": "mirage",
+"nom": "Monkey D. Luffy",
+"type": "GEAR 5",
+"special": null
+},
+{
+"id": "ONEPIECE-010",
+"anime": "One Piece",
+"rarete": "zenkai",
+"nom": "Meilleur opening",
+"type": "NOMINÉ",
+"special": null
+},
+{
+"id": "Reborn-001",
+"anime": "Reborn!",
+"rarete": "eclat",
+"nom": "Reborn",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "Reborn-002",
+"anime": "Reborn!",
+"rarete": "prisme",
+"nom": "Kyōya Hibari",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "TOKYORevengers-001",
+"anime": "Tokyo Revengers",
+"rarete": "mirage",
+"nom": "Meilleur opening",
+"type": "NOMINÉ",
+"special": null
+},
+{
+"id": "Wistoria-001",
+"anime": "Wistoria",
+"rarete": "eclat",
+"nom": "Lihanna Owenzaus",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "Wistoria-002",
+"anime": "Wistoria",
+"rarete": "eclat",
+"nom": "Colette Loire",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "Wistoria-003",
+"anime": "Wistoria",
+"rarete": "eclat",
+"nom": "Will Serfort",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "Wistoria-004",
+"anime": "Wistoria",
+"rarete": "eclat",
+"nom": "Sion Ulster",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "Wistoria-005",
+"anime": "Wistoria",
+"rarete": "eclat",
+"nom": "Edward",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "Wistoria-006",
+"anime": "Wistoria",
+"rarete": "eclat",
+"nom": "Workner",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "Wistoria-007",
+"anime": "Wistoria",
+"rarete": "eclat",
+"nom": "Wignall Lindor",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "Wistoria-008",
+"anime": "Wistoria",
+"rarete": "prisme",
+"nom": "Elfaria",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "Wistoria-009",
+"anime": "Wistoria",
+"rarete": "prisme",
+"nom": "Ellenor Ljos Alf",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "Wistoria-010",
+"anime": "Wistoria",
+"rarete": "prisme",
+"nom": "Will Serfort",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "Wistoria-011",
+"anime": "Wistoria",
+"rarete": "prisme",
+"nom": "Will Serfort",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "Wistoria-012",
+"anime": "Wistoria",
+"rarete": "prisme",
+"nom": "Rosti Nauman",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "Wistoria-013",
+"anime": "Wistoria",
+"rarete": "spectre",
+"nom": "Will Serfort",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "Wistoria-014",
+"anime": "Wistoria",
+"rarete": "spectre",
+"nom": "Lianna",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "Wistoria-015",
+"anime": "Wistoria",
+"rarete": "spectre",
+"nom": "Will Serfort",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "Wistoria-016",
+"anime": "Wistoria",
+"rarete": "mirage",
+"nom": "Will Serfort",
+"type": "PERSONNAGE",
+"special": "hanga"
+},
+{
+"id": "Wistoria-017",
+"anime": "Wistoria",
+"rarete": "mirage",
+"nom": "Edward",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "Wistoria-018",
+"anime": "Wistoria",
+"rarete": "mirage",
+"nom": "Elfaria Serfort",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "Wistoria-019",
+"anime": "Wistoria",
+"rarete": "zenkai",
+"nom": "Will Serfort",
+"type": "PERSONNAGE",
+"special": "hanga"
+},
+{
+"id": "Wistoria-020",
+"anime": "Wistoria",
+"rarete": "zenkai",
+"nom": "Will Serfort",
+"type": "PERSONNAGE",
+"special": "reiatsu"
+},
+{
+"id": "Wistoria-021",
+"anime": "Wistoria",
+"rarete": "zenkai",
+"nom": "Zeo",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "Wistoria-022",
+"anime": "Wistoria",
+"rarete": "zenkai",
+"nom": "Will Serfort",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "Wistoria-023",
+"anime": "Wistoria",
+"rarete": "zenkai",
+"nom": "Meilleur opening",
+"type": "NOMINÉ",
+"special": null
+},
+{
+"id": "Wistoria-024",
+"anime": "Wistoria",
+"rarete": "zenkai",
+"nom": "Aron Mastreas",
+"type": "PERSONNAGE",
+"special": "ekonte"
+},
+{
+"id": "Wistoria-025",
+"anime": "Wistoria",
+"rarete": "zenkai",
+"nom": "Finn",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "Wistoria-026",
+"anime": "Wistoria",
+"rarete": "zenkai",
+"nom": "Will Serfort",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "YominoTsugai-001",
+"anime": "Yomi no Tsugai",
+"rarete": "eclat",
+"nom": "Hidari",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "YominoTsugai-002",
+"anime": "Yomi no Tsugai",
+"rarete": "eclat",
+"nom": "Dextre",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "YominoTsugai-003",
+"anime": "Yomi no Tsugai",
+"rarete": "eclat",
+"nom": "Hidari",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "YominoTsugai-004",
+"anime": "Yomi no Tsugai",
+"rarete": "eclat",
+"nom": "Asa",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "YominoTsugai-005",
+"anime": "Yomi no Tsugai",
+"rarete": "eclat",
+"nom": "Hana",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "YominoTsugai-006",
+"anime": "Yomi no Tsugai",
+"rarete": "prisme",
+"nom": "Ivan",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "YominoTsugai-007",
+"anime": "Yomi no Tsugai",
+"rarete": "prisme",
+"nom": "Hidari",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "YominoTsugai-008",
+"anime": "Yomi no Tsugai",
+"rarete": "spectre",
+"nom": "Jin Kagemori",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "YominoTsugai-009",
+"anime": "Yomi no Tsugai",
+"rarete": "spectre",
+"nom": "Gabby",
+"type": "PERSONNAGE",
+"special": "genga"
+},
+{
+"id": "YominoTsugai-010",
+"anime": "Yomi no Tsugai",
+"rarete": "spectre",
+"nom": "Yomi no Tsugai",
+"type": "ILLUSTRATION",
+"special": null
+},
+{
+"id": "YominoTsugai-011",
+"anime": "Yomi no Tsugai",
+"rarete": "mirage",
+"nom": "Yuru & Asa",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "YominoTsugai-012",
+"anime": "Yomi no Tsugai",
+"rarete": "mirage",
+"nom": "Jin Kagemori",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "YominoTsugai-013",
+"anime": "Yomi no Tsugai",
+"rarete": "mirage",
+"nom": "Yuru & Asa",
+"type": "PERSONNAGE",
+"special": "sakuga"
+},
+{
+"id": "YominoTsugai-014",
+"anime": "Yomi no Tsugai",
+"rarete": "zenkai",
+"nom": "Yuru",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "YominoTsugai-015",
+"anime": "Yomi no Tsugai",
+"rarete": "zenkai",
+"nom": "Yuru",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "YominoTsugai-016",
+"anime": "Yomi no Tsugai",
+"rarete": "zenkai",
+"nom": "Meilleur opening",
+"type": "NOMINÉ",
+"special": null
+},
+{
+"id": "YominoTsugai-017",
+"anime": "Yomi no Tsugai",
+"rarete": "zenkai",
+"nom": "Asa",
+"type": "PERSONNAGE",
+"special": "celluloid"
+},
+{
+"id": "witchHATatelier-001",
+"anime": "Witch Hat Atelier",
+"rarete": "eclat",
+"nom": "Yinny",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "witchHATatelier-002",
+"anime": "Witch Hat Atelier",
+"rarete": "eclat",
+"nom": "Coco",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "witchHATatelier-003",
+"anime": "Witch Hat Atelier",
+"rarete": "eclat",
+"nom": "Qifrey",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "witchHATatelier-004",
+"anime": "Witch Hat Atelier",
+"rarete": "eclat",
+"nom": "Coco",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "witchHATatelier-005",
+"anime": "Witch Hat Atelier",
+"rarete": "eclat",
+"nom": "Witch Hat Atelier",
+"type": "ILLUSTRATION",
+"special": null
+},
+{
+"id": "witchHATatelier-006",
+"anime": "Witch Hat Atelier",
+"rarete": "eclat",
+"nom": "Coco & Qifrey",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "witchHATatelier-007",
+"anime": "Witch Hat Atelier",
+"rarete": "eclat",
+"nom": "Richeh",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "witchHATatelier-008",
+"anime": "Witch Hat Atelier",
+"rarete": "eclat",
+"nom": "Coco & Qifrey",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "witchHATatelier-009",
+"anime": "Witch Hat Atelier",
+"rarete": "eclat",
+"nom": "Qifrey",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "witchHATatelier-010",
+"anime": "Witch Hat Atelier",
+"rarete": "eclat",
+"nom": "Qifrey",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "witchHATatelier-011",
+"anime": "Witch Hat Atelier",
+"rarete": "eclat",
+"nom": "Qifrey",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "witchHATatelier-012",
+"anime": "Witch Hat Atelier",
+"rarete": "eclat",
+"nom": "Coco",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "witchHATatelier-013",
+"anime": "Witch Hat Atelier",
+"rarete": "eclat",
+"nom": "Qifrey",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "witchHATatelier-014",
+"anime": "Witch Hat Atelier",
+"rarete": "eclat",
+"nom": "Coco & Richeh",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "witchHATatelier-015",
+"anime": "Witch Hat Atelier",
+"rarete": "eclat",
+"nom": "Qifrey",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "witchHATatelier-016",
+"anime": "Witch Hat Atelier",
+"rarete": "eclat",
+"nom": "Qifrey",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "witchHATatelier-017",
+"anime": "Witch Hat Atelier",
+"rarete": "eclat",
+"nom": "Qifrey & Olruggio",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "witchHATatelier-018",
+"anime": "Witch Hat Atelier",
+"rarete": "eclat",
+"nom": "Qifrey",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "witchHATatelier-019",
+"anime": "Witch Hat Atelier",
+"rarete": "eclat",
+"nom": "Qifrey",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "witchHATatelier-020",
+"anime": "Witch Hat Atelier",
+"rarete": "prisme",
+"nom": "Qifrey",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "witchHATatelier-021",
+"anime": "Witch Hat Atelier",
+"rarete": "prisme",
+"nom": "Coco",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "witchHATatelier-022",
+"anime": "Witch Hat Atelier",
+"rarete": "prisme",
+"nom": "Coco & Tetia",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "witchHATatelier-023",
+"anime": "Witch Hat Atelier",
+"rarete": "prisme",
+"nom": "Custas",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "witchHATatelier-024",
+"anime": "Witch Hat Atelier",
+"rarete": "prisme",
+"nom": "Olruggio",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "witchHATatelier-025",
+"anime": "Witch Hat Atelier",
+"rarete": "spectre",
+"nom": "Qifrey",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "witchHATatelier-026",
+"anime": "Witch Hat Atelier",
+"rarete": "spectre",
+"nom": "Coco",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "witchHATatelier-027",
+"anime": "Witch Hat Atelier",
+"rarete": "spectre",
+"nom": "Olruggio",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "witchHATatelier-028",
+"anime": "Witch Hat Atelier",
+"rarete": "spectre",
+"nom": "Qifrey",
+"type": "PERSONNAGE",
+"special": "sumi"
+},
+{
+"id": "witchHATatelier-029",
+"anime": "Witch Hat Atelier",
+"rarete": "spectre",
+"nom": "Qifrey & Olruggio",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "witchHATatelier-030",
+"anime": "Witch Hat Atelier",
+"rarete": "spectre",
+"nom": "Qifrey",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "witchHATatelier-031",
+"anime": "Witch Hat Atelier",
+"rarete": "spectre",
+"nom": "Coco",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "witchHATatelier-032",
+"anime": "Witch Hat Atelier",
+"rarete": "mirage",
+"nom": "Qifrey",
+"type": "PERSONNAGE",
+"special": "hanga"
+},
+{
+"id": "witchHATatelier-033",
+"anime": "Witch Hat Atelier",
+"rarete": "mirage",
+"nom": "Qifrey",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "witchHATatelier-034",
+"anime": "Witch Hat Atelier",
+"rarete": "mirage",
+"nom": "Coco",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "witchHATatelier-035",
+"anime": "Witch Hat Atelier",
+"rarete": "mirage",
+"nom": "Qifrey & Olruggio",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "witchHATatelier-036",
+"anime": "Witch Hat Atelier",
+"rarete": "mirage",
+"nom": "Olruggio",
+"type": "PERSONNAGE",
+"special": "reiatsu"
+},
+{
+"id": "witchHATatelier-037",
+"anime": "Witch Hat Atelier",
+"rarete": "mirage",
+"nom": "Qifrey",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "witchHATatelier-038",
+"anime": "Witch Hat Atelier",
+"rarete": "mirage",
+"nom": "Olruggio",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "witchHATatelier-039",
+"anime": "Witch Hat Atelier",
+"rarete": "zenkai",
+"nom": "Qifrey",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "witchHATatelier-040",
+"anime": "Witch Hat Atelier",
+"rarete": "zenkai",
+"nom": "Qifrey",
+"type": "PERSONNAGE",
+"special": "ekonte"
+},
+{
+"id": "witchHATatelier-041",
+"anime": "Witch Hat Atelier",
+"rarete": "zenkai",
+"nom": "Meilleur opening",
+"type": "NOMINÉ",
+"special": null
+},
+{
+"id": "witchHATatelier-042",
+"anime": "Witch Hat Atelier",
+"rarete": "zenkai",
+"nom": "Agott",
+"type": "PERSONNAGE",
+"special": null
+},
+{
+"id": "witchHATatelier-043",
+"anime": "Witch Hat Atelier",
+"rarete": "zenkai",
+"nom": "Qifrey",
+"type": "PERSONNAGE",
+"special": "sumi"
+}
+]

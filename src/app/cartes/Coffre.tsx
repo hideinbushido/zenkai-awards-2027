@@ -51,6 +51,7 @@ export default function Coffre({ cartes, miennes, ordre, pseudo, sousTitre, acti
   const [possession, setPossession] = useState<Possession>("possedees");
   const [tri, setTri] = useState<Tri>("recentes");
   const [ouverte, setOuverte] = useState<string | null>(null);
+  const [survolee, setSurvolee] = useState<string | null>(null);   // carte animée sous le pointeur : on lance sa vidéo
 
   const animes = useMemo(() => [...new Set(cartes.map(c => c.anime))].sort(), [cartes]);
   const possedees = useMemo(() => cartes.filter(c => miennes[c.id]), [cartes, miennes]);
@@ -151,9 +152,13 @@ export default function Coffre({ cartes, miennes, ordre, pseudo, sousTitre, acti
             <li key={c.id}>
               {q ? (
                 <button type="button" className={s.carte} data-r={c.rarete} onClick={() => setOuverte(c.id)}
-                  onPointerMove={incliner} onPointerLeave={relacher} aria-label={`${c.nom}, ${LABEL[c.rarete]}${q > 1 ? `, ${q} exemplaires` : ""}`}>
+                  onPointerMove={incliner} onPointerEnter={() => variantesAnimees.has(c.id) && setSurvolee(c.id)}
+                  onPointerLeave={e => { relacher(e); setSurvolee(v => (v === c.id ? null : v)); }}
+                  aria-label={`${c.nom}, ${LABEL[c.rarete]}${q > 1 ? `, ${q} exemplaires` : ""}`}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={imgDe(c)} alt="" loading="lazy" /><i className={s.reflet} />
+                  <img src={imgDe(c)} alt="" loading="lazy" />
+                  {survolee === c.id && <video className={s.clip} src={`/booster/variantes/${c.id}.mp4`} autoPlay loop muted playsInline aria-hidden="true" />}
+                  <i className={s.reflet} /><i className={s.holo} aria-hidden="true" />
                   {neuve && <span className={s.neuve}>Nouvelle</span>}
                   {q > 1 && <span className={s.qte}>×{q}</span>}
                 </button>
@@ -219,7 +224,7 @@ function Fiche({ carte, quantite, obtenue, enCouverture, premiere, rang, sur, on
             <img key={carte.id} src={imgDe(carte)} alt={`${carte.nom}, ${LABEL[carte.rarete]}`} data-active />
           )}
           {balaye > 0 && <i key={balaye} className={s.balayage} aria-hidden="true" />}
-          <i className={s.reflet} />
+          <i className={s.reflet} /><i className={s.holo} aria-hidden="true" />
         </div>
         <button type="button" className={s.fleche} onClick={() => onPas(1)} aria-label="Carte suivante">→</button>
       </div>
