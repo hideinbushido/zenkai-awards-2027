@@ -64,17 +64,27 @@ export default function OpeningVertical({ bascule }: { bascule?: ReactNode }) {
     };
   }, [aller]);
 
-  // musique : l'opening du nominé (vidéo cachée, 720p suffit pour le son), calée sur le refrain
+  // l'opening du nominé en fond plein écran, calé sur le refrain ; « Écouter » active simplement son son
   useEffect(() => {
     const v = musique.current, n = LISTE[i];
-    if (!v || !son || !n.video) { v?.pause(); return; }
+    if (!v || !n.video) return;
     let annule = false;
-    v.src = n.video.replace("/openings/", "/openings/720/");
-    const go = () => { if (annule) return; v.currentTime = n.refrain ?? 0; v.play().catch(() => setSon(false)); };
+    const petit = innerWidth < 900;
+    delete v.dataset.pret;
+    v.src = petit ? n.video.replace("/openings/", "/openings/720/") : n.video;
+    const go = () => { if (annule) return; v.currentTime = n.refrain ?? 0; v.play().catch(() => { v.muted = true; setSon(false); v.play().catch(() => {}); }); };
+    const pret = () => { if (!annule) v.dataset.pret = ""; };
     v.addEventListener("loadedmetadata", go, { once: true });
+    v.addEventListener("playing", pret, { once: true });
     v.load();
-    return () => { annule = true; v.removeEventListener("loadedmetadata", go); v.pause(); };
-  }, [i, son]);
+    return () => { annule = true; v.removeEventListener("loadedmetadata", go); v.removeEventListener("playing", pret); };
+  }, [i]);
+  useEffect(() => {
+    const v = musique.current;
+    if (!v) return;
+    v.muted = !son;
+    if (son) v.play().catch(() => setSon(false));
+  }, [son]);
 
   useEffect(() => {
     [1, -1].forEach(d => { const im = new Image(); const m = LISTE[(i + d + N) % N]; im.src = carteNomine(m.id, m.img).carte; });
@@ -95,6 +105,8 @@ export default function OpeningVertical({ bascule }: { bascule?: ReactNode }) {
   return (
     <section className={s.scene} style={{ "--fond": fond, "--encre": encre, "--dir": dir } as CSSProperties}
       data-plein-ecran="" data-lenis-prevent="" aria-label="Meilleur opening : les nominés">
+      <video ref={musique} className={s.fondVideo} muted playsInline loop preload="none" aria-hidden />
+      <div className={s.voile} aria-hidden />
       <header className={s.hud}>
         <Link href="/categories">← Catégories</Link>
         <p><span>Meilleur opening</span> <em>{pad(idx + 1)} / {CATEGORIES.length}</em></p>
@@ -138,7 +150,6 @@ export default function OpeningVertical({ bascule }: { bascule?: ReactNode }) {
           );
         })}
       </div>
-      <video ref={musique} className={s.musique} playsInline preload="none" aria-hidden />
     </section>
   );
 }
