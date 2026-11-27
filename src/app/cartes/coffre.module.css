@@ -117,6 +117,13 @@
 .fiche::backdrop { background: #000a; backdrop-filter: blur(10px); }
 .fiche[open] { animation: entree 600ms var(--ease-sortie); }
 @keyframes entree { from { opacity: 0; } }
+.fondFiche { position: absolute; inset: -8%; z-index: -2; pointer-events: none; background: center / cover no-repeat; filter: blur(46px) saturate(1.3) brightness(.55); transform: scale(1.1); animation: entree .8s var(--ease-sortie); }
+.grande { cursor: zoom-in; }
+.fiche[data-epure] .grande { cursor: zoom-out; }
+/* carte seule : plus rien autour */
+.fiche[data-epure] { grid-template-columns: 1fr; }
+.fiche[data-epure] .infos, .fiche[data-epure] .fleche, .fiche[data-epure] .fermer, .fiche[data-epure] .halo { display: none; }
+.fiche[data-epure] .fondFiche { filter: blur(40px) saturate(1.35) brightness(.8); }
 .halo { position: absolute; inset: 0; pointer-events: none; z-index: -1;
   background: radial-gradient(40% 55% at 34% 52%, color-mix(in oklch, var(--r) 30%, transparent), transparent 70%); }
 .scene { display: flex; align-items: center; justify-content: center; gap: clamp(10px, 2vw, 32px); min-height: 0; height: 100%; }
@@ -176,6 +183,7 @@
 .carte[data-r="prisme"][data-survol] .holo, .grande[data-r="prisme"][data-survol] .holo { opacity: 0.75; }
 .clip { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 
+@media (max-width: 1023px) { .modes { display: none; } }
 @media (max-width: 900px) {
   .tete { grid-template-columns: minmax(0, 1fr); }
   .bilan, .actions { min-width: 0; }
@@ -186,6 +194,11 @@
   .scene { height: auto; min-height: auto; }
   .grande { height: auto; width: min(76vw, 40svh); }
   .fleche { display: none; }
+  .modes { display: none; }
+  /* téléphone, carte seule : elle prend toute la largeur, centrée, sur son propre fond flouté (prête pour un fond d'écran) */
+  .fiche[data-epure] { padding: 0; align-content: center; overflow: hidden; }
+  .fiche[data-epure] .grande { width: 100vw; max-height: 100svh; border-radius: 0; box-shadow: none; transform: none; animation: none; }
+  .fiche[data-epure] .scene { height: 100svh; }
 }
 @media (max-width: 560px) {
   .grille { grid-template-columns: repeat(2, minmax(0, 1fr)); }

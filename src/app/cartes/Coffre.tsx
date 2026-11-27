@@ -2,6 +2,8 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type CSSProperties, type PointerEvent, type ReactNode } from "react";
 import { variantesAnimees } from "@/data/variantes";
 import { vuesCartes } from "@/data/vues";
+import { cartesNues } from "@/data/nues";
+import HeliceCartes from "./HeliceCartes";
 import s from "./coffre.module.css";
 
 export type Carte = { id: string; anime: string; rarete: string; nom: string; special: string | null };
@@ -51,6 +53,11 @@ export default function Coffre({ cartes, miennes, ordre, pseudo, sousTitre, acti
   const [possession, setPossession] = useState<Possession>("possedees");
   const [tri, setTri] = useState<Tri>("recentes");
   const [ouverte, setOuverte] = useState<string | null>(null);
+  // sur ordinateur, la collection se parcourt en hélice ; la grille reste disponible
+  const [mode, setMode] = useState<"helice" | "grille">("grille");
+  useEffect(() => {
+    if (matchMedia("(min-width: 1024px) and (pointer: fine)").matches) { const f = requestAnimationFrame(() => setMode("helice")); return () => cancelAnimationFrame(f); }
+  }, []);
   const [survolee, setSurvolee] = useState<string | null>(null);   // carte animée sous le pointeur : on lance sa vidéo
 
   const animes = useMemo(() => [...new Set(cartes.map(c => c.anime))].sort(), [cartes]);
@@ -131,6 +138,10 @@ export default function Coffre({ cartes, miennes, ordre, pseudo, sousTitre, acti
               <button key={p} type="button" aria-pressed={possession === p} onClick={() => setPossession(p)}>
                 {p === "toutes" ? "Toutes" : p === "possedees" ? "Obtenues" : "Manquantes"}</button>))}
           </div>
+          <div className={`${s.segment} ${s.modes}`} role="group" aria-label="Affichage">
+            <button type="button" aria-pressed={mode === "helice"} onClick={() => setMode("helice")}>Hélice</button>
+            <button type="button" aria-pressed={mode === "grille"} onClick={() => setMode("grille")}>Grille</button>
+          </div>
           <label className={s.tri}><span>Trier</span>
             <select value={tri} onChange={e => setTri(e.target.value as Tri)}>
               <option value="recentes">Plus récentes</option><option value="rarete">Rareté</option>
@@ -143,7 +154,7 @@ export default function Coffre({ cartes, miennes, ordre, pseudo, sousTitre, acti
       {etat}
       <p className={s.nb} aria-live="polite">{visibles.length} carte{visibles.length > 1 ? "s" : ""}{rarete ? ` · ${LABEL[rarete]}` : ""}{anime !== "tous" ? ` · ${anime}` : ""}</p>
 
-      <ul className={s.grille}>
+      {mode === "helice" ? <HeliceCartes cartes={visibles} miennes={miennes} onOuvrir={setOuverte} /> : <ul className={s.grille}>
         {visibles.map(c => {
           const q = miennes[c.id];
           const date = ordre[c.id] ? Date.parse(ordre[c.id]) : NaN;
@@ -171,7 +182,7 @@ export default function Coffre({ cartes, miennes, ordre, pseudo, sousTitre, acti
             </li>
           );
         })}
-      </ul>
+      </ul>}
 
       {vue && <Fiche carte={vue} quantite={miennes[vue.id] ?? 0} obtenue={ordre[vue.id]} enCouverture={couverture.includes(vue.id)}
         premiere={couverture.indexOf(vue.id) === 0} rang={ouvrables.findIndex(c => c.id === vue.id) + 1} sur={ouvrables.length}
@@ -193,6 +204,11 @@ function Fiche({ carte, quantite, obtenue, enCouverture, premiere, rang, sur, on
   const iv = choix.id === carte.id ? choix.i : 0;
   const [balaye, setBalaye] = useState(0);
   const anime = variantesAnimees.has(carte.id);
+  // toucher la carte : on retire tout ce qui l'entoure (et son texte quand une version nue existe) pour la voir seule,
+  // en plein écran sur téléphone (de quoi faire une capture pour un fond d'écran) ; on retouche pour tout remettre
+  const [epure, setEpure] = useState(false);
+  const nue = epure && cartesNues.has(carte.id);
+  const glisse = useRef<{ x: number; y: number } | null>(null);
 
   useEffect(() => { dlg.current?.showModal(); }, []);
   useEffect(() => {
@@ -205,14 +221,27 @@ function Fiche({ carte, quantite, obtenue, enCouverture, premiere, rang, sur, on
   const date = obtenue ? new Date(obtenue) : null;
 
   return (
-    <dialog ref={dlg} className={s.fiche} data-r={carte.rarete} onClose={onFermer}
-      onClick={e => { if (e.target === e.currentTarget) onFermer(); }} aria-labelledby="fiche-nom">
+    <dialog ref={dlg} className={s.fiche} data-r={carte.rarete} data-epure={epure || undefined} onClose={onFermer}
+      onClick={e => { if (e.target === e.currentTarget) { if (epure) setEpure(false); else onFermer(); } }} aria-labelledby="fiche-nom"
+      onTouchStart={e => { glisse.current = { x: e.touches[0].clientX, y: e.touches[0].clientY }; }}
+      onTouchEnd={e => {
+        const g = glisse.current; glisse.current = null; if (!g) return;
+        const dx = e.changedTouches[0].clientX - g.x, dy = e.changedTouches[0].clientY - g.y;
+        if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5) onPas(dx < 0 ? 1 : -1);
+      }}>
+      {/* fond : la carte elle-même, agrandie et floutée, pour que l'écran entier soit habillé */}
+      <div key={carte.id} className={s.fondFiche} style={{ backgroundImage: `url(${imgDe(carte)})` }} aria-hidden="true" />
       <div className={s.halo} aria-hidden="true" />
       <div className={s.scene}>
         <button type="button" className={s.fleche} onClick={() => onPas(-1)} aria-label="Carte précédente">←</button>
         <div className={s.grande} data-r={carte.rarete} onPointerMove={e => incliner(e, 1.4)} onPointerLeave={relacher}
-          style={{ "--rx": "0deg", "--ry": "0deg" } as CSSProperties}>
-          {anime && !vues ? (
+          style={{ "--rx": "0deg", "--ry": "0deg" } as CSSProperties}
+          role="button" tabIndex={0} aria-pressed={epure} aria-label={epure ? "Réafficher les informations" : "Voir la carte seule"}
+          onClick={() => setEpure(x => !x)} onKeyDown={e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setEpure(x => !x); } }}>
+          {nue ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img key={carte.id + "-nu"} src={`/booster/img/cards/${carte.id}/nu.webp`} alt={`${carte.nom}, sans texte`} data-active />
+          ) : anime && !vues ? (
             <video key={carte.id} autoPlay loop playsInline muted poster={`/booster/img/cards/${carte.id}/full.webp`} src={`/booster/variantes/${carte.id}.mp4`} />
           ) : vues ? (
             vues.map((v, i) => (
@@ -248,7 +277,7 @@ function Fiche({ carte, quantite, obtenue, enCouverture, premiere, rang, sur, on
           {enCouverture && !premiere && <button type="button" className={s.secondaire} onClick={onPremiere}>Mettre en premier</button>}
         </div>
         <p role="status" className={s.message}>{message}</p>
-        <p className={s.position}>{rang > 0 ? `${rang} / ${sur}` : ""} · ← → pour parcourir</p>
+        <p className={s.position}>{rang > 0 ? `${rang} / ${sur}` : ""} · ← → pour parcourir · touche la carte pour la voir seule</p>
       </aside>
       <button type="button" className={s.fermer} onClick={onFermer} aria-label="Fermer">✕</button>
     </dialog>

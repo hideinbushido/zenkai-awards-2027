@@ -143,6 +143,7 @@ INFOS = dict(nom="ICHIGO KUROSAKI", anime="BLEACH", type="PERSONNAGE", num="029"
 # ---------------------------------------------------------------- éléments communs
 def bandeau_haut(c, couleur_marque, couleur_txt, fond=(10, 9, 14, 170), contour=None, x=150, y=150):
     """Plaque en haut à gauche : ZENKAI penché comme le logo officiel, code de série et numéro."""
+    if os.environ.get("ZENKAI_SANS_TEXTE") == "1": return   # version nue : pas de plaque vide
     h = 104; w = 840
     p = skia.Paint(AntiAlias=True, Color=skia.Color(*fond))
     c.drawRRect(skia.RRect.MakeRectXY(skia.Rect.MakeXYWH(x, y, w, h), h / 2, h / 2), p)
