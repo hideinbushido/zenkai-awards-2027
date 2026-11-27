@@ -269,6 +269,8 @@ if __name__ == "__main__":
     man = json.load(open(os.path.join(BASE, "manifeste.json")))
     for e in man:
         if e["nom"] == "Inconnu": continue
+        c = f"{SORTIE_LOT}/{e['dossier']}/{e['fichier']}"
+        if not os.path.exists(c) or os.path.exists(c[:-4] + ".mp4"): continue   # seulement les cartes du lot sans vidéo
         if sys.argv[1:] and e["fichier"] not in sys.argv[1:] and sys.argv[1] != "ekonte": continue
         if e.get("special") == "ekonte" and (not sys.argv[1:] or sys.argv[1] == "ekonte" or e["fichier"] in sys.argv[1:]):
             faire_ekonte(e)

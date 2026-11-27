@@ -46,21 +46,54 @@ def genga_mirage(art, rarete="mirage"):
     return habiller(rarete, img, "GENGA", art.perso, voile=(40, 40, 50), voile_force=0.8)
 
 def genga_zenkai(art, rarete="zenkai"):
-    """Le genga sur feuille d'or : trait à l'encre noire, ombres hachurées en or sombre."""
-    r = np.random.default_rng(9); n = flou(r.standard_normal((H, W)).astype(np.float32), 30)
-    d, sp = relief(n * 0.5 + 0.5, 6, 3, brillance=18)
-    feuille = or_metal(np.clip(0.55 + 0.35 * d, 0, 1), sp * 0.6)
-    t = cv2.erode(traits(art.rgb, 1.2, p=30), np.ones((2, 2), np.uint8))
-    img = melange(feuille, np.array([0.05, 0.03, 0.02]), (1 - t))
-    ombre = ((gris(art.rgb) < 0.28) * art.perso).astype(np.float32)
-    hach = ((np.sin((XX + YY) * 0.35) > 0.55) * flou(ombre, 2)).astype(np.float32)
-    img = melange(img, np.array([0.36, 0.22, 0.06]), hach * 0.8)
+    """La table lumineuse : la feuille de genga éclairée par-dessous. Le trait au crayon, les
+    corrections rouge et bleu, et l'image finale en couleurs qui transparaît à travers le papier.
+    Barre de calage dorée en haut, numéro de plan entouré au crayon rouge."""
+    # lumière de la table : chaude au centre, qui tombe vers les bords
+    d = np.sqrt(((XX - W * 0.5) / (W * 0.62)) ** 2 + ((YY - H * 0.44) / (H * 0.6)) ** 2)
+    lum = np.clip(1.16 - 0.5 * d ** 1.6, 0.5, 1.16)[..., None] * np.array([1.0, 0.96, 0.88])
+    feuille = papier((250, 248, 242), 0.02, 0.025, 11)
+    # l'image en couleurs vue à travers la feuille : douce sur le décor, franche sur le personnage
+    eclaire = np.clip(1.25 - d ** 1.6, 0, 1)                                 # 1 sous la lampe, 0 sur les bords
+    k = np.clip((0.3 + 0.7 * eclaire) * (0.75 + 0.25 * flou(art.perso, 4)), 0, 0.96)[..., None]
+    gm = gris(art.rgb)[..., None]
+    couleur = np.clip(gm + (art.rgb - gm) * 1.25, 0, 1) ** 1.1          # couleurs un peu plus vives
+    img = np.clip((feuille * (1 - k) + feuille * couleur * k) * lum, 0, 1)
+    halo = flou(np.clip(gm[..., 0] - 0.72, 0, 1) * 3, 25)[..., None]          # la lumière de la table qui bave dans les clairs
+    img = np.clip(img + halo * np.array([0.35, 0.3, 0.2]), 0, 1)
+    # trait au crayon graphite
+    t = traits(art.rgb, 1.2, p=30)
+    img = melange(img, np.array([0.16, 0.15, 0.17]), (1 - t) * 0.9)
+    g = gris(art.rgb)
+    ombre = ((g < 0.25) * art.perso).astype(np.float32)
+    bo = cv2.Canny((ombre * 255).astype(np.uint8), 50, 150).astype(np.float32) / 255
+    img = melange(img, np.array([0.86, 0.16, 0.18]), flou(bo, 1.4) * 0.9)      # limite d'ombre au crayon rouge
+    cl = ((g > 0.8) * art.perso).astype(np.float32)
+    bl = cv2.Canny((cl * 255).astype(np.uint8), 50, 150).astype(np.float32) / 255
+    img = melange(img, np.array([0.18, 0.4, 0.88]), flou(bl, 1.4) * 0.85)      # reflets au crayon bleu
     def notes(c):
-        trous = skia.Paint(AntiAlias=True, Color=skia.Color(20, 14, 6))
-        for x in (W / 2 - 300, W / 2, W / 2 + 300):
-            c.drawRRect(skia.RRect.MakeRectXY(skia.Rect.MakeXYWH(x - 50, 330, 100, 46), 23, 23), trous)
+        # barre de calage dorée avec ses trois tétons
+        barre = skia.Paint(AntiAlias=True, Shader=skia.GradientShader.MakeLinear([(0, 300), (0, 400)],
+                           [skia.Color(255, 236, 170), skia.Color(196, 140, 40), skia.Color(120, 78, 18)]))
+        c.drawRRect(skia.RRect.MakeRectXY(skia.Rect.MakeXYWH(W / 2 - 560, 304, 1120, 92), 18, 18), barre)
+        teton = skia.Paint(AntiAlias=True, Color=skia.Color(70, 44, 10))
+        for x, w in ((W / 2 - 330, 120), (W / 2, 80), (W / 2 + 330, 120)):
+            c.drawRRect(skia.RRect.MakeRectXY(skia.Rect.MakeXYWH(x - w / 2, 330, w, 40), 20, 20), teton)
+        # numéro de plan entouré au crayon rouge
+        etiquette = skia.Paint(AntiAlias=True, Color=skia.Color(250, 246, 236, 235))
+        c.save(); c.rotate(-3, W - 410, 515)
+        c.drawRect(skia.Rect.MakeXYWH(W - 600, 410, 380, 210), etiquette)
+        rouge = skia.Paint(AntiAlias=True, Style=skia.Paint.kStroke_Style, StrokeWidth=6, Color=skia.Color(200, 40, 44, 230))
+        c.drawOval(skia.Rect.MakeXYWH(W - 560, 430, 300, 170), rouge)
+        ecriture(c, "C-" + INFOS["num"], W - 520, 545, 70, (200, 40, 44), "cond")
+        c.restore()
+        # colonne de feuille d'exposition
+        q = skia.Paint(AntiAlias=True, Style=skia.Paint.kStroke_Style, StrokeWidth=3, Color=skia.Color(60, 60, 70, 150))
+        for k_ in range(12):
+            y = 780 + k_ * 110; c.drawLine(W - 200, y, W - 150, y, q)
+            if k_ % 3 == 0: ecriture(c, str(k_ + 1), W - 205, y - 18, 30, (60, 60, 70), "bold")
     img = dessiner(img, notes)
-    return habiller(rarete, img, "GENGA", art.perso, voile=(30, 20, 6), voile_force=0.85)
+    return habiller(rarete, img, "GENGA", art.perso, voile=(30, 20, 6), voile_force=0.6)
 
 # ================================================================== SAKUGA
 def sakuga_spectre(art, rarete="spectre"):
