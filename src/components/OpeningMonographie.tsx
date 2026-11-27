@@ -147,18 +147,21 @@ export default function OpeningMonographie({ bascule }: { bascule?: React.ReactN
         </div>
       </div>
 
-      <figure className={s.ecran}>
-        <video ref={v => { videos.current[0] = v; }} data-etat="visible" muted playsInline loop preload="none" aria-hidden />
-        <video ref={v => { videos.current[1] = v; }} data-etat="repos" muted playsInline loop preload="none" aria-hidden />
-        <figcaption key={n.id}>{oeuvre} · opening</figcaption>
-      </figure>
+      {/* l'opening en fond de tout l'écran */}
+      <div className={s.ecran} aria-hidden>
+        <video ref={v => { videos.current[0] = v; }} data-etat="visible" muted playsInline loop preload="none" />
+        <video ref={v => { videos.current[1] = v; }} data-etat="repos" muted playsInline loop preload="none" />
+      </div>
+      <div className={s.voile} aria-hidden />
 
-      {carte.vraie && (
-        <div className={s.carte} key={n.id + "c"} aria-hidden>
-          <img src={carte.carte} alt="" />
-          {carte.anim && <video src={carte.anim} autoPlay muted loop playsInline onPlaying={e => e.currentTarget.classList.add(s.joue)} />}
+      {/* la carte nominée en grand, à la place de l'image de la Monograph */}
+      <figure className={s.carte} key={n.id + "c"}>
+        <div className={s.carteCadre}>
+          <img src={carte.carte} alt={`Carte nominée : ${n.nom}`} />
+          {carte.anim && <video src={carte.anim} autoPlay muted loop playsInline aria-hidden onPlaying={e => e.currentTarget.classList.add(s.joue)} />}
         </div>
-      )}
+        <figcaption>{carte.vraie ? "Carte nominée" : "Visuel"} · {oeuvre}</figcaption>
+      </figure>
 
       <div ref={ruban} className={s.ruban} aria-label="Tous les openings nominés">
         <div ref={piste} className={s.piste}>

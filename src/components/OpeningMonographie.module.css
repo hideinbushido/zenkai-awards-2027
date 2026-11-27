@@ -33,14 +33,29 @@
 .fleches { display: flex; gap: 6px; margin-left: auto; }
 .fleches button { width: 46px; padding: 0; }
 
-.ecran { grid-column: 2; grid-row: 1; position: relative; align-self: center; justify-self: end; margin: 0; width: min(100%, calc((100svh - 104px - var(--ruban) - 40px) * 16 / 9)); aspect-ratio: 16 / 9; background: #16141b; overflow: hidden; }
+/* opening plein écran, en fond */
+.ecran { position: absolute; inset: 0; z-index: 0; background: #0b0a0e; overflow: hidden; }
 .ecran video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .ecran video[data-etat="repos"] { opacity: 0; z-index: 0; }
 .ecran video[data-etat="dessous"] { z-index: 1; }
 .ecran video[data-etat="attente"] { z-index: 2; clip-path: inset(0 0 0 100%); }
-.ecran video[data-etat="entre"] { z-index: 2; clip-path: inset(0 0 0 0); transition: clip-path 1s var(--ease); }
+.ecran video[data-etat="entre"] { z-index: 2; clip-path: inset(0 0 0 0); transition: clip-path 1.1s var(--ease); }
 .ecran video[data-etat="visible"] { z-index: 2; clip-path: inset(0 0 0 0); }
-.ecran figcaption { position: absolute; left: 0; bottom: -26px; font: 400 10px/1 var(--f-large); letter-spacing: .16em; text-transform: uppercase; opacity: .55; animation: fondu .6s .3s var(--ease) both; }
+/* voile : lisibilité du titre à gauche et du ruban en bas, l'opening reste visible au centre */
+.voile { position: absolute; inset: 0; z-index: 1; pointer-events: none; background:
+  linear-gradient(90deg, #0b0a0ee6 0%, #0b0a0e99 32%, #0b0a0e33 60%, #0b0a0e66 100%),
+  linear-gradient(180deg, #0b0a0eb3 0%, transparent 22%, transparent 62%, #0b0a0ef2 100%); }
+.texte, .carte, .ruban, .hud { position: relative; z-index: 2; }
+.hud { position: absolute; }
+
+/* carte nominée en grand */
+.carte { grid-column: 2; grid-row: 1; justify-self: end; align-self: end; margin: 0 0 22px; display: grid; gap: 10px; }
+.carteCadre { position: relative; height: calc(100svh - 104px - var(--ruban) - 90px); max-height: 900px; aspect-ratio: 1200 / 1676; border-radius: 3.6% / 2.6%; overflow: hidden; box-shadow: 0 40px 100px #000d; animation: devoile 1.1s var(--ease) both; }
+.carteCadre img, .carteCadre video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.carteCadre video { opacity: 0; transition: opacity .5s; }
+.carteCadre video.joue { opacity: 1; }
+.carte figcaption { font: 400 10px/1 var(--f-large); letter-spacing: .16em; text-transform: uppercase; opacity: .7; animation: fondu .6s .4s var(--ease) both; }
+@keyframes devoile { from { clip-path: inset(100% 0 0 0); transform: translateY(30px) scale(1.04); } to { clip-path: inset(0 0 0 0); } }
 
 .ruban { grid-column: 1 / -1; grid-row: 2; position: relative; margin: 0 calc(var(--marge) * -1); overflow: hidden; cursor: grab; touch-action: pan-y; user-select: none; padding-top: 14px; border-top: 1px solid #f4f1ec1f; }
 .ruban:active { cursor: grabbing; }
@@ -56,7 +71,6 @@
 
 @media (max-width: 900px) {
   .page { grid-template-columns: 1fr; grid-template-rows: auto 1fr var(--ruban); padding-top: 120px; row-gap: 18px; }
-  .ecran { grid-column: 1; grid-row: 1; justify-self: stretch; width: 100%; }
   .ruban { grid-row: 3; }
   .hud p, .hud a:last-child { display: none; }
   .hud a { white-space: nowrap; }
@@ -69,10 +83,11 @@
   .ecran video[data-etat="entre"] { transition: none; }
 }
 
-/* carte nominée posée sur le coin de l'écran, avec son animation */
-.carte { position: relative; grid-column: 2; grid-row: 1; justify-self: start; align-self: end; margin-bottom: 2svh; translate: -12% 0; z-index: 2; height: clamp(170px, 32svh, 340px); aspect-ratio: 1200 / 1676; border-radius: 3.6% / 2.6%; overflow: hidden; rotate: -5deg; box-shadow: 0 30px 70px #000c; animation: carte .9s .15s var(--ease) both; pointer-events: none; }
-.carte img, .carte video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.carte video { opacity: 0; transition: opacity .5s; }
-.carte video.joue { opacity: 1; }
-@keyframes carte { from { opacity: 0; transform: translateY(40px) rotate(6deg) scale(.92); } }
-@media (max-width: 900px) { .carte { grid-column: 1; grid-row: 1; justify-self: end; align-self: end; translate: 0 30%; margin: 0 8px 0 0; height: 22svh; rotate: 4deg; } }
+
+@media (max-width: 900px) {
+  .carte { grid-column: 1; grid-row: 1; justify-self: center; }
+  .carteCadre { height: 34svh; }
+  .carte { margin: 0; }
+  .actions { gap: 8px; }
+}
+@media (prefers-reduced-motion: reduce) { .carteCadre { animation: none; } }
