@@ -1,20 +1,17 @@
 "use client";
 
-// Meilleur opening, version « Slider Verticalix » : le titre de l'opening en très grand à gauche,
-// la pile des cartes nominées à droite (celle du milieu nette et animée, les voisines floues),
-// le fond aux couleurs de l'animé, et la musique de l'opening qui part au refrain quand le son est activé.
+// Galerie des nominés d'après « Slider Verticalix » : le nom en très grand à gauche, la pile des nominés à droite
+// (celui du milieu net, les voisins flous), le fond teinté. En fond : l'opening calé sur le refrain
+// (et sa musique quand le son est activé) ou, sans opening, le visuel du nominé flouté.
 import Link from "next/link";
-import { useCallback, useEffect, useRef, useState, type CSSProperties, type PointerEvent, type ReactNode } from "react";
+import { useCallback, useEffect, useRef, useState, type CSSProperties, type PointerEvent } from "react";
 import { CATEGORIES } from "@/data/edition";
 import { NOMINES_2027 } from "@/data/nomines2027";
 import { carteNomine } from "@/data/cartesNomines";
 import { garderCarte, useCollection } from "@/lib/collection";
-import s from "./OpeningVertical.module.css";
+import s from "./GalerieVerticale.module.css";
 
 type Nomine = { id: string; nom: string; detail?: string; img: string; video?: string; refrain?: number };
-const LISTE = NOMINES_2027.opening as Nomine[];
-const N = LISTE.length;
-const CAT = "opening";
 const pad = (n: number) => String(n).padStart(2, "0");
 // [fond, encre] par opening
 const TEINTE: Record<string, [string, string]> = {
@@ -26,8 +23,16 @@ const TEINTE: Record<string, [string, string]> = {
   "tokyo-revengers": ["#151517", "#f4f1ec"], "sentenced-hero": ["#3d3d46", "#f2f2f4"], "marriage-toxin": ["#e8b4c8", "#2a0f1c"],
 };
 
-export default function OpeningVertical({ bascule }: { bascule?: ReactNode }) {
+// teintes de repli pour les catégories sans couleur dédiée
+const PALETTE: [string, string][] = [["#3a1f94", "#efeaff"], ["#8f2a10", "#fff1e6"], ["#1c5a45", "#ecf7ef"], ["#5b0f1c", "#f6efe6"],
+  ["#173a6b", "#eaf2ff"], ["#d93a78", "#1d0612"], ["#0f5a52", "#eafaf6"], ["#e7dcc6", "#1d150c"]];
+
+export default function GalerieVerticale({ categorie: CAT }: { categorie: string }) {
+  const LISTE = (NOMINES_2027[CAT] ?? []) as Nomine[];
+  const N = LISTE.length;
+  const cat = CATEGORIES.find(c => c.id === CAT)!;
   const idx = CATEGORIES.findIndex(c => c.id === CAT);
+  const carteDe = (m: Nomine) => CAT === "opening" ? carteNomine(m.id, m.img) : { carte: m.img, vignette: m.img, anim: null, vraie: false };
   const suivante = CATEGORIES[(idx + 1) % CATEGORIES.length];
   const bulletin = useCollection();
   const [{ i, avant, dir }, setEtat] = useState({ i: 0, avant: -1, dir: 1 });
@@ -42,7 +47,7 @@ export default function OpeningVertical({ bascule }: { bascule?: ReactNode }) {
     verrou.current = t;
     setAnim(null);
     setEtat(e => ({ i: (e.i + d + N) % N, avant: e.i, dir: d }));
-  }, []);
+  }, [N]);
   const choisir = (k: number) => { if (k !== i) { setAnim(null); setEtat(e => ({ i: k, avant: e.i, dir: k > e.i ? 1 : -1 })); } };
 
   useEffect(() => {
@@ -87,7 +92,7 @@ export default function OpeningVertical({ bascule }: { bascule?: ReactNode }) {
   }, [son]);
 
   useEffect(() => {
-    [1, -1].forEach(d => { const im = new Image(); const m = LISTE[(i + d + N) % N]; im.src = carteNomine(m.id, m.img).carte; });
+    [1, -1].forEach(d => { const im = new Image(); const m = LISTE[(i + d + N) % N]; im.src = carteDe(m).carte; });
   }, [i]);
 
   const incliner = (e: PointerEvent<HTMLElement>) => {
@@ -99,18 +104,18 @@ export default function OpeningVertical({ bascule }: { bascule?: ReactNode }) {
 
   const n = LISTE[i];
   const [artiste, oeuvre] = (n.detail ?? "").split(" · ");
-  const [fond, encre] = TEINTE[n.id] ?? ["#15131a", "#f4f1ec"];
+  const [fond, encre] = TEINTE[n.id] ?? PALETTE[i % PALETTE.length];
   const choisi = bulletin[CAT] === n.id;
 
   return (
     <section className={s.scene} style={{ "--fond": fond, "--encre": encre, "--dir": dir } as CSSProperties}
-      data-plein-ecran="" data-lenis-prevent="" aria-label="Meilleur opening : les nominés">
+      data-plein-ecran="" data-lenis-prevent="" aria-label={`${cat.titre} : les nominés`}>
       <video ref={musique} className={s.fondVideo} muted playsInline loop preload="none" aria-hidden />
+      {!n.video && <div className={s.image} key={n.id + "f"} style={{ backgroundImage: `url(${n.img})` }} aria-hidden />}
       <div className={s.voile} aria-hidden />
       <header className={s.hud}>
         <Link href="/categories">← Catégories</Link>
-        <p><span>Meilleur opening</span> <em>{pad(idx + 1)} / {CATEGORIES.length}</em></p>
-        {bascule}
+        <p><span>{cat.titre}</span> <em>{pad(idx + 1)} / {CATEGORIES.length}</em></p>
         <Link href={`/categories/${suivante.id}`}>{suivante.court} →</Link>
       </header>
 
@@ -119,16 +124,18 @@ export default function OpeningVertical({ bascule }: { bascule?: ReactNode }) {
         <div className={s.titres} aria-live="polite">
           {LISTE.map((m, k) => (
             <h1 key={m.id} className={s.titre} data-pos={k === i ? "actif" : k === avant ? "sort" : "cache"} aria-hidden={k !== i}>
-              {[...m.nom].map((c, j) => <span key={j} style={{ "--j": j } as CSSProperties}>{c === " " ? " " : c}</span>)}
+              {(() => { let j = 0; return m.nom.split(" ").map((mot, w) => (
+                <span key={w} className={s.mot}>{[...mot].map(c => <span key={j} style={{ "--j": j++ } as CSSProperties}>{c}</span>)}</span>
+              )); })()}
             </h1>
           ))}
         </div>
-        <p className={s.sous} key={n.id}><b>{artiste}</b> · {oeuvre}</p>
+        <p className={s.sous} key={n.id}><b>{artiste}</b>{oeuvre ? ` · ${oeuvre}` : ""}</p>
         <div className={s.commandes}>
           <button className={s.rond} onClick={() => aller(1)} aria-label="Opening suivant">↓</button>
           <button className={s.rond} onClick={() => aller(-1)} aria-label="Opening précédent">↑</button>
           <button className={s.pilule} data-plein={choisi || undefined} onClick={() => garderCarte(CAT, n.id)}>{choisi ? "Dans ton bulletin ✓" : "Voter"}</button>
-          <button className={s.pilule} aria-pressed={son} onClick={() => setSon(x => !x)}>{son ? "♪ Couper la musique" : "♪ Écouter l’opening"}</button>
+          {n.video && <button className={s.pilule} aria-pressed={son} onClick={() => setSon(x => !x)}>{son ? "♪ Couper la musique" : "♪ Écouter l’opening"}</button>}
         </div>
       </div>
 
@@ -136,12 +143,12 @@ export default function OpeningVertical({ bascule }: { bascule?: ReactNode }) {
         {LISTE.map((m, k) => {
           const d = ((k - i + N + Math.floor(N / 2)) % N) - Math.floor(N / 2);
           const pos = d === 0 ? "actif" : d === -1 ? "avant" : d === 1 ? "apres" : d < 0 ? "loin-haut" : "loin-bas";
-          const c = carteNomine(m.id, m.img);
+          const c = carteDe(m);
           if (Math.abs(d) > 2) return null;
           return (
             <figure key={m.id} className={s.carte} data-pos={pos} onClick={() => d !== 0 && choisir(k)}
               onPointerMove={d === 0 ? incliner : undefined} onPointerLeave={d === 0 ? relacher : undefined}>
-              <img src={c.carte} alt={d === 0 ? `Carte nominée : ${m.nom}` : ""} draggable={false} decoding="async" />
+              <img src={c.carte} alt={d === 0 ? `${c.vraie ? "Carte nominée" : "Nominé"} : ${m.nom}` : ""} draggable={false} decoding="async" />
               {d === 0 && c.anim && (
                 <video key={m.id} src={c.anim} autoPlay muted loop playsInline aria-hidden
                   className={anim === m.id ? s.joue : undefined} onPlaying={() => setAnim(m.id)} />

@@ -1,8 +1,8 @@
 "use client";
 
-// Meilleur opening : galerie éditoriale d'après « Monograph Gallery ».
-// À gauche le titre en très grand (mots qui montent derrière un masque), au centre-droit l'opening en HD
-// qui démarre au refrain, en bas un ruban de vignettes qui défile tout seul, se glisse avec élan et se clique.
+// Galerie des nominés d'après « Monograph Gallery » : le nom en très grand à gauche (mots qui montent derrière
+// un masque), le nominé en grand à droite, en fond l'opening (calé sur le refrain) ou son visuel flouté,
+// en bas un ruban de vignettes qui défile tout seul, se glisse avec élan et se clique.
 // Seuls transform, opacity et clip-path bougent : le rendu reste fluide en plein écran.
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState, type CSSProperties } from "react";
@@ -10,16 +10,18 @@ import { CATEGORIES } from "@/data/edition";
 import { NOMINES_2027 } from "@/data/nomines2027";
 import { garderCarte, useCollection } from "@/lib/collection";
 import { carteNomine } from "@/data/cartesNomines";
-import s from "./OpeningMonographie.module.css";
+import s from "./GalerieMonographie.module.css";
 
 type Nomine = { id: string; nom: string; detail?: string; img: string; video?: string; refrain?: number };
-const LISTE = NOMINES_2027.opening as Nomine[];
-const N = LISTE.length;
 const pad = (n: number) => String(n).padStart(2, "0");
-const CAT = "opening";
 
-export default function OpeningMonographie({ bascule }: { bascule?: React.ReactNode }) {
+export default function GalerieMonographie({ categorie: CAT }: { categorie: string }) {
+  const LISTE = (NOMINES_2027[CAT] ?? []) as Nomine[];
+  const N = LISTE.length;
+  const REP = Math.max(1, Math.ceil(20 / Math.max(1, N))); // le ruban doit toujours dépasser la largeur de l’écran
+  const cat = CATEGORIES.find(c => c.id === CAT)!;
   const idx = CATEGORIES.findIndex(c => c.id === CAT);
+  const carteDe = (m: Nomine) => CAT === "opening" ? carteNomine(m.id, m.img) : { carte: m.img, vignette: m.img, anim: null, vraie: false };
   const suivante = CATEGORIES[(idx + 1) % CATEGORIES.length];
   const bulletin = useCollection();
   const [i, setI] = useState(0);
@@ -70,7 +72,7 @@ export default function OpeningMonographie({ bascule }: { bascule?: React.ReactN
     setSon(!v.muted);
   };
 
-  const aller = useCallback((d: number) => setI(x => (x + d + N) % N), []);
+  const aller = useCallback((d: number) => setI(x => (x + d + N) % N), [N]);
 
   // ---------- ruban : défilement continu, glisser avec élan, molette horizontale ----------
   useEffect(() => {
@@ -116,14 +118,13 @@ export default function OpeningMonographie({ bascule }: { bascule?: React.ReactN
   const n = LISTE[i];
   const [artiste, oeuvre] = (n.detail ?? "").split(" · ");
   const choisi = bulletin[CAT] === n.id;
-  const carte = carteNomine(n.id, n.img);
+  const carte = carteDe(n);
 
   return (
-    <section className={s.page} data-plein-ecran="" data-lenis-prevent="" aria-label="Meilleur opening : les nominés">
+    <section className={s.page} data-plein-ecran="" data-lenis-prevent="" aria-label={`${cat.titre} : les nominés`}>
       <header className={s.hud}>
         <Link href="/categories">← Catégories</Link>
-        <p><span>Meilleur opening</span> <em>{pad(idx + 1)} / {CATEGORIES.length}</em></p>
-        {bascule}
+        <p><span>{cat.titre}</span> <em>{pad(idx + 1)} / {CATEGORIES.length}</em></p>
         <Link href={`/categories/${suivante.id}`}>{suivante.court} →</Link>
       </header>
 
@@ -137,9 +138,9 @@ export default function OpeningMonographie({ bascule }: { bascule?: React.ReactN
         <p className={s.legende} key={n.id + "l"}><b>{artiste}</b><span>{oeuvre}</span></p>
         <div className={s.actions}>
           <button type="button" className={s.principal} data-choisi={choisi || undefined} onClick={() => garderCarte(CAT, n.id)}>
-            {choisi ? "Dans ton bulletin ✓" : "Voter pour cet opening"}
+            {choisi ? "Dans ton bulletin ✓" : "Voter"}
           </button>
-          <button type="button" onClick={basculerSon} aria-pressed={son}>{son ? "Couper le son" : "Activer le son"}</button>
+          {n.video && <button type="button" onClick={basculerSon} aria-pressed={son}>{son ? "Couper le son" : "Activer le son"}</button>}
           <span className={s.fleches}>
             <button type="button" onClick={() => aller(-1)} aria-label="Opening précédent">←</button>
             <button type="button" onClick={() => aller(1)} aria-label="Opening suivant">→</button>
@@ -152,28 +153,29 @@ export default function OpeningMonographie({ bascule }: { bascule?: React.ReactN
         <video ref={v => { videos.current[0] = v; }} data-etat="visible" muted playsInline loop preload="none" />
         <video ref={v => { videos.current[1] = v; }} data-etat="repos" muted playsInline loop preload="none" />
       </div>
+      {!n.video && <div className={s.image} key={n.id + "f"} style={{ backgroundImage: `url(${n.img})` }} aria-hidden />}
       <div className={s.voile} aria-hidden />
 
       {/* la carte nominée en grand, à la place de l'image de la Monograph */}
       <figure className={s.carte} key={n.id + "c"}>
         <div className={s.carteCadre}>
-          <img src={carte.carte} alt={`Carte nominée : ${n.nom}`} />
+          <img src={carte.carte} alt={`${carte.vraie ? "Carte nominée" : "Nominé"} : ${n.nom}`} />
           {carte.anim && <video src={carte.anim} autoPlay muted loop playsInline aria-hidden onPlaying={e => e.currentTarget.classList.add(s.joue)} />}
         </div>
-        <figcaption>{carte.vraie ? "Carte nominée" : "Visuel"} · {oeuvre}</figcaption>
+        <figcaption>{carte.vraie ? "Carte nominée" : "Nominé"}{oeuvre || artiste ? ` · ${oeuvre || artiste}` : ""}</figcaption>
       </figure>
 
-      <div ref={ruban} className={s.ruban} aria-label="Tous les openings nominés">
+      <div ref={ruban} className={s.ruban} aria-label="Tous les nominés">
         <div ref={piste} className={s.piste}>
-          {[0, 1, 2].flatMap(copie => LISTE.map((m, k) => (
-            <button key={`${copie}-${m.id}`} type="button" className={s.vignette} data-actif={k === i || undefined}
-              aria-hidden={copie !== 1} tabIndex={copie === 1 ? 0 : -1}
+          {[0, 1, 2].flatMap(copie => Array.from({ length: REP }, (_, r) => r).flatMap(r => LISTE.map((m, k) => (
+            <button key={`${copie}-${r}-${m.id}`} type="button" className={s.vignette} data-actif={k === i || undefined}
+              aria-hidden={copie !== 1 || r > 0} tabIndex={copie === 1 && r === 0 ? 0 : -1}
               onClick={() => { if (!tire.current) setI(k); }}>
               <span className={s.num}>{pad(k + 1)}</span>
-              <img src={carteNomine(m.id, m.img).vignette} alt={copie === 1 ? m.nom : ""} draggable={false} loading="lazy" decoding="async" />
+              <img src={carteDe(m).vignette} alt={copie === 1 && r === 0 ? m.nom : ""} draggable={false} loading="lazy" decoding="async" />
               <span className={s.nomV}>{m.nom}</span>
             </button>
-          )))}
+          ))))}
         </div>
       </div>
     </section>

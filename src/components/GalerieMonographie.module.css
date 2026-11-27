@@ -41,6 +41,8 @@
 .ecran video[data-etat="attente"] { z-index: 2; clip-path: inset(0 0 0 100%); }
 .ecran video[data-etat="entre"] { z-index: 2; clip-path: inset(0 0 0 0); transition: clip-path 1.1s var(--ease); }
 .ecran video[data-etat="visible"] { z-index: 2; clip-path: inset(0 0 0 0); }
+/* sans opening : le visuel du nominé, agrandi et flouté, en fond */
+.image { position: absolute; inset: -6%; z-index: 0; background: center / cover no-repeat; filter: blur(38px) saturate(1.25) brightness(.75); transform: scale(1.1); animation: fondu 1s var(--ease) both; }
 /* voile : lisibilité du titre à gauche et du ruban en bas, l'opening reste visible au centre */
 .voile { position: absolute; inset: 0; z-index: 1; pointer-events: none; background:
   linear-gradient(90deg, #0b0a0ee6 0%, #0b0a0e99 32%, #0b0a0e33 60%, #0b0a0e66 100%),

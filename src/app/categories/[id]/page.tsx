@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
-import GalerieCourbe from "@/components/GalerieCourbe";
-import OpeningGaleries from "@/components/OpeningGaleries";
+import GalerieNomines from "@/components/GalerieNomines";
 import OuvertureBooster from "@/components/OuvertureBooster";
 import { FAMILLES, categorie, nominesDe, voisines } from "@/data/boosters";
 import { CATEGORIES } from "@/data/edition";
@@ -32,8 +31,7 @@ async function Contenu({ params }: { params: PageProps<"/categories/[id]">["para
   const { id } = await params;
   const c = categorie(id);
   if (!c) notFound();
-  if (id === "opening") return <OpeningGaleries />;
-  if (nominesDe(id)?.length) return <GalerieCourbe key={id} categorie={id} />;
+  if (nominesDe(id)?.length) return <GalerieNomines categorie={id} />;
   const { avant, apres, numero } = voisines(id);
   const famille = FAMILLES.find((f) => f.id === c.famille)!;
 

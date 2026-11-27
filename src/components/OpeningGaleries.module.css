@@ -1,3 +1,0 @@
-.bascule { display: inline-flex; padding: 3px; border-radius: 999px; border: 1px solid color-mix(in oklab, currentColor 45%, transparent); }
-.bascule button { padding: 7px 12px; border: 0; border-radius: 999px; background: transparent; color: inherit; font: 400 9px/1 var(--f-large); letter-spacing: .14em; text-transform: uppercase; cursor: pointer; opacity: .6; transition: opacity .2s, background-color .2s; }
-.bascule button[aria-pressed="true"] { background: color-mix(in oklab, currentColor 22%, transparent); opacity: 1; }
