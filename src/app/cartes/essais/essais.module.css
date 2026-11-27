@@ -1,0 +1,40 @@
+/* Essais de galerie : styles communs */
+.barre {
+  position: fixed; left: 50%; bottom: 18px; z-index: 60; translate: -50% 0;
+  display: flex; align-items: center; gap: 4px; padding: 5px;
+  border-radius: 999px; background: oklch(0.99 0 0 / 0.78); backdrop-filter: blur(14px);
+  box-shadow: 0 8px 30px oklch(0.2 0.02 272 / 0.16); font: 500 13px/1 var(--f-texte);
+}
+.barre a { display: flex; align-items: baseline; gap: 6px; padding: 10px 14px; border-radius: 999px; color: var(--encre); text-decoration: none; transition: background .25s; }
+.barre a small { font-size: 10px; opacity: .5; }
+.barre a:hover { background: oklch(0.2 0.02 272 / 0.07); }
+.barre a[aria-current] { background: var(--encre); color: white; }
+.barre .barreTitre { font-family: var(--f-large); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; opacity: .6; }
+.barre[data-sombre] { background: oklch(0.2 0.01 270 / 0.7); }
+.barre[data-sombre] a { color: oklch(0.95 0 0); }
+.barre[data-sombre] a[aria-current] { background: white; color: var(--nuit); }
+@media (max-width: 640px) { .barre .barreTitre, .barre a small { display: none; } .barre a { padding: 10px 11px; } }
+
+/* Index */
+.index { min-height: 100svh; padding: calc(110px + 4vh) var(--marge) 120px; }
+.index h1 { font: 400 clamp(36px, 6vw, 88px)/1 var(--f-display); font-stretch: 75%; text-transform: uppercase; margin: 0 0 12px; }
+.index p { color: var(--texte-doux); max-width: 52ch; margin: 0 0 48px; }
+.choix { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.choix a { position: relative; display: flex; flex-direction: column; justify-content: flex-end; gap: 6px; aspect-ratio: 3 / 4; padding: 22px; border-radius: var(--rayon); overflow: hidden; color: white; text-decoration: none; background: var(--nuit); isolation: isolate; }
+.choix a img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; opacity: .7; transition: scale .8s var(--ease-sortie), opacity .4s; }
+.choix a::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(transparent 40%, oklch(0.1 0.01 270 / .85)); }
+.choix a:hover img { scale: 1.06; opacity: .9; }
+.choix strong { font: 400 34px/1 var(--f-display); font-stretch: 75%; text-transform: uppercase; }
+.choix span { font-size: 13px; opacity: .75; }
+.choix small { font-family: var(--f-large); font-size: 10px; letter-spacing: .14em; opacity: .6; }
+
+/* Fiche ouverte (commune) */
+.fiche { position: fixed; inset: 0; z-index: 80; display: grid; place-items: center; background: oklch(0.12 0.01 270 / 0.82); backdrop-filter: blur(18px); animation: apparait .45s var(--ease-sortie); cursor: zoom-out; }
+.ficheCorps { display: flex; align-items: center; gap: clamp(20px, 5vw, 72px); padding: var(--marge); color: white; }
+.ficheCorps img, .ficheCorps video { height: min(78svh, 900px); aspect-ratio: 600 / 838; width: auto; border-radius: 3.6% / 2.6%; box-shadow: 0 30px 80px oklch(0 0 0 / .5); animation: monte .6s var(--ease-sortie); }
+.ficheCorps h2 { font: 400 clamp(32px, 4vw, 64px)/1 var(--f-display); font-stretch: 75%; text-transform: uppercase; margin: 10px 0; }
+.ficheCorps p { margin: 0; opacity: .7; }
+.ficheCorps small { font-family: var(--f-large); font-size: 11px; letter-spacing: .16em; text-transform: uppercase; opacity: .7; }
+@media (max-width: 760px) { .ficheCorps { flex-direction: column; text-align: center; } .ficheCorps img, .ficheCorps video { height: 62svh; } }
+@keyframes apparait { from { opacity: 0; } }
+@keyframes monte { from { opacity: 0; translate: 0 30px; scale: .94; } }

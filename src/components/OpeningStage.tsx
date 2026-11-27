@@ -10,7 +10,8 @@ import s from "./OpeningStage.module.css";
 
 const art: Record<string,string> = {
   "bleach-ibull":"BLEACH", "black-clover":"BLACKCLOVER", ignis:"FIREforce",
-  "hells-paradise":"HELLSParadise", "marriage-toxin":"MARRIAGETOXIC"
+  "hells-paradise":"HELLSParadise", "marriage-toxin":"MARRIAGETOXIC",
+  "tokyo-revengers":"TOKYORevengers"
 };
 const featured = NOMINES_2027.opening.filter(n => art[n.id]);
 
