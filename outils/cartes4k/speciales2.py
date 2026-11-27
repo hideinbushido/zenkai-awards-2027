@@ -391,6 +391,52 @@ def sakuga_profondeur(art, rarete="zenkai"):
 VARIANTES["sakuga"] = {"spectre": sakuga_ligne, "mirage": sakuga_impact, "zenkai": sakuga_profondeur}
 
 
+def sakuga_remanence(art, rarete="mirage"):
+    """Les images rémanentes : la vraie image reste nette au premier plan ; derrière le personnage,
+    trois copies fantômes décalées dans le sens du geste (le « smear » du sakuga), teintées de sa
+    couleur, et le décor filé par la vitesse avec des traits d'action."""
+    perso = np.maximum(art.perso, flou(art.large, 2)) if hasattr(art, "large") else art.perso
+    if perso.mean() < 0.03:          # détourage vide (image d'action très chargée) : on garde nette toute la zone centrale
+        el = ((XX - W * 0.5) / (W * 0.46)) ** 2 + ((YY - H * 0.46) / (H * 0.44)) ** 2
+        perso = np.clip((1.15 - el) / 0.5, 0, 1).astype(np.float32)
+    coul = couleur_perso(art)
+    petit_rgb = cv2.resize(art.rgb, (W // 2, H // 2)); petit_m = cv2.resize(perso, (W // 2, H // 2))
+    decor = cv2.resize(arriere_plan(art, petit_rgb, petit_m), (W, H), interpolation=cv2.INTER_CUBIC)
+    # sens du mouvement : diagonale montante vers la droite ; le décor est filé dans ce sens
+    ang = np.deg2rad(-28); dx, dy = np.cos(ang), np.sin(ang)
+    L = 61; k = np.zeros((L, L), np.float32)
+    for t in range(L): k[int(L / 2 + (t - L / 2) * dy), int(L / 2 + (t - L / 2) * dx)] = 1
+    decor = cv2.filter2D(decor, -1, k / k.sum(), borderType=cv2.BORDER_REFLECT) * 0.82
+    # traits d'action le long du mouvement
+    r = np.random.default_rng(12); proj = (XX * -dy + YY * dx)
+    bande = r.random(1400); idx = ((proj - proj.min()) / (proj.max() - proj.min()) * 1399).astype(int)
+    traitsv = (bande[idx] > 0.93).astype(np.float32) * (0.35 + 0.65 * r.random(1400)[idx])
+    long_ = flou(r.random((H, W)).astype(np.float32), 40); long_ = (long_ - long_.min()) / (long_.max() - long_.min())
+    traitsv *= lisse(long_, 0.45, 0.6)
+    img = ecran(decor, np.ones(3) * (traitsv * 0.55)[..., None])
+    # trois rémanences derrière le personnage, de la plus lointaine à la plus proche
+    for n, (dist, a) in enumerate(((330, 0.3), (220, 0.42), (110, 0.56))):
+        M = np.float32([[1, 0, -dx * dist], [0, 1, -dy * dist]])
+        g = cv2.warpAffine(art.rgb, M, (W, H), borderMode=cv2.BORDER_REFLECT)
+        gm = cv2.warpAffine(perso, M, (W, H)) * (1 - perso)
+        teinte = np.clip(g * 0.45 + coul * 0.75, 0, 1)
+        img = melange(img, teinte, flou(gm, 3) * a)
+        bord = np.clip(flou(gm, 3) - flou(gm, 9), 0, 1) * 2.5
+        img = ecran(img, coul * (np.clip(bord, 0, 1) * a)[..., None])
+    # la vraie image, nette, avec un liseré lumineux côté mouvement
+    img = melange(img, art.rgb, perso)
+    bord = np.clip(flou(perso, 5) - perso * 0.9, 0, 1) * 1.8
+    img = ecran(img, np.clip(coul * 0.6 + 0.5, 0, 1) * np.clip(bord, 0, 1)[..., None])
+    def minutage(c):                 # minutage d'animateur : on 1s (une image par frame)
+        p = skia.Paint(AntiAlias=True, Style=skia.Paint.kStroke_Style, StrokeWidth=4, Color=skia.Color(240, 240, 250, 190))
+        for k_ in range(6):
+            x = W - 560 + k_ * 62; c.drawLine(x, 330, x, 330 + (46 if k_ % 2 == 0 else 26), p)
+        ecriture(c, "1s", W - 560, 430, 44, (240, 240, 250), "cond", 200)
+    img = dessiner(img, minutage)
+    return habiller(rarete, img, "SAKUGA", None)
+
+VARIANTES["sakuga"]["mirage"] = sakuga_remanence
+
 if __name__ == "__main__":
     sel = json.load(open("selection.json")); filtre = sys.argv[1:]
     for n, e in enumerate(sel, 1):

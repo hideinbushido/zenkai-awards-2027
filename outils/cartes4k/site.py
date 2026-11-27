@@ -30,7 +30,7 @@ def main():
     # on repart de zéro : les anciennes cartes (ancien design) sont remplacées
     for d in (cartes_dir, var_dir):
         shutil.rmtree(d, ignore_errors=True); os.makedirs(d)
-    cards, catalogue, manquantes, videos = [], [], [], []
+    cards, catalogue, manquantes, videos, vues = [], [], [], [], {}
     for e in man:
         cid = f"{re.sub(r'[^A-Za-z0-9]', '', e['dossier'])}-{e['num']:03d}"   # identifiant sans espace ni point (liens, contrôles)
         jpg = trouver(e, ".jpg")
@@ -38,6 +38,12 @@ def main():
             manquantes.append(cid); continue
         d = os.path.join(cartes_dir, cid); os.makedirs(d)
         Image.open(jpg).convert("RGB").resize((W, H), Image.LANCZOS).save(os.path.join(d, "full.webp"), quality=84, method=6)
+        complete = trouver(dict(e, fichier=e["fichier"][:-4] + "_VUE-COMPLETE.jpg"), ".jpg")   # Ekonte Spectre : 2e vue
+        if complete:
+            v = os.path.join(PUB, "vues", cid); os.makedirs(v, exist_ok=True)
+            Image.open(jpg).convert("RGB").resize((W, H), Image.LANCZOS).save(os.path.join(v, "planches.webp"), quality=86, method=6)
+            Image.open(complete).convert("RGB").resize((W, H), Image.LANCZOS).save(os.path.join(v, "complete.webp"), quality=86, method=6)
+            vues[cid] = [("3 planches", f"/booster/vues/{cid}/planches.webp"), ("Image complète", f"/booster/vues/{cid}/complete.webp")]
         mp4 = trouver(e, ".mp4")
         if mp4:
             subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", mp4, "-vf", "scale=540:-2", "-c:v", "libx264",
@@ -54,6 +60,14 @@ def main():
     with open(os.path.join(PUB, "cards.js"), "w") as f:
         f.write("window.ZK_CARDS = " + json.dumps({"booster": 10, "cards": cards}, ensure_ascii=False) + ";\n")
     json.dump(catalogue, open(os.path.join(BASE, "catalogue.json"), "w"), ensure_ascii=False, indent=0)
+    racine = os.path.dirname(os.path.dirname(BASE))
+    with open(os.path.join(racine, "src/data/vues.ts"), "w") as f:
+        f.write("// Cartes qui ont plusieurs façons d'être regardées (Ekonte Spectre : trois planches ou image complète).\n"
+                "// La première vue est celle par défaut ; le passage de l'une à l'autre se fait par un balayage de lumière.\n"
+                "export type Vue = { label: string; src: string };\n\nexport const vuesCartes: Record<string, Vue[]> = {\n")
+        for k, vs in vues.items():
+            f.write(f'  "{k}": [\n' + ",\n".join(f'    {{ label: "{l}", src: "{u}" }}' for l, u in vs) + "\n  ],\n")
+        f.write("};\n")
     print(len(cards), "cartes,", len(videos), "vidéos,", len(manquantes), "manquantes", manquantes[:20])
     return videos
 
